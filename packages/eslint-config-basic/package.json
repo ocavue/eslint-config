@@ -1,6 +1,6 @@
 {
   "name": "@ocavue/eslint-config-basic",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": "index.js",
   "dependencies": {
     "@typescript-eslint/parser": "^5.44.0",
