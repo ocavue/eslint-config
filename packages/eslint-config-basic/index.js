@@ -13,14 +13,13 @@ module.exports = defineConfig({
     'eslint-plugin-unicorn',
     'eslint-plugin-no-only-tests',
     'eslint-plugin-import',
+    'eslint-plugin-jsonc',
 
     '@typescript-eslint',
   ],
 
   extends: [
     'eslint:recommended',
-    'plugin:jsonc/recommended-with-jsonc',
-    'plugin:yml/standard',
     'plugin:markdown/recommended',
 
     // https://www.npmjs.com/package/eslint-plugin-import
@@ -75,9 +74,6 @@ module.exports = defineConfig({
     // Require `Array.isArray()` instead of `instanceof Array`.
     'unicorn/no-instanceof-array': 'error',
 
-    // yml
-    'yml/quotes': 'off',
-
     // import
     // External modules must be declared in the package.json
     'import/no-extraneous-dependencies': 'error',
@@ -94,35 +90,11 @@ module.exports = defineConfig({
 
   overrides: [
     {
-      files: ['*.json', '*.json5'],
-      parser: 'jsonc-eslint-parser',
-      rules: {
-        'jsonc/array-bracket-spacing': ['error', 'never'],
-        'jsonc/comma-dangle': ['error', 'never'],
-        'jsonc/comma-style': ['error', 'last'],
-        'jsonc/indent': ['error', 2],
-        'jsonc/key-spacing': [
-          'error',
-          { beforeColon: false, afterColon: true },
-        ],
-        'jsonc/no-octal-escape': 'error',
-        'jsonc/object-curly-newline': [
-          'error',
-          { multiline: true, consistent: true },
-        ],
-        'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': [
-          'error',
-          { allowMultiplePropertiesPerLine: true },
-        ],
-      },
-    },
-    {
       files: ['package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
         'jsonc/sort-keys': [
-          'error',
+          'warn',
           {
             pathPattern: '^$',
             order: [
@@ -174,10 +146,6 @@ module.exports = defineConfig({
           },
         ],
       },
-    },
-    {
-      files: ['*.yaml', '*.yml'],
-      parser: 'yaml-eslint-parser',
     },
     {
       // Code blocks in markdown file

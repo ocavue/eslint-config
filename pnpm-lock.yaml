@@ -47,7 +47,6 @@ importers:
       eslint-plugin-markdown: ^3.0.0
       eslint-plugin-no-only-tests: ^3.1.0
       eslint-plugin-unicorn: ^45.0.0
-      eslint-plugin-yml: ^1.2.0
       typescript: ~4.8.0
       yaml-eslint-parser: ^1.1.0
     dependencies:
@@ -60,7 +59,6 @@ importers:
       eslint-plugin-markdown: 3.0.0_eslint@8.28.0
       eslint-plugin-no-only-tests: 3.1.0
       eslint-plugin-unicorn: 45.0.0_eslint@8.28.0
-      eslint-plugin-yml: 1.2.0_eslint@8.28.0
       yaml-eslint-parser: 1.1.0
     devDependencies:
       eslint: 8.28.0
@@ -881,21 +879,6 @@ packages:
       safe-regex: 2.1.1
       semver: 7.3.8
       strip-indent: 3.0.0
-    dev: false
-
-  /eslint-plugin-yml/1.2.0_eslint@8.28.0:
-    resolution: {integrity: sha512-v0jAU/F5SJg28zkpxwGpY04eGZMWFP6os8u2qaEAIRjSH2GqrNl0yBR5+sMHLU/026kAduxVbvLSqmT3Mu3O0g==}
-    engines: {node: ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: '>=6.0.0'
-    dependencies:
-      debug: 4.3.4
-      eslint: 8.28.0
-      lodash: 4.17.21
-      natural-compare: 1.4.0
-      yaml-eslint-parser: 1.1.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /eslint-scope/5.1.1:

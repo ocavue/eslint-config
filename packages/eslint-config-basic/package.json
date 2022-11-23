@@ -12,7 +12,6 @@
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-unicorn": "^45.0.0",
-    "eslint-plugin-yml": "^1.2.0",
     "yaml-eslint-parser": "^1.1.0"
   },
   "peerDependencies": {
