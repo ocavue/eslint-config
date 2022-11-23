@@ -50,14 +50,18 @@ module.exports = defineConfig({
   ],
 
   rules: {
+    // JS
+    // Use "\n" instead of "\r\n"
+    'linebreak-style': ['error', 'unix'],
+
+    // TS
+    '@typescript-eslint/no-explicit-any': 'off',
+
     // unicorn
     // Enforce passing a message value when creating a built-in error
     'unicorn/error-message': 'error',
     // Require `Array.isArray()` instead of `instanceof Array`.
     'unicorn/no-instanceof-array': 'error',
-
-    // typescript
-    '@typescript-eslint/no-explicit-any': 'off',
 
     // yml
     'yml/quotes': 'off',
