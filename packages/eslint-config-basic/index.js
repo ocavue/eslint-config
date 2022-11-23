@@ -12,6 +12,7 @@ module.exports = defineConfig({
   plugins: [
     'eslint-plugin-unicorn',
     'eslint-plugin-no-only-tests',
+    'eslint-plugin-import',
 
     '@typescript-eslint',
   ],
