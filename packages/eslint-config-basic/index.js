@@ -12,6 +12,7 @@ module.exports = defineConfig({
   plugins: [
     'eslint-plugin-unicorn',
     'eslint-plugin-no-only-tests',
+
     '@typescript-eslint',
   ],
 
@@ -20,6 +21,10 @@ module.exports = defineConfig({
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
     'plugin:markdown/recommended',
+
+    // https://www.npmjs.com/package/eslint-plugin-import
+    'plugin:import/recommended',
+    'plugin:import/typescript',
 
     // https://typescript-eslint.io/docs/linting/configs
     'plugin:@typescript-eslint/recommended',
@@ -57,6 +62,18 @@ module.exports = defineConfig({
 
     // yml
     'yml/quotes': 'off',
+
+    // import
+    'import/no-extraneous-dependencies': 'error',
+  },
+
+  settings: {
+    'import/resolver': {
+      // You will also need to install and configure the TypeScript resolver
+      // See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
+      typescript: true,
+      node: true,
+    },
   },
 
   overrides: [
