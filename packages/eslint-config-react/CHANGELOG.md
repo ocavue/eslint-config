@@ -1,5 +1,11 @@
 # Changelog
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @ocavue/eslint-config-basic bumped from ^0.5.0 to ^0.6.0
+
 ## [0.4.1](https://github.com/ocavue/eslint-config/compare/eslint-config-react-v0.4.0...eslint-config-react-v0.4.1) (2022-11-23)
 
 
