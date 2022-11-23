@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.6.0...eslint-config-basic-v0.6.1) (2022-11-23)
+
+
+### Bug Fixes
+
+* disable @typescript-eslint/no-extra-semi ([a9d0cf5](https://github.com/ocavue/eslint-config/commit/a9d0cf5ab14bfb2ab5810b26e591349cc6dda9d8))
+
 ## [0.6.0](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.5.0...eslint-config-basic-v0.6.0) (2022-11-23)
 
 
