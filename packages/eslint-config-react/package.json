@@ -1,6 +1,6 @@
 {
   "name": "@ocavue/eslint-config-react",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "main": "index.js",
   "dependencies": {
     "@ocavue/eslint-config-basic": "^0.6.2",
