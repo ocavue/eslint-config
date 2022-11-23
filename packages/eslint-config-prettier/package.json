@@ -1,6 +1,6 @@
 {
   "name": "@ocavue/eslint-config-prettier",
-  "version": "0.2.1",
+  "version": "0.4.0",
   "main": "index.js",
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
