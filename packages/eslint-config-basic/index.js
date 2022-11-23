@@ -23,7 +23,6 @@ module.exports = defineConfig({
     'plugin:markdown/recommended',
 
     // https://www.npmjs.com/package/eslint-plugin-import
-    'plugin:import/recommended',
     'plugin:import/typescript',
 
     // https://typescript-eslint.io/docs/linting/configs
@@ -64,6 +63,7 @@ module.exports = defineConfig({
     'yml/quotes': 'off',
 
     // import
+    // External modules must be declared in the package.json
     'import/no-extraneous-dependencies': 'error',
   },
 
