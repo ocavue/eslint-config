@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.6.2...eslint-config-basic-v0.6.3) (2022-11-23)
+
+
+### Bug Fixes
+
+* remove eslint-plugin-yml ([2b1d71b](https://github.com/ocavue/eslint-config/commit/2b1d71b31890052c36f6f4fbd34e5d1b183d973e))
+
 ## [0.6.2](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.6.1...eslint-config-basic-v0.6.2) (2022-11-23)
 
 
