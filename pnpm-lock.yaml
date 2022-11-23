@@ -20,8 +20,8 @@ importers:
 
   packages/eslint-config:
     specifiers:
-      '@ocavue/eslint-config-basic': ^0.2.1
-      '@ocavue/eslint-config-prettier': ^0.2.1
+      '@ocavue/eslint-config-basic': ^0.4.0
+      '@ocavue/eslint-config-prettier': ^0.4.0
       '@typescript-eslint/eslint-plugin': ^5.44.0
       '@typescript-eslint/parser': ^5.44.0
       eslint: ^8.28.0
@@ -79,8 +79,8 @@ importers:
 
   packages/eslint-config-react:
     specifiers:
-      '@ocavue/eslint-config-basic': ^0.2.1
-      '@ocavue/eslint-config-prettier': ^0.2.1
+      '@ocavue/eslint-config-basic': ^0.4.0
+      '@ocavue/eslint-config-prettier': ^0.4.0
       eslint: ^8.28.0
       eslint-plugin-react: ^7.31.11
       eslint-plugin-react-hooks: ^4.6.0
