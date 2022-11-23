@@ -12,6 +12,13 @@
   * dependencies
     * @ocavue/eslint-config-basic bumped from ^0.6.0 to ^0.6.1
 
+## [0.4.6](https://github.com/ocavue/eslint-config/compare/eslint-config-react-v0.4.5...eslint-config-react-v0.4.6) (2022-11-23)
+
+
+### Bug Fixes
+
+* disable react/prop-types ([6ae02f0](https://github.com/ocavue/eslint-config/commit/6ae02f0f33cdde6204a8313250409553ac583eef))
+
 ## [0.4.5](https://github.com/ocavue/eslint-config/compare/eslint-config-react-v0.4.4...eslint-config-react-v0.4.5) (2022-11-23)
 
 
