@@ -20,14 +20,14 @@ importers:
 
   packages/eslint-config:
     specifiers:
-      '@ocavue/eslint-config-basic': ^0.6.1
+      '@ocavue/eslint-config-basic': ^0.6.2
       '@ocavue/eslint-config-prettier': ^0.4.1
       eslint: ^8.28.0
       eslint-define-config: ^1.12.0
       prettier: ^2.8.0
       typescript: ~4.8.0
     dependencies:
-      '@ocavue/eslint-config-basic': 0.6.1_zksrc6ykdxhogxjbhb5axiabwi
+      '@ocavue/eslint-config-basic': link:../eslint-config-basic
       '@ocavue/eslint-config-prettier': link:../eslint-config-prettier
       eslint-define-config: 1.12.0
     devDependencies:
@@ -83,7 +83,7 @@ importers:
 
   packages/eslint-config-react:
     specifiers:
-      '@ocavue/eslint-config-basic': ^0.6.1
+      '@ocavue/eslint-config-basic': ^0.6.2
       '@ocavue/eslint-config-prettier': ^0.4.1
       eslint: ^8.28.0
       eslint-define-config: ^1.12.0
@@ -91,7 +91,7 @@ importers:
       eslint-plugin-react-hooks: ^4.6.0
       typescript: ~4.8.0
     dependencies:
-      '@ocavue/eslint-config-basic': 0.6.1_zksrc6ykdxhogxjbhb5axiabwi
+      '@ocavue/eslint-config-basic': link:../eslint-config-basic
       '@ocavue/eslint-config-prettier': link:../eslint-config-prettier
       eslint-define-config: 1.12.0
       eslint-plugin-react: 7.31.11_eslint@8.28.0
@@ -178,29 +178,6 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
-
-  /@ocavue/eslint-config-basic/0.6.1_zksrc6ykdxhogxjbhb5axiabwi:
-    resolution: {integrity: sha512-E0Zqp+q3FI7/STtkz7ViNgnPrFW6oB02QAXqB9Ag919RbjBtT+QJ5W3tStGKYjeTGBARYSq+v2uunheH2jh6ZA==}
-    peerDependencies:
-      eslint: '>=8.0.0'
-      typescript: '>=4.0.0'
-    dependencies:
-      '@typescript-eslint/parser': 5.44.0_zksrc6ykdxhogxjbhb5axiabwi
-      eslint: 8.28.0
-      eslint-define-config: 1.12.0
-      eslint-import-resolver-typescript: 3.5.2_ktrec6dplf4now6nlbc6d67jee
-      eslint-plugin-import: 2.26.0_vc54pluhgv7booofyyjouvuf74
-      eslint-plugin-jsonc: 2.5.0_eslint@8.28.0
-      eslint-plugin-markdown: 3.0.0_eslint@8.28.0
-      eslint-plugin-no-only-tests: 3.1.0
-      eslint-plugin-unicorn: 45.0.0_eslint@8.28.0
-      eslint-plugin-yml: 1.2.0_eslint@8.28.0
-      typescript: 4.8.4
-      yaml-eslint-parser: 1.1.0
-    transitivePeerDependencies:
-      - eslint-import-resolver-webpack
-      - supports-color
-    dev: false
 
   /@pkgr/utils/2.3.1:
     resolution: {integrity: sha512-wfzX8kc1PMyUILA+1Z/EqoE4UCXGy0iRGMhPwdfae1+f0OXlLqCk+By+aMzgJBzR9AzS4CDizioG6Ss1gvAFJw==}
