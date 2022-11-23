@@ -1,9 +1,9 @@
 {
   "name": "@ocavue/eslint-config",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "main": "index.js",
   "dependencies": {
-    "@ocavue/eslint-config-basic": "^0.6.0",
+    "@ocavue/eslint-config-basic": "^0.6.1",
     "@ocavue/eslint-config-prettier": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
