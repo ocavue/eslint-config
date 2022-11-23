@@ -9,6 +9,9 @@
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
-  }
+    "skipDefaultLibCheck": true,
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": ["./packages/*/*.js"]
 }

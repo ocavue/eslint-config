@@ -1,0 +1,28 @@
+name: Update Lock
+
+on:
+  push:
+    branches:
+      - release-please*
+
+jobs:
+  update-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: false
+
+      - name: Update Lockfile
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Push updated files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "chore: update files"
+          git push || true

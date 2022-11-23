@@ -1,0 +1,28 @@
+{
+  "name": "@ocavue/eslint-config-prettier",
+  "version": "0.2.1",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "prettier": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "prettier": "^2.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

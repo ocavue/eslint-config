@@ -1,0 +1,9 @@
+{
+  "plugins": ["node-workspace"],
+  "packages": {
+    "packages/eslint-config-basic": {},
+    "packages/eslint-config": {},
+    "packages/eslint-config-react": {},
+    "packages/eslint-config-prettier": {}
+  }
+}
