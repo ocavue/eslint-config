@@ -74,10 +74,12 @@ importers:
     specifiers:
       eslint: ^8.28.0
       eslint-config-prettier: ^8.5.0
+      eslint-define-config: ^1.12.0
       eslint-plugin-prettier: ^4.2.1
       prettier: ^2.8.0
     dependencies:
       eslint-config-prettier: 8.5.0_eslint@8.28.0
+      eslint-define-config: 1.12.0
       eslint-plugin-prettier: 4.2.1_cwlo2dingkvfydnaculr42urve
     devDependencies:
       eslint: 8.28.0
@@ -88,11 +90,13 @@ importers:
       '@ocavue/eslint-config-basic': ^0.4.0
       '@ocavue/eslint-config-prettier': ^0.4.0
       eslint: ^8.28.0
+      eslint-define-config: ^1.12.0
       eslint-plugin-react: ^7.31.11
       eslint-plugin-react-hooks: ^4.6.0
     dependencies:
       '@ocavue/eslint-config-basic': link:../eslint-config-basic
       '@ocavue/eslint-config-prettier': link:../eslint-config-prettier
+      eslint-define-config: 1.12.0
       eslint-plugin-react: 7.31.11_eslint@8.28.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.28.0
     devDependencies:

@@ -5,6 +5,7 @@
   "dependencies": {
     "@ocavue/eslint-config-basic": "^0.4.0",
     "@ocavue/eslint-config-prettier": "^0.4.0",
+    "eslint-define-config": "^1.12.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
