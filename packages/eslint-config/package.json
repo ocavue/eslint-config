@@ -1,10 +1,10 @@
 {
   "name": "@ocavue/eslint-config",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "main": "index.js",
   "dependencies": {
-    "@ocavue/eslint-config-basic": "^0.6.3",
-    "@ocavue/eslint-config-prettier": "^0.4.1",
+    "@ocavue/eslint-config-basic": "^0.6.4",
+    "@ocavue/eslint-config-prettier": "^0.4.2",
     "eslint-define-config": "^1.13.0"
   },
   "peerDependencies": {
