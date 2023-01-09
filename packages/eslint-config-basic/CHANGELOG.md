@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.6.3...eslint-config-basic-v0.6.4) (2023-01-09)
+
+
+### Bug Fixes
+
+* update dependencies ([b1c1738](https://github.com/ocavue/eslint-config/commit/b1c17382b337a31564b627776a44b6048efcfd6f))
+
 ## [0.6.3](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.6.2...eslint-config-basic-v0.6.3) (2022-11-23)
 
 

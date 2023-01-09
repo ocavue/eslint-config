@@ -18,6 +18,21 @@
   * dependencies
     * @ocavue/eslint-config-basic bumped from ^0.6.2 to ^0.6.3
 
+## [0.4.8](https://github.com/ocavue/eslint-config/compare/eslint-config-react-v0.4.7...eslint-config-react-v0.4.8) (2023-01-09)
+
+
+### Bug Fixes
+
+* update dependencies ([b1c1738](https://github.com/ocavue/eslint-config/commit/b1c17382b337a31564b627776a44b6048efcfd6f))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @ocavue/eslint-config-basic bumped from ^0.6.3 to ^0.6.4
+    * @ocavue/eslint-config-prettier bumped from ^0.4.1 to ^0.4.2
+
 ## [0.4.6](https://github.com/ocavue/eslint-config/compare/eslint-config-react-v0.4.5...eslint-config-react-v0.4.6) (2022-11-23)
 
 
