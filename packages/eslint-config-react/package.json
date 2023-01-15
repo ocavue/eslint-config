@@ -1,6 +1,14 @@
 {
   "name": "@ocavue/eslint-config-react",
   "version": "0.4.8",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/eslint-config.git",
+    "directory": "packages/eslint-config-react"
+  },
+  "bugs": "https://github.com/ocavue/eslint-config/issues",
   "main": "index.js",
   "dependencies": {
     "@ocavue/eslint-config-basic": "^0.6.4",

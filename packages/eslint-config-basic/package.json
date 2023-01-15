@@ -1,6 +1,14 @@
 {
   "name": "@ocavue/eslint-config-basic",
   "version": "0.6.4",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/eslint-config.git",
+    "directory": "packages/eslint-config-basic"
+  },
+  "bugs": "https://github.com/ocavue/eslint-config/issues",
   "main": "index.js",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.1",
