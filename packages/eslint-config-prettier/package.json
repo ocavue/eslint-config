@@ -1,6 +1,14 @@
 {
   "name": "@ocavue/eslint-config-prettier",
   "version": "0.4.2",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/eslint-config.git",
+    "directory": "packages/eslint-config-prettier"
+  },
+  "bugs": "https://github.com/ocavue/eslint-config/issues",
   "main": "index.js",
   "dependencies": {
     "eslint-config-prettier": "^8.6.0",

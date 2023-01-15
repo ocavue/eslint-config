@@ -8,12 +8,12 @@
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/ocavue",
-  "homepage": "https://github.com/ocavue/@ocavue/dev-config-monorepo#readme",
+  "homepage": "https://github.com/ocavue/eslint-config#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ocavue/@ocavue/dev-config-monorepo.git"
+    "url": "https://github.com/ocavue/eslint-config.git"
   },
-  "bugs": "https://github.com/ocavue/@ocavue/dev-config-monorepo/issues",
+  "bugs": "https://github.com/ocavue/eslint-config/issues",
   "keywords": [],
   "sideEffects": false,
   "scripts": {
