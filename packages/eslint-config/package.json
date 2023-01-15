@@ -1,6 +1,6 @@
 {
   "name": "@ocavue/eslint-config",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "funding": "https://github.com/sponsors/ocavue",
   "homepage": "https://github.com/ocavue/eslint-config#readme",
   "repository": {
@@ -11,8 +11,8 @@
   "bugs": "https://github.com/ocavue/eslint-config/issues",
   "main": "index.js",
   "dependencies": {
-    "@ocavue/eslint-config-basic": "^0.6.4",
-    "@ocavue/eslint-config-prettier": "^0.4.2",
+    "@ocavue/eslint-config-basic": "^0.6.5",
+    "@ocavue/eslint-config-prettier": "^0.4.3",
     "eslint-define-config": "^1.13.0"
   },
   "peerDependencies": {

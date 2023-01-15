@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.3](https://github.com/ocavue/eslint-config/compare/eslint-config-prettier-v0.4.2...eslint-config-prettier-v0.4.3) (2023-01-15)
+
+
+### Bug Fixes
+
+* correct the repository link in package.json ([#10](https://github.com/ocavue/eslint-config/issues/10)) ([4b5ad5e](https://github.com/ocavue/eslint-config/commit/4b5ad5e40459c470abb8fda326b76730f270d4a1))
+
 ## [0.4.2](https://github.com/ocavue/eslint-config/compare/eslint-config-prettier-v0.4.1...eslint-config-prettier-v0.4.2) (2023-01-09)
 
 

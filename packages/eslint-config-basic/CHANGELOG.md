@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.5](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.6.4...eslint-config-basic-v0.6.5) (2023-01-15)
+
+
+### Bug Fixes
+
+* correct the repository link in package.json ([#10](https://github.com/ocavue/eslint-config/issues/10)) ([4b5ad5e](https://github.com/ocavue/eslint-config/commit/4b5ad5e40459c470abb8fda326b76730f270d4a1))
+
 ## [0.6.4](https://github.com/ocavue/eslint-config/compare/eslint-config-basic-v0.6.3...eslint-config-basic-v0.6.4) (2023-01-09)
 
 
