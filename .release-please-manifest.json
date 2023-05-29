@@ -1,6 +1,0 @@
-{
-  "packages/eslint-config-basic": "0.6.5",
-  "packages/eslint-config-react": "0.4.9",
-  "packages/eslint-config": "0.4.7",
-  "packages/eslint-config-prettier": "0.4.3"
-}
