@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ocavue/eslint-config/compare/v1.0.0...v1.1.0) (2023-05-29)
+
+
+### Features
+
+* prefer top-level function declarations ([#14](https://github.com/ocavue/eslint-config/issues/14)) ([6d1823c](https://github.com/ocavue/eslint-config/commit/6d1823cf55dc1f77940569ab2c9d93c19620ac15))
+
 ## 1.0.0 (2023-05-29)
 
 
