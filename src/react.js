@@ -5,13 +5,13 @@ import reactPlugin from 'eslint-plugin-react'
 // @ts-expect-error no types
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
-import { GLOB_TSX } from './shared.js'
+import { GLOB_TS, GLOB_TSX } from './shared.js'
 
 export function react() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {
-      files: [GLOB_TSX],
+      files: [GLOB_TS, GLOB_TSX],
       plugins: {
         react: reactPlugin,
       },
@@ -35,7 +35,7 @@ export function react() {
     },
 
     {
-      files: [GLOB_TSX],
+      files: [GLOB_TS, GLOB_TSX],
       plugins: {
         'react-hooks': reactHooksPlugin,
       },
