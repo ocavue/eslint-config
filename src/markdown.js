@@ -5,7 +5,7 @@ import markdownPlugin from 'eslint-plugin-markdown'
 
 import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
 
-export const markdown = () => {
+export function markdown() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {

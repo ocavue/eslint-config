@@ -8,7 +8,7 @@ import { GLOB_PACKAGE_JSON } from './shared.js'
 /**
  * Sort package.json keys
  */
-export const packageJson = () => {
+export function packageJson() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {
