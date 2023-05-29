@@ -7,7 +7,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { GLOB_TSX } from './shared.js'
 
-export const react = () => {
+export function react() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {

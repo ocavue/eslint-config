@@ -16,7 +16,7 @@ export { tsParser, tsPlugin }
 /**
  * @param {TypescriptOptions} [options]
  */
-export const typescript = (options) => {
+export function typescript(options) {
   const project = options?.project ?? './tsconfig.json'
 
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */

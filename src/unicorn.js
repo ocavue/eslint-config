@@ -3,7 +3,7 @@
 // @ts-expect-error: eslint-plugin-unicorn is not typed
 import plugin from 'eslint-plugin-unicorn'
 
-export const unicorn = () => {
+export function unicorn() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {

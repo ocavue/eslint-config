@@ -6,7 +6,7 @@ import prettierConfig from 'eslint-config-prettier'
  * Notice that this config does not run `prettier` as an ESLint rule, so you
  * have to run `pretter` separately for formatting.
  */
-export const prettier = () => {
+export function prettier() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {

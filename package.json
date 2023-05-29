@@ -37,6 +37,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-define-config": "^1.20.0",
     "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-antfu": "^0.39.3",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsonc": "^2.8.0",
     "eslint-plugin-markdown": "^3.0.0",

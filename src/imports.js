@@ -3,7 +3,7 @@
 // @ts-expect-error no type
 import importPlugin from 'eslint-plugin-import'
 
-export const imports = () => {
+export function imports() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {

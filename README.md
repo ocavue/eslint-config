@@ -5,6 +5,7 @@ A set of ESLint shareable configs for TypeScript projects.
 - Out of the box support for TypeScript, React, and Markdown
 - Sort your imports
 - Sort your fields in `package.json`
+- Prefer top-level function declarations over function expressions
 
 ## Install
 
@@ -75,3 +76,8 @@ If you are using VS Code, you and install [ESLint extension](https://marketplace
   }
 }
 ```
+
+## Inspired by
+
+- https://github.com/antfu/eslint-config
+- https://github.com/sxzz/eslint-config

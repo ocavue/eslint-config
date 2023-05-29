@@ -1,5 +1,6 @@
 // @ts-check
 
+import { antfu } from './antfu.js'
 import { imports } from './imports.js'
 import { noOnlyTests } from './no-only-tests.js'
 import { packageJson } from './package-json.js'
@@ -16,7 +17,7 @@ import { unicorn } from './unicorn.js'
 /**
  * @param {BasicOptions} [options]
  */
-export const basic = (options) => {
+export function basic(options) {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {
@@ -27,6 +28,7 @@ export const basic = (options) => {
     ...imports(),
     ...packageJson(),
     ...unicorn(),
+    ...antfu(),
     ...noOnlyTests(),
     ...prettier(),
   ]
