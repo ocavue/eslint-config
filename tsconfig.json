@@ -3,15 +3,18 @@
     "target": "es2018",
     "module": "esnext",
     "lib": ["esnext"],
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
+    "allowJs": true,
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "outDir": "dist",
     "skipDefaultLibCheck": true,
-    "allowJs": true,
-    "noEmit": true
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true
   },
-  "include": ["./packages/*/*.js"]
+  "include": ["*.js", "src/*.js"]
 }
