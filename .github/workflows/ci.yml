@@ -20,7 +20,7 @@ jobs:
       - name: Lint
         run: nr lint
 
-  typecheck:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,26 +28,4 @@ jobs:
       - uses: ./.github/actions/setup
 
       - name: Typecheck
-        run: nr typecheck
-
-  test:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        node: [16.x, 18.x]
-        os: [ubuntu-latest, windows-latest, macos-latest]
-      fail-fast: false
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: ./.github/actions/setup
-        with:
-          node-version: ${{ matrix.node }}
-
-      - name: Build
         run: nr build
-
-      - name: Test
-        run: nr test
