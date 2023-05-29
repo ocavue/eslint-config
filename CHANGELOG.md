@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/ocavue/eslint-config/compare/v1.1.0...v1.1.1) (2023-05-29)
+
+
+### Bug Fixes
+
+* enable react rules for .ts files ([b586d33](https://github.com/ocavue/eslint-config/commit/b586d33c6da9dbdbc98bea5b1b974f564ca81c3a))
+
 ## [1.1.0](https://github.com/ocavue/eslint-config/compare/v1.0.0...v1.1.0) (2023-05-29)
 
 
