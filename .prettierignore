@@ -1,6 +1,6 @@
-package-lock.yaml
 yarn.lock
 pnpm-lock.yaml
+package-lock.json
 CHANGELOG.md
 
 .next 
