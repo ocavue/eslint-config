@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/ocavue/eslint-config/compare/v1.1.1...v1.1.2) (2023-06-03)
+
+
+### Bug Fixes
+
+* correct file glob for cjs and cts files ([907e623](https://github.com/ocavue/eslint-config/commit/907e62323d0ef38421432f389764641e0e3d5c3e))
+
 ## [1.1.1](https://github.com/ocavue/eslint-config/compare/v1.1.0...v1.1.1) (2023-05-29)
 
 
