@@ -2,6 +2,7 @@
 
 import tsPlugin from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
+import deprecationPlugin from 'eslint-plugin-deprecation'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 
@@ -40,6 +41,8 @@ export function typescript(options) {
       plugins: {
         // @ts-expect-error: they just don't play very well
         '@typescript-eslint': tsPlugin,
+        // @ts-expect-error: they just don't play very well
+        deprecation: deprecationPlugin,
       },
       rules: {
         ...tsPlugin.configs['eslint-recommended'].overrides?.[0].rules,
@@ -75,10 +78,12 @@ export function typescript(options) {
         '@typescript-eslint/await-thenable': 'warn',
         '@typescript-eslint/require-await': 'warn',
         '@typescript-eslint/unbound-method': 'warn',
+
+        'deprecation/deprecation': 'warn',
       },
     },
     {
-      files: ['**/*.js', '**/*.cjs'],
+      files: [GLOB_JS, GLOB_JSX],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },
