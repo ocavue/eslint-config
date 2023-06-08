@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ocavue/eslint-config/compare/v1.1.2...v1.2.0) (2023-06-08)
+
+
+### Features
+
+* add eslint-plugin-deprecation ([e7306b5](https://github.com/ocavue/eslint-config/commit/e7306b572d209928070bb56b41c7a5510c7bf53e))
+
 ## [1.1.2](https://github.com/ocavue/eslint-config/compare/v1.1.1...v1.1.2) (2023-06-03)
 
 
