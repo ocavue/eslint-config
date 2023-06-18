@@ -61,6 +61,8 @@ export function unicorn() {
         'unicorn/prefer-negative-index': 'error',
         // Prefer `Number` static properties over global ones.
         'unicorn/prefer-number-properties': 'warn',
+        // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
+        'unicorn/prefer-regexp-test': 'warn',
       },
     },
   ]
