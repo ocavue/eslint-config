@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/ocavue/eslint-config/compare/v1.2.0...v1.2.1) (2023-06-18)
+
+
+### Bug Fixes
+
+* enable unicorn/prefer-regexp-test ([f8cc908](https://github.com/ocavue/eslint-config/commit/f8cc9089eae2c4d7acac29c20f258d727c399dd4))
+
 ## [1.2.0](https://github.com/ocavue/eslint-config/compare/v1.1.2...v1.2.0) (2023-06-08)
 
 
