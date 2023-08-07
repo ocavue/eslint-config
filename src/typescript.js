@@ -25,7 +25,6 @@ export function typescript(options) {
     {
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
-        // @ts-expect-error: the types for `parser` seems to be wrong
         parser: tsParser,
         parserOptions: project
           ? {
