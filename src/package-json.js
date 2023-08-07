@@ -14,7 +14,6 @@ export function packageJson() {
     {
       files: [GLOB_PACKAGE_JSON],
       languageOptions: {
-        // @ts-expect-error: the types for `parser` seems to be wrong
         parser,
         parserOptions: {
           jsonSyntax: 'JSON5',
