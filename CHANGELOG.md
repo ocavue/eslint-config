@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/ocavue/eslint-config/compare/v1.2.2...v1.2.3) (2023-08-13)
+
+
+### Bug Fixes
+
+* ignore .svelte-kit ([7472d58](https://github.com/ocavue/eslint-config/commit/7472d5863250d3300f223cb336680ec1b008b132))
+
 ## [1.2.2](https://github.com/ocavue/eslint-config/compare/v1.2.1...v1.2.2) (2023-08-07)
 
 
