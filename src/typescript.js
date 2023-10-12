@@ -28,7 +28,7 @@ export function typescript() {
         deprecation: deprecationPlugin,
       },
       rules: {
-        // ...tsPlugin.configs['eslint-recommended'].overrides?.[0].rules,
+        ...tsPlugin.configs['eslint-recommended'].overrides?.[0].rules,
         ...tsPlugin.configs['recommended-type-checked'].rules,
         ...tsPlugin.configs['stylistic-type-checked'].rules,
 
