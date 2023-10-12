@@ -8,34 +8,18 @@ import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 
 export { tsParser, tsPlugin }
 
-/**
- * @typedef {Object} TypescriptOptions
- * @property {string | false} [project] - Path to tsconfig.json, defaults
- * to './tsconfig.json'. You can pass `false` to disable the tsconfig.json check.
- */
-
-/**
- * @param {TypescriptOptions} [options]
- */
-export function typescript(options) {
-  const project = options?.project ?? './tsconfig.json'
-
+export function typescript() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
         parser: tsParser,
-        parserOptions: project
-          ? {
-              project,
-              sourceType: 'module',
-              ecmaVersion: 'latest',
-            }
-          : {
-              sourceType: 'module',
-              ecmaVersion: 'latest',
-            },
+        parserOptions: {
+          EXPERIMENTAL_useProjectService: true,
+          sourceType: 'module',
+          ecmaVersion: 'latest',
+        },
       },
       plugins: {
         // @ts-expect-error: they just don't play very well
@@ -44,11 +28,9 @@ export function typescript(options) {
         deprecation: deprecationPlugin,
       },
       rules: {
-        ...tsPlugin.configs['eslint-recommended'].overrides?.[0].rules,
-        ...tsPlugin.configs['recommended'].rules,
-        ...(project
-          ? tsPlugin.configs['recommended-requiring-type-checking'].rules
-          : null),
+        // ...tsPlugin.configs['eslint-recommended'].overrides?.[0].rules,
+        ...tsPlugin.configs['recommended-type-checked'].rules,
+        ...tsPlugin.configs['stylistic-type-checked'].rules,
 
         '@typescript-eslint/no-unsafe-call': 'warn',
         '@typescript-eslint/restrict-plus-operands': 'warn',
