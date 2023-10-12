@@ -35,6 +35,7 @@ export function typescript() {
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/consistent-indexed-object-style': 'off',
         '@typescript-eslint/array-type': ['warn', { default: 'array-simple' }],
+        '@typescript-eslint/dot-notation': 'off',
         '@typescript-eslint/no-unsafe-call': 'warn',
         '@typescript-eslint/restrict-plus-operands': 'warn',
         '@typescript-eslint/no-unsafe-return': 'warn',
