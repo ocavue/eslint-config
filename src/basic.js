@@ -9,22 +9,14 @@ import { GLOB_EXCLUDE } from './shared.js'
 import { typescript } from './typescript.js'
 import { unicorn } from './unicorn.js'
 
-/**
- * @typedef {Object} BasicOptions
- * @property {import('./typescript.js').TypescriptOptions} [typescript]
- */
-
-/**
- * @param {BasicOptions} [options]
- */
-export function basic(options) {
+export function basic() {
   /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
   const config = [
     {
       // @ts-expect-error: 'readonly' and cannot be assigned to the mutable type 'string[]'
       ignores: GLOB_EXCLUDE,
     },
-    ...typescript(options?.typescript),
+    ...typescript(),
     ...imports(),
     ...packageJson(),
     ...unicorn(),
