@@ -32,6 +32,8 @@ export function typescript() {
         ...tsPlugin.configs['recommended-type-checked'].rules,
         ...tsPlugin.configs['stylistic-type-checked'].rules,
 
+        '@typescript-eslint/prefer-nullish-coalescing': 'off',
+        '@typescript-eslint/consistent-indexed-object-style': 'off',
         '@typescript-eslint/no-unsafe-call': 'warn',
         '@typescript-eslint/restrict-plus-operands': 'warn',
         '@typescript-eslint/no-unsafe-return': 'warn',
