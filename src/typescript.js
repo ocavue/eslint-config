@@ -16,7 +16,7 @@ export function typescript() {
       languageOptions: {
         parser: tsParser,
         parserOptions: {
-          EXPERIMENTAL_useProjectService: true,
+          project: true,
           sourceType: 'module',
           ecmaVersion: 'latest',
         },
