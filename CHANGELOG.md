@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/ocavue/eslint-config/compare/v1.2.3...v1.3.0) (2023-10-12)
+
+
+### Features
+
+* update typescript-eslint to v6 and automatically detect tsconfig ([#29](https://github.com/ocavue/eslint-config/issues/29)) ([20e7bba](https://github.com/ocavue/eslint-config/commit/20e7bbaffc26ca9c02f791add51b2111f33af7ad))
+
 ## [1.2.3](https://github.com/ocavue/eslint-config/compare/v1.2.2...v1.2.3) (2023-08-13)
 
 
