@@ -32,6 +32,8 @@ export function typescript() {
         ...tsPlugin.configs['recommended-type-checked'].rules,
         ...tsPlugin.configs['stylistic-type-checked'].rules,
 
+        '@typescript-eslint/consistent-type-definitions': 'off',
+        '@typescript-eslint/prefer-optional-chain': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/consistent-indexed-object-style': 'off',
         '@typescript-eslint/array-type': 'off',
