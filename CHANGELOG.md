@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/ocavue/eslint-config/compare/v1.3.0...v1.3.1) (2023-10-13)
+
+
+### Bug Fixes
+
+* disable some rules ([d1a7258](https://github.com/ocavue/eslint-config/commit/d1a7258a585f2f6bd94abef9e4f1581b6c8710ea))
+
 ## [1.3.0](https://github.com/ocavue/eslint-config/compare/v1.2.3...v1.3.0) (2023-10-12)
 
 
