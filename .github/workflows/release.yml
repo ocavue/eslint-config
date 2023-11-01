@@ -21,7 +21,7 @@ jobs:
     needs: [version]
     if: ${{ needs.version.outputs.release_created }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/setup
 
