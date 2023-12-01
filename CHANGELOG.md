@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/ocavue/eslint-config/compare/v1.3.1...v1.3.2) (2023-12-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency eslint-plugin-antfu to v1 ([#40](https://github.com/ocavue/eslint-config/issues/40)) ([1f9128c](https://github.com/ocavue/eslint-config/commit/1f9128c51d058ba04c8564462641d20d09397aec))
+
 ## [1.3.1](https://github.com/ocavue/eslint-config/compare/v1.3.0...v1.3.1) (2023-10-13)
 
 
