@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/ocavue/eslint-config/compare/v1.3.2...v1.3.3) (2023-12-07)
+
+
+### Bug Fixes
+
+* don't check void return for misused promises ([281c893](https://github.com/ocavue/eslint-config/commit/281c89347efcca2da600037aa074ebca1896cbed))
+
 ## [1.3.2](https://github.com/ocavue/eslint-config/compare/v1.3.1...v1.3.2) (2023-12-01)
 
 
