@@ -60,14 +60,14 @@ export function typescript() {
         '@typescript-eslint/no-extra-semi': 'off',
         '@typescript-eslint/prefer-function-type': 'warn',
 
-        // TODO: We should set the rules below to error in the future
         '@typescript-eslint/no-misused-promises': [
-          'warn',
+          'error',
           { checksVoidReturn: false },
         ],
-        '@typescript-eslint/await-thenable': 'warn',
+        '@typescript-eslint/await-thenable': 'error',
+        '@typescript-eslint/unbound-method': 'error',
+        // TODO: We should set the rule below to error in the future
         '@typescript-eslint/require-await': 'warn',
-        '@typescript-eslint/unbound-method': 'warn',
 
         'deprecation/deprecation': 'warn',
       },
