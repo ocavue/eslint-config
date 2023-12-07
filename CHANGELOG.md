@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ocavue/eslint-config/compare/v1.3.3...v1.4.0) (2023-12-07)
+
+
+### Features
+
+* move some rules from warn to error ([b69435f](https://github.com/ocavue/eslint-config/commit/b69435fddacfe94d619aa0a57fe4329cd18fab2a))
+
 ## [1.3.3](https://github.com/ocavue/eslint-config/compare/v1.3.2...v1.3.3) (2023-12-07)
 
 
