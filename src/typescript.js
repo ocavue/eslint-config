@@ -61,7 +61,10 @@ export function typescript() {
         '@typescript-eslint/prefer-function-type': 'warn',
 
         // TODO: We should set the rules below to error in the future
-        '@typescript-eslint/no-misused-promises': 'warn',
+        '@typescript-eslint/no-misused-promises': [
+          'warn',
+          { checksVoidReturn: false },
+        ],
         '@typescript-eslint/await-thenable': 'warn',
         '@typescript-eslint/require-await': 'warn',
         '@typescript-eslint/unbound-method': 'warn',
