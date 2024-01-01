@@ -2,7 +2,7 @@
   "name": "@ocavue/eslint-config",
   "type": "module",
   "version": "1.4.0",
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.13.1",
   "description": "",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -31,17 +31,17 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@types/eslint": "^8.44.8",
+    "@types/eslint": "^8.56.0",
     "@types/eslint-plugin-markdown": "^2.0.2",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
-    "eslint-config-prettier": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-define-config": "^1.24.1",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-antfu": "^1.0.9",
+    "eslint-plugin-antfu": "^1.0.13",
     "eslint-plugin-deprecation": "^2.0.0",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsonc": "^2.11.2",
     "eslint-plugin-markdown": "^3.0.1",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-react": "^7.33.2",
@@ -51,10 +51,10 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.12",
-    "@types/node": "^20.9.1",
-    "eslint": "^8.54.0",
+    "@types/node": "^20.10.6",
+    "eslint": "^8.56.0",
     "prettier": "^2.8.8",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   },
   "renovate": {
     "extends": [
