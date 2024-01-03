@@ -4,7 +4,7 @@
 import importPlugin from 'eslint-plugin-import'
 
 export function imports() {
-  /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
   const config = [
     {
       plugins: {

@@ -4,7 +4,7 @@
 import plugin from 'eslint-plugin-unicorn'
 
 export function unicorn() {
-  /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
   const config = [
     {
       plugins: {

@@ -1,7 +1,7 @@
 import antfuPlugin from 'eslint-plugin-antfu'
 
 export function antfu() {
-  /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
   const config = [
     {
       plugins: {

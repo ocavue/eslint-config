@@ -4,7 +4,7 @@
 import plugin from 'eslint-plugin-no-only-tests'
 
 export function noOnlyTests() {
-  /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
   const config = [
     {
       plugins: {

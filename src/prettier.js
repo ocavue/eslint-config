@@ -7,7 +7,7 @@ import prettierConfig from 'eslint-config-prettier'
  * have to run `pretter` separately for formatting.
  */
 export function prettier() {
-  /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
   const config = [
     {
       rules: {

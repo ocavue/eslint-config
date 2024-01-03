@@ -8,7 +8,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import { GLOB_TS, GLOB_TSX } from './shared.js'
 
 export function react() {
-  /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
   const config = [
     {
       files: [GLOB_TS, GLOB_TSX],
