@@ -9,7 +9,7 @@ import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 export { tsParser, tsPlugin }
 
 export function typescript() {
-  /** @type {import('eslint-define-config').FlatESLintConfigItem[]} */
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
   const config = [
     {
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
