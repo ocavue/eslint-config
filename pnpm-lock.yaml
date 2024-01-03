@@ -21,7 +21,7 @@ dependencies:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
   eslint-define-config:
-    specifier: ^2.0.0
+    specifier: ^2.1.0
     version: 2.1.0
   eslint-import-resolver-typescript:
     specifier: ^3.6.1
