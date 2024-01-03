@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/ocavue/eslint-config/compare/v1.4.0...v1.4.1) (2024-01-03)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency eslint-define-config to v2 ([#45](https://github.com/ocavue/eslint-config/issues/45)) ([9d5fe8e](https://github.com/ocavue/eslint-config/commit/9d5fe8e53fdc9f0155d128e2eb684828fbc938af))
+
 ## [1.4.0](https://github.com/ocavue/eslint-config/compare/v1.3.3...v1.4.0) (2023-12-07)
 
 
