@@ -1,7 +1,7 @@
 {
   "name": "@ocavue/eslint-config",
   "type": "module",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "packageManager": "pnpm@8.15.1",
   "description": "",
   "author": "ocavue <ocavue@gmail.com>",
@@ -53,7 +53,7 @@
     "@antfu/ni": "^0.21.12",
     "@types/node": "^20.11.14",
     "eslint": "^8.56.0",
-    "prettier": "^3.2.4",
+    "prettier": "^2.8.8",
     "typescript": "^5.3.3"
   },
   "renovate": {
