@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/ocavue/eslint-config/compare/v1.4.1...v1.4.2) (2024-02-04)
+
+
+### Bug Fixes
+
+* update dependency prettier to v3 ([#51](https://github.com/ocavue/eslint-config/issues/51)) ([d5d2742](https://github.com/ocavue/eslint-config/commit/d5d2742532273823f2209a6270f64d6bb1520b75))
+
 ## [1.4.1](https://github.com/ocavue/eslint-config/compare/v1.4.0...v1.4.1) (2024-01-03)
 
 
