@@ -51,9 +51,9 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.12",
-    "@types/node": "^20.11.14",
+    "@types/node": "^20.11.16",
     "eslint": "^8.56.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.2.4",
     "typescript": "^5.3.3"
   },
   "renovate": {
