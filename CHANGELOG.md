@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/ocavue/eslint-config/compare/v1.4.2...v1.4.3) (2024-02-04)
+
+
+### Bug Fixes
+
+* trigger release ([6f19504](https://github.com/ocavue/eslint-config/commit/6f195047c4e4a975c0413e5a400effd36db6acf5))
+
 ## [1.4.2](https://github.com/ocavue/eslint-config/compare/v1.4.1...v1.4.2) (2024-02-04)
 
 
