@@ -31,11 +31,10 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
+    "@eslint-types/typescript-eslint": "^7.5.0",
     "@eslint-types/unicorn": "^52.0.0",
     "@types/eslint": "^8.56.7",
     "@types/eslint-plugin-markdown": "^2.0.2",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-define-config": "^2.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -48,7 +47,8 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unicorn": "^52.0.0",
-    "jsonc-eslint-parser": "^2.4.0"
+    "jsonc-eslint-parser": "^2.4.0",
+    "typescript-eslint": "^7.5.0"
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.12",

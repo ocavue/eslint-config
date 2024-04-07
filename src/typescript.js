@@ -1,20 +1,21 @@
 // @ts-check
 
-import tsPlugin from '@typescript-eslint/eslint-plugin'
-import tsParser from '@typescript-eslint/parser'
+/// <reference types="@eslint-types/typescript-eslint" />
+
 import deprecationPlugin from 'eslint-plugin-deprecation'
+import tseslint from 'typescript-eslint'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 
-export { tsParser, tsPlugin }
+export { tseslint }
 
 export function typescript() {
-  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
-  const config = [
+  const config = tseslint.config(
     {
+      extends: [...tseslint.configs.recommended, ...tseslint.configs.stylistic],
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
-        parser: tsParser,
+        parser: tseslint.parser,
         parserOptions: {
           project: true,
           sourceType: 'module',
@@ -22,16 +23,10 @@ export function typescript() {
         },
       },
       plugins: {
-        // @ts-expect-error: they just don't play very well
-        '@typescript-eslint': tsPlugin,
-        // @ts-expect-error: they just don't play very well
+        '@typescript-eslint': tseslint.plugin,
         deprecation: deprecationPlugin,
       },
       rules: {
-        ...tsPlugin.configs['eslint-recommended'].overrides?.[0].rules,
-        ...tsPlugin.configs['recommended-type-checked'].rules,
-        ...tsPlugin.configs['stylistic-type-checked'].rules,
-
         '@typescript-eslint/consistent-type-definitions': 'off',
         '@typescript-eslint/prefer-optional-chain': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
@@ -75,10 +70,15 @@ export function typescript() {
     {
       files: [GLOB_JS, GLOB_JSX],
       rules: {
+        '@typescript-eslint/no-require-imports': 'off',
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
-  ]
+  )
 
-  return config
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
+  // @ts-expect-error: conflict type
+  const config2 = config
+
+  return config2
 }
