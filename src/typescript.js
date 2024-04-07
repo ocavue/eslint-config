@@ -10,17 +10,9 @@ import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 export { tseslint }
 
 export function typescript() {
-  /** @type {import('eslint-define-config').Rules} */
-  // @ts-expect-error: conflict types
-  const recommendedTypeChecked = tseslint.configs.recommendedTypeChecked
-
-  /** @type {import('eslint-define-config').Rules} */
-  // @ts-expect-error: conflict types
-  const stylisticTypeChecked = tseslint.configs.recommendedTypeChecked
-
-  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
-  const config = [
+  const config = tseslint.config(
     {
+      extends: [...tseslint.configs.recommended, ...tseslint.configs.stylistic],
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
         parser: tseslint.parser,
@@ -31,15 +23,10 @@ export function typescript() {
         },
       },
       plugins: {
-        // @ts-expect-error: conflict types
         '@typescript-eslint': tseslint.plugin,
-        // @ts-expect-error: conflict types
         deprecation: deprecationPlugin,
       },
       rules: {
-        ...recommendedTypeChecked,
-        ...stylisticTypeChecked,
-
         '@typescript-eslint/consistent-type-definitions': 'off',
         '@typescript-eslint/prefer-optional-chain': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
@@ -83,10 +70,15 @@ export function typescript() {
     {
       files: [GLOB_JS, GLOB_JSX],
       rules: {
+        '@typescript-eslint/no-require-imports': 'off',
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
-  ]
+  )
 
-  return config
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
+  // @ts-expect-error: conflict type
+  const config2 = config
+
+  return config2
 }
