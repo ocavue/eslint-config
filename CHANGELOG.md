@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.0](https://github.com/ocavue/eslint-config/compare/v1.4.3...v1.5.0) (2024-04-07)
+
+
+### Features
+
+* update dependency eslint-plugin-markdown to v4 ([#58](https://github.com/ocavue/eslint-config/issues/58)) ([07baf9c](https://github.com/ocavue/eslint-config/commit/07baf9ccaf91f8b511cc42876569fa0dc78e74dc))
+* update dependency eslint-plugin-unicorn to v52 ([#60](https://github.com/ocavue/eslint-config/issues/60)) ([7757483](https://github.com/ocavue/eslint-config/commit/7757483b315cca8067924cf53cce851747bd96a8))
+* update dependency typescript-eslint to v7 ([#64](https://github.com/ocavue/eslint-config/issues/64)) ([246340f](https://github.com/ocavue/eslint-config/commit/246340fa5a492497e79e51c05451c4ff9c9aed8e))
+
 ## [1.4.3](https://github.com/ocavue/eslint-config/compare/v1.4.2...v1.4.3) (2024-02-04)
 
 
