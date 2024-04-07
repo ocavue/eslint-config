@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@eslint-types/unicorn':
+    specifier: ^52.0.0
+    version: 52.0.0
   '@types/eslint':
     specifier: ^8.56.7
     version: 8.56.7
@@ -118,6 +121,10 @@ packages:
   /@eslint-community/regexpp@4.6.2:
     resolution: {integrity: sha512-pPTNuaAG3QMH+buKyBIGJs3g/S5y0caxw0ygM3YyE6yJFySwiGGSzA+mM3KJ8QQvzeLh3blwgSonkFjgQdxzMw==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
+
+  /@eslint-types/unicorn@52.0.0:
+    resolution: {integrity: sha512-1+Om/IekT0AwlPiARvhbtKsSgVMu3ZAtP99YCzhHkDSnF5f8sQegh8/3ZmMhlCnKipa7/x8qEC7Bn4rbaagnSA==}
+    dev: false
 
   /@eslint/eslintrc@2.1.4:
     resolution: {integrity: sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ==}

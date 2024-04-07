@@ -1,6 +1,7 @@
 // @ts-check
 
-// @ts-expect-error: eslint-plugin-unicorn is not typed
+/// <reference types="@eslint-types/unicorn" />
+
 import plugin from 'eslint-plugin-unicorn'
 
 export function unicorn() {

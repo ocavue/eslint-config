@@ -31,6 +31,7 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
+    "@eslint-types/unicorn": "^52.0.0",
     "@types/eslint": "^8.56.7",
     "@types/eslint-plugin-markdown": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
