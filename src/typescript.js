@@ -32,7 +32,7 @@ export function typescript() {
       },
       plugins: {
         // @ts-expect-error: conflict types
-        '@typescript-eslint': tseslintPlugin,
+        '@typescript-eslint': tseslint.plugin,
         // @ts-expect-error: conflict types
         deprecation: deprecationPlugin,
       },
