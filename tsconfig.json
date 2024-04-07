@@ -2,7 +2,14 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext",
+    ],
+    "paths": {
+      "eslint-plugin-unicorn": [
+        "./types/eslint-plugin-unicorn.d.ts"
+      ]
+    },
     "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "allowJs": true,
@@ -16,5 +23,9 @@
     "emitDeclarationOnly": true,
     "declarationMap": true
   },
-  "include": ["*.js", "src/*.js"]
+  "include": [
+    "*.js",
+    "src/*.js",
+    "types/*.d.ts"
+  ]
 }
