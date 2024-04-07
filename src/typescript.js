@@ -10,9 +10,13 @@ import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 export { tseslint }
 
 export function typescript() {
-  const config = tseslint.config(
+  const rules = [...tseslint.configs.recommended, ...tseslint.configs.stylistic]
+    .map((config) => config.rules || {})
+    .reduce((acc, cur) => ({ ...acc, ...cur }), {})
+
+  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
+  const config = [
     {
-      extends: [...tseslint.configs.recommended, ...tseslint.configs.stylistic],
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
         parser: tseslint.parser,
@@ -23,10 +27,14 @@ export function typescript() {
         },
       },
       plugins: {
+        // @ts-expect-error: conflict type
         '@typescript-eslint': tseslint.plugin,
+        // @ts-expect-error: conflict type
         deprecation: deprecationPlugin,
       },
       rules: {
+        ...rules,
+
         '@typescript-eslint/consistent-type-definitions': 'off',
         '@typescript-eslint/prefer-optional-chain': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
@@ -74,11 +82,7 @@ export function typescript() {
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
-  )
+  ]
 
-  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
-  // @ts-expect-error: conflict type
-  const config2 = config
-
-  return config2
+  return config
 }
