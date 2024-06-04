@@ -64,6 +64,10 @@ export function unicorn() {
         'unicorn/prefer-number-properties': 'warn',
         // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
         'unicorn/prefer-regexp-test': 'warn',
+        // Prefer using `structuredClone` to create a deep clone
+        'unicorn/prefer-structured-clone': 'warn',
+        // Prefer using the `String.raw` tag to avoid escaping `\`
+        'unicorn/prefer-string-raw': 'warn',
       },
     },
   ]
