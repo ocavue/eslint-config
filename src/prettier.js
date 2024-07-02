@@ -10,7 +10,7 @@ export function prettier() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
-      name: "prettier",
+      name: 'prettier',
       rules: {
         ...prettierConfig.rules,
       },
