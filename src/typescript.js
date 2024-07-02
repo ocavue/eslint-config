@@ -5,7 +5,7 @@
 import deprecationPlugin from 'eslint-plugin-deprecation'
 import tseslint from 'typescript-eslint'
 
-import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
+import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js'
 
 export { tseslint }
 
@@ -43,8 +43,8 @@ export function typescript() {
         '@typescript-eslint/consistent-indexed-object-style': 'off',
         '@typescript-eslint/array-type': 'off',
         '@typescript-eslint/dot-notation': 'off',
-        '@typescript-eslint/no-unsafe-call': 'warn',
         '@typescript-eslint/restrict-plus-operands': 'warn',
+        '@typescript-eslint/no-unsafe-call': 'warn',
         '@typescript-eslint/no-unsafe-return': 'warn',
         '@typescript-eslint/no-unsafe-argument': 'warn',
         '@typescript-eslint/no-unsafe-member-access': 'warn',
@@ -78,11 +78,24 @@ export function typescript() {
       },
     },
     {
-      name: 'typescript-js-off',
+      name: 'typescript-js',
       files: [GLOB_JS, GLOB_JSX],
       rules: {
         '@typescript-eslint/no-require-imports': 'off',
         '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
+      name: 'typescript-test',
+      files: [GLOB_TEST],
+      rules: {
+        '@typescript-eslint/no-unsafe-call': 'warn',
+        '@typescript-eslint/no-unsafe-return': 'warn',
+        '@typescript-eslint/no-unsafe-argument': 'warn',
+        '@typescript-eslint/no-unsafe-member-access': 'warn',
+        '@typescript-eslint/no-unsafe-assignment': 'warn',
+        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
       },
     },
   ]
