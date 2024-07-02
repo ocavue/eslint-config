@@ -4,6 +4,7 @@ export function antfu() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
+      name: "antfu",
       plugins: {
         antfu: antfuPlugin,
       },

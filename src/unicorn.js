@@ -8,6 +8,7 @@ export function unicorn() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
+      name: 'unicorn',
       plugins: {
         unicorn: plugin,
       },

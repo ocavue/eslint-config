@@ -7,6 +7,7 @@ export function noOnlyTests() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
+      name: 'no-only-tests',
       plugins: {
         'no-only-tests': plugin,
       },

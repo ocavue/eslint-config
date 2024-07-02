@@ -12,6 +12,7 @@ export function packageJson() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
+      name: 'package-json',
       files: [GLOB_PACKAGE_JSON],
       languageOptions: {
         parser,

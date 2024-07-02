@@ -7,6 +7,7 @@ export function imports() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
+      name: 'import',
       plugins: {
         import: importPlugin,
       },

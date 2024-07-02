@@ -17,8 +17,10 @@ export function typescript() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
+      name: 'typescript',
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
+        // @ts-expect-error: conflict type
         parser: tseslint.parser,
         parserOptions: {
           project: true,
@@ -76,6 +78,7 @@ export function typescript() {
       },
     },
     {
+      name: 'typescript-js-off',
       files: [GLOB_JS, GLOB_JSX],
       rules: {
         '@typescript-eslint/no-require-imports': 'off',
