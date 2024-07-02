@@ -10,7 +10,7 @@ import { typescript } from './typescript.js'
 import { unicorn } from './unicorn.js'
 
 export function basic() {
-  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
+  /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
       // @ts-expect-error: 'readonly' and cannot be assigned to the mutable type 'string[]'

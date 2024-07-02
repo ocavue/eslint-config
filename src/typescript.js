@@ -14,7 +14,7 @@ export function typescript() {
     .map((config) => config.rules || {})
     .reduce((acc, cur) => ({ ...acc, ...cur }), {})
 
-  /** @type {import('eslint-define-config').FlatESLintConfig[]} */
+  /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
     {
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
