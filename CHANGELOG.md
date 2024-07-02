@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.7.0](https://github.com/ocavue/eslint-config/compare/v1.6.0...v1.7.0) (2024-07-02)
+
+
+### Features
+
+* add name to configs ([a45eeaa](https://github.com/ocavue/eslint-config/commit/a45eeaa3dee79022627a91a81825e7802fc86ef6))
+* disable some typescript rules for test files ([e3b6acb](https://github.com/ocavue/eslint-config/commit/e3b6acb7457d2b128694aa3f003911e0712ba65e))
+* drop eslint-define-config ([24eb6dc](https://github.com/ocavue/eslint-config/commit/24eb6dc6d8126b1284eadb1d03529cdce36c1ceb))
+* support typescript 5.5 ([19e07c5](https://github.com/ocavue/eslint-config/commit/19e07c509d879f0c1a68d407882f41e0180bd387))
+
 ## [1.6.0](https://github.com/ocavue/eslint-config/compare/v1.5.1...v1.6.0) (2024-06-04)
 
 
