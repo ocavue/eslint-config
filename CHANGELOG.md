@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/ocavue/eslint-config/compare/v1.7.0...v1.8.0) (2024-07-09)
+
+
+### Features
+
+* enable rule @typescript-eslint/no-unnecessary-parameter-property-assignment ([#77](https://github.com/ocavue/eslint-config/issues/77)) ([f880ef8](https://github.com/ocavue/eslint-config/commit/f880ef8b39af359a688723edee1af0ce65704e3e))
+
 ## [1.7.0](https://github.com/ocavue/eslint-config/compare/v1.6.0...v1.7.0) (2024-07-02)
 
 
