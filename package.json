@@ -47,12 +47,12 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-unicorn": "^54.0.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "typescript-eslint": "^7.15.0"
+    "typescript-eslint": "^7.16.0"
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.12",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.10",
     "eslint": "^8.57.0",
     "prettier": "^3.3.2",
     "typescript": "^5.5.3"
