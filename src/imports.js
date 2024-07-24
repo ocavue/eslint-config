@@ -1,7 +1,6 @@
 // @ts-check
 
-// @ts-expect-error no type
-import importPlugin from 'eslint-plugin-import'
+import * as importPlugin from 'eslint-plugin-import-x'
 
 export function imports() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
@@ -9,6 +8,7 @@ export function imports() {
     {
       name: 'import',
       plugins: {
+        // @ts-expect-error incorrect type
         import: importPlugin,
       },
       settings: {
@@ -26,6 +26,7 @@ export function imports() {
         'import/no-mutable-exports': 'warn',
         'import/no-useless-path-segments': 'warn',
         'import/newline-after-import': 'warn',
+        'import/no-duplicates': 'warn',
         'import/order': [
           'warn',
           {
