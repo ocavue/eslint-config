@@ -3,24 +3,31 @@
 import prettierConfig from 'eslint-config-prettier'
 // @ts-expect-error no types
 import pluginVue from 'eslint-plugin-vue'
+import tseslint from 'typescript-eslint'
 
 import { GLOB_VUE } from './shared.js'
-import { typescriptLanguageOptions } from './typescript-language-options.js'
 
-/** @type {import('eslint').Linter.FlatConfig} */
+/** @type {import('eslint').Linter.FlatConfig[]} */
 const vueRecommended = pluginVue.configs['flat/recommended']
 
 export function vue() {
   /** @type {import('eslint').Linter.FlatConfig[]} */
   const config = [
+    ...vueRecommended,
     {
-      ...vueRecommended,
-      name: 'vue',
+      name: 'vue:language-options',
       files: [GLOB_VUE],
-      languageOptions: typescriptLanguageOptions,
+      languageOptions: {
+        parserOptions: {
+          parser: tseslint.parser,
+          sourceType: 'module',
+          ecmaVersion: 'latest',
+        },
+      },
+    },
+    {
+      name: 'vue:rules-override',
       rules: {
-        ...vueRecommended.rules,
-
         ...Object.fromEntries(
           Object.entries(prettierConfig.rules)
             .filter(([key]) => key.startsWith('vue/'))
