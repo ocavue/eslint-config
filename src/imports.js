@@ -20,8 +20,8 @@ export function imports() {
         },
       },
       rules: {
-        // External modules must be declared in the package.json
-        'import/no-extraneous-dependencies': 'warn',
+        // External modules must be declared in the package.json. Only enforced in CI.
+        'import/no-extraneous-dependencies': process.env.CI ? 'error' : 'off',
         'import/first': 'warn',
         'import/no-mutable-exports': 'warn',
         'import/no-useless-path-segments': 'warn',
