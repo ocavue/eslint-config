@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.1](https://github.com/ocavue/eslint-config/compare/v1.11.0...v1.11.1) (2024-07-24)
+
+
+### Bug Fixes
+
+* correct markdown import ([#91](https://github.com/ocavue/eslint-config/issues/91)) ([7a4f8a1](https://github.com/ocavue/eslint-config/commit/7a4f8a184e5b3b1e34b5c1f6fb90156f79968210))
+
 ## [1.11.0](https://github.com/ocavue/eslint-config/compare/v1.10.2...v1.11.0) (2024-07-24)
 
 
