@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/ocavue/eslint-config/compare/v1.8.0...v1.9.0) (2024-07-24)
+
+
+### Features
+
+* update eslint-plugin-react ([#80](https://github.com/ocavue/eslint-config/issues/80)) ([d5536f8](https://github.com/ocavue/eslint-config/commit/d5536f87239497e6eedc1a3eb1b67bb5b48c17d4))
+
 ## [1.8.0](https://github.com/ocavue/eslint-config/compare/v1.7.0...v1.8.0) (2024-07-09)
 
 
