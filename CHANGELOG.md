@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/ocavue/eslint-config/compare/v1.10.2...v1.11.0) (2024-07-24)
+
+
+### Features
+
+* enable rules antfu/import-dedupe and import/no-duplicates ([#89](https://github.com/ocavue/eslint-config/issues/89)) ([8d1d8c4](https://github.com/ocavue/eslint-config/commit/8d1d8c4dafda7e23302814813c756c86f7781942))
+
 ## [1.10.2](https://github.com/ocavue/eslint-config/compare/v1.10.1...v1.10.2) (2024-07-24)
 
 
