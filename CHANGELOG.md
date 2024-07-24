@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.10.0](https://github.com/ocavue/eslint-config/compare/v1.9.0...v1.10.0) (2024-07-24)
+
+
+### Features
+
+* support vue ([#83](https://github.com/ocavue/eslint-config/issues/83)) ([aeceead](https://github.com/ocavue/eslint-config/commit/aeceeadbeab87a4a1ef37711bb2001c06dca0340))
+
+
+### Bug Fixes
+
+* only enable import/no-extraneous-dependencies in CI ([#85](https://github.com/ocavue/eslint-config/issues/85)) ([5973bd3](https://github.com/ocavue/eslint-config/commit/5973bd32296522fb0e72666c73c80d519c7c0348))
+
 ## [1.9.0](https://github.com/ocavue/eslint-config/compare/v1.8.0...v1.9.0) (2024-07-24)
 
 
