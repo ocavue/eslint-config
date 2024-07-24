@@ -1,3 +1,3 @@
-import { basic } from './index.js'
+import { basic, markdown } from './index.js'
 
-export default basic()
+export default [...basic(), ...markdown()]

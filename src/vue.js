@@ -1,7 +1,6 @@
 // @ts-check
 
 import prettierConfig from 'eslint-config-prettier'
-// @ts-expect-error no types
 import vuePlugin from 'eslint-plugin-vue'
 import tseslint from 'typescript-eslint'
 
