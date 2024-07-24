@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.2](https://github.com/ocavue/eslint-config/compare/v1.10.1...v1.10.2) (2024-07-24)
+
+
+### Bug Fixes
+
+* fix vue config ([685b710](https://github.com/ocavue/eslint-config/commit/685b710aceb2316ecbccfb0f67f1962fa4887b60))
+
 ## [1.10.1](https://github.com/ocavue/eslint-config/compare/v1.10.0...v1.10.1) (2024-07-24)
 
 
