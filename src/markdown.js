@@ -18,6 +18,8 @@ export function markdown() {
         },
       },
       rules: {
+        // Disable type-aware TypeScript rules, because the code blocks are not
+        // part of a compilable `tsconfig.json` project.
         '@typescript-eslint/no-redeclare': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
@@ -34,6 +36,11 @@ export function markdown() {
         '@typescript-eslint/unbound-method': 'off',
         '@typescript-eslint/require-await': 'off',
         'deprecation/deprecation': 'off',
+
+        // Disable some import rules because they are not working well with
+        // twoslash ---cut--- imports.
+        'import/first': 'off',
+        'import/order': 'off',
 
         'no-alert': 'off',
         'no-console': 'off',
