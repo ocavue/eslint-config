@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.2](https://github.com/ocavue/eslint-config/compare/v1.11.1...v1.11.2) (2024-07-24)
+
+
+### Bug Fixes
+
+* disable some rules for markdown code blocks ([#93](https://github.com/ocavue/eslint-config/issues/93)) ([757df79](https://github.com/ocavue/eslint-config/commit/757df79d4142d2c467f18422e4b90304a20b0c93))
+
 ## [1.11.1](https://github.com/ocavue/eslint-config/compare/v1.11.0...v1.11.1) (2024-07-24)
 
 
