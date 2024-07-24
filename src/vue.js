@@ -2,13 +2,13 @@
 
 import prettierConfig from 'eslint-config-prettier'
 // @ts-expect-error no types
-import pluginVue from 'eslint-plugin-vue'
+import vuePlugin from 'eslint-plugin-vue'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_VUE } from './shared.js'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-const vueRecommended = pluginVue.configs['flat/recommended']
+const vueRecommended = vuePlugin.configs['flat/recommended']
 
 export function vue() {
   /** @type {import('eslint').Linter.FlatConfig[]} */

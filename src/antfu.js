@@ -9,6 +9,7 @@ export function antfu() {
         antfu: antfuPlugin,
       },
       rules: {
+        'antfu/import-dedupe': 'error',
         'antfu/top-level-function': 'error',
       },
     },
