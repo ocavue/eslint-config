@@ -21,7 +21,7 @@ You will need to use the new ["flat" ESLint configuration](https://eslint.org/do
 
 In your `eslint.config.js` file, add the following to extend the basic config:
 
-```JS
+```js
 // eslint.config.js
 import { basic } from '@ocavue/eslint-config'
 
@@ -30,7 +30,7 @@ export default [...basic()]
 
 If you want to use the React config, you can do the following:
 
-```JS
+```js
 // eslint.config.js
 import { basic, react } from '@ocavue/eslint-config'
 
@@ -39,7 +39,7 @@ export default [...basic(), ...react()]
 
 If you want to use the Vue config, you can do the following:
 
-```JS
+```js
 // eslint.config.js
 import { basic, vue } from '@ocavue/eslint-config'
 
@@ -48,7 +48,7 @@ export default [...basic(), ...vue()]
 
 If you want to use the check the code blocks in markdown files, you can do the following:
 
-```JS
+```js
 // eslint.config.js
 import { basic, markdown } from '@ocavue/eslint-config'
 

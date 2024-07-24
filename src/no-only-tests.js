@@ -1,6 +1,5 @@
 // @ts-check
 
-// @ts-expect-error: eslint-plugin-unicorn is not typed
 import plugin from 'eslint-plugin-no-only-tests'
 
 export function noOnlyTests() {

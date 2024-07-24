@@ -1,8 +1,6 @@
 // @ts-check
 
-// @ts-expect-error no types
 import reactPlugin from 'eslint-plugin-react'
-// @ts-expect-error no types
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { GLOB_TS, GLOB_TSX } from './shared.js'
