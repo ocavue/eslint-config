@@ -37,6 +37,15 @@ import { basic, react } from '@ocavue/eslint-config'
 export default [...basic(), ...react()]
 ```
 
+If you want to use the Vue config, you can do the following:
+
+```JS
+// eslint.config.js
+import { basic, vue } from '@ocavue/eslint-config'
+
+export default [...basic(), ...vue()]
+```
+
 If you want to use the check the code blocks in markdown files, you can do the following:
 
 ```JS
