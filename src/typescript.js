@@ -6,6 +6,7 @@ import deprecationPlugin from 'eslint-plugin-deprecation'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js'
+import { typescriptLanguageOptions } from './typescript-language-options.js'
 
 export { tseslint }
 
@@ -19,15 +20,7 @@ export function typescript() {
     {
       name: 'typescript',
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
-      languageOptions: {
-        // @ts-expect-error: conflict type
-        parser: tseslint.parser,
-        parserOptions: {
-          project: true,
-          sourceType: 'module',
-          ecmaVersion: 'latest',
-        },
-      },
+      languageOptions: typescriptLanguageOptions,
       plugins: {
         // @ts-expect-error: conflict type
         '@typescript-eslint': tseslint.plugin,
