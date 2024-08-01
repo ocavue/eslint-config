@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/ocavue/eslint-config/compare/v2.0.0...v2.0.1) (2024-08-01)
+
+
+### Bug Fixes
+
+* add @eslint/compat to fix eslint-plugin-react-hooks ([89e4b67](https://github.com/ocavue/eslint-config/commit/89e4b67fafeff0ad1fd95ee52ed634425c46ab5c))
+
 ## [2.0.0](https://github.com/ocavue/eslint-config/compare/v1.11.2...v2.0.0) (2024-08-01)
 
 
