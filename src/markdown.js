@@ -35,7 +35,6 @@ export function markdown() {
         '@typescript-eslint/await-thenable': 'off',
         '@typescript-eslint/unbound-method': 'off',
         '@typescript-eslint/require-await': 'off',
-        'deprecation/deprecation': 'off',
 
         // Disable some import rules because they are not working well with
         // twoslash ---cut--- imports.

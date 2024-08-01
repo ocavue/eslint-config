@@ -2,7 +2,6 @@
 
 /// <reference types="@eslint-types/typescript-eslint" />
 
-import deprecationPlugin from 'eslint-plugin-deprecation'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js'
@@ -31,8 +30,6 @@ export function typescript() {
       plugins: {
         // @ts-expect-error: conflict type
         '@typescript-eslint': tseslint.plugin,
-        // @ts-expect-error: conflict type
-        deprecation: deprecationPlugin,
       },
       rules: {
         ...rules,
@@ -75,8 +72,6 @@ export function typescript() {
         '@typescript-eslint/unbound-method': 'error',
         // TODO: We should set the rule below to error in the future
         '@typescript-eslint/require-await': 'warn',
-
-        'deprecation/deprecation': 'warn',
       },
     },
     {
