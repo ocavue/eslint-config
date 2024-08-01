@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/ocavue/eslint-config/compare/v1.11.2...v2.0.0) (2024-08-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* update eslint to v9 ([#98](https://github.com/ocavue/eslint-config/issues/98))
+
+### Features
+
+* remove eslint-plugin-deprecation ([#95](https://github.com/ocavue/eslint-config/issues/95)) ([1343b33](https://github.com/ocavue/eslint-config/commit/1343b33b0274fab99f593bcbce47cda8f61f248b))
+* update eslint to v9 ([#98](https://github.com/ocavue/eslint-config/issues/98)) ([d56dfd8](https://github.com/ocavue/eslint-config/commit/d56dfd88b4119f0c466f16020727f1a488895826))
+
 ## [1.11.2](https://github.com/ocavue/eslint-config/compare/v1.11.1...v1.11.2) (2024-07-24)
 
 
