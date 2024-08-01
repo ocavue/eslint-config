@@ -72,8 +72,6 @@ export function typescript() {
         '@typescript-eslint/unbound-method': 'error',
         // TODO: We should set the rule below to error in the future
         '@typescript-eslint/require-await': 'warn',
-
-        'deprecation/deprecation': 'warn',
       },
     },
     {
