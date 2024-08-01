@@ -68,6 +68,18 @@ export function typescript() {
         ],
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/unbound-method': 'error',
+
+        // `type T1 = T0` and `interface T2 extends T0 {}` have the same meaning
+        // but different behavior in TypeScript type checking. `T1` and `T0` are
+        // the same type, while `T2` is different than `T0`. We allow `interface
+        // T2 extends T0 {}` explicitly.
+        '@typescript-eslint/no-empty-object': [
+          'error',
+          {
+            allowInterfaces: 'with-single-extends',
+          },
+        ],
+
         // TODO: We should set the rule below to error in the future
         '@typescript-eslint/require-await': 'warn',
       },
