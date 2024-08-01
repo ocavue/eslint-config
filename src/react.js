@@ -1,5 +1,6 @@
 // @ts-check
 
+import { fixupPluginRules } from '@eslint/compat'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
@@ -31,7 +32,7 @@ export function react() {
       name: 'react-hooks',
       files: [GLOB_TS, GLOB_TSX],
       plugins: {
-        'react-hooks': reactHooksPlugin,
+        'react-hooks': fixupPluginRules(reactHooksPlugin),
       },
       rules: {
         'react-hooks/rules-of-hooks': 'error',

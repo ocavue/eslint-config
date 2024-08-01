@@ -11,6 +11,9 @@ importers:
       '@eslint-types/unicorn':
         specifier: ^52.0.0
         version: 52.0.0
+      '@eslint/compat':
+        specifier: ^1.1.1
+        version: 1.1.1
       '@eslint/js':
         specifier: ^9.8.0
         version: 9.8.0
@@ -122,6 +125,10 @@ packages:
 
   '@eslint-types/unicorn@52.0.0':
     resolution: {integrity: sha512-1+Om/IekT0AwlPiARvhbtKsSgVMu3ZAtP99YCzhHkDSnF5f8sQegh8/3ZmMhlCnKipa7/x8qEC7Bn4rbaagnSA==}
+
+  '@eslint/compat@1.1.1':
+    resolution: {integrity: sha512-lpHyRyplhGPL5mGEh6M9O5nnKk0Gz4bFI+Zu6tKlPpDUN7XshWvH9C/px4UVm87IAANE0W81CEsNGbS1KlzXpA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/config-array@0.17.1':
     resolution: {integrity: sha512-BlYOpej8AQ8Ev9xVqroV7a02JK3SkBAaN9GfMMH9W6Ch8FlQlkjGw4Ir7+FgYwfirivAf4t+GtzuAxqfukmISA==}
@@ -1506,6 +1513,8 @@ snapshots:
   '@eslint-community/regexpp@4.11.0': {}
 
   '@eslint-types/unicorn@52.0.0': {}
+
+  '@eslint/compat@1.1.1': {}
 
   '@eslint/config-array@0.17.1':
     dependencies:
