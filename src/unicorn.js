@@ -47,6 +47,8 @@ export function unicorn() {
         'unicorn/no-array-push-push': 'warn',
         // Do not use a `for` loop that can be replaced with a `for-of` loop.
         'unicorn/no-for-loop': 'error',
+        // Disallow eslint-disable comments without specific rule names
+        'unicorn/no-abusive-eslint-disable': 'error',
         // Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.
         'unicorn/prefer-add-event-listener': 'error',
         // Prefer `.find(…)` and `.findLast(…)` over the first or last element from
