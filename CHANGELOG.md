@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ocavue/eslint-config/compare/v2.0.2...v2.1.0) (2024-08-01)
+
+
+### Features
+
+* add rule unicorn/no-abusive-eslint-disable ([b86160b](https://github.com/ocavue/eslint-config/commit/b86160bb731ab7a5e33b559f224d0f2e926f174a))
+
 ## [2.0.2](https://github.com/ocavue/eslint-config/compare/v2.0.1...v2.0.2) (2024-08-01)
 
 
