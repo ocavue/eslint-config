@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.2](https://github.com/ocavue/eslint-config/compare/v2.0.1...v2.0.2) (2024-08-01)
+
+
+### Bug Fixes
+
+* allow `interface T2 extends T0 {}` ([b6cb265](https://github.com/ocavue/eslint-config/commit/b6cb2658c9590fc9fa2cc00d382c965a979e451a))
+* correct the rule name ([24f8558](https://github.com/ocavue/eslint-config/commit/24f855813fb1ca8036d2ef6157e48be09f3338fa))
+
 ## [2.0.1](https://github.com/ocavue/eslint-config/compare/v2.0.0...v2.0.1) (2024-08-01)
 
 
