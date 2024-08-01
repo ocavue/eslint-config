@@ -73,7 +73,7 @@ export function typescript() {
         // but different behavior in TypeScript type checking. `T1` and `T0` are
         // the same type, while `T2` is different than `T0`. We allow `interface
         // T2 extends T0 {}` explicitly.
-        '@typescript-eslint/no-empty-object': [
+        '@typescript-eslint/no-empty-object-type': [
           'error',
           {
             allowInterfaces: 'with-single-extends',
