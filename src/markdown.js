@@ -14,7 +14,7 @@ export function markdown() {
       files: [`${GLOB_MARKDOWN}/${GLOB_SRC}`, `${GLOB_MARKDOWN}/${GLOB_VUE}`],
       languageOptions: {
         parserOptions: {
-          project: null,
+          projectService: null,
         },
       },
       rules: {
