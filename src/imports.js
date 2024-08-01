@@ -3,7 +3,7 @@
 import * as importPlugin from 'eslint-plugin-import-x'
 
 export function imports() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     {
       name: 'import',

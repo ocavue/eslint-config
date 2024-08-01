@@ -10,7 +10,7 @@ import { typescript } from './typescript.js'
 import { unicorn } from './unicorn.js'
 
 export function basic() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     { ignores: [...GLOB_EXCLUDE] },
     ...typescript(),

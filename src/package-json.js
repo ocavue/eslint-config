@@ -9,7 +9,7 @@ import { GLOB_PACKAGE_JSON } from './shared.js'
  * Sort package.json keys
  */
 export function packageJson() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     {
       name: 'package-json',

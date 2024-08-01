@@ -3,7 +3,7 @@
 import plugin from 'eslint-plugin-no-only-tests'
 
 export function noOnlyTests() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     {
       name: 'no-only-tests',

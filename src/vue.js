@@ -6,11 +6,11 @@ import tseslint from 'typescript-eslint'
 
 import { GLOB_VUE } from './shared.js'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 const vueRecommended = vuePlugin.configs['flat/recommended']
 
 export function vue() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     ...vueRecommended,
     {
