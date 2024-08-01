@@ -1,7 +1,7 @@
 import { Linter } from 'eslint'
 
 declare module 'eslint-plugin-react' {
-  const recommended: Linter.FlatConfig
+  const recommended: Linter.Config
   export default {
     configs: {
       flat: {

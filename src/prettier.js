@@ -7,7 +7,7 @@ import prettierConfig from 'eslint-config-prettier'
  * have to run `pretter` separately for formatting.
  */
 export function prettier() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     {
       name: 'prettier',

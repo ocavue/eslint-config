@@ -5,7 +5,7 @@
 import plugin from 'eslint-plugin-unicorn'
 
 export function unicorn() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     {
       name: 'unicorn',

@@ -1,7 +1,6 @@
 // @ts-check
 
-/// <reference types="@eslint-types/typescript-eslint" />
-
+import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js'
@@ -13,22 +12,21 @@ export function typescript() {
     .map((config) => config.rules || {})
     .reduce((acc, cur) => ({ ...acc, ...cur }), {})
 
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray} */
   const config = [
+    eslint.configs.recommended,
     {
       name: 'typescript',
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
-        // @ts-expect-error: conflict type
         parser: tseslint.parser,
         parserOptions: {
-          project: true,
+          projectService: true,
           sourceType: 'module',
           ecmaVersion: 'latest',
         },
       },
       plugins: {
-        // @ts-expect-error: conflict type
         '@typescript-eslint': tseslint.plugin,
       },
       rules: {
@@ -97,5 +95,9 @@ export function typescript() {
     },
   ]
 
-  return config
+  /** @type {import('eslint').Linter.Config[]} */
+  // @ts-expect-error: unmatched type
+  const configTyped = config
+
+  return configTyped
 }

@@ -5,11 +5,11 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { GLOB_TS, GLOB_TSX } from './shared.js'
 
-/** @type {import('eslint').Linter.FlatConfig} */
+/** @type {import('eslint').Linter.Config} */
 const reactRecommended = reactPlugin.configs.flat.recommended
 
 export function react() {
-  /** @type {import('eslint').Linter.FlatConfig[]} */
+  /** @type {import('eslint').Linter.Config[]} */
   const config = [
     {
       ...reactRecommended,
