@@ -39,7 +39,6 @@ export const GLOB_ALL_SRC = /** @type {const} */ ([
 ])
 
 export const GLOB_NODE_MODULES = /** @type {const} */ ('**/node_modules')
-export const GLOB_DIST = /** @type {const} */ ('**/dist')
 export const GLOB_LOCKFILE = /** @type {const} */ ([
   '**/package-lock.json',
   '**/yarn.lock',
@@ -47,25 +46,10 @@ export const GLOB_LOCKFILE = /** @type {const} */ ([
 ])
 export const GLOB_EXCLUDE = /** @type {const} */ ([
   GLOB_NODE_MODULES,
-  GLOB_DIST,
   ...GLOB_LOCKFILE,
 
-  '**/output',
-  '**/coverage',
-  '**/temp',
   '**/fixtures',
-  '**/.vitepress/cache',
-  '**/.next',
-  '**/.nuxt',
-  '**/.vercel',
   '**/.changeset',
-  '**/.idea',
-  '**/.output',
-  '**/.vite-inspect',
-  '**/.yalc',
-  '**/.svelte-kit',
-  '**/dist-types',
-
   '**/CHANGELOG*.md',
   '**/*.min.*',
   '**/LICENSE*',
