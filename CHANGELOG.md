@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/ocavue/eslint-config/compare/v2.1.0...v2.2.0) (2024-08-07)
+
+
+### Features
+
+* ignore files from .gitignore ([#104](https://github.com/ocavue/eslint-config/issues/104)) ([17e12d8](https://github.com/ocavue/eslint-config/commit/17e12d833166da0ab2ae7b4a2c90a377f8f2b964))
+
 ## [2.1.0](https://github.com/ocavue/eslint-config/compare/v2.0.2...v2.1.0) (2024-08-01)
 
 
