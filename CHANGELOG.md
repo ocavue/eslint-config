@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.2](https://github.com/ocavue/eslint-config/compare/v2.3.1...v2.3.2) (2024-08-12)
+
+
+### Bug Fixes
+
+* avoid duplicate type imports ([#110](https://github.com/ocavue/eslint-config/issues/110)) ([374d3d5](https://github.com/ocavue/eslint-config/commit/374d3d508708c9c3408a4e300c44f75edaad6e33))
+
 ## [2.3.1](https://github.com/ocavue/eslint-config/compare/v2.3.0...v2.3.1) (2024-08-12)
 
 
