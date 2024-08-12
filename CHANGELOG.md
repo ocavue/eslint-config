@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/ocavue/eslint-config/compare/v2.3.0...v2.3.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* prefer inline type imports ([#108](https://github.com/ocavue/eslint-config/issues/108)) ([beaa238](https://github.com/ocavue/eslint-config/commit/beaa2389e87ec352c6bf21711ffad72b853f8c61))
+
 ## [2.3.0](https://github.com/ocavue/eslint-config/compare/v2.2.0...v2.3.0) (2024-08-12)
 
 
