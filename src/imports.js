@@ -26,7 +26,7 @@ export function imports() {
         'import/no-mutable-exports': 'warn',
         'import/no-useless-path-segments': 'warn',
         'import/newline-after-import': 'warn',
-        'import/no-duplicates': 'warn',
+        'import/no-duplicates': ['warn', { 'prefer-inline': true }],
         'import/order': [
           'warn',
           {
