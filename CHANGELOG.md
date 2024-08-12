@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/ocavue/eslint-config/compare/v2.2.0...v2.3.0) (2024-08-12)
+
+
+### Features
+
+* add rule @typescript-eslint/consistent-type-imports ([#106](https://github.com/ocavue/eslint-config/issues/106)) ([75898bf](https://github.com/ocavue/eslint-config/commit/75898bf8db8773de637731f35c58f77b9e226e5e))
+
 ## [2.2.0](https://github.com/ocavue/eslint-config/compare/v2.1.0...v2.2.0) (2024-08-07)
 
 
