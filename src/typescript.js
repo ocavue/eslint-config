@@ -38,7 +38,12 @@ export function typescript() {
         '@typescript-eslint/consistent-indexed-object-style': 'off',
         '@typescript-eslint/array-type': 'off',
         '@typescript-eslint/dot-notation': 'off',
-        '@typescript-eslint/consistent-type-imports': 'warn',
+        '@typescript-eslint/consistent-type-imports': [
+          'warn',
+          {
+            fixStyle: 'inline-type-imports',
+          },
+        ],
         '@typescript-eslint/no-unnecessary-parameter-property-assignment':
           'warn',
         '@typescript-eslint/restrict-plus-operands': 'warn',
