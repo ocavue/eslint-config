@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/ocavue/eslint-config/compare/v2.4.0...v2.5.0) (2024-08-22)
+
+
+### Features
+
+* update @eslint/markdown to v6 ([#112](https://github.com/ocavue/eslint-config/issues/112)) ([7ab0098](https://github.com/ocavue/eslint-config/commit/7ab00984a549873c37b4d3e6652e08f789ff7a30))
+
 ## [2.4.0](https://github.com/ocavue/eslint-config/compare/v2.3.2...v2.4.0) (2024-08-22)
 
 
