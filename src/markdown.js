@@ -5,7 +5,7 @@ import markdownPlugin from '@eslint/markdown'
 import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
 
 export function markdown() {
-  const recommended = markdownPlugin.configs?.recommended
+  const recommended = markdownPlugin.configs?.processor
 
   /** @type {import('eslint').Linter.Config[]} */
   const recommendedConfig = Array.isArray(recommended)
