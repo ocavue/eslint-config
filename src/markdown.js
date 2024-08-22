@@ -1,14 +1,24 @@
 // @ts-check
 
-import markdownPlugin from 'eslint-plugin-markdown'
+import markdownPlugin from '@eslint/markdown'
 
 import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
 
 export function markdown() {
+  const recommended = markdownPlugin.configs?.recommended
+
+  /** @type {import('eslint').Linter.Config[]} */
+  const recommendedConfig = Array.isArray(recommended)
+    ? recommended
+    : (() => {
+        throw new Error(
+          '[@ocavue/eslint-config] markdown recommended is not an array',
+        )
+      })()
+
   /** @type {import('eslint').Linter.Config[]} */
   const config = [
-    // @ts-expect-error: @types/eslint-plugin-markdown is not up to date
-    ...markdownPlugin.configs.recommended,
+    ...recommendedConfig,
 
     {
       files: [`${GLOB_MARKDOWN}/${GLOB_SRC}`, `${GLOB_MARKDOWN}/${GLOB_VUE}`],
