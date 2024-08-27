@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://github.com/ocavue/eslint-config/compare/v2.5.0...v2.6.0) (2024-08-27)
+
+
+### Features
+
+* update dependency eslint-plugin-import-x to v4 ([#119](https://github.com/ocavue/eslint-config/issues/119)) ([c08e4f7](https://github.com/ocavue/eslint-config/commit/c08e4f75e7e9dc9e21f2c643fcaeeb2263b92045))
+
 ## [2.5.0](https://github.com/ocavue/eslint-config/compare/v2.4.0...v2.5.0) (2024-08-22)
 
 
