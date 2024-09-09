@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/ocavue/eslint-config/compare/v2.6.0...v2.7.0) (2024-09-09)
+
+
+### Features
+
+* remove @types/eslint from dependencies ([#123](https://github.com/ocavue/eslint-config/issues/123)) ([a11bff8](https://github.com/ocavue/eslint-config/commit/a11bff8e0bb1f4643c9d0acaaafde626d2b5b4df))
+
 ## [2.6.0](https://github.com/ocavue/eslint-config/compare/v2.5.0...v2.6.0) (2024-08-27)
 
 
