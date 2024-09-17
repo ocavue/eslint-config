@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://github.com/ocavue/eslint-config/compare/v2.7.0...v2.8.0) (2024-09-17)
+
+
+### Features
+
+* enable `@typescript-eslint/no-unnecessary-type-assertion` ([eea1c40](https://github.com/ocavue/eslint-config/commit/eea1c400983ef1f03e73dd248da2b133e89243b7))
+
 ## [2.7.0](https://github.com/ocavue/eslint-config/compare/v2.6.0...v2.7.0) (2024-09-09)
 
 
