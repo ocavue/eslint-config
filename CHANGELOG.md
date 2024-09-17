@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.1](https://github.com/ocavue/eslint-config/compare/v2.8.0...v2.8.1) (2024-09-17)
+
+
+### Bug Fixes
+
+* disable `@typescript-eslint/no-unnecessary-type-assertion` for markdown ([#128](https://github.com/ocavue/eslint-config/issues/128)) ([2475b9d](https://github.com/ocavue/eslint-config/commit/2475b9d5c898f95a8c17db945f698ed9e9e4e155))
+
 ## [2.8.0](https://github.com/ocavue/eslint-config/compare/v2.7.0...v2.8.0) (2024-09-17)
 
 
