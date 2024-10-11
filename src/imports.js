@@ -6,7 +6,7 @@ export function imports() {
   /** @type {import('eslint').Linter.Config[]} */
   const config = [
     {
-      name: 'import-x',
+      name: 'import',
       plugins: {
         // @ts-expect-error incorrect type
         import: importPlugin,
@@ -21,13 +21,13 @@ export function imports() {
       },
       rules: {
         // External modules must be declared in the package.json. Only enforced in CI.
-        'import-x/no-extraneous-dependencies': process.env.CI ? 'error' : 'off',
-        'import-x/first': 'warn',
-        'import-x/no-mutable-exports': 'warn',
-        'import-x/no-useless-path-segments': 'warn',
-        'import-x/newline-after-import': 'warn',
-        'import-x/no-duplicates': ['warn', { 'prefer-inline': true }],
-        'import-x/order': [
+        'import/no-extraneous-dependencies': process.env.CI ? 'error' : 'off',
+        'import/first': 'warn',
+        'import/no-mutable-exports': 'warn',
+        'import/no-useless-path-segments': 'warn',
+        'import/newline-after-import': 'warn',
+        'import/no-duplicates': ['warn', { 'prefer-inline': true }],
+        'import/order': [
           'warn',
           {
             'newlines-between': 'always',
