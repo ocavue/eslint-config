@@ -1,6 +1,7 @@
 // @ts-check
 
 import { fixupPluginRules } from '@eslint/compat'
+
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
