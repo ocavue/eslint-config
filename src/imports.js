@@ -12,7 +12,7 @@ export function imports() {
         import: importPlugin,
       },
       settings: {
-        'import/resolver': {
+        'import-x/resolver': {
           // You will also need to install and configure the TypeScript resolver
           // See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
           typescript: true,
