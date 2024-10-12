@@ -1,7 +1,7 @@
 {
   "name": "@ocavue/eslint-config",
   "type": "module",
-  "version": "2.10.0",
+  "version": "2.10.1",
   "packageManager": "pnpm@9.12.1",
   "description": "",
   "author": "ocavue <ocavue@gmail.com>",

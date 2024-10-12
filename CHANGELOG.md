@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.10.1](https://github.com/ocavue/eslint-config/compare/v2.10.0...v2.10.1) (2024-10-12)
+
+
+### Bug Fixes
+
+* pass correct resolver settings to eslint-plugin-import-x ([#137](https://github.com/ocavue/eslint-config/issues/137)) ([b71c566](https://github.com/ocavue/eslint-config/commit/b71c566c0840eee72d1bce913337ec350e2f43e4))
+* remove compatibility code for eslint-plugin-react-hooks ([#141](https://github.com/ocavue/eslint-config/issues/141)) ([5512ea1](https://github.com/ocavue/eslint-config/commit/5512ea16121bf7794a6aeee1d5cad9ba6d540bad))
+
 ## [2.10.0](https://github.com/ocavue/eslint-config/compare/v2.9.0...v2.10.0) (2024-10-11)
 
 
