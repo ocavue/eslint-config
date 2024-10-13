@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.3](https://github.com/ocavue/eslint-config/compare/v2.10.2...v2.10.3) (2024-10-13)
+
+
+### Bug Fixes
+
+* disable buggy rule `import/no-duplicates` ([f614b1e](https://github.com/ocavue/eslint-config/commit/f614b1ef3e014d8973357c3e30b947b235714cfe))
+
 ## [2.10.2](https://github.com/ocavue/eslint-config/compare/v2.10.1...v2.10.2) (2024-10-13)
 
 
