@@ -26,7 +26,12 @@ export function imports() {
         'import/no-mutable-exports': 'warn',
         'import/no-useless-path-segments': 'warn',
         'import/newline-after-import': 'warn',
-        'import/no-duplicates': ['warn', { 'prefer-inline': true }],
+        'import/no-duplicates': [
+          'warn',
+          // Disable `prefer-inline` because of the following bug
+          // https://github.com/un-ts/eslint-plugin-import-x/issues/167
+          // { 'prefer-inline': true },
+        ],
         'import/order': [
           'warn',
           {
