@@ -1,7 +1,7 @@
 {
   "name": "@ocavue/eslint-config",
   "type": "module",
-  "version": "2.10.0",
+  "version": "2.10.3",
   "packageManager": "pnpm@9.12.1",
   "description": "",
   "author": "ocavue <ocavue@gmail.com>",
@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "@eslint-types/unicorn": "^52.0.0",
-    "@eslint/compat": "^1.2.0",
     "@eslint/js": "^9.12.0",
     "@eslint/markdown": "^6.2.0",
     "eslint-config-flat-gitignore": "^0.3.0",

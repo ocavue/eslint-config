@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.10.3](https://github.com/ocavue/eslint-config/compare/v2.10.2...v2.10.3) (2024-10-13)
+
+
+### Bug Fixes
+
+* disable buggy rule `import/no-duplicates` ([f614b1e](https://github.com/ocavue/eslint-config/commit/f614b1ef3e014d8973357c3e30b947b235714cfe))
+
+## [2.10.2](https://github.com/ocavue/eslint-config/compare/v2.10.1...v2.10.2) (2024-10-13)
+
+
+### Bug Fixes
+
+* disable buggy rule `import/no-duplicates` ([909727d](https://github.com/ocavue/eslint-config/commit/909727d9c92f7d69f04b157f5dda0a7d75c96d00))
+
+## [2.10.1](https://github.com/ocavue/eslint-config/compare/v2.10.0...v2.10.1) (2024-10-12)
+
+
+### Bug Fixes
+
+* pass correct resolver settings to eslint-plugin-import-x ([#137](https://github.com/ocavue/eslint-config/issues/137)) ([b71c566](https://github.com/ocavue/eslint-config/commit/b71c566c0840eee72d1bce913337ec350e2f43e4))
+* remove compatibility code for eslint-plugin-react-hooks ([#141](https://github.com/ocavue/eslint-config/issues/141)) ([5512ea1](https://github.com/ocavue/eslint-config/commit/5512ea16121bf7794a6aeee1d5cad9ba6d540bad))
+
 ## [2.10.0](https://github.com/ocavue/eslint-config/compare/v2.9.0...v2.10.0) (2024-10-11)
 
 
