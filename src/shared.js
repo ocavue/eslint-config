@@ -54,6 +54,7 @@ export const GLOB_EXCLUDE = /** @type {const} */ ([
   '**/*.min.*',
   '**/LICENSE*',
   '**/__snapshots__',
+  '**/.tsup',
 ])
 
 export const EXTENSIONS = /** @type {const} */ ['ts', 'js']
