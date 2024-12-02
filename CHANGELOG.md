@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.11.0](https://github.com/ocavue/eslint-config/compare/v2.10.5...v2.11.0) (2024-12-02)
+
+
+### Features
+
+* update dependencies (non-major) ([#150](https://github.com/ocavue/eslint-config/issues/150)) ([2c76a52](https://github.com/ocavue/eslint-config/commit/2c76a5253c717bfc45cf8f45864f117446f98f6e))
+
 ## [2.10.5](https://github.com/ocavue/eslint-config/compare/v2.10.4...v2.10.5) (2024-11-18)
 
 
