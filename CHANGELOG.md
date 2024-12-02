@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.11.1](https://github.com/ocavue/eslint-config/compare/v2.11.0...v2.11.1) (2024-12-02)
+
+
+### Bug Fixes
+
+* ignore .tsup ([9b01ad6](https://github.com/ocavue/eslint-config/commit/9b01ad6c0f10473c5785cebceab36f1e38df190b))
+
 ## [2.11.0](https://github.com/ocavue/eslint-config/compare/v2.10.5...v2.11.0) (2024-12-02)
 
 
