@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.11.2](https://github.com/ocavue/eslint-config/compare/v2.11.1...v2.11.2) (2024-12-08)
+
+
+### Bug Fixes
+
+* turn off @typescript-eslint/triple-slash-reference ([#154](https://github.com/ocavue/eslint-config/issues/154)) ([5ba8b4f](https://github.com/ocavue/eslint-config/commit/5ba8b4f4af8c496ef783cb57ed52a0283a1a3234))
+
 ## [2.11.1](https://github.com/ocavue/eslint-config/compare/v2.11.0...v2.11.1) (2024-12-02)
 
 
