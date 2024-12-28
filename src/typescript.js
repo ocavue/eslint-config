@@ -38,6 +38,7 @@ export function typescript() {
         '@typescript-eslint/consistent-indexed-object-style': 'off',
         '@typescript-eslint/array-type': 'off',
         '@typescript-eslint/dot-notation': 'off',
+        '@typescript-eslint/triple-slash-reference': 'off',
         '@typescript-eslint/consistent-type-imports': [
           'warn',
           {
