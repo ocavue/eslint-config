@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.11.3](https://github.com/ocavue/eslint-config/compare/v2.11.2...v2.11.3) (2024-12-28)
+
+
+### Bug Fixes
+
+* use built-in types from eslint-plugin-react ([#142](https://github.com/ocavue/eslint-config/issues/142)) ([33a9474](https://github.com/ocavue/eslint-config/commit/33a947410e51f0f1f5b76b130157f4d03a42ac86))
+
 ## [2.11.2](https://github.com/ocavue/eslint-config/compare/v2.11.1...v2.11.2) (2024-12-08)
 
 
