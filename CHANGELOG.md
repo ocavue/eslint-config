@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.0](https://github.com/ocavue/eslint-config/compare/v2.11.3...v2.12.0) (2025-01-01)
+
+
+### Features
+
+* add eslint-plugin-package-json ([#161](https://github.com/ocavue/eslint-config/issues/161)) ([58f69bb](https://github.com/ocavue/eslint-config/commit/58f69bb5d883ad9a0986d68e764e9d820e62f51d))
+
 ## [2.11.3](https://github.com/ocavue/eslint-config/compare/v2.11.2...v2.11.3) (2024-12-28)
 
 
