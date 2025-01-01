@@ -10,6 +10,7 @@ export function packageJson() {
     ...pkgJson,
     rules: {
       ...pkgJson.rules,
+      'package-json/valid-package-definition': 'off',
       'package-json/order-properties': [
         'warn',
         {
