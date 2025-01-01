@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.1](https://github.com/ocavue/eslint-config/compare/v2.12.0...v2.12.1) (2025-01-01)
+
+
+### Bug Fixes
+
+* disable rule `package-json/valid-package-definition` ([#163](https://github.com/ocavue/eslint-config/issues/163)) ([a907f0d](https://github.com/ocavue/eslint-config/commit/a907f0dbe333cbe0dcfc06f1e63a82ca4dee04f3))
+
 ## [2.12.0](https://github.com/ocavue/eslint-config/compare/v2.11.3...v2.12.0) (2025-01-01)
 
 
