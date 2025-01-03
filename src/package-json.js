@@ -11,6 +11,17 @@ export function packageJson() {
     rules: {
       ...pkgJson.rules,
       'package-json/valid-package-definition': 'off',
+      'package-json/sort-collections': [
+        'warn',
+        [
+          // 'scripts', // Don't sort scripts
+          'devDependencies',
+          'dependencies',
+          'peerDependencies',
+          'config',
+          'exports',
+        ],
+      ],
       'package-json/order-properties': [
         'warn',
         {
