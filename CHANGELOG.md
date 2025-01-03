@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.2](https://github.com/ocavue/eslint-config/compare/v2.12.1...v2.12.2) (2025-01-03)
+
+
+### Bug Fixes
+
+* don't sort scripts in package.json ([#165](https://github.com/ocavue/eslint-config/issues/165)) ([d344b27](https://github.com/ocavue/eslint-config/commit/d344b27f4a9cce14a72e16c86cc471fc120b9296))
+
 ## [2.12.1](https://github.com/ocavue/eslint-config/compare/v2.12.0...v2.12.1) (2025-01-01)
 
 
