@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.3](https://github.com/ocavue/eslint-config/compare/v2.12.2...v2.12.3) (2025-01-31)
+
+
+### Bug Fixes
+
+* update dependency eslint-config-prettier to v10 ([#171](https://github.com/ocavue/eslint-config/issues/171)) ([d495e86](https://github.com/ocavue/eslint-config/commit/d495e86baa78cb758c29aa539b2afd40459219d8))
+
 ## [2.12.2](https://github.com/ocavue/eslint-config/compare/v2.12.1...v2.12.2) (2025-01-03)
 
 
