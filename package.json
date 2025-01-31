@@ -13,7 +13,14 @@
     "url": "https://github.com/ocavue/eslint-config.git"
   },
   "bugs": "https://github.com/ocavue/eslint-config/issues",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "markdown",
+    "react",
+    "vue"
+  ],
   "sideEffects": false,
   "main": "./index.js",
   "module": "./index.js",
@@ -40,7 +47,7 @@
     "eslint-plugin-antfu": "^3.0.0",
     "eslint-plugin-import-x": "^4.6.1",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-package-json": "^0.19.0",
+    "eslint-plugin-package-json": "^0.21.1",
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-unicorn": "^56.0.1",
@@ -50,7 +57,6 @@
   "devDependencies": {
     "@antfu/ni": "^0.23.2",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.17.9",
     "@typescript-eslint/utils": "^8.19.0",
     "eslint": "^9.16.0",
