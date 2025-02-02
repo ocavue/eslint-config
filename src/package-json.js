@@ -10,6 +10,7 @@ export function packageJson() {
     ...pkgJson,
     rules: {
       ...pkgJson.rules,
+      'package-json/no-empty-fields': 'off',
       'package-json/valid-package-definition': 'off',
       'package-json/sort-collections': [
         'warn',
