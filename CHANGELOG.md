@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.4](https://github.com/ocavue/eslint-config/compare/v2.12.3...v2.12.4) (2025-02-02)
+
+
+### Bug Fixes
+
+* disable rule package-json/no-empty-fields ([#173](https://github.com/ocavue/eslint-config/issues/173)) ([e0efc2f](https://github.com/ocavue/eslint-config/commit/e0efc2fdba314ab4b0d4a2e6fd2dbb86f544d4c1))
+
 ## [2.12.3](https://github.com/ocavue/eslint-config/compare/v2.12.2...v2.12.3) (2025-01-31)
 
 
