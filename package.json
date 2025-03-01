@@ -2,7 +2,7 @@
   "name": "@ocavue/eslint-config",
   "type": "module",
   "version": "2.12.4",
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "pnpm@9.15.6",
   "description": "",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -39,29 +39,29 @@
   },
   "dependencies": {
     "@eslint-types/unicorn": "^52.0.0",
-    "@eslint/js": "^9.17.0",
-    "@eslint/markdown": "^6.2.1",
-    "eslint-config-flat-gitignore": "^2.0.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-import-resolver-typescript": "^3.7.0",
-    "eslint-plugin-antfu": "^3.0.0",
+    "@eslint/js": "^9.19.0",
+    "@eslint/markdown": "^6.2.2",
+    "eslint-config-flat-gitignore": "^2.1.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-import-resolver-typescript": "^3.8.3",
+    "eslint-plugin-antfu": "^3.1.0",
     "eslint-plugin-import-x": "^4.6.1",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-package-json": "^0.22.0",
+    "eslint-plugin-package-json": "^0.26.0",
     "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-vue": "^9.32.0",
-    "typescript-eslint": "^8.23.0"
+    "typescript-eslint": "^8.25.0"
   },
   "devDependencies": {
     "@antfu/ni": "^0.23.2",
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/node": "^20.17.9",
-    "@typescript-eslint/utils": "^8.23.0",
-    "eslint": "^9.17.0",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.2"
+    "@typescript-eslint/utils": "^8.25.0",
+    "eslint": "^9.19.0",
+    "prettier": "^3.5.2",
+    "typescript": "^5.7.3"
   },
   "renovate": {
     "extends": [
