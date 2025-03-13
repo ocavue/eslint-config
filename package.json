@@ -55,7 +55,7 @@
     "typescript-eslint": "^8.26.1"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.23.2",
+    "@antfu/ni": "^23.3.1",
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/node": "^20.17.9",
     "@typescript-eslint/utils": "^8.26.1",
