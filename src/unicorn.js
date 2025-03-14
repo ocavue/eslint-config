@@ -27,8 +27,6 @@ export function unicorn() {
         'unicorn/prefer-includes': 'error',
         // String methods startsWith/endsWith instead of more complicated stuff
         'unicorn/prefer-string-starts-ends-with': 'error',
-        // textContent instead of innerText
-        'unicorn/prefer-text-content': 'error',
         // Enforce throwing type error when throwing error while checking typeof
         'unicorn/prefer-type-error': 'error',
         // Use new when throwing error
