@@ -1,7 +1,5 @@
 // @ts-check
 
-/// <reference types="@eslint-types/unicorn" />
-
 import plugin from 'eslint-plugin-unicorn'
 
 export function unicorn() {
@@ -17,8 +15,8 @@ export function unicorn() {
         'unicorn/error-message': 'error',
         // Uppercase regex escapes
         'unicorn/escape-case': 'error',
-        // Array.isArray instead of instanceof
-        'unicorn/no-instanceof-array': 'error',
+        // Array.isArray instead of instanceof etc
+        'unicorn/no-instanceof-builtins': 'error',
         // Prevent deprecated `new Buffer()`
         'unicorn/no-new-buffer': 'error',
         // Keep regex literals safe!
@@ -29,8 +27,6 @@ export function unicorn() {
         'unicorn/prefer-includes': 'error',
         // String methods startsWith/endsWith instead of more complicated stuff
         'unicorn/prefer-string-starts-ends-with': 'error',
-        // textContent instead of innerText
-        'unicorn/prefer-text-content': 'error',
         // Enforce throwing type error when throwing error while checking typeof
         'unicorn/prefer-type-error': 'error',
         // Use new when throwing error
