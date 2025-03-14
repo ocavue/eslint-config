@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.0](https://github.com/ocavue/eslint-config/compare/v2.12.5...v2.13.0) (2025-03-14)
+
+
+### Features
+
+* update eslint-plugin-unicorn to v57 ([#182](https://github.com/ocavue/eslint-config/issues/182)) ([d266a0c](https://github.com/ocavue/eslint-config/commit/d266a0c66710c2d482d6d14547b03a02ae6b7245))
+
 ## [2.12.5](https://github.com/ocavue/eslint-config/compare/v2.12.4...v2.12.5) (2025-03-01)
 
 
