@@ -1,15 +1,15 @@
 // @ts-check
 
-import pkgJson from 'eslint-plugin-package-json/configs/recommended'
+import pkgJson from 'eslint-plugin-package-json'
 
 /**
  * Sort package.json keys
  */
 export function packageJson() {
   const config = {
-    ...pkgJson,
+    ...pkgJson.configs.recommended,
     rules: {
-      ...pkgJson.rules,
+      ...pkgJson.configs.recommended.rules,
       'package-json/no-empty-fields': 'off',
       'package-json/valid-package-definition': 'off',
       'package-json/sort-collections': [
