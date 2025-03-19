@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.1](https://github.com/ocavue/eslint-config/compare/v2.13.0...v2.13.1) (2025-03-19)
+
+
+### Bug Fixes
+
+* update dependencies ([#184](https://github.com/ocavue/eslint-config/issues/184)) ([86dfe6f](https://github.com/ocavue/eslint-config/commit/86dfe6fa8a49ea456df2276c4a48a584f2a1b835))
+
 ## [2.13.0](https://github.com/ocavue/eslint-config/compare/v2.12.5...v2.13.0) (2025-03-14)
 
 
