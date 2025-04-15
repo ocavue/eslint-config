@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.1](https://github.com/ocavue/eslint-config/compare/v2.14.0...v2.14.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* ensure vue-eslint-parser version ([#192](https://github.com/ocavue/eslint-config/issues/192)) ([4e62f7b](https://github.com/ocavue/eslint-config/commit/4e62f7b3d05cd09eecfedf506d3e3a2604c7fc92))
+
 ## [2.14.0](https://github.com/ocavue/eslint-config/compare/v2.13.1...v2.14.0) (2025-04-15)
 
 
