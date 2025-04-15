@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.14.0](https://github.com/ocavue/eslint-config/compare/v2.13.1...v2.14.0) (2025-04-15)
+
+
+### Features
+
+* update dependency eslint-import-resolver-typescript to v4 ([#188](https://github.com/ocavue/eslint-config/issues/188)) ([010ed36](https://github.com/ocavue/eslint-config/commit/010ed362f94cea72de717278fc5fd358b40e7941))
+* update dependency eslint-plugin-unicorn to v58 ([#190](https://github.com/ocavue/eslint-config/issues/190)) ([1a596fb](https://github.com/ocavue/eslint-config/commit/1a596fb0aec98273cf4fe4b37858121e43a519b2))
+* update dependency eslint-plugin-vue to v10 ([#181](https://github.com/ocavue/eslint-config/issues/181)) ([1abbced](https://github.com/ocavue/eslint-config/commit/1abbced64646a63760987ae5f73b46f807064f05))
+
 ## [2.13.1](https://github.com/ocavue/eslint-config/compare/v2.13.0...v2.13.1) (2025-03-19)
 
 
