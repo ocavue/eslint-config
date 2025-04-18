@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.2](https://github.com/ocavue/eslint-config/compare/v2.14.1...v2.14.2) (2025-04-18)
+
+
+### Bug Fixes
+
+* add globals to vue ([#194](https://github.com/ocavue/eslint-config/issues/194)) ([3db7985](https://github.com/ocavue/eslint-config/commit/3db7985828a5addcff1c93f56de9a19758513412))
+
 ## [2.14.1](https://github.com/ocavue/eslint-config/compare/v2.14.0...v2.14.1) (2025-04-15)
 
 
