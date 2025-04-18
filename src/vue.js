@@ -2,6 +2,7 @@
 
 import prettierConfig from 'eslint-config-prettier'
 import vuePlugin from 'eslint-plugin-vue'
+import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_VUE } from './shared.js'
@@ -17,10 +18,11 @@ export function vue() {
       name: 'vue:language-options',
       files: [GLOB_VUE],
       languageOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        globals: globals.browser,
         parserOptions: {
           parser: tseslint.parser,
-          sourceType: 'module',
-          ecmaVersion: 'latest',
         },
       },
     },
