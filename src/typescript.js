@@ -88,6 +88,9 @@ export function typescript() {
           },
         ],
 
+        // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
+        '@typescript-eslint/no-inferrable-types': 'off',
+
         // TODO: We should set the rule below to error in the future
         '@typescript-eslint/require-await': 'warn',
       },
