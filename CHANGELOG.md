@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.3](https://github.com/ocavue/eslint-config/compare/v2.14.2...v2.14.3) (2025-04-18)
+
+
+### Bug Fixes
+
+* turn off `@typescript-eslint/no-inferrable-types` ([#197](https://github.com/ocavue/eslint-config/issues/197)) ([5c510a4](https://github.com/ocavue/eslint-config/commit/5c510a4a54cd98037f59f3b4d9c9b9b52ff38c4f))
+
 ## [2.14.2](https://github.com/ocavue/eslint-config/compare/v2.14.1...v2.14.2) (2025-04-18)
 
 
