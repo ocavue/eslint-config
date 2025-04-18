@@ -22,13 +22,13 @@ importers:
         version: 10.1.2(eslint@9.24.0)
       eslint-import-resolver-typescript:
         specifier: ^4.3.2
-        version: 4.3.2(eslint-plugin-import-x@4.10.3(eslint@9.24.0)(typescript@5.8.3))(eslint@9.24.0)
+        version: 4.3.2(eslint-plugin-import-x@4.10.5(eslint@9.24.0)(typescript@5.8.3))(eslint@9.24.0)
       eslint-plugin-antfu:
         specifier: ^3.1.1
         version: 3.1.1(eslint@9.24.0)
       eslint-plugin-import-x:
-        specifier: ^4.10.3
-        version: 4.10.3(eslint@9.24.0)(typescript@5.8.3)
+        specifier: ^4.10.5
+        version: 4.10.5(eslint@9.24.0)(typescript@5.8.3)
       eslint-plugin-no-only-tests:
         specifier: ^3.3.0
         version: 3.3.0
@@ -262,8 +262,8 @@ packages:
   '@octokit/types@13.10.0':
     resolution: {integrity: sha512-ifLaO34EbbPj0Xgro4G5lP5asESjwHracYJvVaPIyXMuiuXLlhic3S47cBdTb+jfODkTE5YtGCLt3Ay3+J97sA==}
 
-  '@pkgr/core@0.2.2':
-    resolution: {integrity: sha512-25L86MyPvnlQoX2MTIV2OiUcb6vJ6aRbFa9pbwByn95INKD5mFH2smgjDhq+fwJoqAgvgbdJLj6Tz7V9X5CFAQ==}
+  '@pkgr/core@0.2.4':
+    resolution: {integrity: sha512-ROFF39F6ZrnzSUEmQQZUar0Jt4xVoP9WnDRdWwF4NNcXs3xBTLgBUDoOwW141y1jP+S8nahIbdxbFC7IShw9Iw==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
   '@tybys/wasm-util@0.9.0':
@@ -773,8 +773,8 @@ packages:
     peerDependencies:
       eslint: '*'
 
-  eslint-plugin-import-x@4.10.3:
-    resolution: {integrity: sha512-Q7yx76tlOfzLGtXDt/sppdYrGNcbr9CrRXqJXTNIpM/7hfX9lRp1noE+PkYgN+xvW47TEeGZ0pgy29hlX9Y7UQ==}
+  eslint-plugin-import-x@4.10.5:
+    resolution: {integrity: sha512-cmteCl8P5q1lkuL/4qqQw1uvnQHytpv2fjHFZ2UIqSfkM0RwWm/KLgasXKIqDRjgMnmUJTeyP8+9hDpJJuiZgg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
@@ -2091,7 +2091,7 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 24.2.0
 
-  '@pkgr/core@0.2.2': {}
+  '@pkgr/core@0.2.4': {}
 
   '@tybys/wasm-util@0.9.0':
     dependencies:
@@ -2645,7 +2645,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@4.3.2(eslint-plugin-import-x@4.10.3(eslint@9.24.0)(typescript@5.8.3))(eslint@9.24.0):
+  eslint-import-resolver-typescript@4.3.2(eslint-plugin-import-x@4.10.5(eslint@9.24.0)(typescript@5.8.3))(eslint@9.24.0):
     dependencies:
       debug: 4.4.0
       eslint: 9.24.0
@@ -2655,7 +2655,7 @@ snapshots:
       tinyglobby: 0.2.12
       unrs-resolver: 1.5.0
     optionalDependencies:
-      eslint-plugin-import-x: 4.10.3(eslint@9.24.0)(typescript@5.8.3)
+      eslint-plugin-import-x: 4.10.5(eslint@9.24.0)(typescript@5.8.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -2663,9 +2663,9 @@ snapshots:
     dependencies:
       eslint: 9.24.0
 
-  eslint-plugin-import-x@4.10.3(eslint@9.24.0)(typescript@5.8.3):
+  eslint-plugin-import-x@4.10.5(eslint@9.24.0)(typescript@5.8.3):
     dependencies:
-      '@pkgr/core': 0.2.2
+      '@pkgr/core': 0.2.4
       '@types/doctrine': 0.0.9
       '@typescript-eslint/utils': 8.30.1(eslint@9.24.0)(typescript@5.8.3)
       debug: 4.4.0
