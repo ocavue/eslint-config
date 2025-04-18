@@ -27,5 +27,9 @@ jobs:
 
       - uses: ./.github/actions/setup
 
-      - name: Typecheck
+      - name: Build
         run: nr build
+
+      - name: Publish snapshot packages
+        if: ${{ github.event_name == 'pull_request' }}
+        run: ./node_modules/.bin/pkg-pr-new publish --pnpm
