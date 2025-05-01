@@ -46,6 +46,7 @@ export function typescript() {
           },
         ],
         '@typescript-eslint/no-import-type-side-effects': 'warn',
+        '@typescript-eslint/no-unnecessary-condition': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
         '@typescript-eslint/no-unnecessary-parameter-property-assignment':
           'warn',
