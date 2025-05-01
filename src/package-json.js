@@ -12,6 +12,7 @@ export function packageJson() {
       ...pkgJson.configs.recommended.rules,
       'package-json/no-empty-fields': 'off',
       'package-json/valid-package-definition': 'off',
+      'package-json/require-description': 'warn',
       'package-json/sort-collections': [
         'warn',
         [
