@@ -35,7 +35,7 @@
     "check": "prettier --check .",
     "fix": "eslint --fix . && prettier --write .",
     "lint": "eslint .",
-    "prepublishOnly": "pnpm run build build"
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@eslint/js": "^9.26.0",
