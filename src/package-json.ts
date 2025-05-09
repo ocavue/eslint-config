@@ -1,4 +1,4 @@
-// @ts-check
+
 
 import pkgJson from 'eslint-plugin-package-json'
 

@@ -1,4 +1,4 @@
-// @ts-check
+
 
 import * as importPlugin from 'eslint-plugin-import-x'
 

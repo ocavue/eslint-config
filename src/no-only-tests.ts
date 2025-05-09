@@ -1,4 +1,4 @@
-// @ts-check
+
 
 import plugin from 'eslint-plugin-no-only-tests'
 

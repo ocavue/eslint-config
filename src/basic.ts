@@ -1,4 +1,4 @@
-// @ts-check
+
 
 import { antfu } from './antfu.js'
 import { ignores } from './ignores.js'
