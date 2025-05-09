@@ -42,7 +42,8 @@ export function typescript() {
         '@typescript-eslint/consistent-type-imports': [
           'warn',
           {
-            fixStyle: 'inline-type-imports',
+            // Allow type imports in type annotations (e.g. `type T = import('Foo').Foo`)
+            disallowTypeAnnotations: false,
           },
         ],
         '@typescript-eslint/no-import-type-side-effects': 'warn',
