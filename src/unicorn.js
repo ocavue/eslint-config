@@ -40,7 +40,7 @@ export function unicorn() {
         // Improve regexes
         'unicorn/better-regex': 'error',
         // Enforce combining multiple `Array#push()` into one call.
-        'unicorn/no-array-push-push': 'warn',
+        'unicorn/prefer-single-call': 'warn',
         // Do not use a `for` loop that can be replaced with a `for-of` loop.
         'unicorn/no-for-loop': 'error',
         // Disallow eslint-disable comments without specific rule names
@@ -67,6 +67,8 @@ export function unicorn() {
         'unicorn/prefer-structured-clone': 'warn',
         // Prefer using the `String.raw` tag to avoid escaping `\`
         'unicorn/prefer-string-raw': 'warn',
+        // Prefer `import.meta.dirname` over `path.dirname(fileURLToPath(import.meta.url))`
+        'unicorn/prefer-import-meta-properties': 'warn',
       },
     },
   ]
