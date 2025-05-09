@@ -1,6 +1,9 @@
-export * from './src/typescript.js'
-export * from './src/prettier.js'
-export * from './src/basic.js'
-export * from './src/markdown.js'
-export * from './src/react.js'
-export * from './src/vue.js'
+// @ts-check
+
+
+export * from './typescript.js'
+export * from './prettier.js'
+export * from './basic.js'
+export * from './markdown.js'
+export * from './react.js'
+export * from './vue.js'
