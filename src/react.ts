@@ -8,7 +8,7 @@ const reactRecommended: Linter.Config =
   reactPlugin.configs.flat?.recommended || {}
 
 export function react(): Linter.Config[] {
-  const config: Linter.Config[] = [
+  return [
     {
       ...reactRecommended,
       name: 'react',
@@ -37,6 +37,4 @@ export function react(): Linter.Config[] {
       },
     },
   ]
-
-  return config
 }
