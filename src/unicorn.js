@@ -67,6 +67,8 @@ export function unicorn() {
         'unicorn/prefer-structured-clone': 'warn',
         // Prefer using the `String.raw` tag to avoid escaping `\`
         'unicorn/prefer-string-raw': 'warn',
+        // Prefer `import.meta.dirname` over `path.dirname(fileURLToPath(import.meta.url))`
+        'unicorn/prefer-import-meta-properties': 'warn',
       },
     },
   ]
