@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.16.0](https://github.com/ocavue/eslint-config/compare/v2.15.1...v2.16.0) (2025-05-09)
+
+
+### Features
+
+* allow type imports in type annotations ([#208](https://github.com/ocavue/eslint-config/issues/208)) ([757cd1e](https://github.com/ocavue/eslint-config/commit/757cd1ec3706ccae327cc259024c70b00e66b3db))
+
 ## [2.15.1](https://github.com/ocavue/eslint-config/compare/v2.15.0...v2.15.1) (2025-05-01)
 
 
