@@ -4,10 +4,10 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { GLOB_TS, GLOB_TSX } from './shared.js'
 
-const reactRecommended: Linter.Config =
-  reactPlugin.configs.flat?.recommended || {}
-
 export function react(): Linter.Config[] {
+  const reactRecommended: Linter.Config =
+    reactPlugin.configs.flat?.recommended || {}
+
   return [
     {
       ...reactRecommended,
