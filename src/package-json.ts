@@ -1,12 +1,11 @@
-// @ts-check
-
+import type { Linter } from 'eslint'
 import pkgJson from 'eslint-plugin-package-json'
 
 /**
  * Sort package.json keys
  */
-export function packageJson() {
-  const config = {
+export function packageJson(): Linter.Config[] {
+  const config: Linter.Config = {
     ...pkgJson.configs.recommended,
     rules: {
       ...pkgJson.configs.recommended.rules,
@@ -69,10 +68,5 @@ export function packageJson() {
       ],
     },
   }
-
-  /** @type {import('eslint').Linter.Config[]} */
-  // @ts-expect-error: unmatched types
-  const configs = [config]
-
-  return configs
+  return [config]
 }

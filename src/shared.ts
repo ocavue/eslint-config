@@ -1,5 +1,3 @@
-// @ts-check
-
 export const GLOB_SRC_EXT = '?([cm])[jt]s?(x)'
 export const GLOB_SRC = '**/*.?([cm])[jt]s?(x)'
 
@@ -25,7 +23,7 @@ export const GLOB_VUE = '**/*.vue'
 export const GLOB_YAML = '**/*.y?(a)ml'
 export const GLOB_HTML = '**/*.htm?(l)'
 
-export const GLOB_ALL_SRC = /** @type {const} */ ([
+export const GLOB_ALL_SRC = [
   GLOB_SRC,
   GLOB_STYLE,
   GLOB_JSON,
@@ -34,15 +32,16 @@ export const GLOB_ALL_SRC = /** @type {const} */ ([
   GLOB_VUE,
   GLOB_YAML,
   GLOB_HTML,
-])
+] as const
 
-export const GLOB_NODE_MODULES = /** @type {const} */ ('**/node_modules')
-export const GLOB_LOCKFILE = /** @type {const} */ ([
+export const GLOB_NODE_MODULES = '**/node_modules' as const
+export const GLOB_LOCKFILE = [
   '**/package-lock.json',
   '**/yarn.lock',
   '**/pnpm-lock.yaml',
-])
-export const GLOB_EXCLUDE = /** @type {const} */ ([
+] as const
+
+export const GLOB_EXCLUDE = [
   GLOB_NODE_MODULES,
   ...GLOB_LOCKFILE,
 
@@ -53,9 +52,9 @@ export const GLOB_EXCLUDE = /** @type {const} */ ([
   '**/LICENSE*',
   '**/__snapshots__',
   '**/.tsup',
-])
+] as const
 
-export const EXTENSIONS = /** @type {const} */ ['ts', 'js']
+export const EXTENSIONS = ['ts', 'js']
   .flatMap((ext) => [ext, ext + 'x'])
   .flatMap((ext) => [ext, 'm' + ext, 'c' + ext])
   .flatMap((ext) => [ext, 'd.' + ext])

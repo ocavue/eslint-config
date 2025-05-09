@@ -1,10 +1,8 @@
-// @ts-check
-
+import type { Linter } from 'eslint'
 import plugin from 'eslint-plugin-unicorn'
 
-export function unicorn() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function unicorn(): Linter.Config[] {
+  return [
     {
       name: 'unicorn',
       plugins: {
@@ -72,6 +70,4 @@ export function unicorn() {
       },
     },
   ]
-
-  return config
 }

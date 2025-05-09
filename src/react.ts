@@ -1,16 +1,14 @@
-// @ts-check
-
+import type { Linter } from 'eslint'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { GLOB_TS, GLOB_TSX } from './shared.js'
 
-/** @type {import('eslint').Linter.Config} */
-const reactRecommended = reactPlugin.configs.flat?.recommended || {}
+export function react(): Linter.Config[] {
+  const reactRecommended: Linter.Config =
+    reactPlugin.configs.flat?.recommended || {}
 
-export function react() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+  return [
     {
       ...reactRecommended,
       name: 'react',
@@ -39,6 +37,4 @@ export function react() {
       },
     },
   ]
-
-  return config
 }

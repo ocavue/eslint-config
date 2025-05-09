@@ -1,10 +1,8 @@
-// @ts-check
-
+import type { Linter } from 'eslint'
 import plugin from 'eslint-plugin-no-only-tests'
 
-export function noOnlyTests() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function noOnlyTests(): Linter.Config[] {
+  return [
     {
       name: 'no-only-tests',
       plugins: {
@@ -15,6 +13,4 @@ export function noOnlyTests() {
       },
     },
   ]
-
-  return config
 }
