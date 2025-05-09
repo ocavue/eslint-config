@@ -1,16 +1,14 @@
-
-
+import type { Linter } from 'eslint'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { GLOB_TS, GLOB_TSX } from './shared.js'
 
-/** @type {import('eslint').Linter.Config} */
-const reactRecommended = reactPlugin.configs.flat?.recommended || {}
+const reactRecommended: Linter.Config =
+  reactPlugin.configs.flat?.recommended || {}
 
-export function react() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function react(): Linter.Config[] {
+  const config: Linter.Config[] = [
     {
       ...reactRecommended,
       name: 'react',

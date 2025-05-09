@@ -1,14 +1,12 @@
-
-
 import markdownPlugin from '@eslint/markdown'
+import type { Linter } from 'eslint'
 
 import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
 
-export function markdown() {
+export function markdown(): Linter.Config[] {
   const recommended = markdownPlugin.configs?.processor
 
-  /** @type {import('eslint').Linter.Config[]} */
-  const recommendedConfig = Array.isArray(recommended)
+  const recommendedConfig: Linter.Config[] = Array.isArray(recommended)
     ? recommended
     : (() => {
         throw new Error(
@@ -16,8 +14,7 @@ export function markdown() {
         )
       })()
 
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+  const config: Linter.Config[] = [
     ...recommendedConfig,
 
     {
