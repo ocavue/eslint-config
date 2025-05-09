@@ -1,5 +1,4 @@
-
-
+import type { Linter } from 'eslint'
 import prettierConfig from 'eslint-config-prettier'
 import vuePlugin from 'eslint-plugin-vue'
 import globals from 'globals'
@@ -7,12 +6,10 @@ import tseslint from 'typescript-eslint'
 
 import { GLOB_VUE } from './shared.js'
 
-/** @type {import('eslint').Linter.Config[]} */
-const vueRecommended = vuePlugin.configs['flat/recommended']
+const vueRecommended: Linter.Config[] = vuePlugin.configs['flat/recommended']
 
-export function vue() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function vue(): Linter.Config[] {
+  const config: Linter.Config[] = [
     ...vueRecommended,
     {
       name: 'vue:language-options',
