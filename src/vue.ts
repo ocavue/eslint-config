@@ -6,11 +6,9 @@ import tseslint from 'typescript-eslint'
 
 import { GLOB_VUE } from './shared.js'
 
-const vueRecommended: Linter.Config[] = vuePlugin.configs['flat/recommended']
-
 export function vue(): Linter.Config[] {
-  const config: Linter.Config[] = [
-    ...vueRecommended,
+  return [
+    ...vuePlugin.configs['flat/recommended'],
     {
       name: 'vue:language-options',
       files: [GLOB_VUE],
@@ -38,6 +36,4 @@ export function vue(): Linter.Config[] {
       },
     },
   ]
-
-  return config
 }

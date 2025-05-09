@@ -10,7 +10,7 @@ import { typescript } from './typescript.js'
 import { unicorn } from './unicorn.js'
 
 export function basic(): Linter.Config[] {
-  const config: Linter.Config[] = [
+  return [
     ...ignores(),
     ...typescript(),
     ...imports(),
@@ -20,6 +20,4 @@ export function basic(): Linter.Config[] {
     ...noOnlyTests(),
     ...prettier(),
   ]
-
-  return config
 }
