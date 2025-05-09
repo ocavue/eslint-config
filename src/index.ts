@@ -1,6 +1,3 @@
-// @ts-check
-
-
 export * from './typescript.js'
 export * from './prettier.js'
 export * from './basic.js'
