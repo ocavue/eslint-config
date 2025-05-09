@@ -1,10 +1,8 @@
-
-
+import type { Linter } from 'eslint'
 import * as importPlugin from 'eslint-plugin-import-x'
 
-export function imports() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function imports(): Linter.Config[] {
+  return [
     {
       name: 'import',
       plugins: {
@@ -50,6 +48,4 @@ export function imports() {
       },
     },
   ]
-
-  return config
 }

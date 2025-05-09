@@ -1,19 +1,18 @@
-
-
 import eslint from '@eslint/js'
+import type { TSESLint } from '@typescript-eslint/utils'
+import type { Linter } from 'eslint'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js'
 
 export { tseslint }
 
-export function typescript() {
+export function typescript(): Linter.Config[] {
   const rules = [...tseslint.configs.recommended, ...tseslint.configs.stylistic]
     .map((config) => config.rules || {})
     .reduce((acc, cur) => ({ ...acc, ...cur }), {})
 
-  /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray} */
-  const config = [
+  const config: TSESLint.FlatConfig.ConfigArray = [
     eslint.configs.recommended,
     {
       name: 'typescript',
@@ -120,9 +119,8 @@ export function typescript() {
     },
   ]
 
-  /** @type {import('eslint').Linter.Config[]} */
   // @ts-expect-error: unmatched type
-  const configTyped = config
+  const configTyped: Linter.Config[] = config
 
   return configTyped
 }

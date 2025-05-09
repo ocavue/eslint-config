@@ -1,4 +1,4 @@
-
+import type { Linter } from 'eslint'
 
 import { antfu } from './antfu.js'
 import { ignores } from './ignores.js'
@@ -9,9 +9,8 @@ import { prettier } from './prettier.js'
 import { typescript } from './typescript.js'
 import { unicorn } from './unicorn.js'
 
-export function basic() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function basic(): Linter.Config[] {
+  const config: Linter.Config[] = [
     ...ignores(),
     ...typescript(),
     ...imports(),

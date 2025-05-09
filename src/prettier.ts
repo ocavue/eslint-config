@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import prettierConfig from 'eslint-config-prettier'
 
 /**
@@ -6,9 +7,8 @@ import prettierConfig from 'eslint-config-prettier'
  * Notice that this config does not run `prettier` as an ESLint rule, so you
  * have to run `pretter` separately for formatting.
  */
-export function prettier() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function prettier(): Linter.Config[] {
+  return [
     {
       name: 'prettier',
       rules: {
@@ -16,6 +16,4 @@ export function prettier() {
       },
     },
   ]
-
-  return config
 }

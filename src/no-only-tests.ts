@@ -1,10 +1,8 @@
-
-
+import type { Linter } from 'eslint'
 import plugin from 'eslint-plugin-no-only-tests'
 
 export function noOnlyTests() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+  const config: Linter.Config[] = [
     {
       name: 'no-only-tests',
       plugins: {

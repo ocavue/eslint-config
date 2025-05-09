@@ -1,8 +1,8 @@
+import type { Linter } from 'eslint'
 import antfuPlugin from 'eslint-plugin-antfu'
 
-export function antfu() {
-  /** @type {import('eslint').Linter.Config[]} */
-  const config = [
+export function antfu(): Linter.Config[] {
+  return [
     {
       name: 'antfu',
       plugins: {
@@ -14,6 +14,4 @@ export function antfu() {
       },
     },
   ]
-
-  return config
 }
