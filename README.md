@@ -17,12 +17,10 @@ $ npm install -D eslint prettier @ocavue/eslint-config
 
 ### Config ESLint
 
-You will need to use the new ["flat" ESLint configuration](https://eslint.org/docs/latest/use/configure/configuration-files-new) (i.e. `eslint.config.js`).
-
-In your `eslint.config.js` file, add the following to extend the basic config:
+Create `eslint.config.mjs` in your project root with the following content:
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 import { defineESLintConfig } from '@ocavue/eslint-config'
 
 export default defineESLintConfig()
@@ -31,7 +29,7 @@ export default defineESLintConfig()
 You can pass an optional object to the `defineESLintConfig` function to enable or disable the configs. For example, if you want to enable the React config, you can do the following:
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 import { defineESLintConfig } from '@ocavue/eslint-config'
 
 export default defineESLintConfig({ react: true })
