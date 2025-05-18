@@ -2,17 +2,19 @@ import type { Linter } from 'eslint'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
-import { GLOB_TS, GLOB_TSX } from './shared.js'
+import { resolveReactOptions, type ReactOptions } from './options.js'
+import type { Config } from './types.js'
 
-export function react(): Linter.Config[] {
-  const reactRecommended: Linter.Config =
-    reactPlugin.configs.flat?.recommended || {}
+export function react(options?: ReactOptions): Config[] {
+  const { files } = resolveReactOptions(options)
+
+  const reactRecommended: Linter.Config = reactPlugin.configs.flat.recommended
 
   return [
     {
       ...reactRecommended,
       name: 'react',
-      files: [GLOB_TS, GLOB_TSX],
+      files: files,
       settings: {
         react: {
           version: 'detect',
@@ -27,7 +29,7 @@ export function react(): Linter.Config[] {
 
     {
       name: 'react-hooks',
-      files: [GLOB_TS, GLOB_TSX],
+      files: files,
       plugins: {
         'react-hooks': reactHooksPlugin,
       },
