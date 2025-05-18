@@ -1,6 +1,7 @@
 import { defineConfig } from 'eslint/config'
 
 import { basic } from './basic.js'
+import { markdown } from './markdown.js'
 import { react } from './react.js'
 import type { Config } from './types.js'
 
@@ -18,15 +19,37 @@ export interface ESLintConfigOptions {
    * @default false
    */
   react?: boolean
+
+  /**
+   * Whether to enable Markdown configuration.
+   *
+   * @default true
+   */
+  markdown?: boolean
+}
+
+function resolveOptions(
+  options?: ESLintConfigOptions,
+): Required<ESLintConfigOptions> {
+  return {
+    react: options?.react ?? false,
+    markdown: options?.markdown ?? true,
+  }
 }
 
 export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
+  const resolvedOptions = resolveOptions(options)
+
   const configs: Config[] = []
 
   configs.push(...basic())
 
-  if (options?.react) {
+  if (resolvedOptions.react) {
     configs.push(...react())
+  }
+
+  if (resolvedOptions.markdown) {
+    configs.push(...markdown())
   }
 
   return defineConfig(configs)
