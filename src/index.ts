@@ -1,13 +1,8 @@
 import { defineConfig } from 'eslint/config'
 
 import { basic } from './basic.js'
-import { command } from './command.js'
-import { markdown } from './markdown.js'
 import { type ESLintConfigOptions, resolveOptions } from './options.js'
-import { react } from './react.js'
 import type { Config } from './types.js'
-import { unocss } from './unocss.js'
-import { vue } from './vue.js'
 
 export * from './basic.js'
 export * from './markdown.js'
@@ -18,10 +13,10 @@ export * from './vue.js'
 
 export type { Config, ESLintConfigOptions }
 
-export function defineESLintConfig(
+export async function defineESLintConfig(
   options?: ESLintConfigOptions,
   ...userConfigs: Config[]
-): Config[] {
+): Promise<Config[]> {
   const resolvedOptions = resolveOptions(options)
 
   const configs: Config[] = []
@@ -29,22 +24,27 @@ export function defineESLintConfig(
   configs.push(...basic())
 
   if (resolvedOptions.markdown) {
+    const { markdown } = await import('./markdown.js')
     configs.push(...markdown())
   }
 
   if (resolvedOptions.react) {
+    const { react } = await import('./react.js')
     configs.push(...react(trueToUndefined(resolvedOptions.react)))
   }
 
   if (resolvedOptions.vue) {
+    const { vue } = await import('./vue.js')
     configs.push(...vue(trueToUndefined(resolvedOptions.vue)))
   }
 
   if (resolvedOptions.unocss) {
+    const { unocss } = await import('./unocss.js')
     configs.push(...unocss())
   }
 
   if (resolvedOptions.command) {
+    const { command } = await import('./command.js')
     configs.push(...command())
   }
 
