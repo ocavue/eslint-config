@@ -57,7 +57,7 @@ If you are using VS Code, you and install [ESLint extension](https://marketplace
 }
 ```
 
-## Customize
+## Customization
 
 You can pass an optional object to the `defineESLintConfig` function to enable or disable the configs. Here is an example:
 
@@ -114,7 +114,31 @@ export interface ESLintConfigOptions {
 }
 ```
 
-## Alternative solutions
+You can pass the second and following arguments to the `defineESLintConfig` function to extend the config.
+
+```js
+// eslint.config.mjs
+import { defineESLintConfig } from '@ocavue/eslint-config'
+
+export default defineESLintConfig(
+  {
+    // Your options here
+  },
+  // More configs here:
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+  {
+    rules: {
+      'no-console': ['warn', { allow: ['warn', 'error', 'assert'] }],
+    },
+  },
+)
+```
+
+## Related projects
 
 - https://github.com/antfu/eslint-config
 - https://github.com/sxzz/eslint-config
