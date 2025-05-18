@@ -1,6 +1,6 @@
 export interface ESLintConfigOptions {
   /**
-   * Whether to enable Markdown configuration.
+   * Whether to check code blocks in Markdown files.
    *
    * @default false
    */

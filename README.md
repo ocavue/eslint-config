@@ -28,7 +28,7 @@ import { defineESLintConfig } from '@ocavue/eslint-config'
 export default defineESLintConfig()
 ```
 
-If you want to use the React config, you can do the following:
+You can pass an optional object to the `defineESLintConfig` function to enable or disable the configs. For example, if you want to enable the React config, you can do the following:
 
 ```js
 // eslint.config.js
@@ -37,22 +37,31 @@ import { defineESLintConfig } from '@ocavue/eslint-config'
 export default defineESLintConfig({ react: true })
 ```
 
-If you want to use the Vue config, you can do the following:
+The full type definition for the options is as follows:
 
-```js
-// eslint.config.js
-import { defineESLintConfig } from '@ocavue/eslint-config'
+```ts
+export interface ESLintConfigOptions {
+  /**
+   * Whether to check code blocks in Markdown files.
+   *
+   * @default false
+   */
+  markdown?: boolean
 
-export default defineESLintConfig({ vue: true })
-```
+  /**
+   * Whether to enable React configuration.
+   *
+   * @default false
+   */
+  react?: boolean
 
-If you want to use the check the code blocks in markdown files, you can do the following:
-
-```js
-// eslint.config.js
-import { defineESLintConfig } from '@ocavue/eslint-config'
-
-export default defineESLintConfig({ markdown: true })
+  /**
+   * Whether to enable Vue configuration.
+   *
+   * @default false
+   */
+  vue?: boolean
+}
 ```
 
 ### Add script for package.json
