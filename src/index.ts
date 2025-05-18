@@ -5,6 +5,7 @@ import { markdown } from './markdown.js'
 import { type ESLintConfigOptions, resolveOptions } from './options.js'
 import { react } from './react.js'
 import type { Config } from './types.js'
+import { unocss } from './unocss.js'
 import { vue } from './vue.js'
 
 export * from './basic.js'
@@ -33,6 +34,10 @@ export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
 
   if (resolvedOptions.vue) {
     configs.push(...vue(trueToUndefined(resolvedOptions.vue)))
+  }
+
+  if (resolvedOptions.unocss) {
+    configs.push(...unocss())
   }
 
   return defineConfig(configs)
