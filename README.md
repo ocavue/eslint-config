@@ -68,6 +68,13 @@ export interface ESLintConfigOptions {
    * @default false
    */
   unocss?: boolean
+
+  /**
+   * Whether to enable [eslint-plugin-command](https://www.npmjs.com/package/eslint-plugin-command) configuration.
+   *
+   * @default false
+   */
+  command?: boolean
 }
 ```
 
