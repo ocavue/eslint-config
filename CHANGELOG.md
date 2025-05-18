@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.18.0](https://github.com/ocavue/eslint-config/compare/v2.17.0...v2.18.0) (2025-05-18)
+
+
+### Features
+
+* add `defineESLintConfig` ([#220](https://github.com/ocavue/eslint-config/issues/220)) ([95a04c8](https://github.com/ocavue/eslint-config/commit/95a04c8f7745dd2cee72a31b01ca95e425f0a5ab))
+
 ## [2.17.0](https://github.com/ocavue/eslint-config/compare/v2.16.0...v2.17.0) (2025-05-09)
 
 
