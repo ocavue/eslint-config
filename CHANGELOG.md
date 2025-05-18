@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.20.0](https://github.com/ocavue/eslint-config/compare/v2.19.0...v2.20.0) (2025-05-18)
+
+
+### Features
+
+* add eslint-plugin-command ([#227](https://github.com/ocavue/eslint-config/issues/227)) ([0391999](https://github.com/ocavue/eslint-config/commit/039199982c891299d7fafff2e4ac7d31a61b2515))
+* add unocss ([#225](https://github.com/ocavue/eslint-config/issues/225)) ([e8b49e8](https://github.com/ocavue/eslint-config/commit/e8b49e8be89764b6c21f45d66ba19845a49637a8))
+* pass user configs to `defineESLintConfig` ([#228](https://github.com/ocavue/eslint-config/issues/228)) ([f2ca6c3](https://github.com/ocavue/eslint-config/commit/f2ca6c34fc25005c23e7a356accdda479f34e683))
+
 ## [2.19.0](https://github.com/ocavue/eslint-config/compare/v2.18.0...v2.19.0) (2025-05-18)
 
 
