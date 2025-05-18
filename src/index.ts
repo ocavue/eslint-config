@@ -32,7 +32,7 @@ export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
   }
 
   if (resolvedOptions.vue) {
-    configs.push(...vue())
+    configs.push(...vue(trueToUndefined(resolvedOptions.vue)))
   }
 
   return defineConfig(configs)
