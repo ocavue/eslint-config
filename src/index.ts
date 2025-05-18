@@ -28,7 +28,7 @@ export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
   }
 
   if (resolvedOptions.react) {
-    configs.push(...react())
+    configs.push(...react(trueToUndefined(resolvedOptions.react)))
   }
 
   if (resolvedOptions.vue) {
@@ -36,4 +36,8 @@ export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
   }
 
   return defineConfig(configs)
+}
+
+function trueToUndefined<T>(value: T | true): T | undefined {
+  return value === true ? undefined : value
 }

@@ -53,7 +53,7 @@ export interface ESLintConfigOptions {
    *
    * @default false
    */
-  react?: boolean
+  react?: boolean | ReactOptions
 
   /**
    * Whether to enable Vue configuration.
