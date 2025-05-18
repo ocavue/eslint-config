@@ -60,7 +60,14 @@ export interface ESLintConfigOptions {
    *
    * @default false
    */
-  vue?: boolean
+  vue?: boolean | VueOptions
+
+  /**
+   * Whether to enable UnoCSS configuration.
+   *
+   * @default false
+   */
+  unocss?: boolean
 }
 ```
 
