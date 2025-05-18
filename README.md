@@ -86,7 +86,7 @@ If you are using VS Code, you and install [ESLint extension](https://marketplace
 }
 ```
 
-## Alternative
+## Alternative solutions
 
 - https://github.com/antfu/eslint-config
 - https://github.com/sxzz/eslint-config
