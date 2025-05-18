@@ -18,7 +18,10 @@ export * from './vue.js'
 
 export type { Config, ESLintConfigOptions }
 
-export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
+export function defineESLintConfig(
+  options?: ESLintConfigOptions,
+  ...userConfigs: Config[]
+): Config[] {
   const resolvedOptions = resolveOptions(options)
 
   const configs: Config[] = []
@@ -44,6 +47,8 @@ export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
   if (resolvedOptions.command) {
     configs.push(...command())
   }
+
+  configs.push(...userConfigs)
 
   return defineConfig(configs)
 }
