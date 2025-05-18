@@ -22,17 +22,26 @@ export interface ESLintConfigOptions {
    * @default false
    */
   vue?: boolean | VueOptions
+
+  /**
+   * Whether to enable UnoCSS configuration.
+   *
+   * @default false
+   */
+  unocss?: boolean
 }
 
 export function resolveOptions({
   markdown = true,
   react = false,
   vue = false,
+  unocss = false,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
     markdown,
     react,
     vue,
+    unocss,
   }
 }
 
