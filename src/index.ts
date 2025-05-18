@@ -2,6 +2,7 @@ import { defineConfig } from 'eslint/config'
 
 import { basic } from './basic.js'
 import { markdown } from './markdown.js'
+import { type ESLintConfigOptions, resolveOptions } from './options.js'
 import { react } from './react.js'
 import type { Config } from './types.js'
 import { vue } from './vue.js'
@@ -13,40 +14,7 @@ export * from './react.js'
 export * from './typescript.js'
 export * from './vue.js'
 
-export interface ESLintConfigOptions {
-  /**
-   * Whether to enable Markdown configuration.
-   *
-   * @default false
-   */
-  markdown?: boolean
-
-  /**
-   * Whether to enable React configuration.
-   *
-   * @default false
-   */
-  react?: boolean
-
-  /**
-   * Whether to enable Vue configuration.
-   *
-   * @default false
-   */
-  vue?: boolean
-}
-
-function resolveOptions({
-  markdown = false,
-  react = false,
-  vue = false,
-}: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
-  return {
-    markdown,
-    react,
-    vue,
-  }
-}
+export type { Config, ESLintConfigOptions }
 
 export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
   const resolvedOptions = resolveOptions(options)
