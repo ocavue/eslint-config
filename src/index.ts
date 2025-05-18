@@ -1,6 +1,7 @@
 import { defineConfig } from 'eslint/config'
 
 import { basic } from './basic.js'
+import { command } from './command.js'
 import { markdown } from './markdown.js'
 import { type ESLintConfigOptions, resolveOptions } from './options.js'
 import { react } from './react.js'
@@ -38,6 +39,10 @@ export function defineESLintConfig(options?: ESLintConfigOptions): Config[] {
 
   if (resolvedOptions.unocss) {
     configs.push(...unocss())
+  }
+
+  if (resolvedOptions.command) {
+    configs.push(...command())
   }
 
   return defineConfig(configs)

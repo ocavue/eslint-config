@@ -30,6 +30,13 @@ export interface ESLintConfigOptions {
    * @default false
    */
   unocss?: boolean
+
+  /**
+   * Whether to enable [eslint-plugin-command](https://www.npmjs.com/package/eslint-plugin-command) configuration.
+   *
+   * @default false 
+   */
+  command?: boolean
 }
 
 export function resolveOptions({
@@ -37,12 +44,14 @@ export function resolveOptions({
   react = false,
   vue = false,
   unocss = false,
+  command = false,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
     markdown,
     react,
     vue,
     unocss,
+    command,
   }
 }
 
