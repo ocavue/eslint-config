@@ -26,13 +26,51 @@ import { defineESLintConfig } from '@ocavue/eslint-config'
 export default defineESLintConfig()
 ```
 
-You can pass an optional object to the `defineESLintConfig` function to enable or disable the configs. For example, if you want to enable the React config, you can do the following:
+### Add script for package.json
+
+```json
+{
+  "scripts": {
+    "lint": "eslint .",
+    "check": "prettier --check .",
+    "fix": "eslint --fix . && prettier --write ."
+  }
+}
+```
+
+### Add `.prettierignore`
+
+Add a [`.prettierignore`](https://prettier.io/docs/en/ignore.html#ignoring-files-prettierignore) file in the root of your project. You can copy the `.prettierignore` file from this project.
+
+### VS Code integration
+
+If you are using VS Code, you and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), then add the following to your VS Code settings:
+
+```json
+// .vscode/settings.json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
+```
+
+## Customize
+
+You can pass an optional object to the `defineESLintConfig` function to enable or disable the configs. Here is an example:
 
 ```js
 // eslint.config.mjs
 import { defineESLintConfig } from '@ocavue/eslint-config'
 
-export default defineESLintConfig({ react: true })
+export default defineESLintConfig({
+  // Enable React config and only apply for files under `src/react` directory.
+  react: { files: ['src/react/**/*.tsx'] },
+  // Enable Vue config.
+  vue: true,
+})
 ```
 
 The full type definition for the options is as follows:
@@ -73,37 +111,6 @@ export interface ESLintConfigOptions {
    * @default false
    */
   command?: boolean
-}
-```
-
-### Add script for package.json
-
-```json
-{
-  "scripts": {
-    "lint": "eslint .",
-    "check": "prettier --check .",
-    "fix": "eslint --fix . && prettier --write ."
-  }
-}
-```
-
-### Add `.prettierignore`
-
-Add a [`.prettierignore`](https://prettier.io/docs/en/ignore.html#ignoring-files-prettierignore) file in the root of your project. You can copy the `.prettierignore` file from this project.
-
-### VS Code integration
-
-If you are using VS Code, you and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), then add the following to your VS Code settings:
-
-```json
-// .vscode/settings.json
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  }
 }
 ```
 
