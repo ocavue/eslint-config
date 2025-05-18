@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.19.0](https://github.com/ocavue/eslint-config/compare/v2.18.0...v2.19.0) (2025-05-18)
+
+
+### Features
+
+* add `ReactOptions` ([#222](https://github.com/ocavue/eslint-config/issues/222)) ([2697420](https://github.com/ocavue/eslint-config/commit/2697420a26d5915b967d38bc3c60b6e3188af916))
+* add `VueOptions` ([#224](https://github.com/ocavue/eslint-config/issues/224)) ([02e0298](https://github.com/ocavue/eslint-config/commit/02e02988041a968acb9afc9bac1cb413392759f0))
+
 ## [2.18.0](https://github.com/ocavue/eslint-config/compare/v2.17.0...v2.18.0) (2025-05-18)
 
 
