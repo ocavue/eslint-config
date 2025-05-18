@@ -44,7 +44,7 @@ export interface ESLintConfigOptions {
   /**
    * Whether to check code blocks in Markdown files.
    *
-   * @default false
+   * @default true 
    */
   markdown?: boolean
 

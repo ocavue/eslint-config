@@ -2,7 +2,7 @@ export interface ESLintConfigOptions {
   /**
    * Whether to check code blocks in Markdown files.
    *
-   * @default false
+   * @default true
    */
   markdown?: boolean
 
@@ -22,7 +22,7 @@ export interface ESLintConfigOptions {
 }
 
 export function resolveOptions({
-  markdown = false,
+  markdown = true,
   react = false,
   vue = false,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
