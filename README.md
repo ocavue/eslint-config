@@ -23,36 +23,36 @@ In your `eslint.config.js` file, add the following to extend the basic config:
 
 ```js
 // eslint.config.js
-import { basic } from '@ocavue/eslint-config'
+import { defineESLintConfig } from '@ocavue/eslint-config'
 
-export default [...basic()]
+export default defineESLintConfig()
 ```
 
 If you want to use the React config, you can do the following:
 
 ```js
 // eslint.config.js
-import { basic, react } from '@ocavue/eslint-config'
+import { defineESLintConfig } from '@ocavue/eslint-config'
 
-export default [...basic(), ...react()]
+export default defineESLintConfig({ react: true })
 ```
 
 If you want to use the Vue config, you can do the following:
 
 ```js
 // eslint.config.js
-import { basic, vue } from '@ocavue/eslint-config'
+import { defineESLintConfig } from '@ocavue/eslint-config'
 
-export default [...basic(), ...vue()]
+export default defineESLintConfig({ vue: true })
 ```
 
 If you want to use the check the code blocks in markdown files, you can do the following:
 
 ```js
 // eslint.config.js
-import { basic, markdown } from '@ocavue/eslint-config'
+import { defineESLintConfig } from '@ocavue/eslint-config'
 
-export default [...basic(), ...markdown()]
+export default defineESLintConfig({ markdown: true })
 ```
 
 ### Add script for package.json
