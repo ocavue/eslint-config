@@ -17,7 +17,7 @@ export interface ESLintConfigOptions {
   /**
    * Whether to enable Markdown configuration.
    *
-   * @default true
+   * @default false
    */
   markdown?: boolean
 
@@ -37,7 +37,7 @@ export interface ESLintConfigOptions {
 }
 
 function resolveOptions({
-  markdown = true,
+  markdown = false,
   react = false,
   vue = false,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
