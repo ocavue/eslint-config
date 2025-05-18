@@ -1,4 +1,4 @@
-import { GLOB_TS, GLOB_TSX } from './shared.js'
+import { GLOB_TS, GLOB_TSX, GLOB_VUE } from './shared.js'
 import type { Config } from './types.js'
 
 export interface ESLintConfigOptions {
@@ -21,7 +21,7 @@ export interface ESLintConfigOptions {
    *
    * @default false
    */
-  vue?: boolean
+  vue?: boolean | VueOptions
 }
 
 export function resolveOptions({
@@ -50,5 +50,22 @@ export interface ReactOptions {
 export function resolveReactOptions({
   files = [GLOB_TS, GLOB_TSX],
 }: ReactOptions = {}): Required<ReactOptions> {
+  return { files }
+}
+
+export interface VueOptions {
+  /**
+   * The default files to lint.
+   *
+   * @default: All .vue files
+   *
+   * @see {@link Config.files}
+   */
+  files?: Config['files']
+}
+
+export function resolveVueOptions({
+  files = [GLOB_VUE],
+}: VueOptions = {}): Required<VueOptions> {
   return { files }
 }

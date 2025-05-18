@@ -4,14 +4,16 @@ import vuePlugin from 'eslint-plugin-vue'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
-import { GLOB_VUE } from './shared.js'
+import { resolveVueOptions, type VueOptions } from './options.js'
 
-export function vue(): Linter.Config[] {
+export function vue(options?: VueOptions): Linter.Config[] {
+  const { files } = resolveVueOptions(options)
+
   return [
     ...vuePlugin.configs['flat/recommended'],
     {
       name: 'vue:language-options',
-      files: [GLOB_VUE],
+      files: files,
       languageOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
