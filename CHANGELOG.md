@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/ocavue/eslint-config/compare/v3.0.0...v3.0.1) (2025-05-19)
+
+
+### Bug Fixes
+
+* disable rule `@typescript-eslint/no-unnecessary-condition` ([#236](https://github.com/ocavue/eslint-config/issues/236)) ([8fbb890](https://github.com/ocavue/eslint-config/commit/8fbb8902b6ffa2890d77ca1c2be44f1bb78ee0d9))
+
 ## [3.0.0](https://github.com/ocavue/eslint-config/compare/v2.21.0...v3.0.0) (2025-05-19)
 
 
