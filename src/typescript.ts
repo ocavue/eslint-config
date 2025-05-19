@@ -8,14 +8,23 @@ import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js'
 export { tseslint }
 
 export function typescript(): Linter.Config[] {
-  const rules = [...tseslint.configs.recommended, ...tseslint.configs.stylistic]
+  console.log(
+    'tseslint.configs.recommendedTypeChecked',
+    tseslint.configs.recommendedTypeChecked,
+  )
+  console.log('tseslint.configs.stylistic', tseslint.configs.stylistic)
+
+  const rules = [
+    ...tseslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.stylistic,
+  ]
     .map((config) => config.rules || {})
     .reduce((acc, cur) => ({ ...acc, ...cur }), {})
 
   const config: TSESLint.FlatConfig.ConfigArray = [
     eslint.configs.recommended,
     {
-      name: 'typescript',
+      name: 'ocavue/typescript/recommended',
       files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
       languageOptions: {
         parser: tseslint.parser,
