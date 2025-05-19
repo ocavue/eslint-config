@@ -60,13 +60,13 @@ function recommended(): TSESLint.FlatConfig.Config {
       '@typescript-eslint/no-explicit-any': 'off',
 
       '@typescript-eslint/no-unused-vars': [
-          'error',
-          {
-            argsIgnorePattern: '^_',
-            varsIgnorePattern: '^_',
-            caughtErrorsIgnorePattern: '^_',
-          },
-        ],
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
 
       '@typescript-eslint/triple-slash-reference': 'off',
     },
@@ -91,6 +91,7 @@ function recommendedTypeCheckedOnly(): TSESLint.FlatConfig.Config {
     'typescript-eslint/recommended-type-checked-only',
   )
 
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
   const rules = config?.rules || {}
 
   return {
