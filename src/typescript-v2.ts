@@ -57,7 +57,29 @@ function recommended(): TSESLint.FlatConfig.Config {
         },
       ],
 
+      '@typescript-eslint/no-explicit-any': 'off',
+
+      '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            argsIgnorePattern: '^_',
+            varsIgnorePattern: '^_',
+            caughtErrorsIgnorePattern: '^_',
+          },
+        ],
+
       '@typescript-eslint/triple-slash-reference': 'off',
+    },
+  }
+}
+
+function js(): TSESLint.FlatConfig.Config {
+  return {
+    name: 'ocavue/typescript/js',
+    files: [GLOB_JS, GLOB_JSX],
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/no-var-requires': 'off',
     },
   }
 }
@@ -116,6 +138,7 @@ export function typescript(): Linter.Config[] {
     recommended(),
     recommendedTypeCheckedOnly(),
     stylistic(),
+    js(),
   ]
 
   // @ts-expect-error: unmatched type

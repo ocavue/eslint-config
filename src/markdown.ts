@@ -18,7 +18,7 @@ export function markdown(): Linter.Config[] {
   }
 
   const disableExtra: Linter.Config = {
-    name: 'ocavue/markdown/disable-extra',
+    name: 'ocavue/markdown/disable-rules',
     files: [`${GLOB_MARKDOWN}/${GLOB_SRC}`, `${GLOB_MARKDOWN}/${GLOB_VUE}`],
     rules: {
       // Disable some import rules because they are not working well with

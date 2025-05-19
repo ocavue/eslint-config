@@ -69,14 +69,7 @@ export function typescript(): Linter.Config[] {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/restrict-template-expressions': 'off',
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          {
-            argsIgnorePattern: '^_',
-            varsIgnorePattern: '^_',
-            caughtErrorsIgnorePattern: '^_',
-          },
-        ],
+
         '@typescript-eslint/no-extra-semi': 'off',
         // '@typescript-eslint/prefer-function-type': 'warn',
 
@@ -108,7 +101,7 @@ export function typescript(): Linter.Config[] {
         '@typescript-eslint/no-unsafe-argument': 'warn',
         '@typescript-eslint/no-unsafe-member-access': 'warn',
         '@typescript-eslint/no-unsafe-assignment': 'warn',
-        '@typescript-eslint/no-explicit-any': 'off',
+
         // '@typescript-eslint/no-empty-function': 'off',
       },
     },
