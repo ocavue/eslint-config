@@ -2,13 +2,19 @@ import type { TSESLint } from '@typescript-eslint/utils'
 import type { Linter } from 'eslint'
 import tseslint from 'typescript-eslint'
 
-import { findConfigByName, GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
+import {
+  findConfigByName,
+  GLOB_JS,
+  GLOB_JSX,
+  GLOB_TS,
+  GLOB_TSX,
+} from './shared.js'
 import type { Config, Rules } from './types.js'
 
 export { tseslint }
 
 function eslintRecommendedRules(): Rules {
-  return tseslint.configs.eslintRecommended?.rules || {}
+  return tseslint.configs.eslintRecommended.rules || {}
 }
 
 function recommendedRules(): Rules {
@@ -136,11 +142,11 @@ function tsOnlyRules(): Rules {
 
     '@typescript-eslint/no-import-type-side-effects': 'warn',
 
-    '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'warn',
-
-    "@typescript-eslint/no-mixed-enums": "error",
+    '@typescript-eslint/no-mixed-enums': 'error',
 
     '@typescript-eslint/no-unnecessary-condition': 'error',
+
+    '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'warn',
 
     '@typescript-eslint/return-await': ['error', 'always'],
   }
