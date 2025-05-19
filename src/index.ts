@@ -1,6 +1,5 @@
 import { defineConfig } from 'eslint/config'
 
-import { basic } from './basic.js'
 import { type ESLintConfigOptions, resolveOptions } from './options.js'
 import type { Config } from './types.js'
 
@@ -21,7 +20,27 @@ export async function defineESLintConfig(
 
   const configs: Config[] = []
 
-  configs.push(...basic())
+  {
+    const { antfu } = await import('./antfu.js')
+    const { ignores } = await import('./ignores.js')
+    const { imports } = await import('./imports.js')
+    const { noOnlyTests } = await import('./no-only-tests.js')
+    const { packageJson } = await import('./package-json.js')
+    const { prettier } = await import('./prettier.js')
+    const { typescript } = await import('./typescript.js')
+    const { unicorn } = await import('./unicorn.js')
+
+    configs.push(
+      ...ignores(),
+      ...typescript(),
+      ...imports(),
+      ...packageJson(),
+      ...unicorn(),
+      ...antfu(),
+      ...noOnlyTests(),
+      ...prettier(),
+    )
+  }
 
   if (resolvedOptions.markdown) {
     const { markdown } = await import('./markdown.js')

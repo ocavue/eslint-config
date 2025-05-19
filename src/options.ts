@@ -1,8 +1,17 @@
+import type { FlatGitignoreOptions as GitignoreOptions } from 'eslint-config-flat-gitignore'
+
 import { GLOB_TS, GLOB_TSX, GLOB_VUE } from './shared.js'
 import type { Config } from './types.js'
 
 // Remember to update the README.md when adding new options
 export interface ESLintConfigOptions {
+  /**
+   * Whether to enable [eslint-config-flat-gitignore](https://www.npmjs.com/package/eslint-config-flat-gitignore) configuration.
+   *
+   * @default true
+   */
+  gitignore?: boolean | GitignoreOptions
+
   /**
    * Whether to check code blocks in Markdown files.
    *
@@ -34,12 +43,13 @@ export interface ESLintConfigOptions {
   /**
    * Whether to enable [eslint-plugin-command](https://www.npmjs.com/package/eslint-plugin-command) configuration.
    *
-   * @default false 
+   * @default false
    */
   command?: boolean
 }
 
 export function resolveOptions({
+  gitignore = true,
   markdown = true,
   react = false,
   vue = false,
@@ -47,6 +57,7 @@ export function resolveOptions({
   command = false,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
+    gitignore,
     markdown,
     react,
     vue,

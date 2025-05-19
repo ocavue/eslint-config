@@ -5,7 +5,7 @@ import { GLOB_EXCLUDE } from './shared.js'
 
 export function ignores(): Linter.Config[] {
   return [
-    { ignores: [...GLOB_EXCLUDE], name: 'basic-global-ignores' },
+    { ignores: [...GLOB_EXCLUDE], name: 'ocavue/ignores' },
     gitignore(),
   ]
 }
