@@ -144,8 +144,6 @@ function tsOnlyRules(): Rules {
 
     '@typescript-eslint/no-mixed-enums': 'error',
 
-    '@typescript-eslint/no-unnecessary-condition': 'error',
-
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'warn',
 
     '@typescript-eslint/return-await': ['error', 'always'],
