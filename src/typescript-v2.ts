@@ -61,11 +61,22 @@ function recommendedTypeCheckedOnly(): TSESLint.FlatConfig.Config {
 function stylistic(): TSESLint.FlatConfig.Config {
   const configs = [...tseslint.configs.stylistic]
   const config = findConfigByName(configs, 'typescript-eslint/stylistic')
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
   const rules = config?.rules || {}
   return {
     name: 'ocavue/typescript/stylistic',
     files: [GLOB_TS, GLOB_TSX],
-    rules: { ...rules },
+    rules: {
+      ...rules,
+      '@typescript-eslint/array-type': 'off',
+      '@typescript-eslint/consistent-indexed-object-style': 'off',
+      '@typescript-eslint/consistent-type-definitions': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
+      // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
+      '@typescript-eslint/no-inferrable-types': 'off',
+      '@typescript-eslint/prefer-for-of': 'off',
+      '@typescript-eslint/prefer-function-type': 'warn',
+    },
   }
 }
 

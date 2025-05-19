@@ -40,11 +40,11 @@ export function typescript(): Linter.Config[] {
       rules: {
         ...rules,
 
-        '@typescript-eslint/consistent-type-definitions': 'off',
+        // '@typescript-eslint/consistent-type-definitions': 'off',
         '@typescript-eslint/prefer-optional-chain': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
-        '@typescript-eslint/consistent-indexed-object-style': 'off',
-        '@typescript-eslint/array-type': 'off',
+        // '@typescript-eslint/consistent-indexed-object-style': 'off',
+        // '@typescript-eslint/array-type': 'off',
         '@typescript-eslint/dot-notation': 'off',
         '@typescript-eslint/triple-slash-reference': 'off',
         '@typescript-eslint/consistent-type-imports': [
@@ -78,7 +78,7 @@ export function typescript(): Linter.Config[] {
           },
         ],
         '@typescript-eslint/no-extra-semi': 'off',
-        '@typescript-eslint/prefer-function-type': 'warn',
+        // '@typescript-eslint/prefer-function-type': 'warn',
 
         '@typescript-eslint/no-misused-promises': [
           'error',
@@ -99,7 +99,7 @@ export function typescript(): Linter.Config[] {
         ],
 
         // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
-        '@typescript-eslint/no-inferrable-types': 'off',
+        // '@typescript-eslint/no-inferrable-types': 'off',
 
         // TODO: We should set the rule below to error in the future
         '@typescript-eslint/require-await': 'warn',
@@ -123,7 +123,7 @@ export function typescript(): Linter.Config[] {
         '@typescript-eslint/no-unsafe-member-access': 'warn',
         '@typescript-eslint/no-unsafe-assignment': 'warn',
         '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/no-empty-function': 'off',
+        // '@typescript-eslint/no-empty-function': 'off',
       },
     },
   ]
