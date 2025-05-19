@@ -58,3 +58,20 @@ export const EXTENSIONS = ['ts', 'js']
   .flatMap((ext) => [ext, ext + 'x'])
   .flatMap((ext) => [ext, 'm' + ext, 'c' + ext])
   .flatMap((ext) => [ext, 'd.' + ext])
+
+export function findConfigByName<T extends { name?: string }>(
+  configs: T[],
+  name: string,
+): T | undefined {
+  const config = configs.find((c) => c.name === name)
+  if (!config) {
+    console.error(
+      `[@ocavue/eslint-config] Unable to find config with name ${name}`,
+    )
+  }
+  return config
+}
+
+export function trueToUndefined<T>(value: T | true): T | undefined {
+  return value === true ? undefined : value
+}

@@ -2,9 +2,8 @@ import type { TSESLint } from '@typescript-eslint/utils'
 import type { Linter } from 'eslint'
 import tseslint from 'typescript-eslint'
 
-import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
+import { findConfigByName, GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 import type { Config, Rules } from './types.js'
-import { findConfigByName } from './utils.js'
 
 export { tseslint }
 
