@@ -3,6 +3,7 @@ import type { Linter } from 'eslint'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
+import type { Rules, Config } from './types.js'
 import { findConfigByName } from './utils.js'
 
 export { tseslint }
@@ -31,6 +32,10 @@ function eslintRecommended(): TSESLint.FlatConfig.Config {
     name: 'ocavue/typescript/eslint-recommended',
     files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
   }
+}
+
+function eslintRecommendedRules(): Rules {
+  return tseslint.configs.eslintRecommended?.rules || {}
 }
 
 function recommended(): TSESLint.FlatConfig.Config {
