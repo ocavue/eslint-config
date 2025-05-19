@@ -78,6 +78,34 @@ The full type definition for the options is as follows:
 ```ts
 export interface ESLintConfigOptions {
   /**
+   * Whether to enable [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) configuration.
+   *
+   * @default true
+   */
+  typescript?: boolean
+
+  /**
+   * Whether to enable [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) configuration.
+   *
+   * @default true
+   */
+  unicorn?: boolean
+
+  /**
+   * Whether to enable [eslint-plugin-package-json](https://www.npmjs.com/package/eslint-plugin-package-json) configuration.
+   *
+   * @default true
+   */
+  packageJson?: boolean
+
+  /**
+   * Whether to enable [eslint-plugin-import-x](https://www.npmjs.com/package/eslint-plugin-import-x) configuration.
+   *
+   * @default true
+   */
+  imports?: boolean
+
+  /**
    * Whether to check code blocks in Markdown files.
    *
    * @default true
@@ -111,6 +139,41 @@ export interface ESLintConfigOptions {
    * @default false
    */
   command?: boolean
+
+  /**
+   * Ignore some common files that should not be linted.
+   *
+   * @default true
+   */
+  ignores?: boolean | IgnoresOptions
+
+  /**
+   * Whether to enable [eslint-config-flat-gitignore](https://www.npmjs.com/package/eslint-config-flat-gitignore) configuration.
+   *
+   * @default true
+   */
+  gitignore?: boolean | GitignoreOptions
+
+  /**
+   * Whether to enable [eslint-plugin-antfu](https://www.npmjs.com/package/eslint-plugin-antfu) configuration.
+   *
+   * @default true
+   */
+  antfu?: boolean
+
+  /**
+   * Whether to enable [eslint-plugin-no-only-tests](https://www.npmjs.com/package/eslint-plugin-no-only-tests) configuration.
+   *
+   * @default true
+   */
+  noOnlyTests?: boolean
+
+  /**
+   * Whether to enable [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) configuration.
+   *
+   * @default true
+   */
+  prettier?: boolean
 }
 ```
 

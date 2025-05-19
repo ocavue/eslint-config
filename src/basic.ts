@@ -8,10 +8,12 @@ import { packageJson } from './package-json.js'
 import { prettier } from './prettier.js'
 import { typescript } from './typescript.js'
 import { unicorn } from './unicorn.js'
+import { gitignore } from './gitignore.js'
 
 export function basic(): Linter.Config[] {
   return [
     ...ignores(),
+    ...gitignore(),
     ...typescript(),
     ...imports(),
     ...packageJson(),
