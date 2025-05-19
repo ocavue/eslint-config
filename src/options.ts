@@ -1,17 +1,10 @@
 import type { FlatGitignoreOptions as GitignoreOptions } from 'eslint-config-flat-gitignore'
 
-import { GLOB_TS, GLOB_TSX, GLOB_VUE } from './shared.js'
+import { GLOB_EXCLUDE, GLOB_TS, GLOB_TSX, GLOB_VUE } from './shared.js'
 import type { Config } from './types.js'
 
 // Remember to update the README.md when adding new options
 export interface ESLintConfigOptions {
-  /**
-   * Whether to enable [eslint-config-flat-gitignore](https://www.npmjs.com/package/eslint-config-flat-gitignore) configuration.
-   *
-   * @default true
-   */
-  gitignore?: boolean | GitignoreOptions
-
   /**
    * Whether to check code blocks in Markdown files.
    *
@@ -46,23 +39,39 @@ export interface ESLintConfigOptions {
    * @default false
    */
   command?: boolean
+
+  /**
+   * Ignore some common files that should not be linted.
+   *
+   * @default true
+   */
+  ignores?: boolean | IgnoresOptions
+
+  /**
+   * Whether to enable [eslint-config-flat-gitignore](https://www.npmjs.com/package/eslint-config-flat-gitignore) configuration.
+   *
+   * @default true
+   */
+  gitignore?: boolean | GitignoreOptions
 }
 
 export function resolveOptions({
-  gitignore = true,
   markdown = true,
   react = false,
   vue = false,
   unocss = false,
   command = false,
+  ignores = true,
+  gitignore = true,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
-    gitignore,
     markdown,
     react,
     vue,
     unocss,
     command,
+    ignores,
+    gitignore,
   }
 }
 
@@ -98,4 +107,22 @@ export function resolveVueOptions({
   files = [GLOB_VUE],
 }: VueOptions = {}): Required<VueOptions> {
   return { files }
+}
+
+export interface IgnoresOptions {
+  /**
+   * An array of glob patterns indicating the files that the configuration
+   * object should not apply to.
+   *
+   * @default: some common files to ignore
+   *
+   * @see {@link Config.ignores}
+   */
+  ignores?: Config['ignores']
+}
+
+export function resolveIgnoresOptions({
+  ignores = [...GLOB_EXCLUDE],
+}: IgnoresOptions = {}): Required<IgnoresOptions> {
+  return { ignores }
 }

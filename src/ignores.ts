@@ -1,7 +1,8 @@
 import type { Linter } from 'eslint'
 
-import { GLOB_EXCLUDE } from './shared.js'
+import { resolveIgnoresOptions, type IgnoresOptions } from './options.js'
 
-export function ignores(): Linter.Config[] {
-  return [{ ignores: [...GLOB_EXCLUDE], name: 'ocavue/ignores' }]
+export function ignores(options?: IgnoresOptions): Linter.Config[] {
+  const { ignores } = resolveIgnoresOptions(options)
+  return [{ name: 'ocavue/ignores', ignores }]
 }
