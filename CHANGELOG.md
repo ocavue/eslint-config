@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.21.0](https://github.com/ocavue/eslint-config/compare/v2.20.0...v2.21.0) (2025-05-19)
+
+
+### Features
+
+* export more options ([#229](https://github.com/ocavue/eslint-config/issues/229)) ([11dc679](https://github.com/ocavue/eslint-config/commit/11dc679ee8a9f260508283057b67121040c125bd))
+
 ## [2.20.0](https://github.com/ocavue/eslint-config/compare/v2.19.0...v2.20.0) (2025-05-18)
 
 
