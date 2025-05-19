@@ -42,6 +42,11 @@ export async function defineESLintConfig(
     )
   }
 
+  if (resolvedOptions.gitignore) {
+    const { gitignore } = await import('./gitignore.js')
+    configs.push(...gitignore(trueToUndefined(resolvedOptions.gitignore)))
+  }
+
   if (resolvedOptions.markdown) {
     const { markdown } = await import('./markdown.js')
     configs.push(...markdown())
