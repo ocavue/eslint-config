@@ -6,6 +6,13 @@ import type { Config } from './types.js'
 // Remember to update the README.md when adding new options
 export interface ESLintConfigOptions {
   /**
+   * Whether to enable TypeScript configuration.
+   *
+   * @default true
+   */
+  typescript?: boolean
+
+  /**
    * Whether to check code blocks in Markdown files.
    *
    * @default true
@@ -56,6 +63,7 @@ export interface ESLintConfigOptions {
 }
 
 export function resolveOptions({
+  typescript = true,
   markdown = true,
   react = false,
   vue = false,
@@ -65,6 +73,7 @@ export function resolveOptions({
   gitignore = true,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
+    typescript,
     markdown,
     react,
     vue,

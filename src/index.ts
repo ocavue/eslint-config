@@ -26,11 +26,9 @@ export async function defineESLintConfig(
     const { noOnlyTests } = await import('./no-only-tests.js')
     const { packageJson } = await import('./package-json.js')
     const { prettier } = await import('./prettier.js')
-    const { typescript } = await import('./typescript.js')
     const { unicorn } = await import('./unicorn.js')
 
     configs.push(
-      ...typescript(),
       ...imports(),
       ...packageJson(),
       ...unicorn(),
@@ -48,6 +46,11 @@ export async function defineESLintConfig(
   if (resolvedOptions.gitignore) {
     const { gitignore } = await import('./gitignore.js')
     configs.push(...gitignore(trueToUndefined(resolvedOptions.gitignore)))
+  }
+
+  if (resolvedOptions.typescript) {
+    const { typescript } = await import('./typescript.js')
+    configs.push(...typescript())
   }
 
   if (resolvedOptions.markdown) {
