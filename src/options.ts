@@ -81,6 +81,27 @@ export interface ESLintConfigOptions {
    * @default true
    */
   gitignore?: boolean | GitignoreOptions
+
+  /**
+   * Whether to enable [eslint-plugin-antfu](https://www.npmjs.com/package/eslint-plugin-antfu) configuration.
+   *
+   * @default true
+   */
+  antfu?: boolean
+
+  /**
+   * Whether to enable [eslint-plugin-no-only-tests](https://www.npmjs.com/package/eslint-plugin-no-only-tests) configuration.
+   *
+   * @default true
+   */
+  noOnlyTests?: boolean
+
+  /**
+   * Whether to enable [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) configuration.
+   *
+   * @default true
+   */
+  prettier?: boolean
 }
 
 export function resolveOptions({
@@ -95,6 +116,9 @@ export function resolveOptions({
   command = false,
   ignores = true,
   gitignore = true,
+  antfu = true,
+  noOnlyTests = true,
+  prettier = true,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
     typescript,
@@ -108,6 +132,9 @@ export function resolveOptions({
     command,
     ignores,
     gitignore,
+    antfu,
+    noOnlyTests,
+    prettier,
   }
 }
 

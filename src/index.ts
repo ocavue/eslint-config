@@ -21,11 +21,18 @@ export async function defineESLintConfig(
   const configs: Config[] = []
 
   {
-    const { antfu } = await import('./antfu.js')
-    const { noOnlyTests } = await import('./no-only-tests.js')
-    const { prettier } = await import('./prettier.js')
-
-    configs.push(...antfu(), ...noOnlyTests(), ...prettier())
+    if (resolvedOptions.antfu) {
+      const { antfu } = await import('./antfu.js')
+      configs.push(...antfu())
+    }
+    if (resolvedOptions.noOnlyTests) {
+      const { noOnlyTests } = await import('./no-only-tests.js')
+      configs.push(...noOnlyTests())
+    }
+    if (resolvedOptions.prettier) {
+      const { prettier } = await import('./prettier.js')
+      configs.push(...prettier())
+    }
   }
 
   if (resolvedOptions.ignores) {
