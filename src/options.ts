@@ -13,6 +13,13 @@ export interface ESLintConfigOptions {
   typescript?: boolean
 
   /**
+   * Whether to enable [eslint-plugin-package-json](https://www.npmjs.com/package/eslint-plugin-package-json) configuration.
+   *
+   * @default true
+   */
+  packageJson?: boolean
+
+  /**
    * Whether to check code blocks in Markdown files.
    *
    * @default true
@@ -64,6 +71,7 @@ export interface ESLintConfigOptions {
 
 export function resolveOptions({
   typescript = true,
+  packageJson = true,
   markdown = true,
   react = false,
   vue = false,
@@ -74,6 +82,7 @@ export function resolveOptions({
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
     typescript,
+    packageJson,
     markdown,
     react,
     vue,
