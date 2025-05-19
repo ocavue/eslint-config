@@ -189,8 +189,9 @@ export default defineESLintConfig(
   },
   // More configs here:
   {
+    files: ['src/**/*.ts', 'src/**/*.tsx'],
     rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn',
     },
   },
   {
