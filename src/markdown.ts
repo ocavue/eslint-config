@@ -1,38 +1,26 @@
 import markdownPlugin from '@eslint/markdown'
 import type { Linter } from 'eslint'
+import tseslint from 'typescript-eslint'
 
 import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
 
 export function markdown(): Linter.Config[] {
-  const recommended: Linter.Config[] = markdownPlugin.configs.processor
+  const processor: Linter.Config[] = markdownPlugin.configs.processor
 
-  const extra: Linter.Config = {
+  // @ts-expect-error: unmatched type: https://github.com/typescript-eslint/typescript-eslint/issues/10899
+  const disableTypeCheckedBase: Linter.Config =
+    tseslint.configs.disableTypeChecked
+
+  const disableTypeChecked: Linter.Config = {
+    ...disableTypeCheckedBase,
+    name: 'ocavue/markdown/disable-type-checked',
     files: [`${GLOB_MARKDOWN}/${GLOB_SRC}`, `${GLOB_MARKDOWN}/${GLOB_VUE}`],
-    languageOptions: {
-      parserOptions: {
-        projectService: null,
-      },
-    },
-    rules: {
-      // Disable type-aware TypeScript rules, because the code blocks are not
-      // part of a compilable `tsconfig.json` project.
-      '@typescript-eslint/no-redeclare': 'off',
-      '@typescript-eslint/no-unused-vars': 'off',
-      '@typescript-eslint/no-use-before-define': 'off',
-      '@typescript-eslint/no-var-requires': 'off',
-      '@typescript-eslint/restrict-plus-operands': 'off',
-      '@typescript-eslint/no-unsafe-call': 'off',
-      '@typescript-eslint/no-unsafe-return': 'off',
-      '@typescript-eslint/no-unsafe-argument': 'off',
-      '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/no-unsafe-assignment': 'off',
-      '@typescript-eslint/no-floating-promises': 'off',
-      '@typescript-eslint/no-misused-promises': 'off',
-      '@typescript-eslint/await-thenable': 'off',
-      '@typescript-eslint/unbound-method': 'off',
-      '@typescript-eslint/require-await': 'off',
-      '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+  }
 
+  const disableExtra: Linter.Config = {
+    name: 'ocavue/markdown/disable-extra',
+    files: [`${GLOB_MARKDOWN}/${GLOB_SRC}`, `${GLOB_MARKDOWN}/${GLOB_VUE}`],
+    rules: {
       // Disable some import rules because they are not working well with
       // twoslash ---cut--- imports.
       'import/first': 'off',
@@ -40,9 +28,8 @@ export function markdown(): Linter.Config[] {
 
       'no-alert': 'off',
       'no-console': 'off',
-      'no-restricted-imports': 'off',
     },
   }
 
-  return [...recommended, extra]
+  return [...processor, disableTypeChecked, disableExtra]
 }
