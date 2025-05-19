@@ -3,13 +3,116 @@ import type { Linter } from 'eslint'
 import tseslint from 'typescript-eslint'
 
 import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
-import type { Rules, Config } from './types.js'
+import type { Config, Rules } from './types.js'
 import { findConfigByName } from './utils.js'
 
 export { tseslint }
 
-function baseConfig(): TSESLint.FlatConfig.Config {
+function eslintRecommendedRules(): Rules {
+  return tseslint.configs.eslintRecommended?.rules || {}
+}
+
+function recommendedRules(): Rules {
+  const configs = [...tseslint.configs.recommended]
+  const config = findConfigByName(configs, 'typescript-eslint/recommended')
+
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
+  const rules = config?.rules || {}
+
   return {
+    ...rules,
+
+    // `type T1 = T0` and `interface T2 extends T0 {}` have the same meaning
+    // but different behavior in TypeScript type checking. `T1` and `T0` are
+    // the same type, while `T2` is different than `T0`. We allow `interface
+    // T2 extends T0 {}` explicitly.
+    '@typescript-eslint/no-empty-object-type': [
+      'error',
+      {
+        allowInterfaces: 'with-single-extends',
+      },
+    ],
+
+    '@typescript-eslint/no-explicit-any': 'off',
+
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+      },
+    ],
+
+    '@typescript-eslint/triple-slash-reference': 'off',
+  }
+}
+
+function recommendedTypeCheckedOnlyRules(): Rules {
+  const configs = [...tseslint.configs.recommendedTypeCheckedOnly]
+  const config = findConfigByName(
+    configs,
+    'typescript-eslint/recommended-type-checked-only',
+  )
+
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
+  const rules = config?.rules || {}
+
+  return {
+    ...rules,
+  }
+}
+
+function stylisticRules(): Rules {
+  const configs = [...tseslint.configs.stylistic]
+  const config = findConfigByName(configs, 'typescript-eslint/stylistic')
+
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
+  const rules = config?.rules || {}
+
+  return {
+    ...rules,
+
+    '@typescript-eslint/array-type': 'off',
+
+    '@typescript-eslint/consistent-indexed-object-style': 'off',
+
+    '@typescript-eslint/consistent-type-definitions': 'off',
+
+    '@typescript-eslint/no-empty-function': 'off',
+
+    // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
+    '@typescript-eslint/no-inferrable-types': 'off',
+
+    '@typescript-eslint/prefer-for-of': 'off',
+
+    '@typescript-eslint/prefer-function-type': 'warn',
+  }
+}
+
+function commonRules(): Rules {
+  return {
+    ...eslintRecommendedRules,
+    ...recommendedRules(),
+  }
+}
+
+function tsOnlyRules(): Rules {
+  return {
+    ...recommendedTypeCheckedOnlyRules(),
+    ...stylisticRules(),
+  }
+}
+
+function jsOnlyRules(): Rules {
+  return {
+    '@typescript-eslint/no-require-imports': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+  }
+}
+
+export function typescript(): Linter.Config[] {
+  const base: TSESLint.FlatConfig.Config = {
     name: 'ocavue/typescript/base',
     files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
     languageOptions: {
@@ -24,129 +127,27 @@ function baseConfig(): TSESLint.FlatConfig.Config {
       '@typescript-eslint': tseslint.plugin,
     },
   }
-}
 
-function eslintRecommended(): TSESLint.FlatConfig.Config {
-  return {
-    ...tseslint.configs.eslintRecommended,
-    name: 'ocavue/typescript/eslint-recommended',
+  const common: TSESLint.FlatConfig.Config = {
+    name: 'ocavue/typescript/rules',
     files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
+    rules: commonRules(),
   }
-}
 
-function eslintRecommendedRules(): Rules {
-  return tseslint.configs.eslintRecommended?.rules || {}
-}
-
-function recommended(): TSESLint.FlatConfig.Config {
-  const configs = [...tseslint.configs.recommended]
-  const config = findConfigByName(configs, 'typescript-eslint/recommended')
-
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
-  const rules = config?.rules || {}
-
-  return {
-    name: 'ocavue/typescript/recommended',
-    files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
-    rules: {
-      ...rules,
-
-      // `type T1 = T0` and `interface T2 extends T0 {}` have the same meaning
-      // but different behavior in TypeScript type checking. `T1` and `T0` are
-      // the same type, while `T2` is different than `T0`. We allow `interface
-      // T2 extends T0 {}` explicitly.
-      '@typescript-eslint/no-empty-object-type': [
-        'error',
-        {
-          allowInterfaces: 'with-single-extends',
-        },
-      ],
-
-      '@typescript-eslint/no-explicit-any': 'off',
-
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
-      ],
-
-      '@typescript-eslint/triple-slash-reference': 'off',
-    },
+  const ts: TSESLint.FlatConfig.Config = {
+    name: 'ocavue/typescript/ts-only-rules',
+    files: [GLOB_TS, GLOB_TSX],
+    rules: tsOnlyRules(),
   }
-}
 
-function js(): TSESLint.FlatConfig.Config {
-  return {
-    name: 'ocavue/typescript/js',
+  const js: TSESLint.FlatConfig.Config = {
+    name: 'ocavue/typescript/js-only-rules',
     files: [GLOB_JS, GLOB_JSX],
-    rules: {
-      '@typescript-eslint/no-require-imports': 'off',
-      '@typescript-eslint/no-var-requires': 'off',
-    },
+    rules: jsOnlyRules(),
   }
-}
-
-function recommendedTypeCheckedOnly(): TSESLint.FlatConfig.Config {
-  const configs = [...tseslint.configs.recommendedTypeCheckedOnly]
-  const config = findConfigByName(
-    configs,
-    'typescript-eslint/recommended-type-checked-only',
-  )
-
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
-  const rules = config?.rules || {}
-
-  return {
-    name: 'ocavue/typescript/recommended-type-checked-only',
-    files: [GLOB_TS, GLOB_TSX],
-    rules: { ...rules },
-  }
-}
-
-function stylistic(): TSESLint.FlatConfig.Config {
-  const configs = [...tseslint.configs.stylistic]
-  const config = findConfigByName(configs, 'typescript-eslint/stylistic')
-
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
-  const rules = config?.rules || {}
-
-  return {
-    name: 'ocavue/typescript/stylistic',
-    files: [GLOB_TS, GLOB_TSX],
-    rules: {
-      ...rules,
-
-      '@typescript-eslint/array-type': 'off',
-
-      '@typescript-eslint/consistent-indexed-object-style': 'off',
-
-      '@typescript-eslint/consistent-type-definitions': 'off',
-
-      '@typescript-eslint/no-empty-function': 'off',
-
-      // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
-      '@typescript-eslint/no-inferrable-types': 'off',
-
-      '@typescript-eslint/prefer-for-of': 'off',
-
-      '@typescript-eslint/prefer-function-type': 'warn',
-    },
-  }
-}
-
-export function typescript(): Linter.Config[] {
-  const configs: TSESLint.FlatConfig.Config[] = [
-    baseConfig(),
-    eslintRecommended(),
-    recommended(),
-    recommendedTypeCheckedOnly(),
-    stylistic(),
-    js(),
-  ]
 
   // @ts-expect-error: unmatched type
+  const configs: Config[] = [base, common, ts, js]
+
   return configs
 }
