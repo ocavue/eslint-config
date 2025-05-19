@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.0.0](https://github.com/ocavue/eslint-config/compare/v2.21.0...v3.0.0) (2025-05-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* only export `defineESLintConfig` ([#233](https://github.com/ocavue/eslint-config/issues/233))
+
+### Features
+
+* enable typescript-eslint `recommended-type-checked` rules ([#231](https://github.com/ocavue/eslint-config/issues/231)) ([1be6257](https://github.com/ocavue/eslint-config/commit/1be62574c91d5fc393d42a5da3ae12cd37b94dbc))
+* only export `defineESLintConfig` ([#233](https://github.com/ocavue/eslint-config/issues/233)) ([bf53953](https://github.com/ocavue/eslint-config/commit/bf539539415ae7a01908e54f3f03cab3deb25de4))
+
 ## [2.21.0](https://github.com/ocavue/eslint-config/compare/v2.20.0...v2.21.0) (2025-05-19)
 
 
