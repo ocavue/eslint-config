@@ -137,6 +137,12 @@ function tsOnlyRules(): Rules {
     '@typescript-eslint/no-import-type-side-effects': 'warn',
 
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'warn',
+
+    "@typescript-eslint/no-mixed-enums": "error",
+
+    '@typescript-eslint/no-unnecessary-condition': 'error',
+
+    '@typescript-eslint/return-await': ['error', 'always'],
   }
 }
 
