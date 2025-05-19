@@ -40,13 +40,7 @@ export function typescript(): Linter.Config[] {
       rules: {
         ...rules,
 
-        // '@typescript-eslint/consistent-type-definitions': 'off',
-        // '@typescript-eslint/prefer-optional-chain': 'off',
-        // '@typescript-eslint/prefer-nullish-coalescing': 'off',
-        // '@typescript-eslint/consistent-indexed-object-style': 'off',
-        // '@typescript-eslint/array-type': 'off',
-        // '@typescript-eslint/dot-notation': 'off',
-        // '@typescript-eslint/triple-slash-reference': 'off',
+    
         '@typescript-eslint/consistent-type-imports': [
           'warn',
           {
