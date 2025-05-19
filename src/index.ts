@@ -1,14 +1,8 @@
 import { defineConfig } from 'eslint/config'
 
 import { type ESLintConfigOptions, resolveOptions } from './options.js'
+import { trueToUndefined } from './shared.js'
 import type { Config } from './types.js'
-
-export * from './basic.js'
-export * from './markdown.js'
-export * from './prettier.js'
-export * from './react.js'
-export * from './typescript.js'
-export * from './vue.js'
 
 export type { Config, ESLintConfigOptions }
 
@@ -93,8 +87,4 @@ export async function defineESLintConfig(
   configs.push(...userConfigs)
 
   return defineConfig(configs)
-}
-
-function trueToUndefined<T>(value: T | true): T | undefined {
-  return value === true ? undefined : value
 }
