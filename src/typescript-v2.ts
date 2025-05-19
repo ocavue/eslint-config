@@ -19,6 +19,7 @@ function recommendedRules(): Rules {
   // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
   const rules = config?.rules || {}
 
+  // @keep-sorted
   return {
     ...rules,
 
@@ -58,29 +59,30 @@ function recommendedTypeCheckedOnlyRules(): Rules {
   // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
   const rules = config?.rules || {}
 
+  // @keep-sorted
   return {
     ...rules,
 
-    '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
-
-    '@typescript-eslint/no-unsafe-call': 'warn',
-
-    '@typescript-eslint/no-unsafe-return': 'warn',
-
-    '@typescript-eslint/no-unsafe-argument': 'warn',
-
-    '@typescript-eslint/no-unsafe-member-access': 'warn',
-
-    '@typescript-eslint/no-unsafe-assignment': 'warn',
-
     '@typescript-eslint/no-floating-promises': 'warn',
-
-    '@typescript-eslint/restrict-template-expressions': 'off',
 
     '@typescript-eslint/no-misused-promises': [
       'error',
       { checksVoidReturn: false },
     ],
+
+    '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
+
+    '@typescript-eslint/no-unsafe-argument': 'warn',
+
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+
+    '@typescript-eslint/no-unsafe-call': 'warn',
+
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+
+    '@typescript-eslint/no-unsafe-return': 'warn',
+
+    '@typescript-eslint/restrict-template-expressions': 'off',
   }
 }
 
@@ -91,6 +93,7 @@ function stylisticRules(): Rules {
   // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
   const rules = config?.rules || {}
 
+  // @keep-sorted
   return {
     ...rules,
 
@@ -119,6 +122,7 @@ function commonRules(): Rules {
 }
 
 function tsOnlyRules(): Rules {
+  // @keep-sorted
   return {
     ...recommendedTypeCheckedOnlyRules(),
     ...stylisticRules(),
@@ -138,6 +142,7 @@ function tsOnlyRules(): Rules {
 }
 
 function jsOnlyRules(): Rules {
+  // @keep-sorted
   return {
     '@typescript-eslint/no-require-imports': 'off',
     '@typescript-eslint/no-var-requires': 'off',
