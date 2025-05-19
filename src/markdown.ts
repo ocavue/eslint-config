@@ -28,6 +28,8 @@ export function markdown(): Linter.Config[] {
 
       'no-alert': 'off',
       'no-console': 'off',
+
+      '@typescript-eslint/no-unused-vars': 'off',
     },
   }
 
