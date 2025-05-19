@@ -20,6 +20,13 @@ export interface ESLintConfigOptions {
   packageJson?: boolean
 
   /**
+   * Whether to enable [eslint-plugin-import-x](https://www.npmjs.com/package/eslint-plugin-import-x) configuration.
+   *
+   * @default true
+   */
+  imports?: boolean
+
+  /**
    * Whether to check code blocks in Markdown files.
    *
    * @default true
@@ -72,6 +79,7 @@ export interface ESLintConfigOptions {
 export function resolveOptions({
   typescript = true,
   packageJson = true,
+  imports = true,
   markdown = true,
   react = false,
   vue = false,
@@ -83,6 +91,7 @@ export function resolveOptions({
   return {
     typescript,
     packageJson,
+    imports,
     markdown,
     react,
     vue,

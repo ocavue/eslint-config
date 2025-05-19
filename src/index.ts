@@ -22,18 +22,11 @@ export async function defineESLintConfig(
 
   {
     const { antfu } = await import('./antfu.js')
-    const { imports } = await import('./imports.js')
     const { noOnlyTests } = await import('./no-only-tests.js')
     const { prettier } = await import('./prettier.js')
     const { unicorn } = await import('./unicorn.js')
 
-    configs.push(
-      ...imports(),
-      ...unicorn(),
-      ...antfu(),
-      ...noOnlyTests(),
-      ...prettier(),
-    )
+    configs.push(...unicorn(), ...antfu(), ...noOnlyTests(), ...prettier())
   }
 
   if (resolvedOptions.ignores) {
@@ -54,6 +47,11 @@ export async function defineESLintConfig(
   if (resolvedOptions.packageJson) {
     const { packageJson } = await import('./package-json.js')
     configs.push(...packageJson())
+  }
+
+  if (resolvedOptions.imports) {
+    const { imports } = await import('./imports.js')
+    configs.push(...imports())
   }
 
   if (resolvedOptions.markdown) {
