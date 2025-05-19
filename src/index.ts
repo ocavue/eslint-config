@@ -24,9 +24,8 @@ export async function defineESLintConfig(
     const { antfu } = await import('./antfu.js')
     const { noOnlyTests } = await import('./no-only-tests.js')
     const { prettier } = await import('./prettier.js')
-    const { unicorn } = await import('./unicorn.js')
 
-    configs.push(...unicorn(), ...antfu(), ...noOnlyTests(), ...prettier())
+    configs.push(...antfu(), ...noOnlyTests(), ...prettier())
   }
 
   if (resolvedOptions.ignores) {
@@ -42,6 +41,11 @@ export async function defineESLintConfig(
   if (resolvedOptions.typescript) {
     const { typescript } = await import('./typescript.js')
     configs.push(...typescript())
+  }
+
+  if (resolvedOptions.unicorn) {
+    const { unicorn } = await import('./unicorn.js')
+    configs.push(...unicorn())
   }
 
   if (resolvedOptions.packageJson) {

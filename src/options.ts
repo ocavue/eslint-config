@@ -13,6 +13,13 @@ export interface ESLintConfigOptions {
   typescript?: boolean
 
   /**
+   * Whether to enable [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) configuration.
+   *
+   * @default true
+   */
+  unicorn?: boolean
+
+  /**
    * Whether to enable [eslint-plugin-package-json](https://www.npmjs.com/package/eslint-plugin-package-json) configuration.
    *
    * @default true
@@ -78,6 +85,7 @@ export interface ESLintConfigOptions {
 
 export function resolveOptions({
   typescript = true,
+  unicorn = true,
   packageJson = true,
   imports = true,
   markdown = true,
@@ -90,6 +98,7 @@ export function resolveOptions({
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
     typescript,
+    unicorn,
     packageJson,
     imports,
     markdown,
