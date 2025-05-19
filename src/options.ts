@@ -6,7 +6,7 @@ import type { Config } from './types.js'
 // Remember to update the README.md when adding new options
 export interface ESLintConfigOptions {
   /**
-   * Whether to enable TypeScript configuration.
+   * Whether to enable [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) configuration.
    *
    * @default true
    */
