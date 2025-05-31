@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/ocavue/eslint-config/compare/v3.0.1...v3.1.0) (2025-05-31)
+
+
+### Features
+
+* add eslint-plugin-react-compiler ([#241](https://github.com/ocavue/eslint-config/issues/241)) ([42357bf](https://github.com/ocavue/eslint-config/commit/42357bf5fd30fd88517fdd97a0231d30cfb54a33))
+
 ## [3.0.1](https://github.com/ocavue/eslint-config/compare/v3.0.0...v3.0.1) (2025-05-19)
 
 
