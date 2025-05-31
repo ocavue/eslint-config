@@ -147,12 +147,20 @@ export interface ReactOptions {
    * @see {@link Config.files}
    */
   files?: Config['files']
+
+  /**
+   * Whether to enable [eslint-plugin-react-compiler](https://www.npmjs.com/package/eslint-plugin-react-compiler) configuration.
+   *
+   * @default false
+   */
+  reactCompiler?: boolean
 }
 
 export function resolveReactOptions({
   files = [GLOB_TS, GLOB_TSX],
+  reactCompiler = false,
 }: ReactOptions = {}): Required<ReactOptions> {
-  return { files }
+  return { files, reactCompiler }
 }
 
 export interface VueOptions {
