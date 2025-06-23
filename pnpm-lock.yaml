@@ -30,8 +30,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(eslint@9.28.0(jiti@2.4.2))
       eslint-plugin-command:
-        specifier: ^3.2.1
-        version: 3.2.1(eslint@9.28.0(jiti@2.4.2))
+        specifier: ^3.3.1
+        version: 3.3.1(eslint@9.28.0(jiti@2.4.2))
       eslint-plugin-import-x:
         specifier: ^4.15.2
         version: 4.15.2(@typescript-eslint/utils@8.34.1(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2))
@@ -39,8 +39,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       eslint-plugin-package-json:
-        specifier: ^0.40.2
-        version: 0.40.2(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
+        specifier: ^0.40.4
+        version: 0.40.4(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
       eslint-plugin-react:
         specifier: ^7.37.5
         version: 7.37.5(eslint@9.28.0(jiti@2.4.2))
@@ -82,11 +82,11 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
       pkg-pr-new:
-        specifier: ^0.0.51
-        version: 0.0.51
+        specifier: ^0.0.53
+        version: 0.0.53
       prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
+        specifier: ^3.6.0
+        version: 3.6.0
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -903,8 +903,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-fix-utils@0.3.0:
-    resolution: {integrity: sha512-0wAVRhCkSCSu4goaIb05gKjFxTd/FC3Jee0ptvWYHS2gBh1mDhsrFyg6JyK47wvM10az/Ns4BlATbTW9HIoQ+Q==}
+  eslint-fix-utils@0.4.0:
+    resolution: {integrity: sha512-nCEciwqByGxsKiWqZjqK7xfL+7dUX9Pi0UL3J0tOwfxVN9e6Y59UxEt1ZYsc3XH0ce6T1WQM/QU2DbKK/6IG7g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       '@types/estree': '>=1'
@@ -940,8 +940,8 @@ packages:
     peerDependencies:
       eslint: '*'
 
-  eslint-plugin-command@3.2.1:
-    resolution: {integrity: sha512-PcpzWe8dvAPaBobxE9zgz1w94fO4JYvzciDzw6thlUb9Uqf5e2/gJz97itOGxvdq+mFeudi71m1OGFgvWmb93w==}
+  eslint-plugin-command@3.3.1:
+    resolution: {integrity: sha512-fBVTXQ2y48TVLT0+4A6PFINp7GcdIailHAXbvPBixE7x+YpYnNQhFZxTdvnb+aWk+COgNebQKen/7m4dmgyWAw==}
     peerDependencies:
       eslint: '*'
 
@@ -962,8 +962,8 @@ packages:
     resolution: {integrity: sha512-brcKcxGnISN2CcVhXJ/kEQlNa0MEfGRtwKtWA16SkqXHKitaKIMrfemJKLKX1YqDU5C/5JY3PvZXd5jEW04e0Q==}
     engines: {node: '>=5.0.0'}
 
-  eslint-plugin-package-json@0.40.2:
-    resolution: {integrity: sha512-HwQ+HK0tvwd81QTuDSBagKf02NXLXoN8JNg48+RRbBclAMNN5n6MZbQriZaPZynq+58PlugmCiYCbBJ8MtoBsw==}
+  eslint-plugin-package-json@0.40.4:
+    resolution: {integrity: sha512-TBL+tOVV6oqohayg9jXnJpwA13sYMR8fsucwHm2zsv7B20nyMYv9lJcQaJ1kNWj1Uj+mlv+PS0K2KHq7sJdT6Q==}
     engines: {node: ^=20.19.0 || >=22.12.0}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -1658,8 +1658,8 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  package-json-validator@0.14.0:
-    resolution: {integrity: sha512-6YkopweMUpKWBAVREhx/OEWzSjewi5vGw1o5m3H/eroonxb1YkuX018dWgP1ioPmNiWskpW8WE4K/AKplUvydg==}
+  package-json-validator@0.15.0:
+    resolution: {integrity: sha512-RnkruEPcr0DtlsTKqAySFQ4btD8KNyWaCDfkvA2BGSa7ST4hDFvHyeoEOn7kkscEx0UnQ9o7AJoQA0zC1lc7yQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -1692,8 +1692,8 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
-  pkg-pr-new@0.0.51:
-    resolution: {integrity: sha512-jilf8dCTUE/iXaJSaNw5iPrNcSWd0s1b2deVXaTJVY3r610TBiio3uWjkmFIs2okThyPq8O+H55KcBcc+baBIQ==}
+  pkg-pr-new@0.0.53:
+    resolution: {integrity: sha512-BUyKB6KZCT8fbAafcz0XgjDAFokeG4kjPn5LVt+Xd0fJDB2FcRhWZsyhcbduc8KmgXv2F7/icu/Zwf+SgYJZwQ==}
     hasBin: true
 
   pkg-types@1.3.1:
@@ -1715,8 +1715,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.0:
+    resolution: {integrity: sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3073,7 +3073,7 @@ snapshots:
     dependencies:
       eslint: 9.28.0(jiti@2.4.2)
 
-  eslint-fix-utils@0.3.0(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2)):
+  eslint-fix-utils@0.4.0(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2)):
     dependencies:
       eslint: 9.28.0(jiti@2.4.2)
     optionalDependencies:
@@ -3105,7 +3105,7 @@ snapshots:
     dependencies:
       eslint: 9.28.0(jiti@2.4.2)
 
-  eslint-plugin-command@3.2.1(eslint@9.28.0(jiti@2.4.2)):
+  eslint-plugin-command@3.3.1(eslint@9.28.0(jiti@2.4.2)):
     dependencies:
       '@es-joy/jsdoccomment': 0.50.2
       eslint: 9.28.0(jiti@2.4.2)
@@ -3129,16 +3129,16 @@ snapshots:
 
   eslint-plugin-no-only-tests@3.3.0: {}
 
-  eslint-plugin-package-json@0.40.2(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0):
+  eslint-plugin-package-json@0.40.4(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0):
     dependencies:
       '@altano/repository-tools': 1.0.1
       change-case: 5.4.4
       detect-indent: 7.0.1
       detect-newline: 4.0.1
       eslint: 9.28.0(jiti@2.4.2)
-      eslint-fix-utils: 0.3.0(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2))
+      eslint-fix-utils: 0.4.0(@types/estree@1.0.7)(eslint@9.28.0(jiti@2.4.2))
       jsonc-eslint-parser: 2.4.0
-      package-json-validator: 0.14.0
+      package-json-validator: 0.15.0
       semver: 7.7.2
       sort-object-keys: 1.1.3
       sort-package-json: 3.2.1
@@ -4083,7 +4083,7 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  package-json-validator@0.14.0:
+  package-json-validator@0.15.0:
     dependencies:
       yargs: 18.0.0
 
@@ -4105,7 +4105,7 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pkg-pr-new@0.0.51:
+  pkg-pr-new@0.0.53:
     dependencies:
       '@jsdevtools/ez-spawn': 3.0.4
       '@octokit/action': 6.1.0
@@ -4132,7 +4132,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.5.3: {}
+  prettier@3.6.0: {}
 
   prop-types@15.8.1:
     dependencies:
