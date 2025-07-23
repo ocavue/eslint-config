@@ -9,13 +9,13 @@ importers:
   .:
     dependencies:
       '@eslint/js':
-        specifier: ^9.29.0
+        specifier: ^9.31.0
         version: 9.31.0
       '@eslint/markdown':
         specifier: ^7.1.0
         version: 7.1.0
       '@unocss/eslint-config':
-        specifier: ^66.2.3
+        specifier: ^66.3.3
         version: 66.3.3(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       eslint-config-flat-gitignore:
         specifier: ^2.1.0
@@ -76,7 +76,7 @@ importers:
         specifier: ^8.38.0
         version: 8.38.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       eslint:
-        specifier: ^9.29.0
+        specifier: ^9.31.0
         version: 9.31.0(jiti@2.4.2)
       jiti:
         specifier: ^2.4.2
