@@ -36,9 +36,9 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@eslint/js": "^9.29.0",
+    "@eslint/js": "^9.31.0",
     "@eslint/markdown": "^7.1.0",
-    "@unocss/eslint-config": "^66.2.3",
+    "@unocss/eslint-config": "^66.3.3",
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -60,7 +60,7 @@
     "@ocavue/tsconfig": "^0.3.7",
     "@types/node": "^20.17.9",
     "@typescript-eslint/utils": "^8.38.0",
-    "eslint": "^9.29.0",
+    "eslint": "^9.31.0",
     "jiti": "^2.4.2",
     "pkg-pr-new": "^0.0.54",
     "prettier": "^3.6.2",
