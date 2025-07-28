@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint'
 import reactPlugin from 'eslint-plugin-react'
-import reactCompiler from "eslint-plugin-react-compiler"
+import reactCompiler from 'eslint-plugin-react-compiler'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { resolveReactOptions, type ReactOptions } from './options.js'
