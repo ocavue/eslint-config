@@ -5,15 +5,13 @@ inputs:
   node-version:
     description: The version of node.js
     required: false
-    default: '20'
+    default: '24'
 
 runs:
   using: composite
   steps:
     - name: Install pnpm
-      uses: pnpm/action-setup@v2
-      with:
-        run_install: false
+      uses: pnpm/action-setup@v4
 
     - name: Setup node
       uses: actions/setup-node@v4
@@ -22,10 +20,20 @@ runs:
         cache: pnpm
         registry-url: 'https://registry.npmjs.org'
 
-    - name: Setup ni
-      run: npm i -g @antfu/ni
+    - name: Check npm version
       shell: bash
+      run: npm --version
+
+    - name: Update npm
+      shell: bash
+      run: npm install -g npm@latest
+
+    # NPM v11.5.0 added support for OIDC publish
+    # https://docs.npmjs.com/cli/v11/using-npm/changelog#1150-2025-07-24
+    - name: Check npm version
+      shell: bash
+      run: npm --version
 
     - name: Install
-      run: ni
+      run: pnpm install
       shell: bash

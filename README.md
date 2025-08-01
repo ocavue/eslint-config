@@ -1,5 +1,7 @@
 # @ocavue/eslint-config
 
+[![npm](https://img.shields.io/npm/v/@ocavue/eslint-config)](https://www.npmjs.com/package/@ocavue/eslint-config)
+
 A set of ESLint shareable configs for TypeScript projects.
 
 - Out of the box support for TypeScript, React, and Markdown
