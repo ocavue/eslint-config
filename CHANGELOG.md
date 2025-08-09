@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.3.1](https://github.com/ocavue/eslint-config/compare/v3.3.0...v3.3.1) (2025-08-09)
+
+
+### Bug Fixes
+
+* update eslint-plugin-package-json ([#263](https://github.com/ocavue/eslint-config/issues/263)) ([b97983e](https://github.com/ocavue/eslint-config/commit/b97983ecc086f9f72c57e40f12b2be7c3d5183c8))
+* update typescript-eslint ([#261](https://github.com/ocavue/eslint-config/issues/261)) ([34fc2e4](https://github.com/ocavue/eslint-config/commit/34fc2e416212cd730e6546768a1245c0376d86e9))
+
 ## [3.3.0](https://github.com/ocavue/eslint-config/compare/v3.2.0...v3.3.0) (2025-08-01)
 
 
