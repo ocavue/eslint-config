@@ -158,8 +158,8 @@ function jsOnlyRules(): Rules {
   }
 }
 
-export function typescript(): Linter.Config[] {
-  const base: TSESLint.FlatConfig.Config = {
+export function typescript(): Config[] {
+  const base: Config = {
     name: 'ocavue/typescript/base',
     files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
     languageOptions: {
@@ -175,26 +175,23 @@ export function typescript(): Linter.Config[] {
     },
   }
 
-  const common: TSESLint.FlatConfig.Config = {
+  const common: Config = {
     name: 'ocavue/typescript/rules',
     files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
     rules: commonRules(),
   }
 
-  const ts: TSESLint.FlatConfig.Config = {
+  const ts: Config = {
     name: 'ocavue/typescript/ts-only-rules',
     files: [GLOB_TS, GLOB_TSX],
     rules: tsOnlyRules(),
   }
 
-  const js: TSESLint.FlatConfig.Config = {
+  const js: Config = {
     name: 'ocavue/typescript/js-only-rules',
     files: [GLOB_JS, GLOB_JSX],
     rules: jsOnlyRules(),
   }
 
-  // @ts-expect-error: unmatched type
-  const configs: Config[] = [base, common, ts, js]
-
-  return configs
+  return [base, common, ts, js]
 }

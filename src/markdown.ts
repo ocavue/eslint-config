@@ -7,7 +7,6 @@ import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
 export function markdown(): Linter.Config[] {
   const processor: Linter.Config[] = markdownPlugin.configs.processor
 
-  // @ts-expect-error: unmatched type: https://github.com/typescript-eslint/typescript-eslint/issues/10899
   const disableTypeCheckedBase: Linter.Config =
     tseslint.configs.disableTypeChecked
 
