@@ -1,5 +1,3 @@
-import type { TSESLint } from '@typescript-eslint/utils'
-import type { Linter } from 'eslint'
 import tseslint from 'typescript-eslint'
 
 import {
