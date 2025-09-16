@@ -149,9 +149,16 @@ export interface ReactOptions {
   files?: Config['files']
 
   /**
-   * Whether to enable [eslint-plugin-react-compiler](https://www.npmjs.com/package/eslint-plugin-react-compiler) configuration.
+   * Whether to enable
+   * [eslint-plugin-react-compiler](https://www.npmjs.com/package/eslint-plugin-react-compiler)
+   * configuration.
    *
    * @default false
+   *
+   * @deprecated This option is no longer needed since
+   * eslint-plugin-react-compiler has been merged into
+   * eslint-plugin-react-hooks. See also
+   * https://github.com/facebook/react/pull/34228
    */
   reactCompiler?: boolean
 }
