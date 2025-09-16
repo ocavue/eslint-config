@@ -68,6 +68,14 @@
   "renovate": {
     "extends": [
       "github>ocavue/config-renovate"
+    ],
+    "packageRules": [
+      {
+        "matchPackageNames": [
+          "eslint-plugin-react-hooks"
+        ],
+        "allowedVersions": "!/6.0.0-rc1$/"
+      }
     ]
   }
 }
