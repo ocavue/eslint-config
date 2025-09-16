@@ -1,6 +1,5 @@
 import type { Linter } from 'eslint'
 import reactPlugin from 'eslint-plugin-react'
-import reactCompiler from 'eslint-plugin-react-compiler'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 
 import { resolveReactOptions, type ReactOptions } from './options.js'
@@ -40,14 +39,6 @@ export function react(options?: ReactOptions): Config[] {
       },
     },
   ]
-
-  if (options?.reactCompiler) {
-    configs.push({
-      ...reactCompiler.configs.recommended,
-      name: 'react-compiler',
-      files: files,
-    })
-  }
 
   return configs
 }
