@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.4.0](https://github.com/ocavue/eslint-config/compare/v3.3.3...v3.4.0) (2025-09-16)
+
+
+### Features
+
+* enable additional unicorn rules ([#275](https://github.com/ocavue/eslint-config/issues/275)) ([d1caa40](https://github.com/ocavue/eslint-config/commit/d1caa406ade0382d1963c927e0c2b2e312165f28))
+* remove eslint-plugin-react-compiler and update eslint-plugin-react-hooks to v6.0.0-rc.2 ([#270](https://github.com/ocavue/eslint-config/issues/270)) ([629fa31](https://github.com/ocavue/eslint-config/commit/629fa317675296528d632659d6482bf226d7369b))
+* update eslint-plugin-unicorn to v61 ([#274](https://github.com/ocavue/eslint-config/issues/274)) ([f48fc21](https://github.com/ocavue/eslint-config/commit/f48fc2126d79acd7346e1cca15a83b88444cd97e))
+
 ## [3.3.3](https://github.com/ocavue/eslint-config/compare/v3.3.2...v3.3.3) (2025-08-31)
 
 
