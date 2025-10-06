@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.4.1](https://github.com/ocavue/eslint-config/compare/v3.4.0...v3.4.1) (2025-10-06)
+
+
+### Bug Fixes
+
+* update dependencies ([#278](https://github.com/ocavue/eslint-config/issues/278)) ([b023d49](https://github.com/ocavue/eslint-config/commit/b023d499723a5f969ca77eb478965ace74d89539))
+
 ## [3.4.0](https://github.com/ocavue/eslint-config/compare/v3.3.3...v3.4.0) (2025-09-16)
 
 
