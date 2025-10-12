@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.6.0](https://github.com/ocavue/eslint-config/compare/v3.5.0...v3.6.0) (2025-10-12)
+
+
+### Features
+
+* update default value of `reactCompiler` option to true ([#285](https://github.com/ocavue/eslint-config/issues/285)) ([7487334](https://github.com/ocavue/eslint-config/commit/7487334f30b2df656e1cb727d61e9b60892c9323))
+
 ## [3.5.0](https://github.com/ocavue/eslint-config/compare/v3.4.1...v3.5.0) (2025-10-12)
 
 
