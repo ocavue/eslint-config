@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://github.com/ocavue/eslint-config/compare/v3.4.1...v3.5.0) (2025-10-12)
+
+
+### Features
+
+* update eslint-plugin-react-hooks to v7 ([d1c2fff](https://github.com/ocavue/eslint-config/commit/d1c2fff9fa965f33816c4c61040d50dccf6fc9d7))
+
 ## [3.4.1](https://github.com/ocavue/eslint-config/compare/v3.4.0...v3.4.1) (2025-10-06)
 
 
