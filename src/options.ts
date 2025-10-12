@@ -150,15 +150,10 @@ export interface ReactOptions {
 
   /**
    * Whether to enable
-   * [eslint-plugin-react-compiler](https://www.npmjs.com/package/eslint-plugin-react-compiler)
+   * [bleeding edge experimental compiler rules](https://github.com/facebook/react/blob/7568e71/packages/eslint-plugin-react-hooks)
    * configuration.
    *
    * @default false
-   *
-   * @deprecated This option is no longer needed since
-   * eslint-plugin-react-compiler has been merged into
-   * eslint-plugin-react-hooks. See also
-   * https://github.com/facebook/react/pull/34228
    */
   reactCompiler?: boolean
 }
