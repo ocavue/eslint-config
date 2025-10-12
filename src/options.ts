@@ -153,14 +153,14 @@ export interface ReactOptions {
    * [bleeding edge experimental compiler rules](https://github.com/facebook/react/blob/7568e71/packages/eslint-plugin-react-hooks)
    * configuration.
    *
-   * @default false
+   * @default true
    */
   reactCompiler?: boolean
 }
 
 export function resolveReactOptions({
   files = [GLOB_TS, GLOB_TSX],
-  reactCompiler = false,
+  reactCompiler = true,
 }: ReactOptions = {}): Required<ReactOptions> {
   return { files, reactCompiler }
 }
