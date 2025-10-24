@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.6.1](https://github.com/ocavue/eslint-config/compare/v3.6.0...v3.6.1) (2025-10-24)
+
+
+### Bug Fixes
+
+* update eslint-plugin-react-hooks ([#288](https://github.com/ocavue/eslint-config/issues/288)) ([976868e](https://github.com/ocavue/eslint-config/commit/976868ea65f4d4553338fbc9264db2459505d202))
+
 ## [3.6.0](https://github.com/ocavue/eslint-config/compare/v3.5.0...v3.6.0) (2025-10-12)
 
 
