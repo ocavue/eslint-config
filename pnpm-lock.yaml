@@ -45,8 +45,8 @@ importers:
         specifier: ^7.37.5
         version: 7.37.5(eslint@9.35.0(jiti@2.6.1))
       eslint-plugin-react-hooks:
-        specifier: ^7.0.0
-        version: 7.0.0(eslint@9.35.0(jiti@2.6.1))
+        specifier: ^7.0.1
+        version: 7.0.1(eslint@9.35.0(jiti@2.6.1))
       eslint-plugin-unicorn:
         specifier: ^61.0.2
         version: 61.0.2(eslint@9.35.0(jiti@2.6.1))
@@ -930,8 +930,8 @@ packages:
       eslint: '>=8.0.0'
       jsonc-eslint-parser: ^2.0.0
 
-  eslint-plugin-react-hooks@7.0.0:
-    resolution: {integrity: sha512-fNXaOwvKwq2+pXiRpXc825Vd63+KM4DLL40Rtlycb8m7fYpp6efrTp1sa6ZbP/Ap58K2bEKFXRmhURE+CJAQWw==}
+  eslint-plugin-react-hooks@7.0.1:
+    resolution: {integrity: sha512-O0d0m04evaNzEPoSW+59Mezf8Qt0InfgGIBJnpC0h3NH/WjUAR7BIKUfysC6todmtiZ/A0oUVS8Gce0WhBrHsA==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
@@ -2075,11 +2075,11 @@ packages:
     resolution: {integrity: sha512-RvEsa3W/NCqEBMtnoE09GRVelA3IqRcKaijEiM6CEGsD19qLurf0HjrYMHwOqImOszlLL0ja63DPJeeU4pm7oQ==}
     engines: {node: '>=20'}
 
-  zod-validation-error@3.4.1:
-    resolution: {integrity: sha512-1KP64yqDPQ3rupxNv7oXhf7KdhHHgaqbKuspVoiN93TT0xrBjql+Svjkdjq/Qh/7GSMmgQs3AfvBT0heE35thw==}
+  zod-validation-error@4.0.2:
+    resolution: {integrity: sha512-Q6/nZLe6jxuU80qb/4uJ4t5v2VEZ44lzQjPDhYJNztRQ4wyWc6VF3D3Kb/fAuPetZQnhS3hnajCf9CsWesghLQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      zod: ^3.24.4
+      zod: ^3.25.0 || ^4.0.0
 
   zod@3.25.42:
     resolution: {integrity: sha512-PcALTLskaucbeHc41tU/xfjfhcz8z0GdhhDcSgrCTmSazUuqnYqiXO63M0QUBVwpBlsLsNVn5qHSC5Dw3KZvaQ==}
@@ -3089,14 +3089,14 @@ snapshots:
     transitivePeerDependencies:
       - '@types/estree'
 
-  eslint-plugin-react-hooks@7.0.0(eslint@9.35.0(jiti@2.6.1)):
+  eslint-plugin-react-hooks@7.0.1(eslint@9.35.0(jiti@2.6.1)):
     dependencies:
       '@babel/core': 7.27.4
       '@babel/parser': 7.27.4
       eslint: 9.35.0(jiti@2.6.1)
       hermes-parser: 0.25.1
       zod: 3.25.42
-      zod-validation-error: 3.4.1(zod@3.25.42)
+      zod-validation-error: 4.0.2(zod@3.25.42)
     transitivePeerDependencies:
       - supports-color
 
@@ -4591,7 +4591,7 @@ snapshots:
     dependencies:
       zod: 3.25.42
 
-  zod-validation-error@3.4.1(zod@3.25.42):
+  zod-validation-error@4.0.2(zod@3.25.42):
     dependencies:
       zod: 3.25.42
 
