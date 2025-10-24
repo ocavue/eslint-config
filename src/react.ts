@@ -9,14 +9,10 @@ export function react(options?: ReactOptions): Config[] {
 
   const reactRecommended: Config = reactPlugin.configs.flat.recommended
 
-  // workaround for https://github.com/facebook/react/issues/34801
-  const reactHooks =
-    (reactHooksPlugin as unknown as null) || reactHooksPlugin.default || {}
-
   const reactHooksRecommended: Config =
-    reactHooks.configs.flat['recommended']
+    reactHooksPlugin.configs.flat['recommended']
   const reactHooksRecommendedCompiler: Config =
-    reactHooks.configs.flat['recommended-latest']
+    reactHooksPlugin.configs.flat['recommended-latest']
 
   const configs: Config[] = [
     {
