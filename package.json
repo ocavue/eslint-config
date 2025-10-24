@@ -48,7 +48,7 @@
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-package-json": "^0.57.0",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-unicorn": "^61.0.2",
     "eslint-plugin-vue": "^10.5.1",
     "globals": "^16.4.0",
