@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.7.0](https://github.com/ocavue/eslint-config/compare/v3.6.3...v3.7.0) (2025-12-03)
+
+
+### Features
+
+* add version option to ReactOptions ([#301](https://github.com/ocavue/eslint-config/issues/301)) ([96f4976](https://github.com/ocavue/eslint-config/commit/96f4976ce43a95cd4f59814f79772c267501e952))
+
 ## [3.6.3](https://github.com/ocavue/eslint-config/compare/v3.6.2...v3.6.3) (2025-11-25)
 
 
