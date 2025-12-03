@@ -5,7 +5,7 @@ import { resolveReactOptions, type ReactOptions } from './options.js'
 import type { Config } from './types.js'
 
 export function react(options?: ReactOptions): Config[] {
-  const { files, reactCompiler } = resolveReactOptions(options)
+  const { files, reactCompiler, version } = resolveReactOptions(options)
 
   const reactRecommended: Config = reactPlugin.configs.flat.recommended
 
@@ -21,8 +21,7 @@ export function react(options?: ReactOptions): Config[] {
       files: files,
       settings: {
         react: {
-          version: 'detect',
-          defaultVersion: '19.2.0'
+          version,
         },
       },
       rules: {

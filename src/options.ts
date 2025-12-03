@@ -156,13 +156,21 @@ export interface ReactOptions {
    * @default true
    */
   reactCompiler?: boolean
+
+  /**
+   * React version to use for linting. Set to a semver version like "16.0", "19.2", etc.
+   *
+   * @default: 'detect'
+   */
+  version?: string
 }
 
 export function resolveReactOptions({
   files = [GLOB_TS, GLOB_TSX],
   reactCompiler = true,
+  version = 'detect',
 }: ReactOptions = {}): Required<ReactOptions> {
-  return { files, reactCompiler }
+  return { files, reactCompiler, version }
 }
 
 export interface VueOptions {
