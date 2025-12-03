@@ -22,7 +22,7 @@ export function react(options?: ReactOptions): Config[] {
       settings: {
         react: {
           version: 'detect',
-          defaultVersion: 'latest'
+          defaultVersion: '19.2.0'
         },
       },
       rules: {
