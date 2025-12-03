@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.7.1](https://github.com/ocavue/eslint-config/compare/v3.7.0...v3.7.1) (2025-12-03)
+
+
+### Bug Fixes
+
+* order "style" field in package.json ([#304](https://github.com/ocavue/eslint-config/issues/304)) ([b9ca331](https://github.com/ocavue/eslint-config/commit/b9ca331068584b82983b3a887e5db861e9a953fa))
+
 ## [3.7.0](https://github.com/ocavue/eslint-config/compare/v3.6.3...v3.7.0) (2025-12-03)
 
 
