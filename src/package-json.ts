@@ -48,7 +48,7 @@ export function packageJson(): Linter.Config[] {
             'main',
             'module',
             'types',
-            "style",
+            'style',
             'exports',
             'typesVersions',
             'bin',
