@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.8.0](https://github.com/ocavue/eslint-config/compare/v3.7.1...v3.8.0) (2025-12-11)
+
+
+### Features
+
+* migrate to `@eslint-react/eslint-plugin` ([#306](https://github.com/ocavue/eslint-config/issues/306)) ([6a084d5](https://github.com/ocavue/eslint-config/commit/6a084d56a53b2356025d3632ba8e9c03be62b1c8))
+
 ## [3.7.1](https://github.com/ocavue/eslint-config/compare/v3.7.0...v3.7.1) (2025-12-03)
 
 
