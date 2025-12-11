@@ -36,6 +36,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
+    "@eslint-react/eslint-plugin": "^2.3.13",
     "@eslint/js": "^9.39.1",
     "@eslint/markdown": "^7.5.1",
     "@unocss/eslint-config": "^66.5.7",
@@ -47,7 +48,6 @@
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-package-json": "^0.85.0",
-    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-unicorn": "^62.0.0",
     "eslint-plugin-vue": "^10.6.2",
@@ -68,14 +68,6 @@
   "renovate": {
     "extends": [
       "github>ocavue/config-renovate"
-    ],
-    "packageRules": [
-      {
-        "matchPackageNames": [
-          "eslint-plugin-react-hooks"
-        ],
-        "allowedVersions": "!/6.0.0-rc1$/"
-      }
     ]
   }
 }
