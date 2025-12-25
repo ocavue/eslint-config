@@ -69,9 +69,6 @@ importers:
       '@types/node':
         specifier: ^20.17.9
         version: 20.17.57
-      '@typescript-eslint/utils':
-        specifier: ^8.50.1
-        version: 8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       eslint:
         specifier: ^9.39.2
         version: 9.39.2(jiti@2.6.1)
