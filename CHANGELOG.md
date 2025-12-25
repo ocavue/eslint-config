@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.8.1](https://github.com/ocavue/eslint-config/compare/v3.8.0...v3.8.1) (2025-12-25)
+
+
+### Bug Fixes
+
+* enable rule `@eslint-react/naming-convention/use-state` ([#312](https://github.com/ocavue/eslint-config/issues/312)) ([5f1965a](https://github.com/ocavue/eslint-config/commit/5f1965abb5002e9f1b56ed9e3e89f79cdcb6d363))
+
 ## [3.8.0](https://github.com/ocavue/eslint-config/compare/v3.7.1...v3.8.0) (2025-12-11)
 
 
