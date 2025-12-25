@@ -26,7 +26,6 @@ export function react(options?: ReactOptions): Config[] {
       },
       rules: {
         ...reactRecommended.rules,
-        '@eslint-react/naming-convention/use-state': 'off',
         '@eslint-react/web-api/no-leaked-event-listener': 'off',
         '@eslint-react/no-array-index-key': 'off',
       },
