@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.8.2](https://github.com/ocavue/eslint-config/compare/v3.8.1...v3.8.2) (2025-12-26)
+
+
+### Bug Fixes
+
+* update default React version to '18.0' ([#316](https://github.com/ocavue/eslint-config/issues/316)) ([19f942e](https://github.com/ocavue/eslint-config/commit/19f942e6882d097cb469b56c4c2d1f1e7cc48a9f))
+
 ## [3.8.1](https://github.com/ocavue/eslint-config/compare/v3.8.0...v3.8.1) (2025-12-25)
 
 
