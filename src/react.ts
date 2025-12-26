@@ -29,6 +29,7 @@ export function react(options?: ReactOptions): Config[] {
         '@eslint-react/dom/no-flush-sync': 'off',
         '@eslint-react/web-api/no-leaked-event-listener': 'off',
         '@eslint-react/no-array-index-key': 'off',
+        '@eslint-react/naming-convention/context-name': 'off',
       },
     },
 
