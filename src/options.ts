@@ -160,7 +160,7 @@ export interface ReactOptions {
   /**
    * React version to use for linting. Set to a semver version like "16.0", "19.2", etc.
    *
-   * @default: 'detect'
+   * @default: '18.0'
    */
   version?: string
 }
@@ -168,7 +168,7 @@ export interface ReactOptions {
 export function resolveReactOptions({
   files = [GLOB_TS, GLOB_TSX],
   reactCompiler = true,
-  version = 'detect',
+  version = '18.0',
 }: ReactOptions = {}): Required<ReactOptions> {
   return { files, reactCompiler, version }
 }
