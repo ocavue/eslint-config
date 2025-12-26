@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.8.3](https://github.com/ocavue/eslint-config/compare/v3.8.2...v3.8.3) (2025-12-26)
+
+
+### Bug Fixes
+
+* disable rule `@eslint-react/naming-convention/context-name` ([#318](https://github.com/ocavue/eslint-config/issues/318)) ([e064822](https://github.com/ocavue/eslint-config/commit/e064822919c95a7ea1bd3af8fbe1c21ff9001b8b))
+
 ## [3.8.2](https://github.com/ocavue/eslint-config/compare/v3.8.1...v3.8.2) (2025-12-26)
 
 
