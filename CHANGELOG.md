@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.8.6](https://github.com/ocavue/eslint-config/compare/v3.8.5...v3.8.6) (2026-01-09)
+
+
+### Bug Fixes
+
+* disable some react rules ([16d2e8a](https://github.com/ocavue/eslint-config/commit/16d2e8acbf2a699389eaa32e9fee5fe10ebe5bd2))
+
 ## [3.8.5](https://github.com/ocavue/eslint-config/compare/v3.8.4...v3.8.5) (2026-01-09)
 
 
