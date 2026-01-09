@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.8.5](https://github.com/ocavue/eslint-config/compare/v3.8.4...v3.8.5) (2026-01-09)
+
+
+### Bug Fixes
+
+* allow empty interface ([#325](https://github.com/ocavue/eslint-config/issues/325)) ([e494ddd](https://github.com/ocavue/eslint-config/commit/e494dddbd257aaa596940f711bf214647d0695fa))
+
 ## [3.8.4](https://github.com/ocavue/eslint-config/compare/v3.8.3...v3.8.4) (2026-01-09)
 
 
