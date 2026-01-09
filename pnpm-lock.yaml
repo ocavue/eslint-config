@@ -67,8 +67,8 @@ importers:
         specifier: ^0.6.2
         version: 0.6.2
       '@types/node':
-        specifier: ^20.17.9
-        version: 20.17.57
+        specifier: ^20.19.27
+        version: 20.19.27
       eslint:
         specifier: ^9.39.2
         version: 9.39.2(jiti@2.6.1)
@@ -86,7 +86,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^4.0.16
-        version: 4.0.16(@types/node@20.17.57)(jiti@2.6.1)
+        version: 4.0.16(@types/node@20.19.27)(jiti@2.6.1)
 
 packages:
 
@@ -698,8 +698,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@20.17.57':
-    resolution: {integrity: sha512-f3T4y6VU4fVQDKVqJV4Uppy8c1p/sVvS3peyqxyWnzkqXFJLRU7Y1Bl7rMS1Qe9z0v4M6McY0Fp9yBsgHJUsWQ==}
+  '@types/node@20.19.27':
+    resolution: {integrity: sha512-N2clP5pJhB2YnZJ3PIHFk5RkygRX5WO/5f0WC08tp0wd+sv0rsJk3MqWn3CbNmT2J505a5336jaQj4ph1AdMug==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1952,8 +1952,8 @@ packages:
   unconfig@7.4.2:
     resolution: {integrity: sha512-nrMlWRQ1xdTjSnSUqvYqJzbTBFugoqHobQj58B2bc8qxHKBBHMNNsWQFP3Cd3/JZK907voM2geYPWqD4VK3MPQ==}
 
-  undici-types@6.19.8:
-    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   undici@5.29.0:
     resolution: {integrity: sha512-raqeBD6NQK4SkWhQzeYKd1KmIG6dllBOTt55Rmkt4HtI9mwdWtJljnrXjAFUBLTSN67HWrOIZ3EPF4kjUw80Bg==}
@@ -2742,9 +2742,9 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@20.17.57':
+  '@types/node@20.19.27':
     dependencies:
-      undici-types: 6.19.8
+      undici-types: 6.21.0
 
   '@types/unist@3.0.3': {}
 
@@ -2940,13 +2940,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.16(vite@7.3.1(@types/node@20.17.57)(jiti@2.6.1))':
+  '@vitest/mocker@4.0.16(vite@7.3.1(@types/node@20.19.27)(jiti@2.6.1))':
     dependencies:
       '@vitest/spy': 4.0.16
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(@types/node@20.17.57)(jiti@2.6.1)
+      vite: 7.3.1(@types/node@20.19.27)(jiti@2.6.1)
 
   '@vitest/pretty-format@4.0.16':
     dependencies:
@@ -4243,7 +4243,7 @@ snapshots:
       quansync: 1.0.0
       unconfig-core: 7.4.2
 
-  undici-types@6.19.8: {}
+  undici-types@6.21.0: {}
 
   undici@5.29.0:
     dependencies:
@@ -4319,7 +4319,7 @@ snapshots:
 
   validate-npm-package-name@7.0.0: {}
 
-  vite@7.3.1(@types/node@20.17.57)(jiti@2.6.1):
+  vite@7.3.1(@types/node@20.19.27)(jiti@2.6.1):
     dependencies:
       esbuild: 0.27.2
       fdir: 6.5.0(picomatch@4.0.3)
@@ -4328,14 +4328,14 @@ snapshots:
       rollup: 4.55.1
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 20.17.57
+      '@types/node': 20.19.27
       fsevents: 2.3.3
       jiti: 2.6.1
 
-  vitest@4.0.16(@types/node@20.17.57)(jiti@2.6.1):
+  vitest@4.0.16(@types/node@20.19.27)(jiti@2.6.1):
     dependencies:
       '@vitest/expect': 4.0.16
-      '@vitest/mocker': 4.0.16(vite@7.3.1(@types/node@20.17.57)(jiti@2.6.1))
+      '@vitest/mocker': 4.0.16(vite@7.3.1(@types/node@20.19.27)(jiti@2.6.1))
       '@vitest/pretty-format': 4.0.16
       '@vitest/runner': 4.0.16
       '@vitest/snapshot': 4.0.16
@@ -4352,10 +4352,10 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.3.1(@types/node@20.17.57)(jiti@2.6.1)
+      vite: 7.3.1(@types/node@20.19.27)(jiti@2.6.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 20.17.57
+      '@types/node': 20.19.27
     transitivePeerDependencies:
       - jiti
       - less
