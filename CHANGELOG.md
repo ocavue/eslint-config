@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.9.1](https://github.com/ocavue/eslint-config/compare/v3.9.0...v3.9.1) (2026-01-09)
+
+
+### Bug Fixes
+
+* update `@eslint-react/eslint-plugin` ([#332](https://github.com/ocavue/eslint-config/issues/332)) ([17bb108](https://github.com/ocavue/eslint-config/commit/17bb10892979a2ee2e737c27182b2b22b603240f))
+
 ## [3.9.0](https://github.com/ocavue/eslint-config/compare/v3.8.6...v3.9.0) (2026-01-09)
 
 
