@@ -14,6 +14,10 @@ export function react(options?: ReactOptions): Config[] {
   const reactHooksRecommendedCompiler: Config =
     reactHooksPlugin.configs.flat['recommended-latest']
 
+  const reactHooksConfig: Config = reactCompiler
+    ? reactHooksRecommendedCompiler
+    : reactHooksRecommended
+
   const configs: Config[] = [
     {
       ...reactRecommended,
@@ -34,11 +38,15 @@ export function react(options?: ReactOptions): Config[] {
     },
 
     {
-      ...(reactCompiler
-        ? reactHooksRecommendedCompiler
-        : reactHooksRecommended),
+      ...reactHooksConfig,
       name: 'react-hooks',
       files: files,
+      rules: {
+        ...reactHooksConfig.rules,
+        // Disable this rule because of https://github.com/facebook/react/issues/34775
+        // TODO: Enable this when the issue is fixed.
+        'react-hooks/refs': 'off',
+      },
     },
   ]
 
