@@ -1,8 +1,6 @@
 import pkgJson from 'eslint-plugin-package-json'
 
-import type { Config, Plugin, Rules } from './types.js'
-
-const plugin: Plugin = pkgJson.configs.recommended.plugins['package-json']
+import type { Config, Rules } from './types.js'
 
 export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-empty-fields.md
@@ -205,10 +203,8 @@ export const packageJsonRules: Rules = {
 export function packageJson(): Config[] {
   return [
     {
+      ...pkgJson,
       name: 'package-json',
-      plugins: {
-        'package-json': plugin,
-      },
       rules: packageJsonRules,
     },
   ]
