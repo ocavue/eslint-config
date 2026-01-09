@@ -29,10 +29,22 @@ export function react(options?: ReactOptions): Config[] {
       },
       rules: {
         ...reactConfig.rules,
-        '@eslint-react/dom/no-flush-sync': 'off',
+
         '@eslint-react/web-api/no-leaked-event-listener': 'off',
-        '@eslint-react/no-array-index-key': 'off',
         '@eslint-react/naming-convention/context-name': 'off',
+
+        // I know these patterns are dangerous, but they are useful in some cases.
+        '@eslint-react/no-children-map': 'off',
+        '@eslint-react/no-clone-element': 'off',
+        '@eslint-react/no-dangerously-set-innerhtml': 'off',
+        '@eslint-react/dom/no-flush-sync': 'off',
+        '@eslint-react/no-array-index-key': 'off',
+
+        // See https://github.com/Rel1cx/eslint-react/issues/1381
+        '@eslint-react/jsx-key-before-spread': 'off',
+
+        // https://github.com/Rel1cx/eslint-react/pull/1380
+        '@eslint-react/naming-convention/ref-name': 'off',
       },
     },
 
