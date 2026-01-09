@@ -124,7 +124,7 @@ export function unicorn(): Linter.Config[] {
       plugins: {
         unicorn: plugin,
       },
-      rules: unicornRules
+      rules: unicornRules,
     },
   ]
 }
