@@ -201,10 +201,11 @@ export const packageJsonRules: Rules = {
  * Sort package.json keys
  */
 export function packageJson(): Config[] {
+  const pkgJsonConfig: Config = pkgJson.configs.recommended
+
   return [
     {
-      ...pkgJson,
-      name: 'package-json',
+      ...pkgJsonConfig,
       rules: packageJsonRules,
     },
   ]
