@@ -1,24 +1,34 @@
 import type { Linter } from 'eslint'
 import plugin from 'eslint-plugin-unicorn'
 
+// @keep-sorted
 export const unicornRules: Linter.RulesRecord = {
+  // Improve regexes
+  'unicorn/better-regex': 'error',
+
   // Pass error message when throwing errors
   'unicorn/error-message': 'error',
 
   // Uppercase regex escapes
   'unicorn/escape-case': 'error',
 
+  // Enforce explicitly comparing the length or size property of a value
+  'unicorn/explicit-length-check': 'error',
+
+  // Disallow eslint-disable comments without specific rule names
+  'unicorn/no-abusive-eslint-disable': 'error',
+
   // Prevent recursive getters/setters from calling themselves
   'unicorn/no-accessor-recursion': 'warn',
 
-  // Array.isArray instead of instanceof etc
-  'unicorn/no-instanceof-builtins': 'error',
+  // Do not use a `for` loop that can be replaced with a `for-of` loop.
+  'unicorn/no-for-loop': 'error',
 
   // Prefer Unicode escapes over hexadecimal escapes
   'unicorn/no-hex-escape': 'warn',
 
-  // Prevent deprecated `new Buffer()`
-  'unicorn/no-new-buffer': 'error',
+  // Array.isArray instead of instanceof etc
+  'unicorn/no-instanceof-builtins': 'error',
 
   // Avoid passing expressions to removeEventListener
   'unicorn/no-invalid-remove-event-listener': 'warn',
@@ -29,47 +39,17 @@ export const unicornRules: Linter.RulesRecord = {
   // Disallow negating the left side in equality checks
   'unicorn/no-negation-in-equality-check': 'warn',
 
+  // Prevent deprecated `new Buffer()`
+  'unicorn/no-new-buffer': 'error',
+
   // Keep regex literals safe!
   'unicorn/no-unsafe-regex': 'off',
-
-  // Lowercase number formatting for octal, hex, binary (0x1'error' instead of 0X1'error')
-  'unicorn/number-literal-case': 'error',
 
   // Disallow spreading when direct usage works
   'unicorn/no-useless-spread': 'warn',
 
-  // includes over indexOf when checking for existence
-  'unicorn/prefer-includes': 'error',
-
-  // String methods startsWith/endsWith instead of more complicated stuff
-  'unicorn/prefer-string-starts-ends-with': 'error',
-
-  // Enforce throwing type error when throwing error while checking typeof
-  'unicorn/prefer-type-error': 'error',
-
-  // Use new when throwing error
-  'unicorn/throw-new-error': 'error',
-
-  // Prefer using the node: protocol
-  'unicorn/prefer-node-protocol': 'error',
-
-  // Enforce explicitly comparing the length or size property of a value
-  'unicorn/explicit-length-check': 'error',
-
-  // Prefer `.flatMap(…)` over `.map(…).flat()`
-  'unicorn/prefer-array-index-of': 'error',
-
-  // Improve regexes
-  'unicorn/better-regex': 'error',
-
-  // Enforce combining multiple `Array#push()` into one call.
-  'unicorn/prefer-single-call': 'warn',
-
-  // Do not use a `for` loop that can be replaced with a `for-of` loop.
-  'unicorn/no-for-loop': 'error',
-
-  // Disallow eslint-disable comments without specific rule names
-  'unicorn/no-abusive-eslint-disable': 'error',
+  // Lowercase number formatting for octal, hex, binary (0x1'error' instead of 0X1'error')
+  'unicorn/number-literal-case': 'error',
 
   // Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.
   'unicorn/prefer-add-event-listener': 'error',
@@ -77,17 +57,33 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer `.find(…)` and `.findLast(…)` over the first or last element from
   'unicorn/prefer-array-find': 'error',
 
+  // Prefer `.flatMap(…)` over `.map(…).flat()`.
+  'unicorn/prefer-array-flat-map': 'error',
+
   // Prefer Array#flat over manual flattening
   'unicorn/prefer-array-flat': 'warn',
 
-  // Prefer `.flatMap(…)` over `.map(…).flat()`.
-  'unicorn/prefer-array-flat-map': 'error',
+  // Prefer `.flatMap(…)` over `.map(…).flat()`
+  'unicorn/prefer-array-index-of': 'error',
 
   // Prefer `.some(…)` over `.filter(…).length` check
   'unicorn/prefer-array-some': 'error',
 
   // Prefer BigInt literals over the constructor
   'unicorn/prefer-bigint-literals': 'warn',
+
+  // Prefer Date.now() to get the number of milliseconds since the Unix Epoch
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-date-now.md
+  'unicorn/prefer-date-now': 'warn',
+
+  // Prefer `export…from` when re-exporting
+  'unicorn/prefer-export-from': ['warn', { ignoreUsedVariables: true }],
+
+  // Prefer `import.meta.dirname` over `path.dirname(fileURLToPath(import.meta.url))`
+  'unicorn/prefer-import-meta-properties': 'warn',
+
+  // includes over indexOf when checking for existence
+  'unicorn/prefer-includes': 'error',
 
   // Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`
   'unicorn/prefer-keyboard-event-key': 'error',
@@ -98,23 +94,32 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer negative index over `.length - index` when possible
   'unicorn/prefer-negative-index': 'error',
 
+  // Prefer using the node: protocol
+  'unicorn/prefer-node-protocol': 'error',
+
   // Prefer `Number` static properties over global ones.
   'unicorn/prefer-number-properties': 'warn',
 
   // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
   'unicorn/prefer-regexp-test': 'warn',
 
-  // Prefer using `structuredClone` to create a deep clone
-  'unicorn/prefer-structured-clone': 'warn',
+  // Enforce combining multiple `Array#push()` into one call.
+  'unicorn/prefer-single-call': 'warn',
 
   // Prefer using the `String.raw` tag to avoid escaping `\`
   'unicorn/prefer-string-raw': 'warn',
 
-  // Prefer `import.meta.dirname` over `path.dirname(fileURLToPath(import.meta.url))`
-  'unicorn/prefer-import-meta-properties': 'warn',
+  // String methods startsWith/endsWith instead of more complicated stuff
+  'unicorn/prefer-string-starts-ends-with': 'error',
 
-  // Prefer `export…from` when re-exporting
-  'unicorn/prefer-export-from': ['warn', { ignoreUsedVariables: true }],
+  // Prefer using `structuredClone` to create a deep clone
+  'unicorn/prefer-structured-clone': 'warn',
+
+  // Enforce throwing type error when throwing error while checking typeof
+  'unicorn/prefer-type-error': 'error',
+
+  // Use new when throwing error
+  'unicorn/throw-new-error': 'error',
 }
 
 export function unicorn(): Linter.Config[] {

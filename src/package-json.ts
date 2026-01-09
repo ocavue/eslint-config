@@ -2,9 +2,8 @@ import pkgJson from 'eslint-plugin-package-json'
 
 import type { Config, Rules } from './types.js'
 
+// @keep-sorted
 export const packageJsonRules: Rules = {
-  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-empty-fields.md
-  'package-json/no-empty-fields': 'off',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-redundant-files.md
   'package-json/no-redundant-files': 'error',
@@ -12,17 +11,61 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-redundant-publishConfig.md
   'package-json/no-redundant-publishConfig': 'error',
 
+  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/order-properties.md
+  'package-json/order-properties': [
+    'warn',
+    {
+      order: [
+        'name',
+        'displayName',
+        'publisher',
+        'type',
+        'version',
+        'private',
+        'packageManager',
+        'description',
+        'author',
+        'license',
+        'funding',
+        'homepage',
+        'repository',
+        'bugs',
+        'contributes',
+        'keywords',
+        'categories',
+        'sideEffects',
+        'main',
+        'module',
+        'types',
+        'style',
+        'exports',
+        'typesVersions',
+        'bin',
+        'icon',
+        'files',
+        'engines',
+        'scripts',
+        'dependencies',
+        'peerDependencies',
+        'peerDependenciesMeta',
+        'optionalDependencies',
+        'devDependencies',
+        'publishConfig',
+        'overrides',
+        'resolutions',
+      ],
+    },
+  ],
+
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/repository-shorthand.md
   'package-json/repository-shorthand': 'error',
 
-  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-description.md
-  'package-json/require-description': 'off',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-license.md
-  'package-json/require-license': 'error',
+  'package-json/require-license': 'warn',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-name.md
-  'package-json/require-name': 'error',
+  'package-json/require-name': 'warn',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-type.md
   'package-json/require-type': 'error',
@@ -129,11 +172,11 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-publishConfig.md
   'package-json/valid-publishConfig': 'error',
 
-  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-repository.md
-  'package-json/valid-repository': 'error',
-
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-repository-directory.md
   'package-json/valid-repository-directory': 'error',
+
+  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-repository.md
+  'package-json/valid-repository': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-scripts.md
   'package-json/valid-scripts': 'error',
@@ -149,52 +192,6 @@ export const packageJsonRules: Rules = {
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-workspaces.md
   'package-json/valid-workspaces': 'error',
-
-  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/order-properties.md
-  'package-json/order-properties': [
-    'warn',
-    {
-      order: [
-        'name',
-        'displayName',
-        'publisher',
-        'type',
-        'version',
-        'private',
-        'packageManager',
-        'description',
-        'author',
-        'license',
-        'funding',
-        'homepage',
-        'repository',
-        'bugs',
-        'contributes',
-        'keywords',
-        'categories',
-        'sideEffects',
-        'main',
-        'module',
-        'types',
-        'style',
-        'exports',
-        'typesVersions',
-        'bin',
-        'icon',
-        'files',
-        'engines',
-        'scripts',
-        'dependencies',
-        'peerDependencies',
-        'peerDependenciesMeta',
-        'optionalDependencies',
-        'devDependencies',
-        'publishConfig',
-        'overrides',
-        'resolutions',
-      ],
-    },
-  ],
 }
 
 /**
