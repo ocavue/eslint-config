@@ -33,7 +33,7 @@ function recommendedRules(): Rules {
     '@typescript-eslint/no-empty-object-type': [
       'error',
       {
-        allowInterfaces: 'with-single-extends',
+        allowInterfaces: 'always',
       },
     ],
 
