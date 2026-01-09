@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.9.0](https://github.com/ocavue/eslint-config/compare/v3.8.6...v3.9.0) (2026-01-09)
+
+
+### Features
+
+* enable rule `unicorn/prefer-date-now` ([#330](https://github.com/ocavue/eslint-config/issues/330)) ([abb05f8](https://github.com/ocavue/eslint-config/commit/abb05f884ffa2163057fde50f1135b6cd30d56c6))
+
 ## [3.8.6](https://github.com/ocavue/eslint-config/compare/v3.8.5...v3.8.6) (2026-01-09)
 
 
