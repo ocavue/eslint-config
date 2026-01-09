@@ -7,16 +7,19 @@ import type { Config } from './types.js'
 export function react(options?: ReactOptions): Config[] {
   const { files, reactCompiler, version } = resolveReactOptions(options)
 
-  const reactRecommended: Config = eslintReact.configs['recommended-typescript']
+  const reactConfig: Config = eslintReact.configs['recommended-typescript']
 
-  const reactHooksRecommended: Config =
+  const reactHooksRecommendedConfig: Config =
     reactHooksPlugin.configs.flat['recommended']
-  const reactHooksRecommendedCompiler: Config =
+  const reactHooksRecommendedCompilerConfig: Config =
     reactHooksPlugin.configs.flat['recommended-latest']
+  const reactHooksConfig: Config = reactCompiler
+    ? reactHooksRecommendedCompilerConfig
+    : reactHooksRecommendedConfig
 
   const configs: Config[] = [
     {
-      ...reactRecommended,
+      ...reactConfig,
       name: 'react',
       files: files,
       settings: {
@@ -25,7 +28,7 @@ export function react(options?: ReactOptions): Config[] {
         },
       },
       rules: {
-        ...reactRecommended.rules,
+        ...reactConfig.rules,
         '@eslint-react/dom/no-flush-sync': 'off',
         '@eslint-react/web-api/no-leaked-event-listener': 'off',
         '@eslint-react/no-array-index-key': 'off',
@@ -34,11 +37,15 @@ export function react(options?: ReactOptions): Config[] {
     },
 
     {
-      ...(reactCompiler
-        ? reactHooksRecommendedCompiler
-        : reactHooksRecommended),
+      ...reactHooksConfig,
       name: 'react-hooks',
       files: files,
+      rules: {
+        ...reactHooksConfig.rules,
+        // Disable this rule because of https://github.com/facebook/react/issues/34775
+        // TODO: Enable this when the issue is fixed.
+        'react-hooks/refs': 'off',
+      },
     },
   ]
 
