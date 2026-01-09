@@ -1,26 +1,32 @@
-import type { Linter } from 'eslint'
 import pkgJson from 'eslint-plugin-package-json'
+
+import type { Config } from './types.js'
 
 /**
  * Sort package.json keys
  */
-export function packageJson(): Linter.Config[] {
-  const config: Linter.Config = {
-    ...pkgJson.configs.recommended,
+export function packageJson(): Config[] {
+  const pkgJsonConfig: Config = pkgJson.configs.recommended
+  const config: Config = {
+    ...pkgJsonConfig,
     rules: {
-      ...pkgJson.configs.recommended.rules,
+      ...pkgJsonConfig.rules,
       'package-json/no-empty-fields': 'off',
-      'package-json/valid-package-definition': 'off',
-      'package-json/require-description': 'warn',
+      'package-json/require-description': 'off',
       'package-json/sort-collections': [
         'warn',
         [
-          // 'scripts', // Don't sort scripts
-          'devDependencies',
-          'dependencies',
-          'peerDependencies',
+          // Copied from the link below but remove "scripts" because we don't
+          // want to sort scripts
+          // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/src/rules/sort-collections.ts#L7
           'config',
+          'dependencies',
+          'devDependencies',
           'exports',
+          'optionalDependencies',
+          'overrides',
+          'peerDependencies',
+          'peerDependenciesMeta',
         ],
       ],
       'package-json/order-properties': [
