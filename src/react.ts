@@ -13,7 +13,6 @@ export function react(options?: ReactOptions): Config[] {
     reactHooksPlugin.configs.flat['recommended']
   const reactHooksRecommendedCompilerConfig: Config =
     reactHooksPlugin.configs.flat['recommended-latest']
-
   const reactHooksConfig: Config = reactCompiler
     ? reactHooksRecommendedCompilerConfig
     : reactHooksRecommendedConfig
