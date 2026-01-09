@@ -52,7 +52,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-unicorn": "^62.0.0",
     "eslint-plugin-vue": "^10.6.2",
-    "globals": "^16.5.0",
+    "globals": "^17.0.0",
     "typescript-eslint": "^8.52.0",
     "vue-eslint-parser": "^10.2.0"
   },
