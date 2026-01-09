@@ -1,279 +1,123 @@
-import type { Linter } from 'eslint'
 import plugin from 'eslint-plugin-unicorn'
-import { expect, test } from 'vitest'
+import { test } from 'vitest'
 
-import type { Plugin, Rules } from './types.ts'
+import { checkRules } from './test-utils.js'
 import { unicornRules } from './unicorn.js'
-
-
-
-function collectEnabledRuleNames(rules: Partial<Linter.RulesRecord>): string[] {
-  const enabledRuleNames: string[] = []
-  for (const [ruleName, ruleConfig] of Object.entries(rules)) {
-    if (ruleConfig == null) continue
-    if (ruleConfig === 'off' || ruleConfig === 0) continue
-    if (Array.isArray(ruleConfig)) {
-      const severity = ruleConfig[0]
-      if (severity === 'off' || severity === 0) continue
-    }
-    enabledRuleNames.push(ruleName)
-  }
-  return enabledRuleNames
-}
-
-function getRuleLink(plugin: Plugin, ruleName: string): string | undefined {
-  return plugin.rules?.[ruleName]?.meta?.docs?.url
-}
-
-/**
- * Normalize rule name to remove the plugin prefix
- * e.g. 'unicorn/error-message' -> 'error-message'
- */
-function normalizeRuleName(ruleName: string): string {
-  return ruleName.replace(/^unicorn\//, '')
-}
-
-/**
- * Get rule configuration from rules object, handling both prefixed and non-prefixed keys
- */
-function getRuleConfig(rules: Rules, ruleName: string): any {
-  const normalized = normalizeRuleName(ruleName)
-  const withPrefix = `unicorn/${normalized}`
-
-  if (withPrefix in rules) {
-    return rules[withPrefix]
-  }
-  if (normalized in rules) {
-    return rules[normalized]
-  }
-  return undefined
-}
-
-/**
- * Deep compare two rule configurations
- */
-function isSameConfig(config1: any, config2: any): boolean {
-  return JSON.stringify(config1) === JSON.stringify(config2)
-}
-
-/**
- * Format a rule violation message with documentation link
- */
-function formatRuleViolation(
-  type: string,
-  ruleName: string,
-  details: {
-    recommendedConfig?: any
-    currentConfig?: any
-    message: string
-    fix: string
-    link?: string
-  }
-): string {
-  const separator = '━'.repeat(60)
-  const normalized = normalizeRuleName(ruleName)
-  const fullName = `unicorn/${normalized}`
-
-  let output = `${separator}\n`
-  output += `❌ ${type}: ${fullName}\n\n`
-
-  if (details.recommendedConfig !== undefined) {
-    output += `  Recommended: ${JSON.stringify(details.recommendedConfig)}\n`
-  }
-  if (details.currentConfig !== undefined) {
-    output += `  Current: ${JSON.stringify(details.currentConfig)}\n`
-  } else if (type.includes('Missing')) {
-    output += `  Current: (not configured)\n`
-  }
-
-  output += `\n  ${details.message}\n`
-
-  if (details.link) {
-    output += `\n  📖 Documentation: ${details.link}\n`
-  }
-
-  output += `\n  💡 Fix: ${details.fix}\n`
-  output += separator
-
-  return output
-}
-
-/**
- * Check that all rule differences between recommended and current configs are explicitly declared.
- *
- * This function ensures that:
- * 1. All recommended rules are either used or explicitly disabled with a reason
- * 2. All extra enabled rules are explicitly declared with a reason
- * 3. All modified rule configurations are explicitly declared with a reason
- *
- * When differences are found, detailed error messages with documentation links are shown.
- */
-function checkRules(options: {
-  plugin: Plugin
-  currentRules: Rules
-  recommendedRules: Rules
-  disabledRules: string[]
-  enabledRules: string[]
-  updatedRules: string[]
-}): void {
-  const { plugin, currentRules, recommendedRules, disabledRules, enabledRules, updatedRules } = options
-  const violations: string[] = []
-
-  // Normalize all rule names for comparison
-  const normalizedDisabled = new Set(disabledRules.map(normalizeRuleName))
-  const normalizedEnabled = new Set(enabledRules.map(normalizeRuleName))
-  const normalizedUpdated = new Set(updatedRules.map(normalizeRuleName))
-
-  const recommendedRuleNames = collectEnabledRuleNames(recommendedRules)
-  const currentRuleNames = collectEnabledRuleNames(currentRules)
-
-  const recommendedSet = new Set(recommendedRuleNames.map(normalizeRuleName))
-
-  // 1. Check missing recommended rules (should be in disabledRules)
-  for (const ruleName of recommendedRuleNames) {
-    const normalized = normalizeRuleName(ruleName)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const currentConfig = getRuleConfig(currentRules, ruleName)
-
-    if (currentConfig === undefined && !normalizedDisabled.has(normalized)) {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const recommendedConfig = getRuleConfig(recommendedRules, ruleName)
-      const link = getRuleLink(plugin, normalized)
-
-      violations.push(formatRuleViolation(
-        'Missing Disabled Declaration',
-        ruleName,
-        {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          recommendedConfig,
-          message: 'This rule is recommended but not in your config.',
-          fix: `Add to disabledRules array with explanation:\ndisabledRules: [\n  '${normalized}', // Reason: ...\n]`,
-          link,
-        }
-      ))
-    }
-  }
-
-  // 2. Check unnecessary disabled rules (not actually recommended)
-  for (const ruleName of disabledRules) {
-    const normalized = normalizeRuleName(ruleName)
-    if (!recommendedSet.has(normalized)) {
-      violations.push(formatRuleViolation(
-        'Unnecessary Disabled Declaration',
-        ruleName,
-        {
-          message: 'This rule is not recommended, no need to disable it.',
-          fix: `Remove '${normalized}' from disabledRules array`,
-        }
-      ))
-    }
-  }
-
-  // 3. Check undeclared extra rules (should be in enabledRules)
-  for (const ruleName of currentRuleNames) {
-    const normalized = normalizeRuleName(ruleName)
-    if (!recommendedSet.has(normalized) && !normalizedEnabled.has(normalized)) {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const currentConfig = getRuleConfig(currentRules, ruleName)
-      const link = getRuleLink(plugin, normalized)
-
-      violations.push(formatRuleViolation(
-        'Undeclared Extra Rule',
-        ruleName,
-        {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          currentConfig,
-          message: 'This rule is not recommended but you enabled it.',
-          fix: `Add to enabledRules array with explanation:\nenabledRules: [\n  '${normalized}', // Reason: ...\n]`,
-          link,
-        }
-      ))
-    }
-  }
-
-  // 4. Check unnecessary enabled rules (actually recommended)
-  for (const ruleName of enabledRules) {
-    const normalized = normalizeRuleName(ruleName)
-    if (recommendedSet.has(normalized)) {
-      violations.push(formatRuleViolation(
-        'Unnecessary Enabled Declaration',
-        ruleName,
-        {
-          message: 'This rule is already recommended, no need to declare as enabled.',
-          fix: `Remove '${normalized}' from enabledRules array`,
-        }
-      ))
-    }
-  }
-
-  // 5. Check modified rules without declaration (should be in updatedRules)
-  for (const ruleName of recommendedRuleNames) {
-    const normalized = normalizeRuleName(ruleName)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const recommendedConfig = getRuleConfig(recommendedRules, ruleName)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const currentConfig = getRuleConfig(currentRules, ruleName)
-
-    if (currentConfig !== undefined && !isSameConfig(recommendedConfig, currentConfig)) {
-      if (!normalizedUpdated.has(normalized)) {
-        const link = getRuleLink(plugin, normalized)
-
-        violations.push(formatRuleViolation(
-          'Undeclared Config Modification',
-          ruleName,
-          {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            recommendedConfig,
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            currentConfig,
-            message: 'This rule has a different configuration than recommended.',
-            fix: `Add to updatedRules array with explanation:\nupdatedRules: [\n  '${normalized}', // Reason: ...\n]`,
-            link,
-          }
-        ))
-      }
-    }
-  }
-
-  // 6. Check unnecessary updated rules (configs are actually the same)
-  for (const ruleName of updatedRules) {
-    const normalized = normalizeRuleName(ruleName)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const recommendedConfig = getRuleConfig(recommendedRules, ruleName)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const currentConfig = getRuleConfig(currentRules, ruleName)
-
-    if (recommendedConfig !== undefined && currentConfig !== undefined) {
-      if (isSameConfig(recommendedConfig, currentConfig)) {
-        violations.push(formatRuleViolation(
-          'Unnecessary Updated Declaration',
-          ruleName,
-          {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            recommendedConfig,
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            currentConfig,
-            message: 'This rule configuration matches the recommended config.',
-            fix: `Remove '${normalized}' from updatedRules array`,
-          }
-        ))
-      }
-    }
-  }
-
-  // Report all violations
-  if (violations.length > 0) {
-    expect.fail('\n\n' + violations.join('\n\n'))
-  }
-}
 
 test('Unicorn rules should match recommended rules', () => {
   checkRules({
     plugin,
     currentRules: unicornRules,
     recommendedRules: plugin.configs.recommended.rules || {},
-    disabledRules: [],
-    enabledRules: [],
-    updatedRules: [],
+    disabledRules: [
+      // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/catch-error-name.md
+      'unicorn/catch-error-name',
+
+      // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-assert.md
+      'unicorn/consistent-assert',
+
+      'unicorn/consistent-date-clone',
+      'unicorn/consistent-empty-array-spread',
+      'unicorn/consistent-existence-index-check',
+      'unicorn/consistent-function-scoping',
+      'unicorn/empty-brace-spaces',
+      'unicorn/expiring-todo-comments',
+      'unicorn/filename-case',
+      'unicorn/import-style',
+      'unicorn/new-for-builtins',
+      'unicorn/no-anonymous-default-export',
+      'unicorn/no-array-callback-reference',
+      'unicorn/no-array-for-each',
+      'unicorn/no-array-method-this-argument',
+      'unicorn/no-array-reduce',
+      'unicorn/no-array-reverse',
+      'unicorn/no-array-sort',
+      'unicorn/no-await-expression-member',
+      'unicorn/no-await-in-promise-methods',
+      'unicorn/no-console-spaces',
+      'unicorn/no-document-cookie',
+      'unicorn/no-empty-file',
+      'unicorn/no-immediate-mutation',
+      'unicorn/no-invalid-fetch-options',
+      'unicorn/no-lonely-if',
+      'unicorn/no-magic-array-flat-depth',
+      'unicorn/no-negated-condition',
+      'unicorn/no-nested-ternary',
+      'unicorn/no-new-array',
+      'unicorn/no-null',
+      'unicorn/no-object-as-default-parameter',
+      'unicorn/no-process-exit',
+      'unicorn/no-single-promise-in-promise-methods',
+      'unicorn/no-static-only-class',
+      'unicorn/no-thenable',
+      'unicorn/no-this-assignment',
+      'unicorn/no-typeof-undefined',
+      'unicorn/no-unnecessary-array-flat-depth',
+      'unicorn/no-unnecessary-array-splice-count',
+      'unicorn/no-unnecessary-await',
+      'unicorn/no-unnecessary-polyfills',
+      'unicorn/no-unnecessary-slice-end',
+      'unicorn/no-unreadable-array-destructuring',
+      'unicorn/no-unreadable-iife',
+      'unicorn/no-useless-collection-argument',
+      'unicorn/no-useless-error-capture-stack-trace',
+      'unicorn/no-useless-fallback-in-spread',
+      'unicorn/no-useless-length-check',
+      'unicorn/no-useless-promise-resolve-reject',
+      'unicorn/no-useless-switch-case',
+      'unicorn/no-useless-undefined',
+      'unicorn/no-zero-fractions',
+      'unicorn/numeric-separators-style',
+      'unicorn/prefer-at',
+      'unicorn/prefer-blob-reading-methods',
+      'unicorn/prefer-class-fields',
+      'unicorn/prefer-classlist-toggle',
+      'unicorn/prefer-code-point',
+      'unicorn/prefer-date-now',
+      'unicorn/prefer-default-parameters',
+      'unicorn/prefer-dom-node-append',
+      'unicorn/prefer-dom-node-dataset',
+      'unicorn/prefer-dom-node-remove',
+      'unicorn/prefer-dom-node-text-content',
+      'unicorn/prefer-event-target',
+      'unicorn/prefer-global-this',
+      'unicorn/prefer-logical-operator-over-ternary',
+      'unicorn/prefer-math-min-max',
+      'unicorn/prefer-modern-dom-apis',
+      'unicorn/prefer-modern-math-apis',
+      'unicorn/prefer-module',
+      'unicorn/prefer-native-coercion-functions',
+      'unicorn/prefer-object-from-entries',
+      'unicorn/prefer-optional-catch-binding',
+      'unicorn/prefer-prototype-methods',
+      'unicorn/prefer-query-selector',
+      'unicorn/prefer-reflect-apply',
+      'unicorn/prefer-response-static-json',
+      'unicorn/prefer-set-has',
+      'unicorn/prefer-set-size',
+      'unicorn/prefer-spread',
+      'unicorn/prefer-string-replace-all',
+      'unicorn/prefer-string-slice',
+      'unicorn/prefer-string-trim-start-end',
+      'unicorn/prefer-switch',
+      'unicorn/prefer-ternary',
+      'unicorn/prefer-top-level-await',
+      'unicorn/prevent-abbreviations',
+      'unicorn/relative-url-style',
+      'unicorn/require-array-join-separator',
+      'unicorn/require-module-attributes',
+      'unicorn/require-module-specifiers',
+      'unicorn/require-number-to-fixed-digits-argument',
+      'unicorn/switch-case-braces',
+      'unicorn/template-indent',
+      'unicorn/text-encoding-identifier-case',
+    ],
+    enabledRules: [
+      // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/better-regex.md
+      'unicorn/better-regex',
+
+      // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-import-meta-properties.md
+      'unicorn/prefer-import-meta-properties',
+    ],
   })
 })
