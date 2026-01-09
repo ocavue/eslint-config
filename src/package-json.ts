@@ -1,9 +1,10 @@
-import type { Linter } from 'eslint'
 import pkgJson from 'eslint-plugin-package-json'
 
-import type { Config } from './types.js'
+import type { Config, Plugin, Rules } from './types.js'
 
-export const packageJsonRules: Linter.RulesRecord = {
+const plugin: Plugin = pkgJson.configs.recommended.plugins['package-json']
+
+export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-empty-fields.md
   'package-json/no-empty-fields': 'off',
 
@@ -206,7 +207,7 @@ export function packageJson(): Config[] {
     {
       name: 'package-json',
       plugins: {
-        'package-json': pkgJson,
+        'package-json': plugin,
       },
       rules: packageJsonRules,
     },
