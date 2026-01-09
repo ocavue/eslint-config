@@ -31,6 +31,8 @@ export function react(options?: ReactOptions): Config[] {
         ...reactConfig.rules,
 
         '@eslint-react/web-api/no-leaked-event-listener': 'off',
+
+        // See https://github.com/Rel1cx/eslint-react/issues/1382
         '@eslint-react/naming-convention/context-name': 'off',
 
         // I know these patterns are dangerous, but they are useful in some cases.
@@ -42,9 +44,6 @@ export function react(options?: ReactOptions): Config[] {
 
         // See https://github.com/Rel1cx/eslint-react/issues/1381
         '@eslint-react/jsx-key-before-spread': 'off',
-
-        // https://github.com/Rel1cx/eslint-react/pull/1380
-        '@eslint-react/naming-convention/ref-name': 'off',
       },
     },
 
