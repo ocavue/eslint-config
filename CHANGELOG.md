@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.4](https://github.com/ocavue/eslint-config/compare/v3.8.3...v3.8.4) (2026-01-09)
+
+
+### Bug Fixes
+
+* disable rule `package-json/require-description` ([#324](https://github.com/ocavue/eslint-config/issues/324)) ([5c676d2](https://github.com/ocavue/eslint-config/commit/5c676d222c9a6a03efe27eabd854a4a190a431d5))
+* disable rule `react-hooks/refs` temporarily ([#320](https://github.com/ocavue/eslint-config/issues/320)) ([8594410](https://github.com/ocavue/eslint-config/commit/859441094d3d5f6eb549864025872fd8bdc8b608))
+
 ## [3.8.3](https://github.com/ocavue/eslint-config/compare/v3.8.2...v3.8.3) (2025-12-26)
 
 
