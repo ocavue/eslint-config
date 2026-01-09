@@ -115,6 +115,10 @@ export const unicornRules: Linter.RulesRecord = {
 
   // Prefer `export…from` when re-exporting
   'unicorn/prefer-export-from': ['warn', { ignoreUsedVariables: true }],
+
+  // Prefer Date.now() to get the number of milliseconds since the Unix Epoch
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-date-now.md
+  'unicorn/prefer-date-now': 'warn',
 }
 
 export function unicorn(): Linter.Config[] {

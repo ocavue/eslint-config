@@ -187,8 +187,6 @@ test('Unicorn rules should match recommended rules', () => {
       // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-code-point.md
       'unicorn/prefer-code-point',
 
-      // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-date-now.md
-      'unicorn/prefer-date-now',
 
       // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-default-parameters.md
       'unicorn/prefer-default-parameters',
