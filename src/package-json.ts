@@ -3,8 +3,6 @@ import pkgJson from 'eslint-plugin-package-json'
 import type { Config, Rules } from './types.js'
 
 export const packageJsonRules: Rules = {
-  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-empty-fields.md
-  'package-json/no-empty-fields': 'off',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-redundant-files.md
   'package-json/no-redundant-files': 'error',
@@ -15,14 +13,12 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/repository-shorthand.md
   'package-json/repository-shorthand': 'error',
 
-  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-description.md
-  'package-json/require-description': 'off',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-license.md
-  'package-json/require-license': 'error',
+  'package-json/require-license': 'warn',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-name.md
-  'package-json/require-name': 'error',
+  'package-json/require-name': 'warn',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-type.md
   'package-json/require-type': 'error',
