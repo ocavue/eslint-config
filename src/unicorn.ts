@@ -103,9 +103,6 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
   'unicorn/prefer-regexp-test': 'warn',
 
-  // Enforce combining multiple `Array#push()` into one call.
-  'unicorn/prefer-single-call': 'warn',
-
   // Prefer using the `String.raw` tag to avoid escaping `\`
   'unicorn/prefer-string-raw': 'warn',
 
