@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.9.2](https://github.com/ocavue/eslint-config/compare/v3.9.1...v3.9.2) (2026-01-11)
+
+
+### Bug Fixes
+
+* disable rule `unicorn/prefer-single-call` ([#334](https://github.com/ocavue/eslint-config/issues/334)) ([6e6579f](https://github.com/ocavue/eslint-config/commit/6e6579f4657324427a2cebc6e8fc4bdd2ff29c71))
+
 ## [3.9.1](https://github.com/ocavue/eslint-config/compare/v3.9.0...v3.9.1) (2026-01-09)
 
 
