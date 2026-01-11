@@ -169,6 +169,11 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/numeric-separators-style.md
     'unicorn/numeric-separators-style',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-single-call.md
+    // Disable this rule because you cannot tell `items.push(item1, item2)` is
+    // valid or not since you don't known whether `items` is an array or not.
+    'unicorn/perfer-single-call',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-at.md
     'unicorn/prefer-at',
 
