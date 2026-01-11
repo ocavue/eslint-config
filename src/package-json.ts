@@ -4,7 +4,6 @@ import type { Config, Rules } from './types.js'
 
 // @keep-sorted
 export const packageJsonRules: Rules = {
-
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-redundant-files.md
   'package-json/no-redundant-files': 'error',
 
@@ -59,7 +58,6 @@ export const packageJsonRules: Rules = {
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/repository-shorthand.md
   'package-json/repository-shorthand': 'error',
-
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/require-license.md
   'package-json/require-license': 'warn',
