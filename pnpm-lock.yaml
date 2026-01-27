@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@eslint-react/eslint-plugin':
-        specifier: ^2.7.2
+        specifier: ^2.7.4
         version: 2.7.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       '@eslint/js':
         specifier: ^9.39.2
@@ -42,7 +42,7 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       eslint-plugin-package-json:
-        specifier: ^0.88.1
+        specifier: ^0.88.2
         version: 0.88.2(@types/estree@1.0.8)(eslint@9.39.2(jiti@2.6.1))(jsonc-eslint-parser@2.4.2)
       eslint-plugin-react-hooks:
         specifier: ^7.0.1
@@ -54,10 +54,10 @@ importers:
         specifier: ^10.7.0
         version: 10.7.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.39.2(jiti@2.6.1)))
       globals:
-        specifier: ^17.0.0
+        specifier: ^17.1.0
         version: 17.1.0
       typescript-eslint:
-        specifier: ^8.53.0
+        specifier: ^8.53.1
         version: 8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       vue-eslint-parser:
         specifier: ^10.2.0
@@ -79,13 +79,13 @@ importers:
         specifier: ^0.0.62
         version: 0.0.62
       prettier:
-        specifier: ^3.8.0
+        specifier: ^3.8.1
         version: 3.8.1
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
       vitest:
-        specifier: ^4.0.17
+        specifier: ^4.0.18
         version: 4.0.18(@types/node@20.19.30)(jiti@2.6.1)
 
 packages:
