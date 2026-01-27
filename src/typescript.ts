@@ -32,7 +32,7 @@ export function originalRecommendedRules(): Rules {
   const configs = [...tseslint.configs.recommended]
   const config = findConfigByName(configs, 'typescript-eslint/recommended')
 
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.54.0/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
   const rules = config?.rules || {}
   return rules
 }
@@ -45,7 +45,7 @@ export function originalRecommendedTypeCheckedOnlyRules(): Rules {
     'typescript-eslint/recommended-type-checked-only',
   )
 
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.54.0/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
   const rules = config?.rules || {}
   return rules
 }
@@ -54,7 +54,7 @@ export function originalStylisticRules(): Rules {
   const configs = [...tseslint.configs.stylistic]
   const config = findConfigByName(configs, 'typescript-eslint/stylistic')
 
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.54.0/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
   const rules = config?.rules || {}
   return rules
 }
@@ -157,8 +157,9 @@ function stylisticRules(): Rules {
     // https://typescript-eslint.io/rules/no-empty-function/
     '@typescript-eslint/no-empty-function': 'off',
 
-    // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
     // https://typescript-eslint.io/rules/no-inferrable-types/
+    // 
+    // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
     '@typescript-eslint/no-inferrable-types': 'off',
 
     // https://typescript-eslint.io/rules/prefer-for-of/
