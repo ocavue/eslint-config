@@ -11,16 +11,57 @@ import type { Config, Rules } from './types.js'
 
 export { tseslint }
 
-function eslintRecommendedRules(): Rules {
+/**
+ * This is a compatibility ruleset that:
+ * - disables rules from eslint:recommended which are already handled by TypeScript.
+ * - enables rules that make sense due to TS's typechecking / transpilation.
+ * @see {@link https://typescript-eslint.io/users/configs/#eslint-recommended}
+ * @internal
+ */
+export function originalESLintRecommendedRules(): Rules {
   return tseslint.configs.eslintRecommended.rules || {}
 }
 
-function recommendedRules(): Rules {
+/** @internal */
+export function eslintRecommendedRules(): Rules {
+  return originalESLintRecommendedRules()
+}
+
+/** @internal */
+export function originalRecommendedRules(): Rules {
   const configs = [...tseslint.configs.recommended]
   const config = findConfigByName(configs, 'typescript-eslint/recommended')
 
   // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
   const rules = config?.rules || {}
+  return rules
+}
+
+/** @internal */
+export function originalRecommendedTypeCheckedOnlyRules(): Rules {
+  const configs = [...tseslint.configs.recommendedTypeCheckedOnly]
+  const config = findConfigByName(
+    configs,
+    'typescript-eslint/recommended-type-checked-only',
+  )
+
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
+  const rules = config?.rules || {}
+  return rules
+}
+
+export function originalStylisticRules(): Rules {
+  const configs = [...tseslint.configs.stylistic]
+  const config = findConfigByName(configs, 'typescript-eslint/stylistic')
+
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
+  const rules = config?.rules || {}
+  return rules
+}
+
+/** @internal */
+export function recommendedRules(): Rules {
+  const rules = originalRecommendedRules()
 
   // @keep-sorted
   return {
@@ -52,15 +93,9 @@ function recommendedRules(): Rules {
   }
 }
 
-function recommendedTypeCheckedOnlyRules(): Rules {
-  const configs = [...tseslint.configs.recommendedTypeCheckedOnly]
-  const config = findConfigByName(
-    configs,
-    'typescript-eslint/recommended-type-checked-only',
-  )
-
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
-  const rules = config?.rules || {}
+/** @internal */
+export function recommendedTypeCheckedOnlyRules(): Rules {
+  const rules = originalRecommendedTypeCheckedOnlyRules()
 
   // @keep-sorted
   return {
@@ -90,11 +125,7 @@ function recommendedTypeCheckedOnlyRules(): Rules {
 }
 
 function stylisticRules(): Rules {
-  const configs = [...tseslint.configs.stylistic]
-  const config = findConfigByName(configs, 'typescript-eslint/stylistic')
-
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
-  const rules = config?.rules || {}
+  const rules = originalStylisticRules()
 
   // @keep-sorted
   return {
@@ -117,14 +148,22 @@ function stylisticRules(): Rules {
   }
 }
 
-function commonRules(): Rules {
+/**
+ * Shared rules for both TypeScript and JavaScript files.
+ * @internal
+ */
+export function commonRules(): Rules {
   return {
     ...eslintRecommendedRules,
     ...recommendedRules(),
   }
 }
 
-function tsOnlyRules(): Rules {
+/**
+ * Additional rules for TypeScript files.
+ * @internal
+ */
+export function tsOnlyRules(): Rules {
   // @keep-sorted
   return {
     ...recommendedTypeCheckedOnlyRules(),
@@ -148,7 +187,11 @@ function tsOnlyRules(): Rules {
   }
 }
 
-function jsOnlyRules(): Rules {
+/**
+ * Additional rules for JavaScript files.
+ * @internal
+ */
+export function jsOnlyRules(): Rules {
   // @keep-sorted
   return {
     '@typescript-eslint/no-require-imports': 'off',
