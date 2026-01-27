@@ -32,7 +32,7 @@ export function originalRecommendedRules(): Rules {
   const configs = [...tseslint.configs.recommended]
   const config = findConfigByName(configs, 'typescript-eslint/recommended')
 
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.54.0/packages/eslint-plugin/src/configs/flat/recommended.ts#L25
   const rules = config?.rules || {}
   return rules
 }
@@ -45,7 +45,7 @@ export function originalRecommendedTypeCheckedOnlyRules(): Rules {
     'typescript-eslint/recommended-type-checked-only',
   )
 
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.54.0/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
   const rules = config?.rules || {}
   return rules
 }
@@ -54,7 +54,7 @@ export function originalStylisticRules(): Rules {
   const configs = [...tseslint.configs.stylistic]
   const config = findConfigByName(configs, 'typescript-eslint/stylistic')
 
-  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.32.1/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
+  // https://github.com/typescript-eslint/typescript-eslint/blob/v8.54.0/packages/eslint-plugin/src/configs/flat/stylistic.ts#L25
   const rules = config?.rules || {}
   return rules
 }
@@ -67,6 +67,8 @@ export function recommendedRules(): Rules {
   return {
     ...rules,
 
+    // https://typescript-eslint.io/rules/no-empty-object-type/
+    // 
     // `type T1 = T0` and `interface T2 extends T0 {}` have the same meaning
     // but different behavior in TypeScript type checking. `T1` and `T0` are
     // the same type, while `T2` is different than `T0`. We allow `interface
@@ -78,8 +80,10 @@ export function recommendedRules(): Rules {
       },
     ],
 
+    // https://typescript-eslint.io/rules/no-explicit-any/
     '@typescript-eslint/no-explicit-any': 'off',
 
+    // https://typescript-eslint.io/rules/no-unused-vars/
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
@@ -89,6 +93,7 @@ export function recommendedRules(): Rules {
       },
     ],
 
+    // https://typescript-eslint.io/rules/triple-slash-reference/
     '@typescript-eslint/triple-slash-reference': 'off',
   }
 }
@@ -101,25 +106,34 @@ export function recommendedTypeCheckedOnlyRules(): Rules {
   return {
     ...rules,
 
+    // https://typescript-eslint.io/rules/no-floating-promises/
     '@typescript-eslint/no-floating-promises': 'warn',
 
+    // https://typescript-eslint.io/rules/no-misused-promises/
     '@typescript-eslint/no-misused-promises': [
       'error',
       { checksVoidReturn: false },
     ],
 
+    // https://typescript-eslint.io/rules/no-unnecessary-type-assertion/
     '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
 
+    // https://typescript-eslint.io/rules/no-unsafe-argument/
     '@typescript-eslint/no-unsafe-argument': 'warn',
 
+    // https://typescript-eslint.io/rules/no-unsafe-assignment/
     '@typescript-eslint/no-unsafe-assignment': 'warn',
 
+    // https://typescript-eslint.io/rules/no-unsafe-call/
     '@typescript-eslint/no-unsafe-call': 'warn',
 
+    // https://typescript-eslint.io/rules/no-unsafe-member-access/
     '@typescript-eslint/no-unsafe-member-access': 'warn',
 
+    // https://typescript-eslint.io/rules/no-unsafe-return/
     '@typescript-eslint/no-unsafe-return': 'warn',
 
+    // https://typescript-eslint.io/rules/restrict-template-expressions/
     '@typescript-eslint/restrict-template-expressions': 'off',
   }
 }
@@ -131,19 +145,27 @@ function stylisticRules(): Rules {
   return {
     ...rules,
 
+    // https://typescript-eslint.io/rules/array-type/
     '@typescript-eslint/array-type': 'off',
 
+    // https://typescript-eslint.io/rules/consistent-indexed-object-style/
     '@typescript-eslint/consistent-indexed-object-style': 'off',
 
+    // https://typescript-eslint.io/rules/consistent-type-definitions/
     '@typescript-eslint/consistent-type-definitions': 'off',
 
+    // https://typescript-eslint.io/rules/no-empty-function/
     '@typescript-eslint/no-empty-function': 'off',
 
+    // https://typescript-eslint.io/rules/no-inferrable-types/
+    // 
     // Turn off this rule because it's incompatible with the `--isolatedDeclarations` compiler option.
     '@typescript-eslint/no-inferrable-types': 'off',
 
+    // https://typescript-eslint.io/rules/prefer-for-of/
     '@typescript-eslint/prefer-for-of': 'off',
 
+    // https://typescript-eslint.io/rules/prefer-function-type/
     '@typescript-eslint/prefer-function-type': 'warn',
   }
 }
@@ -169,6 +191,7 @@ export function tsOnlyRules(): Rules {
     ...recommendedTypeCheckedOnlyRules(),
     ...stylisticRules(),
 
+    // https://typescript-eslint.io/rules/consistent-type-imports/
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       {
@@ -177,12 +200,16 @@ export function tsOnlyRules(): Rules {
       },
     ],
 
+    // https://typescript-eslint.io/rules/no-import-type-side-effects/
     '@typescript-eslint/no-import-type-side-effects': 'warn',
 
+    // https://typescript-eslint.io/rules/no-mixed-enums/
     '@typescript-eslint/no-mixed-enums': 'error',
 
+    // https://typescript-eslint.io/rules/no-unnecessary-parameter-property-assignment/
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'warn',
 
+    // https://typescript-eslint.io/rules/return-await/
     '@typescript-eslint/return-await': ['error', 'always'],
   }
 }
