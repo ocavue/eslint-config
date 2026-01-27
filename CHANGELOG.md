@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.10.0](https://github.com/ocavue/eslint-config/compare/v3.9.2...v3.10.0) (2026-01-27)
+
+
+### Features
+
+* update some TypeScript ESLint rules to error level ([#342](https://github.com/ocavue/eslint-config/issues/342)) ([191dd62](https://github.com/ocavue/eslint-config/commit/191dd6257c6ded967643e9111db6347baaebc465))
+
 ## [3.9.2](https://github.com/ocavue/eslint-config/compare/v3.9.1...v3.9.2) (2026-01-11)
 
 
