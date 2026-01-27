@@ -1,7 +1,7 @@
 {
   "name": "@ocavue/eslint-config",
   "type": "module",
-  "version": "3.9.2",
+  "version": "3.10.0",
   "packageManager": "pnpm@10.28.1",
   "description": "Opinionated ESLint config preset",
   "author": "ocavue <ocavue@gmail.com>",
