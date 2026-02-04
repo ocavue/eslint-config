@@ -1,5 +1,6 @@
-import type { Linter } from 'eslint'
 import prettierConfig from 'eslint-config-prettier'
+
+import type { Config } from './types.ts'
 
 /**
  * Turns off all rules that are unnecessary or might conflict with Prettier.
@@ -7,7 +8,7 @@ import prettierConfig from 'eslint-config-prettier'
  * Notice that this config does not run `prettier` as an ESLint rule, so you
  * have to run `pretter` separately for formatting.
  */
-export function prettier(): Linter.Config[] {
+export function prettier(): Config[] {
   return [
     {
       name: 'prettier',

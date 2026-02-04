@@ -25,26 +25,11 @@ export function imports(): Linter.Config[] {
         'import/no-useless-path-segments': 'warn',
         'import/newline-after-import': 'warn',
         // Disable `no-duplicates` because of the following bug
-        // https://github.com/un-ts/eslint-plugin-import-x/issues/167
+        // https://github.com/un-ts/eslint-plugin-import-x/issues/449
         // 'import/no-duplicates': [
         //   'warn',
         //   { 'prefer-inline': true },
         // ],
-        'import/order': [
-          'warn',
-          {
-            'newlines-between': 'always',
-            alphabetize: { order: 'asc' },
-            groups: [
-              'builtin',
-              'external',
-              'internal',
-              'parent',
-              'sibling',
-              'index',
-            ],
-          },
-        ],
       },
     },
   ]
