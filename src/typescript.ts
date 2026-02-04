@@ -152,6 +152,7 @@ function stylisticRules(): Rules {
  */
 export function commonRules(): Rules {
   return {
+    'no-duplicate-imports': ['warn', { "allowSeparateTypeImports": false, includeExports: true, }],
     ...eslintRecommendedRules(),
     ...recommendedRules(),
   }

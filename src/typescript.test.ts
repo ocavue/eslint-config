@@ -47,6 +47,13 @@ test('commonRules', () => {
       "no-dupe-args": "off",
       "no-dupe-class-members": "off",
       "no-dupe-keys": "off",
+      "no-duplicate-imports": [
+        "warn",
+        {
+          "allowSeparateTypeImports": false,
+          "includeExports": true,
+        },
+      ],
       "no-func-assign": "off",
       "no-import-assign": "off",
       "no-new-native-nonconstructor": "off",
