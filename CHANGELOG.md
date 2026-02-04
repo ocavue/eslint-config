@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.11.2](https://github.com/ocavue/eslint-config/compare/v3.11.1...v3.11.2) (2026-02-04)
+
+
+### Bug Fixes
+
+* don't sort exports ([#351](https://github.com/ocavue/eslint-config/issues/351)) ([d2482ec](https://github.com/ocavue/eslint-config/commit/d2482ecea304c4c69f881f29f3c54d2766327592))
+
 ## [3.11.1](https://github.com/ocavue/eslint-config/compare/v3.11.0...v3.11.1) (2026-02-04)
 
 
