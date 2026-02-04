@@ -15,7 +15,7 @@ export function perfectionist(): Config[] {
         perfectionist: perfectionistPlugin,
       },
       rules: {
-        // 'perfectionist/sort-exports': 'warn',
+        'perfectionist/sort-exports': 'warn',
         'perfectionist/sort-imports': [
           'warn',
           {
