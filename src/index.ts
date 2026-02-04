@@ -54,14 +54,11 @@ export async function defineESLintConfig(
     configs.push(...packageJson())
   }
 
-
-
   if (resolvedOptions.perfectionist) {
     const { perfectionist } = await import('./perfectionist.js')
     configs.push(...perfectionist())
   }
 
-  
   if (resolvedOptions.imports) {
     const { imports } = await import('./imports.js')
     configs.push(...imports())

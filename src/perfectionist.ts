@@ -9,26 +9,26 @@ import type { Config } from './types.ts'
  * have to run `pretter` separately for formatting.
  */
 export function perfectionist(): Config[] {
-    return [
-        {
-            plugins: {
-                perfectionist: perfectionistPlugin,
-            },
-            rules: {
-                'perfectionist/sort-imports': [
-                    'warn',
-                    {
-                        groups: [
-                            'builtin',
-                            'external',
-                            'internal',
-                            'parent',
-                            'sibling',
-                            'index',
-                        ],
-                    }
-                ]
-            },
-        },
-    ]
+  return [
+    {
+      plugins: {
+        perfectionist: perfectionistPlugin,
+      },
+      rules: {
+        'perfectionist/sort-imports': [
+          'warn',
+          {
+            groups: [
+              'builtin',
+              'external',
+              'internal',
+              'parent',
+              'sibling',
+              'index',
+            ],
+          },
+        ],
+      },
+    },
+  ]
 }
