@@ -1,8 +1,6 @@
 import { expect, test } from 'vitest'
 
-import { commonRules } from './typescript.ts'
-import { tsOnlyRules } from './typescript.ts'
-import { jsOnlyRules } from './typescript.ts'
+import { commonRules, jsOnlyRules, tsOnlyRules } from './typescript.ts'
 
 test('commonRules', () => {
   expect(commonRules()).toMatchInlineSnapshot(`
@@ -39,9 +37,39 @@ test('commonRules', () => {
       "@typescript-eslint/prefer-as-const": "error",
       "@typescript-eslint/prefer-namespace-keyword": "error",
       "@typescript-eslint/triple-slash-reference": "off",
+      "constructor-super": "off",
+      "getter-return": "off",
       "no-array-constructor": "off",
+      "no-class-assign": "off",
+      "no-const-assign": "off",
+      "no-dupe-args": "off",
+      "no-dupe-class-members": "off",
+      "no-dupe-keys": "off",
+      "no-duplicate-imports": [
+        "warn",
+        {
+          "allowSeparateTypeImports": true,
+          "includeExports": true,
+        },
+      ],
+      "no-func-assign": "off",
+      "no-import-assign": "off",
+      "no-new-native-nonconstructor": "off",
+      "no-new-symbol": "off",
+      "no-obj-calls": "off",
+      "no-redeclare": "off",
+      "no-setter-return": "off",
+      "no-this-before-super": "off",
+      "no-undef": "off",
+      "no-unreachable": "off",
+      "no-unsafe-negation": "off",
       "no-unused-expressions": "off",
       "no-unused-vars": "off",
+      "no-var": "error",
+      "no-with": "off",
+      "prefer-const": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
     }
   `)
 })
