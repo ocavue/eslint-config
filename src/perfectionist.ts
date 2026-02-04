@@ -15,10 +15,13 @@ export function perfectionist(): Config[] {
         perfectionist: perfectionistPlugin,
       },
       rules: {
+        // 'perfectionist/sort-exports': 'warn',
         'perfectionist/sort-imports': [
           'warn',
           {
             groups: [
+              'side-effect-style',
+              'side-effect',
               'builtin',
               'external',
               'internal',
