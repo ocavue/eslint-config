@@ -1,8 +1,6 @@
 import { expect, test } from 'vitest'
 
-import { commonRules } from './typescript.ts'
-import { tsOnlyRules } from './typescript.ts'
-import { jsOnlyRules } from './typescript.ts'
+import { commonRules, jsOnlyRules, tsOnlyRules } from './typescript.ts'
 
 test('commonRules', () => {
   expect(commonRules()).toMatchInlineSnapshot(`
@@ -50,7 +48,7 @@ test('commonRules', () => {
       "no-duplicate-imports": [
         "warn",
         {
-          "allowSeparateTypeImports": false,
+          "allowSeparateTypeImports": true,
           "includeExports": true,
         },
       ],
