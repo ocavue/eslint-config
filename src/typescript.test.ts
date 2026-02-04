@@ -49,7 +49,6 @@ test('commonRules', () => {
         "warn",
         {
           "allowSeparateTypeImports": true,
-          "includeExports": true,
         },
       ],
       "no-func-assign": "off",
