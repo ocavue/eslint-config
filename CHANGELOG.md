@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.11.0](https://github.com/ocavue/eslint-config/compare/v3.10.0...v3.11.0) (2026-02-04)
+
+
+### Features
+
+* add eslint-plugin-perfectionist ([#347](https://github.com/ocavue/eslint-config/issues/347)) ([c3f249d](https://github.com/ocavue/eslint-config/commit/c3f249d9b88262763e5f434a0e9127b50c095e1e))
+
 ## [3.10.0](https://github.com/ocavue/eslint-config/compare/v3.9.2...v3.10.0) (2026-01-27)
 
 
