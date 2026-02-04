@@ -26,12 +26,21 @@ export interface ESLintConfigOptions {
    */
   packageJson?: boolean
 
+
+  /**
+   * Whether to enable [eslint-plugin-perfectionist](https://www.npmjs.com/package/eslint-plugin-perfectionist) configuration.
+   *
+   * @default true
+   */
+  perfectionist?: boolean
+  
   /**
    * Whether to enable [eslint-plugin-import-x](https://www.npmjs.com/package/eslint-plugin-import-x) configuration.
    *
    * @default true
    */
   imports?: boolean
+
 
   /**
    * Whether to check code blocks in Markdown files.
@@ -108,6 +117,7 @@ export function resolveOptions({
   typescript = true,
   unicorn = true,
   packageJson = true,
+  perfectionist = true,
   imports = true,
   markdown = true,
   react = false,
@@ -124,6 +134,7 @@ export function resolveOptions({
     typescript,
     unicorn,
     packageJson,
+    perfectionist,
     imports,
     markdown,
     react,
