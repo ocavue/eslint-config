@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@eslint-react/eslint-plugin": "^2.8.1",
-    "@eslint/js": "^9.39.2",
+    "@eslint/js": "10.0.0-rc.0 || ^10.0.1",
     "@eslint/markdown": "^7.5.1",
     "@unocss/eslint-config": "^66.6.0",
     "eslint-config-flat-gitignore": "^2.1.0",
@@ -59,7 +59,7 @@
   "devDependencies": {
     "@ocavue/tsconfig": "^0.6.2",
     "@types/node": "^20.19.27",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0-rc.2",
     "jiti": "^2.6.1",
     "pkg-pr-new": "^0.0.62",
     "prettier": "^3.8.1",
