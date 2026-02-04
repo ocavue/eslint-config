@@ -152,7 +152,7 @@ function stylisticRules(): Rules {
  */
 export function commonRules(): Rules {
   return {
-    ...eslintRecommendedRules,
+    ...eslintRecommendedRules(),
     ...recommendedRules(),
   }
 }
