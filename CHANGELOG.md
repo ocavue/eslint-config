@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.12.0](https://github.com/ocavue/eslint-config/compare/v3.11.5...v3.12.0) (2026-02-15)
+
+
+### Features
+
+* remove `eslint-plugin-import-x` ([#368](https://github.com/ocavue/eslint-config/issues/368)) ([398a582](https://github.com/ocavue/eslint-config/commit/398a582a483907672e34bd21a7565d1c3ee3d955))
+
 ## [3.11.5](https://github.com/ocavue/eslint-config/compare/v3.11.4...v3.11.5) (2026-02-15)
 
 
