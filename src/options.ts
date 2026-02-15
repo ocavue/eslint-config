@@ -34,13 +34,6 @@ export interface ESLintConfigOptions {
   perfectionist?: boolean
 
   /**
-   * Whether to enable [eslint-plugin-import-x](https://www.npmjs.com/package/eslint-plugin-import-x) configuration.
-   *
-   * @default false
-   */
-  imports?: boolean
-
-  /**
    * Whether to check code blocks in Markdown files.
    *
    * @default true
@@ -116,7 +109,6 @@ export function resolveOptions({
   unicorn = true,
   packageJson = true,
   perfectionist = true,
-  imports = false,
   markdown = true,
   react = false,
   vue = false,
@@ -133,7 +125,6 @@ export function resolveOptions({
     unicorn,
     packageJson,
     perfectionist,
-    imports,
     markdown,
     react,
     vue,

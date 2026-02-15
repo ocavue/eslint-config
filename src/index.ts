@@ -59,11 +59,6 @@ export async function defineESLintConfig(
     configs.push(...perfectionist())
   }
 
-  if (resolvedOptions.imports) {
-    const { imports } = await import('./imports.js')
-    configs.push(...imports())
-  }
-
   if (resolvedOptions.markdown) {
     const { markdown } = await import('./markdown.js')
     configs.push(...markdown())
