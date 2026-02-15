@@ -36,7 +36,7 @@ export interface ESLintConfigOptions {
   /**
    * Whether to enable [eslint-plugin-import-x](https://www.npmjs.com/package/eslint-plugin-import-x) configuration.
    *
-   * @default true
+   * @default false
    */
   imports?: boolean
 
@@ -116,7 +116,7 @@ export function resolveOptions({
   unicorn = true,
   packageJson = true,
   perfectionist = true,
-  imports = true,
+  imports = false,
   markdown = true,
   react = false,
   vue = false,
