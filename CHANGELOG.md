@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.11.3](https://github.com/ocavue/eslint-config/compare/v3.11.2...v3.11.3) (2026-02-15)
+
+
+### Bug Fixes
+
+* update eslint-plugin-unicorn to v63 ([#357](https://github.com/ocavue/eslint-config/issues/357)) ([55f76db](https://github.com/ocavue/eslint-config/commit/55f76db6f6da3771b2d4fb51d63796ea2a0408a9))
+
 ## [3.11.2](https://github.com/ocavue/eslint-config/compare/v3.11.1...v3.11.2) (2026-02-04)
 
 
