@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.11.5](https://github.com/ocavue/eslint-config/compare/v3.11.4...v3.11.5) (2026-02-15)
+
+
+### Bug Fixes
+
+* disable `eslint-plugin-import-x` ([#366](https://github.com/ocavue/eslint-config/issues/366)) ([44cd8b0](https://github.com/ocavue/eslint-config/commit/44cd8b0b54f28b1293833df57a2415c731a53b0a))
+
 ## [3.11.4](https://github.com/ocavue/eslint-config/compare/v3.11.3...v3.11.4) (2026-02-15)
 
 
