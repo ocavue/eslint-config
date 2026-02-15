@@ -1,36 +1,36 @@
-import type { Linter } from 'eslint'
-import * as importPlugin from 'eslint-plugin-import-x'
+import { importX } from 'eslint-plugin-import-x'
+import { defineConfig } from 'eslint/config'
 
-export function imports(): Linter.Config[] {
-  return [
+import type { Config, Plugin } from './types.ts'
+
+export function imports(): Config[] {
+  // @ts-expect-error incorrect type
+  const importXPlugin: Plugin = importX
+
+  // @ts-expect-error incorrect type
+  const TypeScriptConfig: Config = importX.flatConfigs.typescript
+
+  return defineConfig([
     {
-      name: 'import',
       plugins: {
-        // @ts-expect-error incorrect type
-        import: importPlugin,
+        'import-x': importXPlugin,
       },
-      settings: {
-        'import-x/resolver': {
-          // You will also need to install and configure the TypeScript resolver
-          // See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
-          typescript: true,
-          node: true,
-        },
-      },
+      extends: [TypeScriptConfig],
       rules: {
         // External modules must be declared in the package.json. Only enforced in CI.
-        'import/no-extraneous-dependencies': process.env.CI ? 'error' : 'off',
-        'import/first': 'warn',
-        'import/no-mutable-exports': 'warn',
-        'import/no-useless-path-segments': 'warn',
-        'import/newline-after-import': 'warn',
+        'import-x/no-extraneous-dependencies': process.env.CI ? 'error' : 'off',
+        'import-x/first': 'warn',
+        'import-x/no-mutable-exports': 'warn',
+        'import-x/export': 'error',
+        'import-x/no-useless-path-segments': 'warn',
+        'import-x/newline-after-import': 'warn',
         // Disable `no-duplicates` because of the following bug
         // https://github.com/un-ts/eslint-plugin-import-x/issues/449
-        // 'import/no-duplicates': [
+        // 'import-x/no-duplicates': [
         //   'warn',
         //   { 'prefer-inline': true },
         // ],
       },
     },
-  ]
+  ])
 }
