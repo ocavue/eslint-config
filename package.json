@@ -46,13 +46,13 @@
     "eslint-plugin-antfu": "^3.2.2",
     "eslint-plugin-command": "^3.4.0",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-package-json": "^0.88.2",
+    "eslint-plugin-package-json": "^0.88.3",
     "eslint-plugin-perfectionist": "^5.5.0",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-unicorn": "^63.0.0",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.3.0",
-    "typescript-eslint": "^8.55.1-alpha.4",
+    "typescript-eslint": "^8.56.0",
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
