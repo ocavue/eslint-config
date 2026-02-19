@@ -12,6 +12,10 @@ export const unicornRules: Linter.RulesRecord = {
   // Uppercase regex escapes
   'unicorn/escape-case': 'error',
 
+  // Add expiration conditions to TODO comments
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v63.0.0/docs/rules/expiring-todo-comments.md
+  'unicorn/expiring-todo-comments': 'error',
+
   // Enforce explicitly comparing the length or size property of a value
   'unicorn/explicit-length-check': 'error',
 
