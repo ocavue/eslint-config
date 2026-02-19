@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.13.0](https://github.com/ocavue/eslint-config/compare/v3.12.0...v3.13.0) (2026-02-19)
+
+
+### Features
+
+* enable rule `unicorn/expiring-todo-comments` ([#373](https://github.com/ocavue/eslint-config/issues/373)) ([df6ef43](https://github.com/ocavue/eslint-config/commit/df6ef43a0b9f984238246a8ffc06426ca2a27f36))
+* enable rule `unicorn/prefer-string-replace-all` ([#372](https://github.com/ocavue/eslint-config/issues/372)) ([0115984](https://github.com/ocavue/eslint-config/commit/0115984c77a08d975e3c3ed383736ac3a121311e))
+
 ## [3.12.0](https://github.com/ocavue/eslint-config/compare/v3.11.5...v3.12.0) (2026-02-15)
 
 
