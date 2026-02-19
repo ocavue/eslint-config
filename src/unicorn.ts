@@ -106,6 +106,9 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer using the `String.raw` tag to avoid escaping `\`
   'unicorn/prefer-string-raw': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-replace-all.md
+  'unicorn/prefer-string-replace-all': 'warn',
+
   // String methods startsWith/endsWith instead of more complicated stuff
   'unicorn/prefer-string-starts-ends-with': 'error',
 
