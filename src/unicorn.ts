@@ -106,6 +106,7 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer using the `String.raw` tag to avoid escaping `\`
   'unicorn/prefer-string-raw': 'warn',
 
+  // Prefer `String#replaceAll()` over `String#replace()` when replacing all occurrences
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-replace-all.md
   'unicorn/prefer-string-replace-all': 'warn',
 
