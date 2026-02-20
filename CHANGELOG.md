@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/ocavue/eslint-config/compare/v3.13.0...v4.0.0) (2026-02-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* support eslint v10 ([#346](https://github.com/ocavue/eslint-config/issues/346))
+
+### Features
+
+* support eslint v10 ([#346](https://github.com/ocavue/eslint-config/issues/346)) ([ab40fff](https://github.com/ocavue/eslint-config/commit/ab40fff80fc241ca5818ab0f3d4cb6330d43fa70))
+
 ## [3.13.0](https://github.com/ocavue/eslint-config/compare/v3.12.0...v3.13.0) (2026-02-19)
 
 
