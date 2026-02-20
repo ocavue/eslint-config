@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/ocavue/eslint-config/compare/v4.0.0...v4.1.0) (2026-02-20)
+
+
+### Features
+
+* autofix unused imports ([#377](https://github.com/ocavue/eslint-config/issues/377)) ([1bdd4af](https://github.com/ocavue/eslint-config/commit/1bdd4afbe07d0830f72f6b009003a4bc8b2427e6))
+
 ## [4.0.0](https://github.com/ocavue/eslint-config/compare/v3.13.0...v4.0.0) (2026-02-20)
 
 
