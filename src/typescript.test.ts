@@ -30,6 +30,11 @@ test('commonRules', () => {
         {
           "argsIgnorePattern": "^_",
           "caughtErrorsIgnorePattern": "^_",
+          "enableAutofixRemoval": {
+            "imports": true,
+          },
+          "ignoreRestSiblings": true,
+          "reportUsedIgnorePattern": true,
           "varsIgnorePattern": "^_",
         },
       ],
