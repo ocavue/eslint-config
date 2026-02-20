@@ -6,6 +6,7 @@ import {
   GLOB_JSX,
   GLOB_TS,
   GLOB_TSX,
+  GLOB_TEST
 } from './shared.js'
 import type { Config, Rules } from './types.js'
 
