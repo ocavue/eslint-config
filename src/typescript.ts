@@ -87,9 +87,12 @@ export function recommendedRules(): Rules {
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
+        enableAutofixRemoval: { imports: true },
         argsIgnorePattern: '^_',
         varsIgnorePattern: '^_',
         caughtErrorsIgnorePattern: '^_',
+        ignoreRestSiblings: true,
+        reportUsedIgnorePattern: true,
       },
     ],
 
