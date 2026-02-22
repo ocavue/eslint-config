@@ -1,3 +1,10 @@
 {
-  "extends": "@ocavue/tsconfig/es/build-tsc.json"
+  "extends": "@ocavue/tsconfig/es/build-tsc.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+  ],
+  "exclude": [
+    "src/**/*.test.ts",
+  ]
 }
