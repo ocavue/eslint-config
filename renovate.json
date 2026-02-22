@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["eslint-plugin-react-hooks"],
-      "allowedVersions": "!/^7.1$/"
+      "allowedVersions": ">=7.1.0"
     }
   ]
 }
