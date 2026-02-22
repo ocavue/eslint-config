@@ -4,6 +4,7 @@ import type { Config, Rules } from './types.js'
 
 // @keep-sorted
 export const packageJsonRules: Rules = {
+
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-redundant-files.md
   'package-json/no-redundant-files': 'error',
 
@@ -190,6 +191,10 @@ export const packageJsonRules: Rules = {
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-workspaces.md
   'package-json/valid-workspaces': 'error',
+
+
+  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.89.0/docs/rules/require-repository.md
+  "package-json/require-repository": 'warn',
 }
 
 /**
