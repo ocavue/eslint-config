@@ -155,9 +155,24 @@ function stylisticRules(): Rules {
  */
 export function commonRules(): Rules {
   return {
-    'no-duplicate-imports': ['warn', { allowSeparateTypeImports: true }],
     ...eslintRecommendedRules(),
     ...recommendedRules(),
+
+    // https://eslint.org/docs/v9.x/rules/no-duplicate-imports
+    'no-duplicate-imports': [
+      'warn',
+      {
+        allowSeparateTypeImports: true,
+      },
+    ],
+
+    // https://eslint.org/docs/v9.x/rules/prefer-const#destructuring
+    'prefer-const': [
+      'warn',
+      {
+        destructuring: 'all',
+      },
+    ],
   }
 }
 
