@@ -11,9 +11,6 @@ importers:
       '@eslint-react/eslint-plugin':
         specifier: ^2.13.0
         version: 2.13.0(eslint@10.0.0(jiti@2.6.1))(typescript@5.9.3)
-      '@eslint/js':
-        specifier: ^10.0.1
-        version: 10.0.1(eslint@10.0.0(jiti@2.6.1))
       '@eslint/markdown':
         specifier: ^7.5.1
         version: 7.5.1
@@ -402,15 +399,6 @@ packages:
   '@eslint/core@1.1.0':
     resolution: {integrity: sha512-/nr9K9wkr3P1EzFTdFdMoLuo1PmIxjmwvPozwoSodjNBdefGujXQUF93u1DDZpEaTuDvMsIQddsd35BwtrW9Xw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
-
-  '@eslint/js@10.0.1':
-    resolution: {integrity: sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA==}
-    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
-    peerDependencies:
-      eslint: ^10.0.0
-    peerDependenciesMeta:
-      eslint:
-        optional: true
 
   '@eslint/markdown@7.5.1':
     resolution: {integrity: sha512-R8uZemG9dKTbru/DQRPblbJyXpObwKzo8rv1KYGGuPUPtjM4LXBYM9q5CIZAComzZupws3tWbDwam5AFpPLyJQ==}
@@ -2255,10 +2243,6 @@ snapshots:
   '@eslint/core@1.1.0':
     dependencies:
       '@types/json-schema': 7.0.15
-
-  '@eslint/js@10.0.1(eslint@10.0.0(jiti@2.6.1))':
-    optionalDependencies:
-      eslint: 10.0.0(jiti@2.6.1)
 
   '@eslint/markdown@7.5.1':
     dependencies:

@@ -38,7 +38,6 @@
   },
   "dependencies": {
     "@eslint-react/eslint-plugin": "^2.13.0",
-    "@eslint/js": "^10.0.1",
     "@eslint/markdown": "^7.5.1",
     "@unocss/eslint-config": "^66.6.0",
     "eslint-config-flat-gitignore": "^2.2.1",
@@ -54,14 +53,6 @@
     "globals": "^17.3.0",
     "typescript-eslint": "^8.56.0",
     "vue-eslint-parser": "^10.4.0"
-  },
-  "peerDependencies": {
-    "eslint": "^10.0.0"
-  },
-  "peerDependenciesMeta": {
-    "eslint": {
-      "optional": true
-    }
   },
   "devDependencies": {
     "@ocavue/tsconfig": "^0.6.3",
