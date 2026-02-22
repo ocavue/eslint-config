@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.2.0](https://github.com/ocavue/eslint-config/compare/v4.1.0...v4.2.0) (2026-02-22)
+
+
+### Features
+
+* enable `package-json/require-repository` and `package-json/require-files` ([#382](https://github.com/ocavue/eslint-config/issues/382)) ([14efbb0](https://github.com/ocavue/eslint-config/commit/14efbb0e8b67a0275992cb040ce5b172bbd2c99a))
+
+
+### Bug Fixes
+
+* update options for rule `prefer-const` ([#379](https://github.com/ocavue/eslint-config/issues/379)) ([bc7f3f7](https://github.com/ocavue/eslint-config/commit/bc7f3f7b8c48bac5104417d7fc061412af747ffd))
+
 ## [4.1.0](https://github.com/ocavue/eslint-config/compare/v4.0.0...v4.1.0) (2026-02-20)
 
 
