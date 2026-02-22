@@ -46,7 +46,7 @@
     "eslint-plugin-antfu": "^3.2.2",
     "eslint-plugin-command": "^3.4.0",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-package-json": "^0.88.3",
+    "eslint-plugin-package-json": "^0.89.0",
     "eslint-plugin-perfectionist": "^5.6.0",
     "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-e8c63626-20260213 || 7.1.0-canary-2ba30655-20260219",
     "eslint-plugin-unicorn": "^63.0.0",
