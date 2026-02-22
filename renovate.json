@@ -2,7 +2,7 @@
   "extends": ["github>ocavue/config-renovate"],
   "packageRules": [
     {
-      "matchPackageNames": ["chalk"],
+      "matchPackageNames": ["eslint-plugin-react-hooks"],
       "allowedVersions": "!/^7.1$/"
     }
   ]
