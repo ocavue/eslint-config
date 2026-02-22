@@ -192,9 +192,12 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-workspaces.md
   'package-json/valid-workspaces': 'error',
 
+  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.89.0/docs/rules/require-files.md
+  "package-json/require-files": ['warn', { "ignorePrivate": true }],
+
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.89.0/docs/rules/require-repository.md
-  "package-json/require-repository": 'warn',
+  "package-json/require-repository": ['warn', { "ignorePrivate": true }],
 }
 
 /**
