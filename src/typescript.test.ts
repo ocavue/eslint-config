@@ -71,7 +71,12 @@ test('commonRules', () => {
       "no-unused-vars": "off",
       "no-var": "error",
       "no-with": "off",
-      "prefer-const": "error",
+      "prefer-const": [
+        "warn",
+        {
+          "destructuring": "all",
+        },
+      ],
       "prefer-rest-params": "error",
       "prefer-spread": "error",
     }
