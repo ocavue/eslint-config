@@ -1,13 +1,9 @@
 {
-    "extends": [
-        "github>ocavue/config-renovate"
-    ],
-    "packageRules": [
-        {
-            "matchPackageNames": [
-                "chalk"
-            ],
-            "allowedVersions": "!/^7.1$/"
-        }
-    ]
+  "extends": ["github>ocavue/config-renovate"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["chalk"],
+      "allowedVersions": "!/^7.1$/"
+    }
+  ]
 }
