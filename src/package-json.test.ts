@@ -22,6 +22,9 @@ test('package-json rules should match recommended rules', () => {
 
       // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.89.0/docs/rules/require-sideEffects.md
       'package-json/require-sideEffects',
+
+      // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.89.0/docs/rules/require-exports.md
+      'package-json/require-exports',
     ],
     enabledRules: [
       // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/order-properties.md
