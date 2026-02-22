@@ -47,7 +47,7 @@
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-package-json": "^0.89.0",
     "eslint-plugin-perfectionist": "^5.6.0",
-    "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-e8c63626-20260213 || 7.1.0-canary-2ba30655-20260219",
+    "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-2ba30655-20260219 || 7.1.0-canary-ab18f33d-20260220",
     "eslint-plugin-unicorn": "^63.0.0",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.3.0",
@@ -63,10 +63,5 @@
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
-  },
-  "renovate": {
-    "extends": [
-      "github>ocavue/config-renovate"
-    ]
-  }
+  } 
 }
