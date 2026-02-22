@@ -159,13 +159,20 @@ export function commonRules(): Rules {
     ...recommendedRules(),
 
     // https://eslint.org/docs/v9.x/rules/no-duplicate-imports
-    'no-duplicate-imports': ['warn', {
-      allowSeparateTypeImports: true }],
+    'no-duplicate-imports': [
+      'warn',
+      {
+        allowSeparateTypeImports: true,
+      },
+    ],
 
     // https://eslint.org/docs/v9.x/rules/prefer-const#destructuring
-    "prefer-const": ["warn", {
-      "destructuring": "all",
-    }]
+    'prefer-const': [
+      'warn',
+      {
+        destructuring: 'all',
+      },
+    ],
   }
 }
 
