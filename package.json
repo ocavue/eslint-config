@@ -43,7 +43,7 @@
     "eslint-config-flat-gitignore": "^2.2.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-antfu": "^3.2.2",
-    "eslint-plugin-command": "^3.4.0",
+    "eslint-plugin-command": "^3.5.2",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-package-json": "^0.89.1",
     "eslint-plugin-perfectionist": "^5.6.0",
