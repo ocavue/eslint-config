@@ -143,6 +143,13 @@ export interface ESLintConfigOptions {
   command?: boolean
 
   /**
+   * Whether to enable [@eslint-community/eslint-plugin-eslint-comments](https://www.npmjs.com/package/@eslint-community/eslint-plugin-eslint-comments) configuration.
+   *
+   * @default true
+   */
+  comment?: boolean
+
+  /**
    * Ignore some common files that should not be linted.
    *
    * @default true
