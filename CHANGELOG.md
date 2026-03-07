@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.0](https://github.com/ocavue/eslint-config/compare/v4.2.0...v4.3.0) (2026-03-07)
+
+
+### Features
+
+* add `@eslint-community/eslint-plugin-eslint-comments` ([#390](https://github.com/ocavue/eslint-config/issues/390)) ([4720d72](https://github.com/ocavue/eslint-config/commit/4720d72e5d0e508da9be86642217c8a721aa6065))
+
 ## [4.2.0](https://github.com/ocavue/eslint-config/compare/v4.1.0...v4.2.0) (2026-02-22)
 
 
