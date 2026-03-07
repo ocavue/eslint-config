@@ -68,6 +68,13 @@ export interface ESLintConfigOptions {
    */
   command?: boolean
 
+    /**
+   * Whether to enable [@eslint-community/eslint-plugin-eslint-comments](https://www.npmjs.com/package/@eslint-community/eslint-plugin-eslint-comments) configuration.
+   *
+   * @default true
+   */
+  comment?: boolean 
+
   /**
    * Ignore some common files that should not be linted.
    *
@@ -114,6 +121,7 @@ export function resolveOptions({
   vue = false,
   unocss = false,
   command = false,
+  comment = true,
   ignores = true,
   gitignore = true,
   antfu = true,
@@ -130,6 +138,7 @@ export function resolveOptions({
     vue,
     unocss,
     command,
+    comment,
     ignores,
     gitignore,
     antfu,
