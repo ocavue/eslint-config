@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.1](https://github.com/ocavue/eslint-config/compare/v4.3.0...v4.3.1) (2026-03-09)
+
+
+### Bug Fixes
+
+* disable rule `eslint-comments/disable-enable-pair` ([#393](https://github.com/ocavue/eslint-config/issues/393)) ([8ec05c2](https://github.com/ocavue/eslint-config/commit/8ec05c25c1c0336ce10718899be131484b8ed1bc))
+
 ## [4.3.0](https://github.com/ocavue/eslint-config/compare/v4.2.0...v4.3.0) (2026-03-07)
 
 
