@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.2](https://github.com/ocavue/eslint-config/compare/v4.3.1...v4.3.2) (2026-03-12)
+
+
+### Bug Fixes
+
+* update `eslint-plugin-package-json` ([#395](https://github.com/ocavue/eslint-config/issues/395)) ([2ab0196](https://github.com/ocavue/eslint-config/commit/2ab0196068f606d8a2547236cc7cc08bce93c5bd))
+
 ## [4.3.1](https://github.com/ocavue/eslint-config/compare/v4.3.0...v4.3.1) (2026-03-09)
 
 
