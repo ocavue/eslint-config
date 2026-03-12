@@ -107,6 +107,9 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-bin.md
   'package-json/valid-bin': 'error',
 
+  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-bugs.md
+  'package-json/valid-bugs': 'warn',
+
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-bundleDependencies.md
   'package-json/valid-bundleDependencies': 'error',
 
@@ -140,6 +143,9 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-files.md
   'package-json/valid-files': 'error',
 
+  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-funding.md
+  'package-json/valid-funding': 'warn',
+
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-homepage.md
   'package-json/valid-homepage': 'error',
 
@@ -166,6 +172,9 @@ export const packageJsonRules: Rules = {
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-os.md
   'package-json/valid-os': 'error',
+
+  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-packageManager.md
+  'package-json/valid-packageManager': "warn",
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-peerDependencies.md
   'package-json/valid-peerDependencies': 'error',
