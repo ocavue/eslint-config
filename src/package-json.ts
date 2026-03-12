@@ -174,7 +174,7 @@ export const packageJsonRules: Rules = {
   'package-json/valid-os': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-packageManager.md
-  'package-json/valid-packageManager': "warn",
+  'package-json/valid-packageManager': 'warn',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-peerDependencies.md
   'package-json/valid-peerDependencies': 'error',
