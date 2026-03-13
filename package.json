@@ -46,7 +46,7 @@
     "eslint-plugin-antfu": "^3.2.2",
     "eslint-plugin-command": "^3.5.2",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-package-json": "^0.90.0",
+    "eslint-plugin-package-json": "^0.90.1",
     "eslint-plugin-perfectionist": "^5.6.0",
     "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-2ba30655-20260219 || 7.1.0-canary-ab18f33d-20260220 || 7.1.0-canary-4cc5b7a9-20260303 || 7.1.0-canary-46103596-20260305",
     "eslint-plugin-unicorn": "^63.0.0",
@@ -63,6 +63,6 @@
     "pkg-pr-new": "^0.0.65",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.0-beta.6"
+    "vitest": "^4.1.0"
   }
 }
