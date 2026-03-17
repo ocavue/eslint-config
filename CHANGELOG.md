@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.4](https://github.com/ocavue/eslint-config/compare/v4.3.3...v4.3.4) (2026-03-17)
+
+
+### Bug Fixes
+
+* update some react rules ([#403](https://github.com/ocavue/eslint-config/issues/403)) ([c6f4902](https://github.com/ocavue/eslint-config/commit/c6f49025e318fddedb175c7145a52aa511b234c0))
+
 ## [4.3.3](https://github.com/ocavue/eslint-config/compare/v4.3.2...v4.3.3) (2026-03-17)
 
 
