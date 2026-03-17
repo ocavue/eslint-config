@@ -2,7 +2,6 @@ import perfectionistPlugin from 'eslint-plugin-perfectionist'
 
 import type { Config } from './types.ts'
 
-
 export function perfectionist(): Config[] {
   return [
     {
