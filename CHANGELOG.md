@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.5](https://github.com/ocavue/eslint-config/compare/v4.3.4...v4.3.5) (2026-03-17)
+
+
+### Bug Fixes
+
+* disable rule `@eslint-react/no-array-index-key` ([#405](https://github.com/ocavue/eslint-config/issues/405)) ([93583ac](https://github.com/ocavue/eslint-config/commit/93583ac044b39a95e77d8000e966a20a19afa742))
+
 ## [4.3.4](https://github.com/ocavue/eslint-config/compare/v4.3.3...v4.3.4) (2026-03-17)
 
 
