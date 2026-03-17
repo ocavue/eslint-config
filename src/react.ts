@@ -7,16 +7,7 @@ import type { Config, Rules } from './types.js'
 const reactRecommendedConfig: Config = eslintReact.configs['recommended-typescript']
 
 export const reactRules: Rules = {
-  ...reactRecommendedConfig.rules,
-
-  '@eslint-react/web-api/no-leaked-event-listener': 'off',
-
-  // I know these patterns are dangerous, but they are useful in some cases.
-  '@eslint-react/no-children-map': 'off',
-  '@eslint-react/no-clone-element': 'off',
-  '@eslint-react/no-dangerously-set-innerhtml': 'off',
-  '@eslint-react/dom/no-flush-sync': 'off',
-  '@eslint-react/no-array-index-key': 'off',
+  // TODO
 }
 
 const reactHooksRecommendedConfig: Config =
