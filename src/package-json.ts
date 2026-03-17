@@ -131,6 +131,9 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-devDependencies.md
   'package-json/valid-devDependencies': 'error',
 
+  // https://github.com/michaelfaith/eslint-plugin-package-json/blob/v0.91.0/docs/rules/valid-devEngines.md
+  'package-json/valid-devEngines': 'error',
+
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-directories.md
   'package-json/valid-directories': 'error',
 
