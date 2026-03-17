@@ -95,10 +95,11 @@ export function checkRules(options: {
   const currentRuleNames = collectEnabledRuleNames(currentRules)
 
   const recommendedSet = new Set(recommendedRuleNames)
+  const currentSet = new Set(currentRuleNames)
 
   // 1. Check missing recommended rules (should be in disabledRules)
   for (const ruleName of recommendedRuleNames) {
-    if (!(ruleName in currentRules) && !normalizedDisabled.has(ruleName)) {
+    if (!currentSet.has(ruleName) && !normalizedDisabled.has(ruleName)) {
       const link = getRuleLink(plugin, ruleName)
 
       violations.push(

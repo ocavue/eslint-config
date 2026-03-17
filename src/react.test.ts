@@ -15,7 +15,10 @@ test('react rules should match recommended rules', () => {
     plugin: eslintReact,
     currentRules,
     recommendedRules,
-    disabledRules: [],
+    disabledRules: [
+      // https://eslint-react.xyz/docs/rules/no-array-index-key
+      '@eslint-react/no-array-index-key',
+    ],
     enabledRules: [],
   })
 })

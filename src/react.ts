@@ -69,9 +69,6 @@ export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/no-access-state-in-setstate
   '@eslint-react/no-access-state-in-setstate': 'warn',
 
-  // https://eslint-react.xyz/docs/rules/no-array-index-key
-  '@eslint-react/no-array-index-key': 'warn',
-
   // https://eslint-react.xyz/docs/rules/no-children-count
   '@eslint-react/no-children-count': 'warn',
 
