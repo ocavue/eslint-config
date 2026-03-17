@@ -4,12 +4,10 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import { resolveReactOptions, type ReactOptions } from './options.js'
 import type { Config, Rules } from './types.js'
 
-const reactRecommendedConfig: Config = eslintReact.configs['recommended-typescript']
-
 // @keep-sorted
 export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/component-hook-factories
-  '@eslint-react/component-hook-factories': 'error',
+  '@eslint-react/component-hook-factories': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml-with-children
   '@eslint-react/dom/no-dangerously-set-innerhtml-with-children': 'error',
@@ -18,10 +16,10 @@ export const reactRules: Rules = {
   '@eslint-react/dom/no-dangerously-set-innerhtml': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-find-dom-node
-  '@eslint-react/dom/no-find-dom-node': 'error',
+  '@eslint-react/dom/no-find-dom-node': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-flush-sync
-  '@eslint-react/dom/no-flush-sync': 'error',
+  '@eslint-react/dom/no-flush-sync': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-hydrate
   '@eslint-react/dom/no-hydrate': 'error',
@@ -33,7 +31,7 @@ export const reactRules: Rules = {
   '@eslint-react/dom/no-render-return-value': 'error',
 
   // https://eslint-react.xyz/docs/rules/dom-no-render
-  '@eslint-react/dom/no-render': 'error',
+  '@eslint-react/dom/no-render': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-script-url
   '@eslint-react/dom/no-script-url': 'warn',
@@ -69,7 +67,7 @@ export const reactRules: Rules = {
   '@eslint-react/naming-convention/ref-name': 'warn',
 
   // https://eslint-react.xyz/docs/rules/no-access-state-in-setstate
-  '@eslint-react/no-access-state-in-setstate': 'error',
+  '@eslint-react/no-access-state-in-setstate': 'warn',
 
   // https://eslint-react.xyz/docs/rules/no-array-index-key
   '@eslint-react/no-array-index-key': 'warn',
@@ -114,7 +112,7 @@ export const reactRules: Rules = {
   '@eslint-react/no-forward-ref': 'warn',
 
   // https://eslint-react.xyz/docs/rules/no-missing-key
-  '@eslint-react/no-missing-key': 'error',
+  '@eslint-react/no-missing-key': 'warn',
 
   // https://eslint-react.xyz/docs/rules/no-nested-component-definitions
   '@eslint-react/no-nested-component-definitions': 'error',
@@ -171,7 +169,7 @@ export const reactRules: Rules = {
   '@eslint-react/unsupported-syntax': 'error',
 
   // https://eslint-react.xyz/docs/rules/use-memo
-  '@eslint-react/use-memo': 'error',
+  '@eslint-react/use-memo': 'warn',
 
   // https://eslint-react.xyz/docs/rules/use-state
   '@eslint-react/use-state': 'warn',
@@ -189,13 +187,16 @@ export const reactRules: Rules = {
   '@eslint-react/web-api/no-leaked-timeout': 'warn',
 }
 
-const reactHooksRecommendedConfig: Config =
-  reactHooksPlugin.configs.flat['recommended']
-const reactHooksRecommendedCompilerConfig: Config =
-  reactHooksPlugin.configs.flat['recommended-latest']
-
 export function react(options?: ReactOptions): Config[] {
   const { files, reactCompiler, version } = resolveReactOptions(options)
+
+  const reactRecommendedConfig: Config =
+    eslintReact.configs['recommended-typescript']
+
+  const reactHooksRecommendedConfig: Config =
+    reactHooksPlugin.configs.flat['recommended']
+  const reactHooksRecommendedCompilerConfig: Config =
+    reactHooksPlugin.configs.flat['recommended-latest']
 
   const reactHooksConfig: Config = reactCompiler
     ? reactHooksRecommendedCompilerConfig
