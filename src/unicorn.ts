@@ -6,6 +6,10 @@ export const unicornRules: Linter.RulesRecord = {
   // Improve regexes
   'unicorn/better-regex': 'error',
 
+  // Require consistent use of escape sequences in template literals
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-template-literal-escape.md
+  'unicorn/consistent-template-literal-escape': 'warn',
+
   // Pass error message when throwing errors
   'unicorn/error-message': 'error',
 
@@ -107,6 +111,10 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
   'unicorn/prefer-regexp-test': 'warn',
 
+  // Prefer simple condition first in if statements
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-simple-condition-first.md
+  'unicorn/prefer-simple-condition-first': 'warn',
+
   // Prefer using the `String.raw` tag to avoid escaping `\`
   'unicorn/prefer-string-raw': 'warn',
 
@@ -122,6 +130,10 @@ export const unicornRules: Linter.RulesRecord = {
 
   // Enforce throwing type error when throwing error while checking typeof
   'unicorn/prefer-type-error': 'error',
+
+  // Enforce consistent break position in switch cases
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-break-position.md
+  'unicorn/switch-case-break-position': 'error',
 
   // Use new when throwing error
   'unicorn/throw-new-error': 'error',
