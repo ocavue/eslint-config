@@ -45,19 +45,19 @@ importers:
         specifier: ^5.7.0
         version: 5.7.0(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-react-hooks:
-        specifier: ^7.1.0 || 7.1.0-canary-3f0b9e61-20260317
+        specifier: ^7.1.0 || 7.1.0-canary-3f0b9e61-20260317 || 7.1.0-canary-74568e86-20260328
         version: 7.1.0-canary-3f0b9e61-20260317(eslint@10.1.0(jiti@2.6.1))
       eslint-plugin-unicorn:
         specifier: ^64.0.0
         version: 64.0.0(eslint@10.1.0(jiti@2.6.1))
       eslint-plugin-vue:
-        specifier: ^10.8.0
+        specifier: ^10.7.0
         version: 10.8.0(@typescript-eslint/parser@8.58.0(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.1.0(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.1.0(jiti@2.6.1)))
       globals:
-        specifier: ^17.4.0
+        specifier: ^17.3.0
         version: 17.4.0
       typescript-eslint:
-        specifier: ^8.57.2
+        specifier: ^8.58.0
         version: 8.58.0(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3)
       vue-eslint-parser:
         specifier: ^10.4.0
