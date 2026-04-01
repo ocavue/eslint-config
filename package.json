@@ -57,7 +57,7 @@
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
-    "@ocavue/tsconfig": "^0.7.0",
+    "@ocavue/tsconfig": "^0.7.1",
     "@types/node": "^20.19.27",
     "eslint": "^10.1.0",
     "jiti": "^2.6.1",

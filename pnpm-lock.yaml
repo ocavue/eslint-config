@@ -64,8 +64,8 @@ importers:
         version: 10.4.0(eslint@10.1.0(jiti@2.6.1))
     devDependencies:
       '@ocavue/tsconfig':
-        specifier: ^0.7.0
-        version: 0.7.0
+        specifier: ^0.7.1
+        version: 0.7.1
       '@types/node':
         specifier: ^20.19.27
         version: 20.19.37
@@ -452,8 +452,8 @@ packages:
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
 
-  '@ocavue/tsconfig@0.7.0':
-    resolution: {integrity: sha512-9XQKdECB9dGLoLCYZozOZ8RH7OuWJosdp0t9l5bEvoFGitorrVG/XRsB0LqKICekmQxpDNjhQ+teOGYdmEb3SA==}
+  '@ocavue/tsconfig@0.7.1':
+    resolution: {integrity: sha512-jw1LPUqi/f043s61WOYEWWA6P1ZSSYXR3KJXcNxBXXrxiUXhEAbuEBUmi6Qs8NduIVU3xCkbaYw5BU3UyL3G3A==}
 
   '@octokit/action@6.1.0':
     resolution: {integrity: sha512-lo+nHx8kAV86bxvOVOI3vFjX3gXPd/L7guAUbvs3pUvnR2KC+R7yjBkA1uACt4gYhs4LcWP3AXSGQzsbeN2XXw==}
@@ -2257,7 +2257,7 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.1.0
 
-  '@ocavue/tsconfig@0.7.0': {}
+  '@ocavue/tsconfig@0.7.1': {}
 
   '@octokit/action@6.1.0':
     dependencies:
