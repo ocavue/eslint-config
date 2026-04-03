@@ -29,13 +29,6 @@ test('react rules should match recommended rules', () => {
       '@eslint-react/jsx-no-key-after-spread',
 
 
-      // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-namespace/no-namespace.mdx
-      '@eslint-react/jsx-no-namespace',
-
-      // https://www.eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml
-'@eslint-react/dom-no-dangerously-set-innerhtml',
-
-
     ],
     enabledRules: [],
   })

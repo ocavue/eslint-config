@@ -9,41 +9,38 @@ export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/component-hook-factories
   '@eslint-react/component-hook-factories': 'warn',
 
-  // https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml-with-children
-  '@eslint-react/dom/no-dangerously-set-innerhtml-with-children': 'error',
+  // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-dom/src/rules/no-dangerously-set-innerhtml-with-children/no-dangerously-set-innerhtml-with-children.mdx
+  '@eslint-react/dom-no-dangerously-set-innerhtml-with-children': 'error',
 
-  // https://eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml
-  '@eslint-react/dom/no-dangerously-set-innerhtml': 'warn',
+  // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-dom/src/rules/no-dangerously-set-innerhtml/no-dangerously-set-innerhtml.mdx
+  '@eslint-react/dom-no-dangerously-set-innerhtml': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-find-dom-node
-  '@eslint-react/dom/no-find-dom-node': 'warn',
+  '@eslint-react/dom-no-find-dom-node': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-flush-sync
-  '@eslint-react/dom/no-flush-sync': 'warn',
+  '@eslint-react/dom-no-flush-sync': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-hydrate
-  '@eslint-react/dom/no-hydrate': 'error',
-
-  // https://eslint-react.xyz/docs/rules/dom-no-namespace
-  '@eslint-react/dom/no-namespace': 'error',
+  '@eslint-react/dom-no-hydrate': 'error',
 
   // https://eslint-react.xyz/docs/rules/dom-no-render-return-value
-  '@eslint-react/dom/no-render-return-value': 'error',
+  '@eslint-react/dom-no-render-return-value': 'error',
 
   // https://eslint-react.xyz/docs/rules/dom-no-render
-  '@eslint-react/dom/no-render': 'warn',
+  '@eslint-react/dom-no-render': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-script-url
-  '@eslint-react/dom/no-script-url': 'warn',
+  '@eslint-react/dom-no-script-url': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-unsafe-iframe-sandbox
-  '@eslint-react/dom/no-unsafe-iframe-sandbox': 'warn',
+  '@eslint-react/dom-no-unsafe-iframe-sandbox': 'warn',
 
   // https://eslint-react.xyz/docs/rules/dom-no-use-form-state
-  '@eslint-react/dom/no-use-form-state': 'error',
+  '@eslint-react/dom-no-use-form-state': 'error',
 
   // https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children
-  '@eslint-react/dom/no-void-elements-with-children': 'error',
+  '@eslint-react/dom-no-void-elements-with-children': 'error',
 
   // https://eslint-react.xyz/docs/rules/error-boundaries
   '@eslint-react/error-boundaries': 'error',
@@ -51,8 +48,6 @@ export const reactRules: Rules = {
   // https://github.com/facebook/react/issues/14920
   '@eslint-react/exhaustive-deps': 'warn',
 
-  // https://eslint-react.xyz/docs/rules/jsx-key-before-spread
-  '@eslint-react/jsx-key-before-spread': 'warn',
 
   // https://eslint-react.xyz/docs/rules/jsx-no-comment-textnodes
   '@eslint-react/jsx-no-comment-textnodes': 'warn',
@@ -60,14 +55,17 @@ export const reactRules: Rules = {
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-leaked-semicolon/no-leaked-semicolon.mdx
   '@eslint-react/jsx-no-leaked-semicolon': 'warn',
 
+  // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-namespace/no-namespace.mdx
+  '@eslint-react/jsx-no-namespace': 'error',
+
   // https://eslint-react.xyz/docs/rules/naming-convention-context-name
-  '@eslint-react/naming-convention/context-name': 'warn',
+  '@eslint-react/naming-convention-context-name': 'warn',
 
   // https://eslint-react.xyz/docs/rules/naming-convention-id-name
-  '@eslint-react/naming-convention/id-name': 'warn',
+  '@eslint-react/naming-convention-id-name': 'warn',
 
   // https://eslint-react.xyz/docs/rules/naming-convention-ref-name
-  '@eslint-react/naming-convention/ref-name': 'warn',
+  '@eslint-react/naming-convention-ref-name': 'warn',
 
   // https://eslint-react.xyz/docs/rules/no-access-state-in-setstate
   '@eslint-react/no-access-state-in-setstate': 'warn',
@@ -153,8 +151,8 @@ export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/purity
   '@eslint-react/purity': 'warn',
 
-  // https://eslint-react.xyz/docs/rules/function-definition
-  '@eslint-react/rsc/function-definition': 'error',
+  // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-rsc/src/rules/function-definition/function-definition.mdx
+  '@eslint-react/rsc-function-definition': 'error',
 
   // https://react.dev/reference/rules/rules-of-hooks
   '@eslint-react/rules-of-hooks': 'error',
@@ -174,8 +172,6 @@ export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/use-state
   '@eslint-react/use-state': 'warn',
 
-    // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-resize-observer/no-leaked-resize-observer.mdx
-  '@eslint-react/web-api-leaked-resize-observer': "warn",
 
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-event-listener/no-leaked-event-listener.mdx
   '@eslint-react/web-api-no-leaked-event-listener': 'warn',
