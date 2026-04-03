@@ -18,6 +18,24 @@ test('react rules should match recommended rules', () => {
     disabledRules: [
       // https://eslint-react.xyz/docs/rules/no-array-index-key
       '@eslint-react/no-array-index-key',
+
+      // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-children-prop/no-children-prop.mdx
+      '@eslint-react/jsx-no-children-prop',
+
+      // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-children-prop-with-children/no-children-prop-with-children.mdx
+      '@eslint-react/jsx-no-children-prop-with-children',
+
+      // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-key-after-spread/no-key-after-spread.mdx
+      '@eslint-react/jsx-no-key-after-spread',
+
+
+      // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-namespace/no-namespace.mdx
+      '@eslint-react/jsx-no-namespace',
+
+      // https://www.eslint-react.xyz/docs/rules/dom-no-dangerously-set-innerhtml
+'@eslint-react/dom-no-dangerously-set-innerhtml',
+
+
     ],
     enabledRules: [],
   })
