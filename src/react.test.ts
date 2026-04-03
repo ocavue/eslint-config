@@ -27,8 +27,6 @@ test('react rules should match recommended rules', () => {
 
       // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-jsx/src/rules/no-key-after-spread/no-key-after-spread.mdx
       '@eslint-react/jsx-no-key-after-spread',
-
-
     ],
     enabledRules: [],
   })

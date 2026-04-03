@@ -48,7 +48,6 @@ export const reactRules: Rules = {
   // https://github.com/facebook/react/issues/14920
   '@eslint-react/exhaustive-deps': 'warn',
 
-
   // https://eslint-react.xyz/docs/rules/jsx-no-comment-textnodes
   '@eslint-react/jsx-no-comment-textnodes': 'warn',
 
@@ -172,19 +171,17 @@ export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/use-state
   '@eslint-react/use-state': 'warn',
 
-
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-event-listener/no-leaked-event-listener.mdx
   '@eslint-react/web-api-no-leaked-event-listener': 'warn',
 
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-interval/no-leaked-interval.mdx
   '@eslint-react/web-api-no-leaked-interval': 'warn',
 
-  // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-resize-observer/no-leaked-resize-observer.mdx  
+  // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-resize-observer/no-leaked-resize-observer.mdx
   '@eslint-react/web-api-no-leaked-resize-observer': 'warn',
 
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-timeout/no-leaked-timeout.mdx
-  '@eslint-react/web-api-no-leaked-timeout': "warn",
-
+  '@eslint-react/web-api-no-leaked-timeout': 'warn',
 }
 
 export function react(options?: ReactOptions): Config[] {
