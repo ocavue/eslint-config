@@ -7,6 +7,8 @@ export const GLOB_JSX = '**/*.?([cm])jsx'
 export const GLOB_TS = '**/*.?([cm])ts'
 export const GLOB_TSX = '**/*.?([cm])tsx'
 
+export const GLOB_GEN = '**/*.gen.*'
+
 export const GLOB_TEST = '**/*.(spec|test).?([cm])[jt]s?(x)'
 
 export const GLOB_STYLE = '**/*.{c,le,sc}ss'

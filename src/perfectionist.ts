@@ -1,5 +1,6 @@
 import perfectionistPlugin from 'eslint-plugin-perfectionist'
 
+import { GLOB_GEN } from './shared.ts'
 import type { Config } from './types.ts'
 
 export function perfectionist(): Config[] {
@@ -24,6 +25,12 @@ export function perfectionist(): Config[] {
             ],
           },
         ],
+      },
+    },
+    {
+      files: [GLOB_GEN],
+      rules: {
+        'perfectionist/sort-imports': 'off',
       },
     },
   ]
