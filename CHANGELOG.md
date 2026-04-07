@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.2](https://github.com/ocavue/eslint-config/compare/v4.5.1...v4.5.2) (2026-04-07)
+
+
+### Bug Fixes
+
+* handle generated svelte and json files ([#425](https://github.com/ocavue/eslint-config/issues/425)) ([7ff5f93](https://github.com/ocavue/eslint-config/commit/7ff5f930f1d9b73fe51cc243c35d2140c9128aac))
+
 ## [4.5.1](https://github.com/ocavue/eslint-config/compare/v4.5.0...v4.5.1) (2026-04-07)
 
 
