@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.1](https://github.com/ocavue/eslint-config/compare/v4.5.0...v4.5.1) (2026-04-07)
+
+
+### Bug Fixes
+
+* disable `perfectionist/sort-imports` for generated files ([#423](https://github.com/ocavue/eslint-config/issues/423)) ([e9eb282](https://github.com/ocavue/eslint-config/commit/e9eb2820513235de5c7855f9077095165f755278))
+
 ## [4.5.0](https://github.com/ocavue/eslint-config/compare/v4.4.0...v4.5.0) (2026-04-03)
 
 
