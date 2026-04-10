@@ -31,9 +31,14 @@
   "scripts": {
     "test": "vitest",
     "build": "tsc -b",
-    "check": "prettier --check .",
-    "fix": "eslint --fix . && prettier --write .",
-    "lint": "eslint .",
+    "fix": "pnpm run fix:eslint && pnpm run fix:prettier",
+    "fix:eslint": "eslint --fix .",
+    "fix:prettier": "prettier --write .",
+    "lint": "pnpm run lint:ts && pnpm run lint:eslint && pnpm run lint:knip && pnpm run lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "lint:ts": "tsc -b .",
+    "lint:knip": "knip",
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
@@ -61,6 +66,7 @@
     "@types/node": "^20.19.27",
     "eslint": "^10.2.0",
     "jiti": "^2.6.1",
+    "knip": "^6.3.1",
     "pkg-pr-new": "^0.0.66",
     "prettier": "^3.8.2",
     "typescript": "^6.0.2",
