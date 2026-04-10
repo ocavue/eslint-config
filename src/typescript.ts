@@ -9,8 +9,6 @@ import {
 } from './shared.js'
 import type { Config, Rules } from './types.js'
 
-export { tseslint }
-
 /**
  * This is a compatibility ruleset that:
  * - disables rules from eslint:recommended which are already handled by TypeScript.
@@ -18,17 +16,17 @@ export { tseslint }
  * @see {@link https://typescript-eslint.io/users/configs/#eslint-recommended}
  * @internal
  */
-export function originalESLintRecommendedRules(): Rules {
+function originalESLintRecommendedRules(): Rules {
   return tseslint.configs.eslintRecommended.rules || {}
 }
 
 /** @internal */
-export function eslintRecommendedRules(): Rules {
+function eslintRecommendedRules(): Rules {
   return originalESLintRecommendedRules()
 }
 
 /** @internal */
-export function originalRecommendedRules(): Rules {
+function originalRecommendedRules(): Rules {
   const configs = [...tseslint.configs.recommended]
   const config = findConfigByName(configs, 'typescript-eslint/recommended')
 
@@ -38,7 +36,7 @@ export function originalRecommendedRules(): Rules {
 }
 
 /** @internal */
-export function originalRecommendedTypeCheckedOnlyRules(): Rules {
+function originalRecommendedTypeCheckedOnlyRules(): Rules {
   const configs = [...tseslint.configs.recommendedTypeCheckedOnly]
   const config = findConfigByName(
     configs,
@@ -50,7 +48,7 @@ export function originalRecommendedTypeCheckedOnlyRules(): Rules {
   return rules
 }
 
-export function originalStylisticRules(): Rules {
+function originalStylisticRules(): Rules {
   const configs = [...tseslint.configs.stylistic]
   const config = findConfigByName(configs, 'typescript-eslint/stylistic')
 
@@ -60,7 +58,7 @@ export function originalStylisticRules(): Rules {
 }
 
 /** @internal */
-export function recommendedRules(): Rules {
+function recommendedRules(): Rules {
   const rules = originalRecommendedRules()
 
   // @keep-sorted
@@ -102,7 +100,7 @@ export function recommendedRules(): Rules {
 }
 
 /** @internal */
-export function recommendedTypeCheckedOnlyRules(): Rules {
+function recommendedTypeCheckedOnlyRules(): Rules {
   const rules = originalRecommendedTypeCheckedOnlyRules()
 
   // @keep-sorted

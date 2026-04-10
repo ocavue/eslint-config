@@ -2,7 +2,7 @@ import { expect } from 'vitest'
 
 import type { Plugin, Rules } from './types.ts'
 
-export function collectEnabledRuleNames(rules: Partial<Rules>): string[] {
+function collectEnabledRuleNames(rules: Partial<Rules>): string[] {
   const enabledRuleNames: string[] = []
   for (const [ruleName, ruleConfig] of Object.entries(rules)) {
     if (ruleConfig == null) continue
@@ -16,10 +16,7 @@ export function collectEnabledRuleNames(rules: Partial<Rules>): string[] {
   return enabledRuleNames
 }
 
-export function getRuleLink(
-  plugin: Plugin,
-  ruleName: string,
-): string | undefined {
+function getRuleLink(plugin: Plugin, ruleName: string): string | undefined {
   const ruleNames: string[] = [ruleName]
 
   if (ruleName.includes('/')) {
