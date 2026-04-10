@@ -17,9 +17,6 @@ importers:
       '@eslint/markdown':
         specifier: ^8.0.1
         version: 8.0.1
-      '@typescript-eslint/rule-tester':
-        specifier: ^8.58.1
-        version: 8.58.1(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
       '@unocss/eslint-config':
         specifier: ^66.6.8
         version: 66.6.8(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
@@ -45,7 +42,7 @@ importers:
         specifier: ^5.8.0
         version: 5.8.0(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
       eslint-plugin-react-hooks:
-        specifier: ^7.1.0 || 7.1.0-canary-044d56f3-20260330 || 7.1.0-canary-404b38c7-20260408 || 7.1.0-canary-705268dc-20260409
+        specifier: ^7.1.0 || 7.1.0-canary-1b45e243-20260402 || 7.1.0-canary-404b38c7-20260408 || 7.1.0-canary-705268dc-20260409
         version: 7.1.0-canary-705268dc-20260409(eslint@10.2.0(jiti@2.6.1))
       eslint-plugin-unicorn:
         specifier: ^64.0.0
