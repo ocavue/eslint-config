@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.3](https://github.com/ocavue/eslint-config/compare/v4.5.2...v4.5.3) (2026-04-10)
+
+
+### Bug Fixes
+
+* update dependencies ([#428](https://github.com/ocavue/eslint-config/issues/428)) ([9fcb62a](https://github.com/ocavue/eslint-config/commit/9fcb62a193acd248701b218957d64bdf511bb203))
+
 ## [4.5.2](https://github.com/ocavue/eslint-config/compare/v4.5.1...v4.5.2) (2026-04-07)
 
 
