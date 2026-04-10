@@ -16,10 +16,7 @@ function collectEnabledRuleNames(rules: Partial<Rules>): string[] {
   return enabledRuleNames
 }
 
-function getRuleLink(
-  plugin: Plugin,
-  ruleName: string,
-): string | undefined {
+function getRuleLink(plugin: Plugin, ruleName: string): string | undefined {
   const ruleNames: string[] = [ruleName]
 
   if (ruleName.includes('/')) {
