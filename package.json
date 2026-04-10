@@ -40,8 +40,8 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.7.1",
     "@eslint-react/eslint-plugin": "^4.2.3",
     "@eslint/markdown": "^8.0.1",
-    "@typescript-eslint/rule-tester": "^8.58.0",
-    "@unocss/eslint-config": "^66.6.7",
+    "@typescript-eslint/rule-tester": "^8.58.1",
+    "@unocss/eslint-config": "^66.6.8",
     "eslint-config-flat-gitignore": "^2.3.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-antfu": "^3.2.2",
@@ -49,11 +49,11 @@
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-package-json": "^0.91.1",
     "eslint-plugin-perfectionist": "^5.8.0",
-    "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-3f0b9e61-20260317 || 7.1.0-canary-74568e86-20260328",
+    "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-044d56f3-20260330 || 7.1.0-canary-404b38c7-20260408 || 7.1.0-canary-705268dc-20260409",
     "eslint-plugin-unicorn": "^64.0.0",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.4.0",
-    "typescript-eslint": "^8.58.0",
+    "typescript-eslint": "^8.58.1",
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
@@ -62,8 +62,8 @@
     "eslint": "^10.2.0",
     "jiti": "^2.6.1",
     "pkg-pr-new": "^0.0.66",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.2",
     "typescript": "^6.0.2",
-    "vitest": "^4.1.2"
+    "vitest": "^4.1.4"
   }
 }
