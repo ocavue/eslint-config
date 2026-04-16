@@ -54,7 +54,7 @@ importers:
         specifier: ^17.5.0
         version: 17.5.0
       typescript-eslint:
-        specifier: ^8.58.1
+        specifier: ^8.58.2
         version: 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
       vue-eslint-parser:
         specifier: ^10.4.0
@@ -73,14 +73,14 @@ importers:
         specifier: ^2.6.1
         version: 2.6.1
       knip:
-        specifier: ^6.3.1
-        version: 6.3.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
+        specifier: ^6.4.1
+        version: 6.4.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
       pkg-pr-new:
         specifier: ^0.0.66
         version: 0.0.66
       prettier:
-        specifier: ^3.8.2
-        version: 3.8.2
+        specifier: ^3.8.3
+        version: 3.8.3
       typescript:
         specifier: ^6.0.2
         version: 6.0.2
@@ -1668,8 +1668,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  knip@6.3.1:
-    resolution: {integrity: sha512-22kLJloVcOVOAudCxlFOC0ICAMme7dKsS7pVTEnrmyKGpswb8ieznvAiSKUeFVDJhb01ect6dkDc1Ha1g1sPpg==}
+  knip@6.4.1:
+    resolution: {integrity: sha512-Ry+ywmDFSZvKp/jx7LxMgsZWRTs931alV84e60lh0Stf6kSRYqSIUTkviyyDFRcSO3yY1Kpbi83OirN+4lA2Xw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -1938,8 +1938,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.8.2:
-    resolution: {integrity: sha512-8c3mgTe0ASwWAJK+78dpviD+A8EqhndQPUBpNUIPt6+xWlIigCwfN01lWr9MAede4uqXGTEKeQWTvzb3vjia0Q==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3896,7 +3896,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knip@6.3.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2):
+  knip@6.4.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       fast-glob: 3.3.3
@@ -4434,7 +4434,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.8.2: {}
+  prettier@3.8.3: {}
 
   punycode@2.3.1: {}
 

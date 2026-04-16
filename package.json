@@ -57,7 +57,7 @@
     "eslint-plugin-unicorn": "^64.0.0",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.5.0",
-    "typescript-eslint": "^8.58.1",
+    "typescript-eslint": "^8.58.2",
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
@@ -65,9 +65,9 @@
     "@types/node": "^20.19.27",
     "eslint": "^10.2.0",
     "jiti": "^2.6.1",
-    "knip": "^6.3.1",
+    "knip": "^6.4.1",
     "pkg-pr-new": "^0.0.66",
-    "prettier": "^3.8.2",
+    "prettier": "^3.8.3",
     "typescript": "^6.0.2",
     "vitest": "^4.1.4"
   }
