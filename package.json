@@ -53,10 +53,10 @@
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-package-json": "^0.91.1",
     "eslint-plugin-perfectionist": "^5.8.0",
-    "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-1b45e243-20260402 || 7.1.0-canary-404b38c7-20260408 || 7.1.0-canary-705268dc-20260409",
+    "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-404b38c7-20260408 || 7.1.0-canary-705268dc-20260409 || 7.1.0-canary-00f063c3-20260415",
     "eslint-plugin-unicorn": "^64.0.0",
     "eslint-plugin-vue": "^10.8.0",
-    "globals": "^17.4.0",
+    "globals": "^17.5.0",
     "typescript-eslint": "^8.58.1",
     "vue-eslint-parser": "^10.4.0"
   },
