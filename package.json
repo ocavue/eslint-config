@@ -57,7 +57,7 @@
     "eslint-plugin-unicorn": "^64.0.0",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.5.0",
-    "typescript-eslint": "^8.58.2",
+    "typescript-eslint": "^8.58.1",
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
