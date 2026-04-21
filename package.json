@@ -52,7 +52,7 @@
     "eslint-plugin-command": "^3.5.2",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-package-json": "^0.91.1",
-    "eslint-plugin-perfectionist": "^5.8.0",
+    "eslint-plugin-perfectionist": "^5.9.0",
     "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-404b38c7-20260408 || 7.1.0-canary-705268dc-20260409 || 7.1.0-canary-00f063c3-20260415",
     "eslint-plugin-unicorn": "^64.0.0",
     "eslint-plugin-vue": "^10.8.0",
@@ -63,12 +63,12 @@
   "devDependencies": {
     "@ocavue/tsconfig": "^0.7.1",
     "@types/node": "^20.19.27",
-    "eslint": "^10.2.0",
+    "eslint": "^10.2.1",
     "jiti": "^2.6.1",
     "knip": "^6.4.1",
     "pkg-pr-new": "^0.0.66",
     "prettier": "^3.8.3",
-    "typescript": "^6.0.2",
+    "typescript": "^6.0.3",
     "vitest": "^4.1.4"
   }
 }
