@@ -2,7 +2,7 @@
   "name": "@ocavue/eslint-config",
   "type": "module",
   "version": "4.5.4",
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.2",
   "description": "Opinionated ESLint config preset",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -55,9 +55,9 @@
     "eslint-plugin-perfectionist": "^5.9.0",
     "eslint-plugin-react-hooks": "^7.1.0 || 7.1.0-canary-404b38c7-20260408 || 7.1.0-canary-705268dc-20260409 || 7.1.0-canary-00f063c3-20260415",
     "eslint-plugin-unicorn": "^64.0.0",
-    "eslint-plugin-vue": "^10.8.0",
+    "eslint-plugin-vue": "^10.9.0",
     "globals": "^17.5.0",
-    "typescript-eslint": "^8.58.2",
+    "typescript-eslint": "^8.59.0",
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
@@ -65,10 +65,10 @@
     "@types/node": "^20.19.27",
     "eslint": "^10.2.1",
     "jiti": "^2.6.1",
-    "knip": "^6.4.1",
+    "knip": "^6.7.0",
     "pkg-pr-new": "^0.0.66",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.4"
+    "vitest": "^4.1.5"
   }
 }
