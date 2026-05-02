@@ -65,8 +65,8 @@
     "@types/node": "^20.19.27",
     "eslint": "^10.2.1",
     "jiti": "^2.6.1",
-    "knip": "^6.7.0",
-    "pkg-pr-new": "^0.0.66",
+    "knip": "^6.9.0",
+    "pkg-pr-new": "^0.0.69",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
     "vitest": "^4.1.5"
