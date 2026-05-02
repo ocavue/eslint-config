@@ -51,8 +51,8 @@ importers:
         specifier: ^10.9.0
         version: 10.9.0(@typescript-eslint/parser@8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.2.1(jiti@2.6.1)))
       globals:
-        specifier: ^17.6.0
-        version: 17.6.0
+        specifier: ^17.5.0
+        version: 17.5.0
       typescript-eslint:
         specifier: ^8.59.1
         version: 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
@@ -1545,10 +1545,6 @@ packages:
 
   globals@17.5.0:
     resolution: {integrity: sha512-qoV+HK2yFl/366t2/Cb3+xxPUo5BuMynomoDmiaZBIdbs+0pYbjfZU+twLhGKp4uCZ/+NbtpVepH5bGCxRyy2g==}
-    engines: {node: '>=18'}
-
-  globals@17.6.0:
-    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
     engines: {node: '>=18'}
 
   hermes-estree@0.25.1:
@@ -3755,8 +3751,6 @@ snapshots:
       is-glob: 4.0.3
 
   globals@17.5.0: {}
-
-  globals@17.6.0: {}
 
   hermes-estree@0.25.1: {}
 
