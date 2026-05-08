@@ -6,9 +6,6 @@ import type { Config, Rules } from './types.js'
 
 // @keep-sorted
 export const reactRules: Rules = {
-  // https://eslint-react.xyz/docs/rules/component-hook-factories
-  '@eslint-react/component-hook-factories': 'warn',
-
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-dom/src/rules/no-dangerously-set-innerhtml-with-children/no-dangerously-set-innerhtml-with-children.mdx
   '@eslint-react/dom-no-dangerously-set-innerhtml-with-children': 'error',
 
@@ -117,9 +114,6 @@ export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/no-nested-lazy-component-declarations
   '@eslint-react/no-nested-lazy-component-declarations': 'error',
 
-  // https://eslint-react.xyz/docs/rules/no-redundant-should-component-update
-  '@eslint-react/no-redundant-should-component-update': 'error',
-
   // https://eslint-react.xyz/docs/rules/no-set-state-in-component-did-mount
   '@eslint-react/no-set-state-in-component-did-mount': 'warn',
 
@@ -162,6 +156,9 @@ export const reactRules: Rules = {
   // https://eslint-react.xyz/docs/rules/set-state-in-render
   '@eslint-react/set-state-in-render': 'error',
 
+  // https://github.com/Rel1cx/eslint-react/blob/v5.7.4/plugins/eslint-plugin-react-x/src/rules/static-components/static-components.mdx
+  '@eslint-react/static-components': 'warn',
+
   // https://eslint-react.xyz/docs/rules/unsupported-syntax
   '@eslint-react/unsupported-syntax': 'error',
 
@@ -173,6 +170,9 @@ export const reactRules: Rules = {
 
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-event-listener/no-leaked-event-listener.mdx
   '@eslint-react/web-api-no-leaked-event-listener': 'warn',
+
+  // https://github.com/Rel1cx/eslint-react/blob/v5.7.4/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-fetch/no-leaked-fetch.mdx
+  '@eslint-react/web-api-no-leaked-fetch': 'warn',
 
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-interval/no-leaked-interval.mdx
   '@eslint-react/web-api-no-leaked-interval': 'warn',
