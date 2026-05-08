@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.6](https://github.com/ocavue/eslint-config/compare/v4.5.5...v4.5.6) (2026-05-08)
+
+
+### Bug Fixes
+
+* update `@eslint-react/eslint-plugin` to v5 ([#441](https://github.com/ocavue/eslint-config/issues/441)) ([f182ab5](https://github.com/ocavue/eslint-config/commit/f182ab5a91b52dfa27f6b157a93e73c8377145b2))
+
 ## [4.5.5](https://github.com/ocavue/eslint-config/compare/v4.5.4...v4.5.5) (2026-05-02)
 
 
