@@ -51,7 +51,7 @@
     "eslint-plugin-antfu": "^3.2.3",
     "eslint-plugin-command": "^3.5.2",
     "eslint-plugin-no-only-tests": "^3.4.0",
-    "eslint-plugin-package-json": "^0.91.2",
+    "eslint-plugin-package-json": "^1.1.0",
     "eslint-plugin-perfectionist": "^5.9.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-unicorn": "^64.0.0",
