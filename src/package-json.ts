@@ -107,6 +107,9 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-bin.md
   'package-json/valid-bin': 'error',
 
+  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-browser
+  'package-json/valid-browser': 'error',
+
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-bugs.md
   'package-json/valid-bugs': 'warn',
 
@@ -149,11 +152,17 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-funding.md
   'package-json/valid-funding': 'warn',
 
+  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-gypfile
+  'package-json/valid-gypfile': 'error',
+
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-homepage.md
   'package-json/valid-homepage': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-keywords.md
   'package-json/valid-keywords': 'error',
+
+  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-libc
+  'package-json/valid-libc': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-license.md
   'package-json/valid-license': 'error',
@@ -181,6 +190,12 @@ export const packageJsonRules: Rules = {
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-peerDependencies.md
   'package-json/valid-peerDependencies': 'error',
+
+  // https://eslint-plugin-package-json.dev/rules/valid-peerDependenciesMeta-relationship
+  'package-json/valid-peerDependenciesMeta-relationship': 'error',
+
+  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-peerDependenciesMeta
+  'package-json/valid-peerDependenciesMeta': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-private.md
   'package-json/valid-private': 'error',
