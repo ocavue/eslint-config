@@ -107,7 +107,7 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-bin.md
   'package-json/valid-bin': 'error',
 
-  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-browser
+  // https://github.com/michaelfaith/eslint-plugin-package-json/blob/v1.1.0/site/src/content/docs/rules/valid-properties/valid-browser.md
   'package-json/valid-browser': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-bugs.md
@@ -152,7 +152,7 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.90.0/docs/rules/valid-funding.md
   'package-json/valid-funding': 'warn',
 
-  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-gypfile
+  // https://github.com/michaelfaith/eslint-plugin-package-json/blob/v1.1.0/site/src/content/docs/rules/valid-properties/valid-gypfile.md
   'package-json/valid-gypfile': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-homepage.md
@@ -161,7 +161,7 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-keywords.md
   'package-json/valid-keywords': 'error',
 
-  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-libc
+  // https://github.com/michaelfaith/eslint-plugin-package-json/blob/v1.1.0/site/src/content/docs/rules/valid-properties/valid-libc.md
   'package-json/valid-libc': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-license.md
@@ -191,10 +191,10 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-peerDependencies.md
   'package-json/valid-peerDependencies': 'error',
 
-  // https://eslint-plugin-package-json.dev/rules/valid-peerDependenciesMeta-relationship
+  // https://github.com/michaelfaith/eslint-plugin-package-json/blob/v1.1.0/site/src/content/docs/rules/valid-peerDependenciesMeta-relationship.md
   'package-json/valid-peerDependenciesMeta-relationship': 'error',
 
-  // https://eslint-plugin-package-json.dev/rules/valid-properties/valid-peerDependenciesMeta
+  // https://github.com/michaelfaith/eslint-plugin-package-json/blob/v1.1.0/site/src/content/docs/rules/valid-properties/valid-peerDependenciesMeta.md
   'package-json/valid-peerDependenciesMeta': 'error',
 
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/valid-private.md
