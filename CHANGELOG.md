@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.10](https://github.com/ocavue/eslint-config/compare/v4.5.9...v4.5.10) (2026-06-07)
+
+
+### Bug Fixes
+
+* disable `unicorn/no-for-loop` rule ([#456](https://github.com/ocavue/eslint-config/issues/456)) ([4599efd](https://github.com/ocavue/eslint-config/commit/4599efd6d150e9e542ee81ad9bca9d8d5c10e14d))
+
 ## [4.5.9](https://github.com/ocavue/eslint-config/compare/v4.5.8...v4.5.9) (2026-05-25)
 
 
