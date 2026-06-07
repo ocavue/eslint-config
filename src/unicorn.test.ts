@@ -76,6 +76,10 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-empty-file.md
     'unicorn/no-empty-file',
 
+    // Do not use a `for` loop that can be replaced with a `for-of` loop.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-for-loop.md
+    'unicorn/no-for-loop',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-immediate-mutation.md
     'unicorn/no-immediate-mutation',
 
