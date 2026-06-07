@@ -29,9 +29,6 @@ export const unicornRules: Linter.RulesRecord = {
   // Prevent recursive getters/setters from calling themselves
   'unicorn/no-accessor-recursion': 'warn',
 
-  // Do not use a `for` loop that can be replaced with a `for-of` loop.
-  'unicorn/no-for-loop': 'error',
-
   // Prefer Unicode escapes over hexadecimal escapes
   'unicorn/no-hex-escape': 'warn',
 
