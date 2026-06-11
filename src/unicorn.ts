@@ -82,7 +82,8 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/prefer-date-now': 'warn',
 
   // Prefer `export…from` when re-exporting
-  'unicorn/prefer-export-from': ['warn', { ignoreUsedVariables: true }],
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-export-from.md
+  'unicorn/prefer-export-from': ['warn', { checkUsedVariables: false }],
 
   // Prefer `import.meta.dirname` over `path.dirname(fileURLToPath(import.meta.url))`
   'unicorn/prefer-import-meta-properties': 'warn',
@@ -112,8 +113,14 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-simple-condition-first.md
   'unicorn/prefer-simple-condition-first': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-string-match-all.md
+  'unicorn/prefer-string-match-all': 'error',
+
   // Prefer using the `String.raw` tag to avoid escaping `\`
   'unicorn/prefer-string-raw': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-string-repeat.md
+  'unicorn/prefer-string-repeat': ['warn', { minimumRepetitions: 10 }],
 
   // Prefer `String#replaceAll()` over `String#replace()` when replacing all occurrences
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-string-replace-all.md
@@ -127,6 +134,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // Enforce throwing type error when throwing error while checking typeof
   'unicorn/prefer-type-error': 'error',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/require-css-escape.md
+  'unicorn/require-css-escape': 'warn',
 
   // Enforce consistent break position in switch cases
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-break-position.md
