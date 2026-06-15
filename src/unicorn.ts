@@ -154,7 +154,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/prefer-array-find': 'error',
 
   // Prefer `.flatMap(…)` over `.map(…).flat()`.
-  'unicorn/prefer-array-flat-map': 'error',
+  'unicorn/prefer-array-flat-map': 'off',
 
   // Prefer Array#flat over manual flattening
   'unicorn/prefer-array-flat': 'warn',
