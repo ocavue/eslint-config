@@ -1,3 +1,5 @@
 allowBuilds:
   esbuild: false
+minimumReleaseAgeExclude:
+  - eslint-plugin-unicorn@66.0.0
 strictPeerDependencies: true

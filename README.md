@@ -216,3 +216,11 @@ export default defineESLintConfig(
 - https://github.com/antfu/eslint-config
 - https://github.com/sxzz/eslint-config
 - https://github.com/ntnyq/eslint-config
+
+## Sponsors
+
+<p align="center"><a href="https://github.com/sponsors/ocavue"><img src="https://cdn.jsdelivr.net/gh/ocavue/sponsors/sponsorkit/sponsors.svg" alt="My Sponsors"></a></p>
+
+## License
+
+MIT
