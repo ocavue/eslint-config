@@ -45,7 +45,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-confusing-array-with': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-declarations-before-early-exit.md
-  'unicorn/no-declarations-before-early-exit': 'warn',
+  'unicorn/no-declarations-before-early-exit': 'off',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-duplicate-loops.md
   'unicorn/no-duplicate-loops': 'warn',
@@ -88,7 +88,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-named-default': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-negated-array-predicate.md
-  'unicorn/no-negated-array-predicate': 'warn',
+  'unicorn/no-negated-array-predicate': 'off',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-negated-comparison.md
   'unicorn/no-negated-comparison': 'warn',
@@ -261,7 +261,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/prefer-url-href': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/require-array-sort-compare.md
-  'unicorn/require-array-sort-compare': 'warn',
+  'unicorn/require-array-sort-compare': 'off',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/require-css-escape.md
   'unicorn/require-css-escape': 'warn',
