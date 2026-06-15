@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.1](https://github.com/ocavue/eslint-config/compare/v4.7.0...v4.7.1) (2026-06-15)
+
+
+### Bug Fixes
+
+* disable some unicorn rules ([#465](https://github.com/ocavue/eslint-config/issues/465)) ([7571223](https://github.com/ocavue/eslint-config/commit/75712236c4af4a4e5f1abc6ac225777fbd7160c1))
+
 ## [4.7.0](https://github.com/ocavue/eslint-config/compare/v4.6.0...v4.7.0) (2026-06-15)
 
 
