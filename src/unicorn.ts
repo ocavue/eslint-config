@@ -7,7 +7,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/better-regex': 'error',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/class-reference-in-static-methods.md
-  'unicorn/class-reference-in-static-methods': 'error',
+  'unicorn/class-reference-in-static-methods': 'warn',
 
   // Require consistent use of escape sequences in template literals
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-template-literal-escape.md
@@ -42,7 +42,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-computed-property-existence-check': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-confusing-array-with.md
-  'unicorn/no-confusing-array-with': 'error',
+  'unicorn/no-confusing-array-with': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-declarations-before-early-exit.md
   'unicorn/no-declarations-before-early-exit': 'warn',
@@ -54,7 +54,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-duplicate-set-values': 'error',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-error-property-assignment.md
-  'unicorn/no-error-property-assignment': 'error',
+  'unicorn/no-error-property-assignment': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-exports-in-scripts.md
   'unicorn/no-exports-in-scripts': 'error',
@@ -67,7 +67,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-incorrect-query-selector': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-incorrect-template-string-interpolation.md
-  'unicorn/no-incorrect-template-string-interpolation': 'error',
+  'unicorn/no-incorrect-template-string-interpolation': 'warn',
 
   // Array.isArray instead of instanceof etc
   'unicorn/no-instanceof-builtins': 'error',
@@ -82,7 +82,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-late-current-target-access': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-mismatched-map-key.md
-  'unicorn/no-mismatched-map-key': 'error',
+  'unicorn/no-mismatched-map-key': 'warn',
 
   // Disallow named usage of default import/export
   'unicorn/no-named-default': 'warn',
@@ -100,16 +100,16 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-new-buffer': 'error',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-object-methods-with-collections.md
-  'unicorn/no-object-methods-with-collections': 'error',
+  'unicorn/no-object-methods-with-collections': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-optional-chaining-on-undeclared-variable.md
-  'unicorn/no-optional-chaining-on-undeclared-variable': 'error',
+  'unicorn/no-optional-chaining-on-undeclared-variable': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-redundant-comparison.md
   'unicorn/no-redundant-comparison': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-return-array-push.md
-  'unicorn/no-return-array-push': 'error',
+  'unicorn/no-return-array-push': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-subtraction-comparison.md
   'unicorn/no-subtraction-comparison': 'warn',
@@ -121,10 +121,10 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/no-unnecessary-splice': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unsafe-buffer-conversion.md
-  'unicorn/no-unsafe-buffer-conversion': 'error',
+  'unicorn/no-unsafe-buffer-conversion': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unsafe-property-key.md
-  'unicorn/no-unsafe-property-key': 'error',
+  'unicorn/no-unsafe-property-key': 'warn',
 
   // Keep regex literals safe!
   'unicorn/no-unsafe-regex': 'off',
@@ -267,7 +267,7 @@ export const unicornRules: Linter.RulesRecord = {
   'unicorn/require-css-escape': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/require-proxy-trap-boolean-return.md
-  'unicorn/require-proxy-trap-boolean-return': 'error',
+  'unicorn/require-proxy-trap-boolean-return': 'warn',
 
   // Enforce consistent break position in switch cases
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-break-position.md
