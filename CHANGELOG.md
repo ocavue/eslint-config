@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.2](https://github.com/ocavue/eslint-config/compare/v4.7.1...v4.7.2) (2026-06-16)
+
+
+### Bug Fixes
+
+* disable rule `unicorn/no-incorrect-template-string-interpolation` ([#467](https://github.com/ocavue/eslint-config/issues/467)) ([9fd8bd9](https://github.com/ocavue/eslint-config/commit/9fd8bd9ef1dae365ce955262b4472cbcfa67e6d6))
+
 ## [4.7.1](https://github.com/ocavue/eslint-config/compare/v4.7.0...v4.7.1) (2026-06-15)
 
 
