@@ -54,7 +54,7 @@
     "eslint-plugin-package-json": "^1.1.0",
     "eslint-plugin-perfectionist": "^5.9.0",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-unicorn": "^66.0.0",
+    "eslint-plugin-unicorn": "^67.0.0",
     "eslint-plugin-vue": "^10.9.2",
     "globals": "^17.6.0",
     "typescript-eslint": "^8.59.4",
