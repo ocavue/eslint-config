@@ -236,14 +236,8 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-unused-array-method-return.md
     'unicorn/no-unused-array-method-return',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-useless-coercion.md
-    'unicorn/no-useless-coercion',
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-collection-argument.md
     'unicorn/no-useless-collection-argument',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-useless-continue.md
-    'unicorn/no-useless-continue',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-useless-else.md
     'unicorn/no-useless-else',
