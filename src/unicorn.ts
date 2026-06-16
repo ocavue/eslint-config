@@ -63,9 +63,6 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-incorrect-query-selector.md
   'unicorn/no-incorrect-query-selector': 'warn',
 
-  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-incorrect-template-string-interpolation.md
-  'unicorn/no-incorrect-template-string-interpolation': 'warn',
-
   // Array.isArray instead of instanceof etc
   'unicorn/no-instanceof-builtins': 'error',
 
