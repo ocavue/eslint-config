@@ -13,11 +13,11 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/catch-error-name.md
     'unicorn/catch-error-name',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/comment-content.md
-    'unicorn/comment-content',
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/consistent-assert.md
     'unicorn/consistent-assert',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/consistent-boolean-name.md
+    'unicorn/consistent-boolean-name',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/consistent-class-member-order.md
     'unicorn/consistent-class-member-order',
@@ -64,6 +64,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v63.0.0/docs/rules/isolated-functions.md
     'unicorn/isolated-functions',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/logical-assignment-operators.md
+    'unicorn/logical-assignment-operators',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/max-nested-calls.md
     'unicorn/max-nested-calls',
 
@@ -87,6 +90,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-array-sort.md
     'unicorn/no-array-sort',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-array-splice.md
+    'unicorn/no-array-splice',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-await-expression-member.md
     'unicorn/no-await-expression-member',
@@ -152,6 +158,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-new-array.md
     'unicorn/no-new-array',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-non-function-verb-prefix.md
+    'unicorn/no-non-function-verb-prefix',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-null.md
     'unicorn/no-null',
 
@@ -176,11 +185,17 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-this-outside-of-class.md
     'unicorn/no-this-outside-of-class',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-top-level-assignment-in-function.md
+    'unicorn/no-top-level-assignment-in-function',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-top-level-side-effects.md
     'unicorn/no-top-level-side-effects',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-typeof-undefined.md
     'unicorn/no-typeof-undefined',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-uncalled-method.md
+    'unicorn/no-uncalled-method',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-undeclared-class-members.md
     'unicorn/no-undeclared-class-members',
@@ -206,11 +221,11 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unreadable-array-destructuring.md
     'unicorn/no-unreadable-array-destructuring',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-unreadable-for-of-expression.md
+    'unicorn/no-unreadable-for-of-expression',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unreadable-iife.md
     'unicorn/no-unreadable-iife',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unreadable-new-expression.md
-    'unicorn/no-unreadable-new-expression',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unreadable-object-destructuring.md
     'unicorn/no-unreadable-object-destructuring',
@@ -239,6 +254,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-length-check.md
     'unicorn/no-useless-length-check',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-useless-override.md
+    'unicorn/no-useless-override',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-promise-resolve-reject.md
     'unicorn/no-useless-promise-resolve-reject',
 
@@ -257,11 +275,17 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/numeric-separators-style.md
     'unicorn/numeric-separators-style',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/operator-assignment.md
+    'unicorn/operator-assignment',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-array-flat-map.md
     'unicorn/prefer-array-flat-map',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-array-last-methods.md
     'unicorn/prefer-array-last-methods',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/prefer-array-slice.md
+    'unicorn/prefer-array-slice',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-at.md
     'unicorn/prefer-at',
@@ -296,6 +320,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-early-return.md
     'unicorn/prefer-early-return',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/prefer-else-if.md
+    'unicorn/prefer-else-if',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-event-target.md
     'unicorn/prefer-event-target',
 
@@ -304,6 +331,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-global-this.md
     'unicorn/prefer-global-this',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/prefer-has-check.md
+    'unicorn/prefer-has-check',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-https.md
     'unicorn/prefer-https',
@@ -322,6 +352,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-logical-operator-over-ternary.md
     'unicorn/prefer-logical-operator-over-ternary',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/prefer-map-from-entries.md
+    'unicorn/prefer-map-from-entries',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-math-abs.md
     'unicorn/prefer-math-abs',

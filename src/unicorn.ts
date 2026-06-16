@@ -123,8 +123,14 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-useless-boolean-cast.md
   'unicorn/no-useless-boolean-cast': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-useless-coercion.md
+  'unicorn/no-useless-coercion': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-useless-concat.md
   'unicorn/no-useless-concat': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-useless-continue.md
+  'unicorn/no-useless-continue': 'warn',
 
   // Disallow spreading when direct usage works
   'unicorn/no-useless-spread': 'warn',
