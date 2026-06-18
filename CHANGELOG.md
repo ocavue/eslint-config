@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.8.1](https://github.com/ocavue/eslint-config/compare/v4.8.0...v4.8.1) (2026-06-18)
+
+
+### Bug Fixes
+
+* enable rule `unicorn/no-useless-undefined` ([#471](https://github.com/ocavue/eslint-config/issues/471)) ([d06379e](https://github.com/ocavue/eslint-config/commit/d06379e0922ec8db2bad9b8b398b0d2c594ec2a8))
+
 ## [4.8.0](https://github.com/ocavue/eslint-config/compare/v4.7.2...v4.8.0) (2026-06-16)
 
 
