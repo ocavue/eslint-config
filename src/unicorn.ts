@@ -138,6 +138,12 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-useless-template-literals.md
   'unicorn/no-useless-template-literals': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-undefined.md
+  'unicorn/no-useless-undefined': [
+    'warn',
+    { checkArrowFunctionBody: false, checkArguments: false },
+  ],
+
   // Lowercase number formatting for octal, hex, binary (0x1'error' instead of 0X1'error')
   'unicorn/number-literal-case': 'error',
 
