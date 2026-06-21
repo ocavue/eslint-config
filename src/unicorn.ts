@@ -165,6 +165,9 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer `.flatMap(…)` over `.map(…).flat()`
   'unicorn/prefer-array-index-of': 'error',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-array-iterable-methods.md
+  'unicorn/prefer-array-iterable-methods': 'warn',
+
   // Prefer `.some(…)` over `.filter(…).length` check
   'unicorn/prefer-array-some': 'error',
 
@@ -181,6 +184,9 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer `export…from` when re-exporting
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-export-from.md
   'unicorn/prefer-export-from': ['warn', { checkUsedVariables: false }],
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-flat-math-min-max.md
+  'unicorn/prefer-flat-math-min-max': 'warn',
 
   // Prefer global `NaN` / `Infinity` over the `Number.*` static constants.
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-global-number-constants.md
@@ -257,8 +263,14 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-unicode-code-point-escapes.md
   'unicorn/prefer-unicode-code-point-escapes': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-url-can-parse.md
+  'unicorn/prefer-url-can-parse': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-url-href.md
   'unicorn/prefer-url-href': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-while-loop-condition.md
+  'unicorn/prefer-while-loop-condition': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/require-css-escape.md
   'unicorn/require-css-escape': 'warn',

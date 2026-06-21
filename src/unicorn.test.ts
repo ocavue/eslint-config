@@ -353,7 +353,6 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-array-from-async.md
     'unicorn/prefer-array-from-async',
 
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-array-last-methods.md
     'unicorn/prefer-array-last-methods',
 
@@ -404,9 +403,6 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-event-target.md
     'unicorn/prefer-event-target',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-flat-math-min-max.md
-    'unicorn/prefer-flat-math-min-max',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-get-or-insert-computed.md
     'unicorn/prefer-get-or-insert-computed',
@@ -561,12 +557,6 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-unary-minus.md
     'unicorn/prefer-unary-minus',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-url-can-parse.md
-    'unicorn/prefer-url-can-parse',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-while-loop-condition.md
-    'unicorn/prefer-while-loop-condition',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/relative-url-style.md
     'unicorn/relative-url-style',
