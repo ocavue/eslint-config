@@ -171,8 +171,11 @@ export const reactRules: Rules = {
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-event-listener/no-leaked-event-listener.mdx
   '@eslint-react/web-api-no-leaked-event-listener': 'warn',
 
-  // https://github.com/Rel1cx/eslint-react/blob/v5.7.4/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-fetch/no-leaked-fetch.mdx
+  // https://github.com/Rel1cx/eslint-react/blob/v5.9.2/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-fetch/no-leaked-fetch.mdx
   '@eslint-react/web-api-no-leaked-fetch': 'warn',
+
+  // https://github.com/Rel1cx/eslint-react/blob/v5.9.2/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-intersection-observer/no-leaked-intersection-observer.mdx
+  '@eslint-react/web-api-no-leaked-intersection-observer': 'warn',
 
   // https://github.com/Rel1cx/eslint-react/blob/v4.2.3/packages/plugins/eslint-plugin-react-web-api/src/rules/no-leaked-interval/no-leaked-interval.mdx
   '@eslint-react/web-api-no-leaked-interval': 'warn',
