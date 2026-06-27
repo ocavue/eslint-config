@@ -2,7 +2,7 @@
   "name": "@ocavue/eslint-config",
   "type": "module",
   "version": "4.9.1",
-  "packageManager": "pnpm@11.6.0",
+  "packageManager": "pnpm@11.9.0",
   "description": "Opinionated ESLint config preset",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -31,12 +31,12 @@
   "scripts": {
     "test": "vitest",
     "build": "tsc -b",
-    "fix": "pnpm run fix:eslint && pnpm run fix:prettier",
+    "fix": "pnpm run fix:eslint && pnpm run fix:oxfmt",
     "fix:eslint": "eslint --fix .",
-    "fix:prettier": "prettier --write .",
-    "lint": "pnpm run lint:ts && pnpm run lint:eslint && pnpm run lint:knip && pnpm run lint:prettier",
+    "fix:oxfmt": "oxfmt",
+    "lint": "pnpm run lint:ts && pnpm run lint:eslint && pnpm run lint:knip && pnpm run lint:oxfmt",
     "lint:eslint": "eslint .",
-    "lint:prettier": "prettier --check .",
+    "lint:oxfmt": "oxfmt --check",
     "lint:ts": "tsc -b .",
     "lint:knip": "knip",
     "prepublishOnly": "pnpm run build"
@@ -66,8 +66,8 @@
     "eslint": "^10.5.0",
     "jiti": "^2.7.0",
     "knip": "^6.18.0",
+    "oxfmt": "^0.56.0",
     "pkg-pr-new": "^0.0.75",
-    "prettier": "^3.8.4",
     "typescript": "^6.0.3",
     "vitest": "^4.1.9"
   }

@@ -13,11 +13,7 @@ export const GLOB_MARKDOWN = '**/*.md'
 export const GLOB_VUE = '**/*.vue'
 
 const GLOB_NODE_MODULES = '**/node_modules' as const
-const GLOB_LOCKFILE = [
-  '**/package-lock.json',
-  '**/yarn.lock',
-  '**/pnpm-lock.yaml',
-] as const
+const GLOB_LOCKFILE = ['**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml'] as const
 
 export const GLOB_EXCLUDE = [
   GLOB_NODE_MODULES,
@@ -38,9 +34,7 @@ export function findConfigByName<T extends { name?: string }>(
 ): T | undefined {
   const config = configs.find((c) => c.name === name)
   if (!config) {
-    console.error(
-      `[@ocavue/eslint-config] Unable to find config with name ${name}`,
-    )
+    console.error(`[@ocavue/eslint-config] Unable to find config with name ${name}`)
   }
   return config
 }

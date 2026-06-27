@@ -7,8 +7,7 @@ import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
 export function markdown(): Linter.Config[] {
   const processor: Linter.Config[] = markdownPlugin.configs.processor
 
-  const disableTypeCheckedBase: Linter.Config =
-    tseslint.configs.disableTypeChecked
+  const disableTypeCheckedBase: Linter.Config = tseslint.configs.disableTypeChecked
 
   const disableTypeChecked: Linter.Config = {
     ...disableTypeCheckedBase,

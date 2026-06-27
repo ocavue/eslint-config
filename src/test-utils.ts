@@ -76,13 +76,7 @@ export function checkRules(options: {
   disabledRules: string[]
   enabledRules: string[]
 }): void {
-  const {
-    plugin,
-    currentRules,
-    recommendedRules,
-    disabledRules,
-    enabledRules,
-  } = options
+  const { plugin, currentRules, recommendedRules, disabledRules, enabledRules } = options
   const violations: string[] = []
 
   const normalizedDisabled = new Set(disabledRules)
@@ -141,8 +135,7 @@ export function checkRules(options: {
     if (recommendedSet.has(ruleName)) {
       violations.push(
         formatRuleViolation('Unnecessary Enabled Declaration', ruleName, {
-          message:
-            'This rule is already recommended, no need to declare as enabled.',
+          message: 'This rule is already recommended, no need to declare as enabled.',
           fix: `Remove '${ruleName}' from enabledRules array`,
         }),
       )

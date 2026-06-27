@@ -1,12 +1,6 @@
 import tseslint from 'typescript-eslint'
 
-import {
-  findConfigByName,
-  GLOB_JS,
-  GLOB_JSX,
-  GLOB_TS,
-  GLOB_TSX,
-} from './shared.js'
+import { findConfigByName, GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.js'
 import type { Config, Rules } from './types.js'
 
 /**
@@ -38,10 +32,7 @@ function originalRecommendedRules(): Rules {
 /** @internal */
 function originalRecommendedTypeCheckedOnlyRules(): Rules {
   const configs = [...tseslint.configs.recommendedTypeCheckedOnly]
-  const config = findConfigByName(
-    configs,
-    'typescript-eslint/recommended-type-checked-only',
-  )
+  const config = findConfigByName(configs, 'typescript-eslint/recommended-type-checked-only')
 
   // https://github.com/typescript-eslint/typescript-eslint/blob/v8.54.0/packages/eslint-plugin/src/configs/flat/recommended-type-checked-only.ts#L25
   const rules = config?.rules || {}
@@ -108,10 +99,7 @@ function recommendedTypeCheckedOnlyRules(): Rules {
     ...rules,
 
     // https://typescript-eslint.io/rules/no-misused-promises/
-    '@typescript-eslint/no-misused-promises': [
-      'error',
-      { checksVoidReturn: false },
-    ],
+    '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
 
     // https://typescript-eslint.io/rules/restrict-template-expressions/
     '@typescript-eslint/restrict-template-expressions': 'off',
