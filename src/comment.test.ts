@@ -6,8 +6,7 @@ import { checkRules } from './test-utils.ts'
 import type { Plugin, Rules } from './types.ts'
 
 test('comment rules should match recommended rules', () => {
-  const plugin: Plugin =
-    recommended.plugins!['@eslint-community/eslint-comments']
+  const plugin: Plugin = recommended.plugins!['@eslint-community/eslint-comments']
   const recommendedRules: Rules = recommended.rules || {}
 
   checkRules({

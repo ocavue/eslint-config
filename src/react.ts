@@ -190,11 +190,9 @@ export const reactRules: Rules = {
 export function react(options?: ReactOptions): Config[] {
   const { files, reactCompiler, version } = resolveReactOptions(options)
 
-  const reactRecommendedConfig: Config =
-    eslintReact.configs['recommended-typescript']
+  const reactRecommendedConfig: Config = eslintReact.configs['recommended-typescript']
 
-  const reactHooksRecommendedConfig: Config =
-    reactHooksPlugin.configs.flat['recommended']
+  const reactHooksRecommendedConfig: Config = reactHooksPlugin.configs.flat['recommended']
   const reactHooksRecommendedCompilerConfig: Config =
     reactHooksPlugin.configs.flat['recommended-latest']
 

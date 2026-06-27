@@ -193,9 +193,7 @@ export interface VueOptions {
   files?: Config['files']
 }
 
-export function resolveVueOptions({
-  files = [GLOB_VUE],
-}: VueOptions = {}): Required<VueOptions> {
+export function resolveVueOptions({ files = [GLOB_VUE] }: VueOptions = {}): Required<VueOptions> {
   return { files }
 }
 
