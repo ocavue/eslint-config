@@ -185,6 +185,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-invalid-fetch-options.md
     'unicorn/no-invalid-fetch-options',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/no-invalid-well-known-symbol-methods.md
+    'unicorn/no-invalid-well-known-symbol-methods',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-lonely-if.md
     'unicorn/no-lonely-if',
 
@@ -347,6 +350,12 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/operator-assignment.md
     'unicorn/operator-assignment',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-abort-signal-timeout.md
+    'unicorn/prefer-abort-signal-timeout',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-aggregate-error.md
+    'unicorn/prefer-aggregate-error',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-array-flat-map.md
     'unicorn/prefer-array-flat-map',
 
@@ -391,6 +400,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-remove.md
     'unicorn/prefer-dom-node-remove',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-dom-node-replace-children.md
+    'unicorn/prefer-dom-node-replace-children',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-text-content.md
     'unicorn/prefer-dom-node-text-content',
@@ -472,6 +484,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-object-from-entries.md
     'unicorn/prefer-object-from-entries',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-observer-apis.md
+    'unicorn/prefer-observer-apis',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-optional-catch-binding.md
     'unicorn/prefer-optional-catch-binding',
 
@@ -480,6 +495,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-private-class-fields.md
     'unicorn/prefer-private-class-fields',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-promise-try.md
+    'unicorn/prefer-promise-try',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-promise-with-resolvers.md
     'unicorn/prefer-promise-with-resolvers',
@@ -504,6 +522,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-set-has.md
     'unicorn/prefer-set-has',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-set-methods.md
+    'unicorn/prefer-set-methods',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-set-size.md
     'unicorn/prefer-set-size',
@@ -546,6 +567,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-ternary.md
     'unicorn/prefer-ternary',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-toggle-attribute.md
+    'unicorn/prefer-toggle-attribute',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-top-level-await.md
     'unicorn/prefer-top-level-await',
 
@@ -557,6 +581,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-unary-minus.md
     'unicorn/prefer-unary-minus',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-url-search-parameters.md
+    'unicorn/prefer-url-search-parameters',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/relative-url-style.md
     'unicorn/relative-url-style',
