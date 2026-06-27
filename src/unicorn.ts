@@ -13,6 +13,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-template-literal-escape.md
   'unicorn/consistent-template-literal-escape': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/consistent-tuple-labels.md
+  'unicorn/consistent-tuple-labels': 'warn',
+
   // Pass error message when throwing errors
   'unicorn/error-message': 'error',
 
@@ -74,6 +77,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-late-current-target-access.md
   'unicorn/no-late-current-target-access': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/no-late-event-control.md
+  'unicorn/no-late-event-control': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-mismatched-map-key.md
   'unicorn/no-mismatched-map-key': 'warn',

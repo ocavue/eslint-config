@@ -49,9 +49,6 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/consistent-optional-chaining.md
     'unicorn/consistent-optional-chaining',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/consistent-tuple-labels.md
-    'unicorn/consistent-tuple-labels',
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/default-export-style.md
     'unicorn/default-export-style',
 
@@ -190,9 +187,6 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/no-invalid-well-known-symbol-methods.md
     'unicorn/no-invalid-well-known-symbol-methods',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/no-late-event-control.md
-    'unicorn/no-late-event-control',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-lonely-if.md
     'unicorn/no-lonely-if',
