@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 80,
+  "sortPackageJson": false,
+  "ignorePatterns": [
+    "yarn.lock",
+    "pnpm-lock.yaml",
+    "package-lock.json",
+    "CHANGELOG.md",
+    ".next",
+    ".cache",
+    ".DS_Store",
+    ".idea",
+    "*.log",
+    "*.tgz",
+    "coverage",
+    "dist",
+    "lib-cov",
+    "logs",
+    "node_modules",
+    "temp",
+    "dist-types",
+    "*.tsbuildinfo"
+  ]
+}
