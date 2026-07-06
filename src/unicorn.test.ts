@@ -639,7 +639,6 @@ test('Unicorn rules should match recommended rules', () => {
 
   // @keep-sorted
   const enabledRules = [
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-import-meta-properties.md
     'unicorn/prefer-import-meta-properties',
   ]

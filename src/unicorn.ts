@@ -3,7 +3,6 @@ import plugin from 'eslint-plugin-unicorn'
 
 // @keep-sorted
 export const unicornRules: Linter.RulesRecord = {
-
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/class-reference-in-static-methods.md
   'unicorn/class-reference-in-static-methods': 'warn',
 

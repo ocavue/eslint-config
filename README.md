@@ -94,6 +94,13 @@ export interface ESLintConfigOptions {
   unicorn?: boolean
 
   /**
+   * Whether to enable [eslint-plugin-regexp](https://www.npmjs.com/package/eslint-plugin-regexp) configuration.
+   *
+   * @default true
+   */
+  regexp?: boolean
+
+  /**
    * Whether to enable [eslint-plugin-package-json](https://www.npmjs.com/package/eslint-plugin-package-json) configuration.
    *
    * @default true

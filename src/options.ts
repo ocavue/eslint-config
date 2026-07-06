@@ -20,6 +20,13 @@ export interface ESLintConfigOptions {
   unicorn?: boolean
 
   /**
+   * Whether to enable [eslint-plugin-regexp](https://www.npmjs.com/package/eslint-plugin-regexp) configuration.
+   *
+   * @default true
+   */
+  regexp?: boolean
+
+  /**
    * Whether to enable [eslint-plugin-package-json](https://www.npmjs.com/package/eslint-plugin-package-json) configuration.
    *
    * @default true
@@ -114,6 +121,7 @@ export interface ESLintConfigOptions {
 export function resolveOptions({
   typescript = true,
   unicorn = true,
+  regexp = true,
   packageJson = true,
   perfectionist = true,
   markdown = true,
@@ -131,6 +139,7 @@ export function resolveOptions({
   return {
     typescript,
     unicorn,
+    regexp,
     packageJson,
     perfectionist,
     markdown,
