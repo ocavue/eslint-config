@@ -49,6 +49,11 @@ export async function defineESLintConfig(
     configs.push(...unicorn())
   }
 
+  if (resolvedOptions.regexp) {
+    const { regexp } = await import('./regexp.js')
+    configs.push(...regexp())
+  }
+
   if (resolvedOptions.packageJson) {
     const { packageJson } = await import('./package-json.js')
     configs.push(...packageJson())
