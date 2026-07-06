@@ -6,12 +6,6 @@ export const unicornRules: Linter.RulesRecord = {
   // Improve regexes
   'unicorn/better-regex': 'error',
 
-  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/no-unnecessary-array-flat-map.md
-  'unicorn/no-unnecessary-array-flat-map': "warn",
-
-  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/prefer-block-statement-over-iife.md
-  'unicorn/prefer-block-statement-over-iife': 'warn',
-
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/class-reference-in-static-methods.md
   'unicorn/class-reference-in-static-methods': 'warn',
 
@@ -117,6 +111,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-subtraction-comparison.md
   'unicorn/no-subtraction-comparison': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/no-unnecessary-array-flat-map.md
+  'unicorn/no-unnecessary-array-flat-map': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unnecessary-global-this.md
   'unicorn/no-unnecessary-global-this': 'warn',
 
@@ -185,6 +182,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // Prefer BigInt literals over the constructor
   'unicorn/prefer-bigint-literals': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/prefer-block-statement-over-iife.md
+  'unicorn/prefer-block-statement-over-iife': 'warn',
 
   // Prefer Date.now() to get the number of milliseconds since the Unix Epoch
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-date-now.md

@@ -266,7 +266,6 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-array-flat-depth.md
     'unicorn/no-unnecessary-array-flat-depth',
 
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-array-splice-count.md
     'unicorn/no-unnecessary-array-splice-count',
 
@@ -392,8 +391,6 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-blob-reading-methods.md
     'unicorn/prefer-blob-reading-methods',
-
-
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-boolean-return.md
     'unicorn/prefer-boolean-return',
