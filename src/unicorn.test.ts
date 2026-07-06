@@ -600,9 +600,6 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-type-literal-last.md
     'unicorn/prefer-type-literal-last',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-uint8array-base64.md
-    'unicorn/prefer-uint8array-base64',
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-unary-minus.md
     'unicorn/prefer-unary-minus',
 
