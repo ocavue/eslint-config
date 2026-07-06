@@ -6,6 +6,12 @@ export const unicornRules: Linter.RulesRecord = {
   // Improve regexes
   'unicorn/better-regex': 'error',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/no-unnecessary-array-flat-map.md
+  'unicorn/no-unnecessary-array-flat-map': "warn",
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/prefer-block-statement-over-iife.md
+  'unicorn/prefer-block-statement-over-iife': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/class-reference-in-static-methods.md
   'unicorn/class-reference-in-static-methods': 'warn',
 
