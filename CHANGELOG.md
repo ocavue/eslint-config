@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.11.0](https://github.com/ocavue/eslint-config/compare/v4.10.0...v4.11.0) (2026-07-06)
+
+
+### Features
+
+* add eslint-plugin-regexp ([#491](https://github.com/ocavue/eslint-config/issues/491)) ([9801305](https://github.com/ocavue/eslint-config/commit/9801305bec3da32deb19aa752de43f5f982345de))
+* update eslint-plugin-unicorn to v70 ([#488](https://github.com/ocavue/eslint-config/issues/488)) ([b4e935f](https://github.com/ocavue/eslint-config/commit/b4e935fe7354bc843c5b000bc2bd2aca065d2b28))
+* update eslint-plugin-unicorn to v71 ([#490](https://github.com/ocavue/eslint-config/issues/490)) ([c2a7b83](https://github.com/ocavue/eslint-config/commit/c2a7b83d7ec2f1843480b350dbf98b5e21d77cc4))
+
 ## [4.10.0](https://github.com/ocavue/eslint-config/compare/v4.9.1...v4.10.0) (2026-06-27)
 
 
