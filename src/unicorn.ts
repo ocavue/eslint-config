@@ -278,6 +278,9 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer using `structuredClone` to create a deep clone
   'unicorn/prefer-structured-clone': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/prefer-then-catch.md
+  'unicorn/prefer-then-catch': 'warn',
+
   // Enforce throwing type error when throwing error while checking typeof
   'unicorn/prefer-type-error': 'error',
 
