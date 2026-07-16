@@ -252,10 +252,6 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
   'unicorn/prefer-regexp-test': 'warn',
 
-  // Prefer simple condition first in if statements
-  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-simple-condition-first.md
-  'unicorn/prefer-simple-condition-first': 'warn',
-
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-single-object-destructuring.md
   'unicorn/prefer-single-object-destructuring': 'warn',
 
