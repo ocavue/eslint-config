@@ -81,6 +81,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-mismatched-map-key.md
   'unicorn/no-mismatched-map-key': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/no-multiple-promise-resolver-calls.md
+  'unicorn/no-multiple-promise-resolver-calls': 'warn',
+
   // Disallow named usage of default import/export
   'unicorn/no-named-default': 'warn',
 
@@ -105,6 +108,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-return-array-push.md
   'unicorn/no-return-array-push': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/no-shorthand-property-overrides.md
+  'unicorn/no-shorthand-property-overrides': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-subtraction-comparison.md
   'unicorn/no-subtraction-comparison': 'warn',
 
@@ -116,6 +122,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unnecessary-splice.md
   'unicorn/no-unnecessary-splice': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/no-unnecessary-string-trim.md
+  'unicorn/no-unnecessary-string-trim': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unsafe-buffer-conversion.md
   'unicorn/no-unsafe-buffer-conversion': 'warn',
@@ -137,6 +146,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-useless-continue.md
   'unicorn/no-useless-continue': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/no-useless-re-export.md
+  'unicorn/no-useless-re-export': 'warn',
 
   // Disallow spreading when direct usage works
   'unicorn/no-useless-spread': 'warn',
@@ -265,6 +277,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // Prefer using `structuredClone` to create a deep clone
   'unicorn/prefer-structured-clone': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/prefer-then-catch.md
+  'unicorn/prefer-then-catch': 'warn',
 
   // Enforce throwing type error when throwing error while checking typeof
   'unicorn/prefer-type-error': 'error',

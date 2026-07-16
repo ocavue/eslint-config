@@ -254,6 +254,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-top-level-side-effects.md
     'unicorn/no-top-level-side-effects',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/no-transition-all.md
+    'unicorn/no-transition-all',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-typeof-undefined.md
     'unicorn/no-typeof-undefined',
 
@@ -412,6 +415,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-append.md
     'unicorn/prefer-dom-node-append',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/prefer-dom-node-html-methods.md
+    'unicorn/prefer-dom-node-html-methods',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-dom-node-remove.md
     'unicorn/prefer-dom-node-remove',
