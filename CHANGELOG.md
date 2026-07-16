@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.12.1](https://github.com/ocavue/eslint-config/compare/v4.12.0...v4.12.1) (2026-07-16)
+
+
+### Bug Fixes
+
+* disable rule `unicorn/prefer-simple-condition-first` ([#499](https://github.com/ocavue/eslint-config/issues/499)) ([d1e8b6e](https://github.com/ocavue/eslint-config/commit/d1e8b6e4b57adada0e3b36da12c1d358c223007a))
+
 ## [4.12.0](https://github.com/ocavue/eslint-config/compare/v4.11.0...v4.12.0) (2026-07-16)
 
 
