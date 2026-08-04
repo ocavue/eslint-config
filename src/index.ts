@@ -89,6 +89,11 @@ export async function defineESLintConfig(
     configs.push(...command())
   }
 
+  if (resolvedOptions.jsdoc) {
+    const { jsdoc } = await import('./jsdoc.js')
+    configs.push(...jsdoc())
+  }
+
   if (resolvedOptions.comment) {
     const { comment } = await import('./comment.js')
     configs.push(...comment())
