@@ -76,6 +76,13 @@ export interface ESLintConfigOptions {
   command?: boolean
 
   /**
+   * Whether to enable [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc) configuration.
+   *
+   * @default true
+   */
+  jsdoc?: boolean
+
+  /**
    * Whether to enable [@eslint-community/eslint-plugin-eslint-comments](https://www.npmjs.com/package/@eslint-community/eslint-plugin-eslint-comments) configuration.
    *
    * @default true
@@ -129,6 +136,7 @@ export function resolveOptions({
   vue = false,
   unocss = false,
   command = false,
+  jsdoc = true,
   comment = true,
   ignores = true,
   gitignore = true,
@@ -147,6 +155,7 @@ export function resolveOptions({
     vue,
     unocss,
     command,
+    jsdoc,
     comment,
     ignores,
     gitignore,
@@ -160,7 +169,7 @@ export interface ReactOptions {
   /**
    * The default files to lint.
    *
-   * @default: All typescript files
+   * @default All typescript files
    *
    * @see {@link Config.files}
    */
@@ -178,7 +187,7 @@ export interface ReactOptions {
   /**
    * React version to use for linting. Set to a semver version like "16.0", "19.2", etc.
    *
-   * @default: '18.0'
+   * @default '18.0'
    */
   version?: string
 }
@@ -195,7 +204,7 @@ export interface VueOptions {
   /**
    * The default files to lint.
    *
-   * @default: All .vue files
+   * @default All .vue files
    *
    * @see {@link Config.files}
    */
@@ -211,7 +220,7 @@ export interface IgnoresOptions {
    * An array of glob patterns indicating the files that the configuration
    * object should not apply to.
    *
-   * @default: some common files to ignore
+   * @default some common files to ignore
    *
    * @see {@link Config.ignores}
    */
