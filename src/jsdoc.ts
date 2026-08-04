@@ -30,20 +30,11 @@ export const jsdocRules: Linter.RulesRecord = {
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/escape-inline-tags.md
   'jsdoc/escape-inline-tags': 'warn',
 
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/implements-on-classes.md
-  'jsdoc/implements-on-classes': 'warn',
-
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/multiline-blocks.md
   'jsdoc/multiline-blocks': ['warn', {noSingleLineBlocks: true}],
 
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-defaults.md
-  'jsdoc/no-defaults': 'warn',
-
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-multi-asterisks.md
   'jsdoc/no-multi-asterisks': 'warn',
-
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-types.md
-  'jsdoc/no-types': 'warn',
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/reject-any-type.md
   'jsdoc/reject-any-type': 'warn',
@@ -60,9 +51,6 @@ export const jsdocRules: Linter.RulesRecord = {
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-property-name.md
   'jsdoc/require-property-name': 'warn',
 
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-property.md
-  'jsdoc/require-property': 'warn',
-
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-throws-type.md
   'jsdoc/require-throws-type': 'warn',
 
@@ -71,9 +59,6 @@ export const jsdocRules: Linter.RulesRecord = {
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-yields-type.md
   'jsdoc/require-yields-type': 'warn',
-
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-yields.md
-  'jsdoc/require-yields': 'warn',
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/tag-lines.md
   'jsdoc/tag-lines': 'warn',

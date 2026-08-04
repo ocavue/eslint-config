@@ -7,10 +7,19 @@ import { checkRules } from './test-utils.js'
 test('JSDoc rules should match recommended rules', () => {
   // @keep-sorted
   const disabledRules = [
-    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param-description.md
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/implements-on-classes.md
+    'jsdoc/implements-on-classes',
+
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-defaults.md
+    'jsdoc/no-defaults',
+
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-types.md
+    'jsdoc/no-types',
 
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-jsdoc.md
     'jsdoc/require-jsdoc',
+
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param-description.md
     'jsdoc/require-param-description',
 
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param-name.md
@@ -18,6 +27,9 @@ test('JSDoc rules should match recommended rules', () => {
 
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param.md
     'jsdoc/require-param',
+
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-property.md
+    'jsdoc/require-property',
 
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-returns-check.md
     'jsdoc/require-returns-check',
@@ -27,6 +39,9 @@ test('JSDoc rules should match recommended rules', () => {
 
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-returns.md
     'jsdoc/require-returns',
+
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-yields.md
+    'jsdoc/require-yields',
   ]
 
   checkRules({
