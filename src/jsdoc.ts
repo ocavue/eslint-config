@@ -57,15 +57,6 @@ export const jsdocRules: Linter.RulesRecord = {
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-next-type.md
   'jsdoc/require-next-type': 'warn',
 
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param-description.md
-  'jsdoc/require-param-description': 'warn',
-
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param-name.md
-  'jsdoc/require-param-name': 'warn',
-
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param.md
-  'jsdoc/require-param': 'warn',
-
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-property-description.md
   'jsdoc/require-property-description': 'warn',
 
@@ -74,15 +65,6 @@ export const jsdocRules: Linter.RulesRecord = {
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-property.md
   'jsdoc/require-property': 'warn',
-
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-returns-check.md
-  'jsdoc/require-returns-check': 'warn',
-
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-returns-description.md
-  'jsdoc/require-returns-description': 'warn',
-
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-returns.md
-  'jsdoc/require-returns': 'warn',
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-throws-type.md
   'jsdoc/require-throws-type': 'warn',
