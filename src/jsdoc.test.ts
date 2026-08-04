@@ -8,6 +8,9 @@ test('JSDoc rules should match recommended rules', () => {
   // @keep-sorted
   const disabledRules = [
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param-description.md
+
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-jsdoc.md
+    'jsdoc/require-jsdoc',
     'jsdoc/require-param-description',
 
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-param-name.md

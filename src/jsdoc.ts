@@ -51,9 +51,6 @@ export const jsdocRules: Linter.RulesRecord = {
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/reject-function-type.md
   'jsdoc/reject-function-type': 'warn',
 
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-jsdoc.md
-  'jsdoc/require-jsdoc': 'warn',
-
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-next-type.md
   'jsdoc/require-next-type': 'warn',
 
