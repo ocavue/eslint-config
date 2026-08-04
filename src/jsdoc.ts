@@ -60,8 +60,6 @@ export const jsdocRules: Linter.RulesRecord = {
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-yields-type.md
   'jsdoc/require-yields-type': 'warn',
 
-  // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/tag-lines.md
-  'jsdoc/tag-lines': 'warn',
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/ts-no-empty-object-type.md
   'jsdoc/ts-no-empty-object-type': 'warn',
