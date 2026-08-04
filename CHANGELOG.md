@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.13.0](https://github.com/ocavue/eslint-config/compare/v4.12.1...v4.13.0) (2026-08-04)
+
+
+### Features
+
+* add jsdoc config ([#507](https://github.com/ocavue/eslint-config/issues/507)) ([95c261b](https://github.com/ocavue/eslint-config/commit/95c261bafb45a79dcc91cf4dab16fff82a00adb4))
+* update eslint-plugin-unicorn to v73 ([#504](https://github.com/ocavue/eslint-config/issues/504)) ([3a77d1c](https://github.com/ocavue/eslint-config/commit/3a77d1cdf667b1d900f91609331b1960012b2226))
+
 ## [4.12.1](https://github.com/ocavue/eslint-config/compare/v4.12.0...v4.12.1) (2026-07-16)
 
 
