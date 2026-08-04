@@ -31,7 +31,7 @@ export const jsdocRules: Linter.RulesRecord = {
   'jsdoc/escape-inline-tags': 'warn',
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/multiline-blocks.md
-  'jsdoc/multiline-blocks': ['warn', {noSingleLineBlocks: true}],
+  'jsdoc/multiline-blocks': ['warn', { noSingleLineBlocks: true }],
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-multi-asterisks.md
   'jsdoc/no-multi-asterisks': 'warn',
