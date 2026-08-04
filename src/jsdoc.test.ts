@@ -13,9 +13,6 @@ test('JSDoc rules should match recommended rules', () => {
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-defaults.md
     'jsdoc/no-defaults',
 
-    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/tag-lines.md
-    'jsdoc/tag-lines' ,
-
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/no-types.md
     'jsdoc/no-types',
 
@@ -45,6 +42,9 @@ test('JSDoc rules should match recommended rules', () => {
 
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/require-yields.md
     'jsdoc/require-yields',
+
+    // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/tag-lines.md
+    'jsdoc/tag-lines',
   ]
 
   checkRules({

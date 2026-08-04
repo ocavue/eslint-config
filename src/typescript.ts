@@ -14,12 +14,16 @@ function originalESLintRecommendedRules(): Rules {
   return tseslint.configs.eslintRecommended.rules || {}
 }
 
-/** @internal */
+/**
+ * @internal
+ */
 function eslintRecommendedRules(): Rules {
   return originalESLintRecommendedRules()
 }
 
-/** @internal */
+/**
+ * @internal
+ */
 function originalRecommendedRules(): Rules {
   const configs = [...tseslint.configs.recommended]
   const config = findConfigByName(configs, 'typescript-eslint/recommended')
@@ -29,7 +33,9 @@ function originalRecommendedRules(): Rules {
   return rules
 }
 
-/** @internal */
+/**
+ * @internal
+ */
 function originalRecommendedTypeCheckedOnlyRules(): Rules {
   const configs = [...tseslint.configs.recommendedTypeCheckedOnly]
   const config = findConfigByName(configs, 'typescript-eslint/recommended-type-checked-only')
@@ -48,7 +54,9 @@ function originalStylisticRules(): Rules {
   return rules
 }
 
-/** @internal */
+/**
+ * @internal
+ */
 function recommendedRules(): Rules {
   const rules = originalRecommendedRules()
 
@@ -90,7 +98,9 @@ function recommendedRules(): Rules {
   }
 }
 
-/** @internal */
+/**
+ * @internal
+ */
 function recommendedTypeCheckedOnlyRules(): Rules {
   const rules = originalRecommendedTypeCheckedOnlyRules()
 
