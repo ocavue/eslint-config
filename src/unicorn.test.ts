@@ -7,6 +7,7 @@ import { unicornRules } from './unicorn.js'
 test('Unicorn rules should match recommended rules', () => {
   // @keep-sorted
   const disabledRules = [
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/better-dom-traversing.md
     'unicorn/better-dom-traversing',
 
@@ -304,6 +305,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/no-unsafe-promise-all-settled-values.md
     'unicorn/no-unsafe-promise-all-settled-values',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/no-unsafe-sqlite-interpolation.md
+    'unicorn/no-unsafe-sqlite-interpolation',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unsafe-string-replacement.md
     'unicorn/no-unsafe-string-replacement',
