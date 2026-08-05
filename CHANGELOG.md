@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.13.1](https://github.com/ocavue/eslint-config/compare/v4.13.0...v4.13.1) (2026-08-05)
+
+
+### Bug Fixes
+
+* tweak jsdoc rules ([#508](https://github.com/ocavue/eslint-config/issues/508)) ([d465c46](https://github.com/ocavue/eslint-config/commit/d465c4617b2fb5e10aa0469adfdb4eb4c8db6889))
+
 ## [4.13.0](https://github.com/ocavue/eslint-config/compare/v4.12.1...v4.13.0) (2026-08-04)
 
 
