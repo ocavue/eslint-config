@@ -162,9 +162,6 @@ export const unicornRules: Linter.RulesRecord = {
     { checkArrowFunctionBody: false, checkArguments: false },
   ],
 
-  // Lowercase number formatting for octal, hex, binary (0x1'error' instead of 0X1'error')
-  'unicorn/number-literal-case': 'error',
-
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-add-event-listener-options.md
   'unicorn/prefer-add-event-listener-options': 'warn',
 
