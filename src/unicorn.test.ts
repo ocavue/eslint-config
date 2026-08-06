@@ -359,6 +359,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-zero-fractions.md
     'unicorn/no-zero-fractions',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/number-literal-case.md
+    'unicorn/number-literal-case',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/numeric-separators-style.md
     'unicorn/numeric-separators-style',
 
