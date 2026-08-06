@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.13.2](https://github.com/ocavue/eslint-config/compare/v4.13.1...v4.13.2) (2026-08-06)
+
+
+### Bug Fixes
+
+* disable rule `unicorn/number-literal-case` ([#511](https://github.com/ocavue/eslint-config/issues/511)) ([578d104](https://github.com/ocavue/eslint-config/commit/578d104c81c999bce47eb3be935e86482d94b706))
+
 ## [4.13.1](https://github.com/ocavue/eslint-config/compare/v4.13.0...v4.13.1) (2026-08-05)
 
 
