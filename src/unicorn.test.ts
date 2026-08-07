@@ -610,6 +610,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-ternary.md
     'unicorn/prefer-ternary',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v72.0.0/docs/rules/prefer-then-catch.md
+    'unicorn/prefer-then-catch',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-toggle-attribute.md
     'unicorn/prefer-toggle-attribute',
 
