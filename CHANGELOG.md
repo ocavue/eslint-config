@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.13.3](https://github.com/ocavue/eslint-config/compare/v4.13.2...v4.13.3) (2026-08-07)
+
+
+### Bug Fixes
+
+* disable rule `unicorn/prefer-add-event-listener` ([#513](https://github.com/ocavue/eslint-config/issues/513)) ([b193192](https://github.com/ocavue/eslint-config/commit/b193192bda8eea52ac54d50a70d99581b6ca5bb1))
+* disable rule `unicorn/prefer-then-catch` ([#514](https://github.com/ocavue/eslint-config/issues/514)) ([057398d](https://github.com/ocavue/eslint-config/commit/057398ddf78b5da66a41d721ff3853501d11abbb))
+
 ## [4.13.2](https://github.com/ocavue/eslint-config/compare/v4.13.1...v4.13.2) (2026-08-06)
 
 
