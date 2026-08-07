@@ -165,9 +165,6 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-add-event-listener-options.md
   'unicorn/prefer-add-event-listener-options': 'warn',
 
-  // Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.
-  'unicorn/prefer-add-event-listener': 'error',
-
   // Prefer `.find(…)` and `.findLast(…)` over the first or last element from
   'unicorn/prefer-array-find': 'error',
 

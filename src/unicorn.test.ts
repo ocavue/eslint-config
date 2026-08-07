@@ -374,6 +374,10 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-abort-signal-timeout.md
     'unicorn/prefer-abort-signal-timeout',
 
+    // Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/prefer-add-event-listener.md
+    'unicorn/prefer-add-event-listener',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/prefer-aggregate-error.md
     'unicorn/prefer-aggregate-error',
 
