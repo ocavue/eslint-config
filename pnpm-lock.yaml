@@ -13,13 +13,13 @@ importers:
         specifier: ^4.7.2
         version: 4.7.2(eslint@10.8.0)
       '@eslint-react/eslint-plugin':
-        specifier: ^5.11.2
+        specifier: ^5.14.1
         version: 5.18.2(eslint@10.8.0)(typescript@6.0.3)
       '@eslint/markdown':
         specifier: ^8.0.3
         version: 8.0.3
       '@unocss/eslint-config':
-        specifier: ^66.7.4
+        specifier: ^66.7.5
         version: 66.7.5(eslint@10.8.0)(typescript@6.0.3)
       eslint-config-flat-gitignore:
         specifier: ^2.3.0
@@ -43,7 +43,7 @@ importers:
         specifier: ^1.6.0
         version: 1.6.2(eslint@10.8.0)
       eslint-plugin-perfectionist:
-        specifier: ^5.9.1
+        specifier: ^5.10.0
         version: 5.10.1(eslint@10.8.0)(typescript@6.0.3)
       eslint-plugin-react-hooks:
         specifier: ^7.1.1
@@ -74,13 +74,13 @@ importers:
         specifier: ^22.0.0
         version: 22.20.1
       eslint:
-        specifier: ^10.6.0
+        specifier: ^10.7.0
         version: 10.8.0(jiti@2.7.0)
       jiti:
         specifier: ^2.7.0
         version: 2.7.0
       knip:
-        specifier: ^6.24.0
+        specifier: ^6.26.0
         version: 6.31.0
       oxfmt:
         specifier: ^0.60.0
