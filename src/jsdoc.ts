@@ -15,7 +15,10 @@ export const jsdocRules: Linter.RulesRecord = {
   'jsdoc/check-property-names': 'warn',
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/check-tag-names.md
-  'jsdoc/check-tag-names': ['warn', { typed: false, enableFixer: false, jsxTags: true }],
+  'jsdoc/check-tag-names': [
+    'warn',
+    { typed: false, enableFixer: false, jsxTags: true, definedTags: ['defaultValue'] },
+  ],
 
   // https://github.com/gajus/eslint-plugin-jsdoc/blob/v63.3.3/docs/rules/check-types.md
   'jsdoc/check-types': 'warn',
