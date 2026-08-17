@@ -152,7 +152,7 @@ export interface ESLintConfigOptions {
   /**
    * Whether to enable [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc) configuration.
    *
-   * @default true
+   * @default false
    */
   jsdoc?: boolean
 
