@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.13.5](https://github.com/ocavue/eslint-config/compare/v4.13.4...v4.13.5) (2026-08-17)
+
+
+### Bug Fixes
+
+* disable jsdoc rules by default ([#523](https://github.com/ocavue/eslint-config/issues/523)) ([7d26622](https://github.com/ocavue/eslint-config/commit/7d26622460c0ec90623008fe58422b1f270fc5e6))
+
 ## [4.13.4](https://github.com/ocavue/eslint-config/compare/v4.13.3...v4.13.4) (2026-08-10)
 
 
