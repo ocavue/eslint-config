@@ -78,7 +78,7 @@ export interface ESLintConfigOptions {
   /**
    * Whether to enable [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc) configuration.
    *
-   * @default true
+   * @default false
    */
   jsdoc?: boolean
 
@@ -136,7 +136,7 @@ export function resolveOptions({
   vue = false,
   unocss = false,
   command = false,
-  jsdoc = true,
+  jsdoc = false,
   comment = true,
   ignores = true,
   gitignore = true,
