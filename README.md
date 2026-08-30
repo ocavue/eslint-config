@@ -197,6 +197,13 @@ export interface ESLintConfigOptions {
    * @default true
    */
   prettier?: boolean
+
+  /**
+   * Whether to enable [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) configuration.
+   *
+   * @default true
+   */
+  stylistic?: boolean
 }
 ```
 

@@ -123,6 +123,13 @@ export interface ESLintConfigOptions {
    * @default true
    */
   prettier?: boolean
+
+  /**
+   * Whether to enable [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) configuration.
+   *
+   * @default true
+   */
+  stylistic?: boolean
 }
 
 export function resolveOptions({
@@ -143,6 +150,7 @@ export function resolveOptions({
   antfu = true,
   noOnlyTests = true,
   prettier = true,
+  stylistic = true,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
     typescript,
@@ -162,6 +170,7 @@ export function resolveOptions({
     antfu,
     noOnlyTests,
     prettier,
+    stylistic,
   }
 }
 
