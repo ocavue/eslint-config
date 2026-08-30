@@ -650,7 +650,6 @@ test('Unicorn rules should match recommended rules', () => {
     'unicorn/require-passive-events',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v73.0.0/docs/rules/single-line-block-comment-style.md
-    // TODO: enable this rule after https://github.com/sindresorhus/eslint-plugin-unicorn/issues/3603 is implmemented
     'unicorn/single-line-block-comment-style',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/switch-case-braces.md
