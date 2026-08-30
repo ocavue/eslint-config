@@ -45,8 +45,8 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.7.2",
     "@eslint-react/eslint-plugin": "^5.14.1",
     "@eslint/markdown": "^8.0.3",
-    "@unocss/eslint-config": "^66.7.5",
-    "eslint-config-flat-gitignore": "^2.3.0",
+    "@unocss/eslint-config": "^66.8.1",
+    "eslint-config-flat-gitignore": "^2.4.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-antfu": "^3.2.3",
     "eslint-plugin-command": "^4.0.0",
@@ -68,9 +68,9 @@
     "eslint": "^10.7.0",
     "jiti": "^2.7.0",
     "knip": "^6.26.0",
-    "oxfmt": "^0.60.0",
-    "pkg-pr-new": "^0.0.78",
+    "oxfmt": "^0.65.0",
+    "pkg-pr-new": "^0.0.88",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   }
 }
