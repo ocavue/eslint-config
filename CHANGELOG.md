@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.14.0](https://github.com/ocavue/eslint-config/compare/v4.13.5...v4.14.0) (2026-08-30)
+
+
+### Features
+
+* update eslint-plugin-unicorn to v74 ([#528](https://github.com/ocavue/eslint-config/issues/528)) ([c30e8da](https://github.com/ocavue/eslint-config/commit/c30e8daf3bbdf5a4503d9803efc38424aff8eb1c))
+
 ## [4.13.5](https://github.com/ocavue/eslint-config/compare/v4.13.4...v4.13.5) (2026-08-17)
 
 
