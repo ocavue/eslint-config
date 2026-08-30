@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.15.0](https://github.com/ocavue/eslint-config/compare/v4.14.0...v4.15.0) (2026-08-30)
+
+
+### Features
+
+* enable rule `@stylistic/implicit-arrow-linebreak` ([#530](https://github.com/ocavue/eslint-config/issues/530)) ([9156fab](https://github.com/ocavue/eslint-config/commit/9156fabb54e291dcab61cbb82dda7e05b935a0f6))
+
 ## [4.14.0](https://github.com/ocavue/eslint-config/compare/v4.13.5...v4.14.0) (2026-08-30)
 
 
