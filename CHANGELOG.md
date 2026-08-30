@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.16.0](https://github.com/ocavue/eslint-config/compare/v4.15.0...v4.16.0) (2026-08-30)
+
+
+### Features
+
+* enable rule `ocavue/no-implicit-arrow-linebreak` ([#534](https://github.com/ocavue/eslint-config/issues/534)) ([e0d0e16](https://github.com/ocavue/eslint-config/commit/e0d0e168eb5486090b5997eae91878cd68d8de69))
+
+
+### Bug Fixes
+
+* disable rule `package-json/no-redundant-publishConfig` ([#532](https://github.com/ocavue/eslint-config/issues/532)) ([7b383e3](https://github.com/ocavue/eslint-config/commit/7b383e3a1aaa0957622825087550e64232cacf06))
+
 ## [4.15.0](https://github.com/ocavue/eslint-config/compare/v4.14.0...v4.15.0) (2026-08-30)
 
 
