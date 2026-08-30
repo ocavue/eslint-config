@@ -29,9 +29,9 @@ export async function defineESLintConfig(
     configs.push(...prettier())
   }
 
-  if (resolvedOptions.stylistic) {
-    const { stylistic } = await import('./stylistic.js')
-    configs.push(...stylistic())
+  if (resolvedOptions.ocavue) {
+    const { ocavue } = await import('./ocavue.js')
+    configs.push(...ocavue())
   }
 
   if (resolvedOptions.ignores) {
