@@ -29,6 +29,11 @@ export async function defineESLintConfig(
     configs.push(...prettier())
   }
 
+  if (resolvedOptions.stylistic) {
+    const { stylistic } = await import('./stylistic.js')
+    configs.push(...stylistic())
+  }
+
   if (resolvedOptions.ignores) {
     const { ignores } = await import('./ignores.js')
     configs.push(...ignores(trueToUndefined(resolvedOptions.ignores)))
