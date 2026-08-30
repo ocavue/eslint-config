@@ -199,11 +199,11 @@ export interface ESLintConfigOptions {
   prettier?: boolean
 
   /**
-   * Whether to enable [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) configuration.
+   * Whether to enable [eslint-plugin-ocavue](https://www.npmjs.com/package/eslint-plugin-ocavue) configuration.
    *
    * @default true
    */
-  stylistic?: boolean
+  ocavue?: boolean
 }
 ```
 

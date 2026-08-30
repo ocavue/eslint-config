@@ -1,5 +1,6 @@
 minimumReleaseAgeExclude:
   - eslint-plugin-unicorn
+  - eslint-plugin-ocavue@0.1.0
 
 strictPeerDependencies: true
 

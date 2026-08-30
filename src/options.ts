@@ -125,11 +125,11 @@ export interface ESLintConfigOptions {
   prettier?: boolean
 
   /**
-   * Whether to enable [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) configuration.
+   * Whether to enable [eslint-plugin-ocavue](https://www.npmjs.com/package/eslint-plugin-ocavue) configuration.
    *
    * @default true
    */
-  stylistic?: boolean
+  ocavue?: boolean
 }
 
 export function resolveOptions({
@@ -150,7 +150,7 @@ export function resolveOptions({
   antfu = true,
   noOnlyTests = true,
   prettier = true,
-  stylistic = true,
+  ocavue = true,
 }: ESLintConfigOptions = {}): Required<ESLintConfigOptions> {
   return {
     typescript,
@@ -170,7 +170,7 @@ export function resolveOptions({
     antfu,
     noOnlyTests,
     prettier,
-    stylistic,
+    ocavue,
   }
 }
 
