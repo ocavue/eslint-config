@@ -7,9 +7,6 @@ export const packageJsonRules: Rules = {
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-redundant-files.md
   'package-json/no-redundant-files': 'error',
 
-  // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/no-redundant-publishConfig.md
-  'package-json/no-redundant-publishConfig': 'error',
-
   // https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/v0.88.1/docs/rules/order-properties.md
   'package-json/order-properties': [
     'warn',
