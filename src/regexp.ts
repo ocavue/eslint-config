@@ -1,5 +1,6 @@
 import type { Linter } from 'eslint'
 import plugin from 'eslint-plugin-regexp'
+import { GLOB_GEN, GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './shared.ts'
 
 /**
  * Core ESLint rules that are superseded by the regexp plugin's own rules, so
@@ -214,6 +215,8 @@ export function regexp(): Linter.Config[] {
       plugins: {
         regexp: plugin,
       },
+          files: [GLOB_TS, GLOB_TSX, GLOB_JS, GLOB_JSX],
+                  ignores: [GLOB_GEN],
       rules: {
         ...regexpSupersededRules,
         ...regexpRules,
