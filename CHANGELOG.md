@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.16.1](https://github.com/ocavue/eslint-config/compare/v4.16.0...v4.16.1) (2026-09-01)
+
+
+### Bug Fixes
+
+* ignore some rules in generated files ([#535](https://github.com/ocavue/eslint-config/issues/535)) ([f91e413](https://github.com/ocavue/eslint-config/commit/f91e413907d786a4943bef1738ac044c9a3d4d14))
+
 ## [4.16.0](https://github.com/ocavue/eslint-config/compare/v4.15.0...v4.16.0) (2026-08-30)
 
 
