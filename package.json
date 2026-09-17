@@ -42,8 +42,8 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@eslint-community/eslint-plugin-eslint-comments": "^4.7.2",
-    "@eslint-react/eslint-plugin": "^5.14.1",
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.8.1",
+    "@eslint-react/eslint-plugin": "^5.19.1",
     "@eslint/markdown": "^8.0.3",
     "@unocss/eslint-config": "^66.8.1",
     "eslint-config-flat-gitignore": "^2.4.0",
@@ -53,12 +53,12 @@
     "eslint-plugin-jsdoc": "^64.0.1",
     "eslint-plugin-no-only-tests": "^3.4.0",
     "eslint-plugin-ocavue": "^0.1.0",
-    "eslint-plugin-package-json": "^1.6.0",
-    "eslint-plugin-perfectionist": "^5.10.0",
+    "eslint-plugin-package-json": "^1.8.1",
+    "eslint-plugin-perfectionist": "^5.11.1",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-regexp": "^3.1.1",
+    "eslint-plugin-regexp": "^3.3.0",
     "eslint-plugin-unicorn": "^75.0.0",
-    "eslint-plugin-vue": "^10.10.0",
+    "eslint-plugin-vue": "^10.11.0",
     "globals": "^17.9.0",
     "typescript-eslint": "^8.66.0",
     "vue-eslint-parser": "^10.4.1"
@@ -66,12 +66,12 @@
   "devDependencies": {
     "@ocavue/tsconfig": "^0.7.1",
     "@types/node": "^24.0.0",
-    "eslint": "^10.7.0",
+    "eslint": "^10.10.0",
     "jiti": "^2.7.0",
     "knip": "^6.26.0",
     "oxfmt": "^0.65.0",
     "pkg-pr-new": "^0.0.88",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.1"
   }
 }
