@@ -111,10 +111,10 @@ importers:
   .:
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments':
-        specifier: ^4.7.2
+        specifier: ^4.8.1
         version: 4.8.1(eslint@10.10.0)
       '@eslint-react/eslint-plugin':
-        specifier: ^5.14.1
+        specifier: ^5.19.1
         version: 5.19.1(eslint@10.10.0)(typescript@6.0.3)
       '@eslint/markdown':
         specifier: ^8.0.3
@@ -144,22 +144,22 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0(eslint@10.10.0)
       eslint-plugin-package-json:
-        specifier: ^1.6.0
+        specifier: ^1.8.1
         version: 1.8.1(eslint@10.10.0)
       eslint-plugin-perfectionist:
-        specifier: ^5.10.0
+        specifier: ^5.11.1
         version: 5.11.1(eslint@10.10.0)(typescript@6.0.3)
       eslint-plugin-react-hooks:
         specifier: ^7.1.1
         version: 7.1.1(eslint@10.10.0)
       eslint-plugin-regexp:
-        specifier: ^3.1.1
+        specifier: ^3.3.0
         version: 3.3.0(eslint@10.10.0)
       eslint-plugin-unicorn:
         specifier: ^75.0.0
         version: 75.0.0(eslint@10.10.0)
       eslint-plugin-vue:
-        specifier: ^10.10.0
+        specifier: ^10.11.0
         version: 10.11.0(@typescript-eslint/parser@8.70.0)(eslint@10.10.0)(vue-eslint-parser@10.4.1)
       globals:
         specifier: ^17.9.0
@@ -178,7 +178,7 @@ importers:
         specifier: ^24.0.0
         version: 24.13.5
       eslint:
-        specifier: ^10.7.0
+        specifier: ^10.10.0
         version: 10.10.0(jiti@2.7.0)
       jiti:
         specifier: ^2.7.0
@@ -196,7 +196,7 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       vitest:
-        specifier: ^5.0.0
+        specifier: ^5.0.1
         version: 5.0.1(@types/node@24.13.5)(vite@8.3.0)
 
 packages:
