@@ -38,6 +38,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-array-from-fill.md
   'unicorn/no-array-from-fill': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-async-iterator-callback.md
+  'unicorn/no-async-iterator-callback': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-computed-property-existence-check.md
   'unicorn/no-computed-property-existence-check': 'warn',
 
@@ -135,6 +138,12 @@ export const unicornRules: Linter.RulesRecord = {
   // Keep regex literals safe!
   'unicorn/no-unsafe-regex': 'off',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-unused-builtin-method-return.md
+  'unicorn/no-unused-builtin-method-return': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-unused-iterator-helper.md
+  'unicorn/no-unused-iterator-helper': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-useless-boolean-cast.md
   'unicorn/no-useless-boolean-cast': 'warn',
 
@@ -161,6 +170,9 @@ export const unicornRules: Linter.RulesRecord = {
     'warn',
     { checkArrowFunctionBody: false, checkArguments: false },
   ],
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-using-resource-escape.md
+  'unicorn/no-using-resource-escape': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-add-event-listener-options.md
   'unicorn/prefer-add-event-listener-options': 'warn',
@@ -267,6 +279,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // Prefer using `structuredClone` to create a deep clone
   'unicorn/prefer-structured-clone': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/prefer-temporal-conversion.md
+  'unicorn/prefer-temporal-conversion': 'warn',
 
   // Enforce throwing type error when throwing error while checking typeof
   'unicorn/prefer-type-error': 'error',
