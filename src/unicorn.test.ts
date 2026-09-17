@@ -112,9 +112,6 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-array-splice.md
     'unicorn/no-array-splice',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-async-iterator-callback.md
-    'unicorn/no-async-iterator-callback',
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/no-async-promise-finally.md
     'unicorn/no-async-promise-finally',
 
@@ -314,12 +311,6 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unsafe-string-replacement.md
     'unicorn/no-unsafe-string-replacement',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-unused-builtin-method-return.md
-    'unicorn/no-unused-builtin-method-return',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-unused-iterator-helper.md
-    'unicorn/no-unused-iterator-helper',
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-collection-argument.md
     'unicorn/no-useless-collection-argument',
 
@@ -361,9 +352,6 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-useless-switch-case.md
     'unicorn/no-useless-switch-case',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-using-resource-escape.md
-    'unicorn/no-using-resource-escape',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/no-xor-as-exponentiation.md
     'unicorn/no-xor-as-exponentiation',
@@ -624,9 +612,6 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-switch.md
     'unicorn/prefer-switch',
-
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/prefer-temporal-conversion.md
-    'unicorn/prefer-temporal-conversion',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-ternary.md
     'unicorn/prefer-ternary',
