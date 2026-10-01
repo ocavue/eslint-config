@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.19.0](https://github.com/ocavue/eslint-config/compare/v4.18.0...v4.19.0) (2026-10-01)
+
+
+### Features
+
+* update eslint-plugin-jsdoc to v65 ([#549](https://github.com/ocavue/eslint-config/issues/549)) ([9593baa](https://github.com/ocavue/eslint-config/commit/9593baa908fa3f493d2bb1a78d793ff32ccbcddf))
+
 ## [4.18.0](https://github.com/ocavue/eslint-config/compare/v4.17.0...v4.18.0) (2026-09-20)
 
 
