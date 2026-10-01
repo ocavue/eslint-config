@@ -5,3 +5,5 @@ minimumReleaseAgeExclude:
 strictPeerDependencies: true
 
 dedupePeers: true
+
+autoDedupe: true
