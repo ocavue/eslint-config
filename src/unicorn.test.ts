@@ -112,6 +112,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v67.0.0/docs/rules/no-array-splice.md
     'unicorn/no-array-splice',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-asterisk-prefix-in-documentation-comments.md
+    'unicorn/no-asterisk-prefix-in-documentation-comments',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/no-async-promise-finally.md
     'unicorn/no-async-promise-finally',
 
@@ -188,8 +191,26 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-invalid-fetch-options.md
     'unicorn/no-invalid-fetch-options',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-integrity.md
+    'unicorn/no-invalid-integrity',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-intl-options.md
+    'unicorn/no-invalid-intl-options',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-property-descriptor.md
+    'unicorn/no-invalid-property-descriptor',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-response-options.md
+    'unicorn/no-invalid-response-options',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-temporal-arithmetic.md
+    'unicorn/no-invalid-temporal-arithmetic',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v69.0.0/docs/rules/no-invalid-well-known-symbol-methods.md
     'unicorn/no-invalid-well-known-symbol-methods',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-leading-empty-lines.md
+    'unicorn/no-leading-empty-lines',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-lonely-if.md
     'unicorn/no-lonely-if',
@@ -483,6 +504,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/prefer-iterator-zip.md
     'unicorn/prefer-iterator-zip',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/prefer-literal-ascii.md
+    'unicorn/prefer-literal-ascii',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-location-assign.md
     'unicorn/prefer-location-assign',
 
@@ -571,6 +595,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-set-size.md
     'unicorn/prefer-set-size',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/prefer-short-escape-sequences.md
+    'unicorn/prefer-short-escape-sequences',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-simple-condition-first.md
     'unicorn/prefer-simple-condition-first',

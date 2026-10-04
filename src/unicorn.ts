@@ -44,6 +44,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-computed-property-existence-check.md
   'unicorn/no-computed-property-existence-check': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-conflicting-constraints.md
+  'unicorn/no-conflicting-constraints': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-confusing-array-with.md
   'unicorn/no-confusing-array-with': 'warn',
 
@@ -63,8 +66,14 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-for-each.md
   'unicorn/no-for-each': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-incomplete-accessor-override.md
+  'unicorn/no-incomplete-accessor-override': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-incorrect-query-selector.md
   'unicorn/no-incorrect-query-selector': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-ineffective-csp-directives.md
+  'unicorn/no-ineffective-csp-directives': 'warn',
 
   // Array.isArray instead of instanceof etc
   'unicorn/no-instanceof-builtins': 'error',
@@ -72,8 +81,20 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-invalid-argument-count.md
   'unicorn/no-invalid-argument-count': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-boolean-attribute-value.md
+  'unicorn/no-invalid-boolean-attribute-value': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-dom-token.md
+  'unicorn/no-invalid-dom-token': 'warn',
+
   // Avoid passing expressions to removeEventListener
   'unicorn/no-invalid-remove-event-listener': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-style-set-property.md
+  'unicorn/no-invalid-style-set-property': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-invalid-url-protocol-comparison.md
+  'unicorn/no-invalid-url-protocol-comparison': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-late-current-target-access.md
   'unicorn/no-late-current-target-access': 'warn',
@@ -105,6 +126,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-optional-chaining-on-undeclared-variable.md
   'unicorn/no-optional-chaining-on-undeclared-variable': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-prevent-default-in-passive-listener.md
+  'unicorn/no-prevent-default-in-passive-listener': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-redundant-comparison.md
   'unicorn/no-redundant-comparison': 'warn',
 
@@ -123,6 +147,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unnecessary-global-this.md
   'unicorn/no-unnecessary-global-this': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-unnecessary-parameters.md
+  'unicorn/no-unnecessary-parameters': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unnecessary-splice.md
   'unicorn/no-unnecessary-splice': 'warn',
 
@@ -131,6 +158,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unsafe-buffer-conversion.md
   'unicorn/no-unsafe-buffer-conversion': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-unsafe-json-serialization.md
+  'unicorn/no-unsafe-json-serialization': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unsafe-property-key.md
   'unicorn/no-unsafe-property-key': 'warn',
@@ -143,6 +173,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v75.0.0/docs/rules/no-unused-iterator-helper.md
   'unicorn/no-unused-iterator-helper': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-url-in-search-params.md
+  'unicorn/no-url-in-search-params': 'warn',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-useless-boolean-cast.md
   'unicorn/no-useless-boolean-cast': 'warn',
@@ -208,6 +241,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-direct-iteration.md
   'unicorn/prefer-direct-iteration': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/prefer-escaped-irregular-whitespace.md
+  'unicorn/prefer-escaped-irregular-whitespace': 'warn',
+
   // Prefer `export…from` when re-exporting
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-export-from.md
   'unicorn/prefer-export-from': ['warn', { checkUsedVariables: false }],
@@ -254,6 +290,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-object-iterable-methods.md
   'unicorn/prefer-object-iterable-methods': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/prefer-promise-static-methods.md
+  'unicorn/prefer-promise-static-methods': 'warn',
 
   // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
   'unicorn/prefer-regexp-test': 'warn',
@@ -303,6 +342,9 @@ export const unicornRules: Linter.RulesRecord = {
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/require-proxy-trap-boolean-return.md
   'unicorn/require-proxy-trap-boolean-return': 'warn',
+
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/require-text-decoder-streaming.md
+  'unicorn/require-text-decoder-streaming': 'warn',
 
   // Enforce consistent break position in switch cases
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-break-position.md
