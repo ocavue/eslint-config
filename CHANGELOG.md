@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.20.1](https://github.com/ocavue/eslint-config/compare/v4.20.0...v4.20.1) (2026-10-05)
+
+
+### Bug Fixes
+
+* disable rule `unicorn/no-unnecessary-parameters` ([#555](https://github.com/ocavue/eslint-config/issues/555)) ([f5d4d52](https://github.com/ocavue/eslint-config/commit/f5d4d521dad1b36aa4d70e6f7b0a185e40f9a75c))
+
 ## [4.20.0](https://github.com/ocavue/eslint-config/compare/v4.19.0...v4.20.0) (2026-10-04)
 
 
