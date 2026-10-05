@@ -147,7 +147,6 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unnecessary-global-this.md
   'unicorn/no-unnecessary-global-this': 'warn',
 
-
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/no-unnecessary-splice.md
   'unicorn/no-unnecessary-splice': 'warn',
 
