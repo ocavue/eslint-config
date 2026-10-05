@@ -10,6 +10,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/better-dom-traversing.md
     'unicorn/better-dom-traversing',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-unnecessary-parameters.md
+    'unicorn/no-unnecessary-parameters',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/catch-error-name.md
     'unicorn/catch-error-name',
 
