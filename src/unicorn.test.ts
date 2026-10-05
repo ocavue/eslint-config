@@ -305,6 +305,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/no-unnecessary-nested-ternary.md
     'unicorn/no-unnecessary-nested-ternary',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-unnecessary-parameters.md
+    'unicorn/no-unnecessary-parameters',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-unnecessary-polyfills.md
     'unicorn/no-unnecessary-polyfills',
 
