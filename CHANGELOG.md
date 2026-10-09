@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.20.2](https://github.com/ocavue/eslint-config/compare/v4.20.1...v4.20.2) (2026-10-09)
+
+
+### Bug Fixes
+
+* disable rule `unicorn/prefer-single-object-destructuring` ([#559](https://github.com/ocavue/eslint-config/issues/559)) ([98f9575](https://github.com/ocavue/eslint-config/commit/98f957509452e11763b08ca8a526498f74843c98))
+
 ## [4.20.1](https://github.com/ocavue/eslint-config/compare/v4.20.0...v4.20.1) (2026-10-05)
 
 
