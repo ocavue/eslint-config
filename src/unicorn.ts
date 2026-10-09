@@ -294,9 +294,6 @@ export const unicornRules: Linter.RulesRecord = {
   // Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`
   'unicorn/prefer-regexp-test': 'warn',
 
-  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-single-object-destructuring.md
-  'unicorn/prefer-single-object-destructuring': 'warn',
-
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v65.0.1/docs/rules/prefer-string-match-all.md
   'unicorn/prefer-string-match-all': 'error',
 

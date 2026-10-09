@@ -619,6 +619,9 @@ test('Unicorn rules should match recommended rules', () => {
     // valid or not since you don't known whether `items` is an array or not.
     'unicorn/prefer-single-call',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-single-object-destructuring.md
+    'unicorn/prefer-single-object-destructuring',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v68.0.0/docs/rules/prefer-single-replace.md
     'unicorn/prefer-single-replace',
 
