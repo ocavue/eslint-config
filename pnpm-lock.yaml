@@ -219,7 +219,7 @@ importers:
         specifier: ^10.11.0
         version: 10.11.1(@typescript-eslint/parser@8.71.2)(eslint@10.12.0)(vue-eslint-parser@10.4.1)
       globals:
-        specifier: ^17.12.0
+        specifier: ^17.0.0
         version: 17.13.0
       typescript-eslint:
         specifier: ^8.66.0
