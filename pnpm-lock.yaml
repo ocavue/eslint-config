@@ -210,14 +210,14 @@ importers:
         specifier: ^7.1.1
         version: 7.1.1(eslint@10.13.0)
       eslint-plugin-regexp:
-        specifier: ^3.3.1
-        version: 3.3.1(eslint@10.13.0)
+        specifier: ^3.3.2
+        version: 3.3.2(eslint@10.13.0)
       eslint-plugin-unicorn:
         specifier: ^79.0.0
         version: 79.0.0(eslint@10.13.0)(typescript@6.0.3)
       eslint-plugin-vue:
-        specifier: ^10.11.1
-        version: 10.11.1(@typescript-eslint/parser@8.72.0)(eslint@10.13.0)(vue-eslint-parser@10.4.1)
+        specifier: ^10.12.0
+        version: 10.12.0(@typescript-eslint/parser@8.72.0)(eslint@10.13.0)(vue-eslint-parser@10.4.1)
       globals:
         specifier: ^17.13.0
         version: 17.13.0
@@ -1455,8 +1455,8 @@ packages:
       eslint:
         optional: true
 
-  eslint-plugin-regexp@3.3.1:
-    resolution: {integrity: sha512-58bGUci/AaWAo1ETj6Lsnmy6QXwnSyVONRA805828nnqp7vrTwdaQMc02vtowmYB3A5OB3SLr3r5HgmfxX4dLg==}
+  eslint-plugin-regexp@3.3.2:
+    resolution: {integrity: sha512-hdkHQVDUtP3+U66PMZSQxw++mburJyJbFY8fu8lryMvJ2glo7xjq1Ov8A/uczxNU+IS87TFXUUBIJ7dxqgcJwg==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
       eslint: '>=9.38.0'
@@ -1471,8 +1471,8 @@ packages:
       typescript:
         optional: true
 
-  eslint-plugin-vue@10.11.1:
-    resolution: {integrity: sha512-pasVXhl7wUmIvhujoqs/m0mJ9r59QW1IR9XXYKGR0FETzSM+Hhlf4qKIYgWiDDP+9YKv4YfbwskD7LqIdVcgQw==}
+  eslint-plugin-vue@10.12.0:
+    resolution: {integrity: sha512-YsrHHtMaxjWqmxr/Kv9yXUfakUlbTCWtIBvr9eounzj6ZsGJdz1I4UuTIHkhzKHes793Cwo3PGTcvsoBqNyzCA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       '@stylistic/eslint-plugin': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -3545,7 +3545,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-regexp@3.3.1(eslint@10.13.0):
+  eslint-plugin-regexp@3.3.2(eslint@10.13.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.13.0)
       '@eslint-community/regexpp': 4.12.2
@@ -3586,7 +3586,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-vue@10.11.1(@typescript-eslint/parser@8.72.0)(eslint@10.13.0)(vue-eslint-parser@10.4.1):
+  eslint-plugin-vue@10.12.0(@typescript-eslint/parser@8.72.0)(eslint@10.13.0)(vue-eslint-parser@10.4.1):
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.13.0)
       eslint: 10.13.0(jiti@2.7.0)
