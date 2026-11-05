@@ -198,8 +198,8 @@ importers:
         specifier: ^3.4.0
         version: 3.4.0
       eslint-plugin-ocavue:
-        specifier: ^0.1.0
-        version: 0.1.0(eslint@10.14.0)
+        specifier: ^0.2.0
+        version: 0.2.0(eslint@10.14.0)
       eslint-plugin-package-json:
         specifier: ^1.10.1
         version: 1.13.0(eslint@10.14.0)
@@ -1372,8 +1372,8 @@ packages:
     resolution: {integrity: sha512-4S3/9Nb7A2tiMcpzEQE9bQSlpeOz6WJkgryBuou/SA8W2x2c8Zf4j0NvTKBjv6qNhF9T79tmkecm/0CHqV0UGg==}
     engines: {node: '>=5.0.0'}
 
-  eslint-plugin-ocavue@0.1.0:
-    resolution: {integrity: sha512-K4xat/BdWfNhBDD7rWmiXXJ5bakFLlAgEFWp4CFgxGpviP6CvDF3EP6gvKQQKpxFXw8h0KIhYFQvHLkULghxBg==}
+  eslint-plugin-ocavue@0.2.0:
+    resolution: {integrity: sha512-pSiu6RMb6KzkThY0w1Yh2KqAzCBgZfi70eFYNKZ86Fd8xdIPzVMmIqrHkJQZEc9+zUIkb5IRbQObGsKtXzVrkA==}
     peerDependencies:
       eslint: ^10.0.0
 
@@ -3413,7 +3413,7 @@ snapshots:
 
   eslint-plugin-no-only-tests@3.4.0: {}
 
-  eslint-plugin-ocavue@0.1.0(eslint@10.14.0):
+  eslint-plugin-ocavue@0.2.0(eslint@10.14.0):
     dependencies:
       eslint: 10.14.0(jiti@2.7.0)
 
