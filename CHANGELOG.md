@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.23.0](https://github.com/ocavue/eslint-config/compare/v4.22.1...v4.23.0) (2026-11-06)
+
+
+### Features
+
+* enable `ocavue/prefer-while-true` ([#575](https://github.com/ocavue/eslint-config/issues/575)) ([a6b4326](https://github.com/ocavue/eslint-config/commit/a6b4326633c675742d7073c83a046a1226b5ea8b))
+
 ## [4.22.1](https://github.com/ocavue/eslint-config/compare/v4.22.0...v4.22.1) (2026-11-06)
 
 
