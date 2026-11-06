@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.22.1](https://github.com/ocavue/eslint-config/compare/v4.22.0...v4.22.1) (2026-11-06)
+
+
+### Bug Fixes
+
+* update dependency eslint-plugin-ocavue to ^0.2.0 ([#573](https://github.com/ocavue/eslint-config/issues/573)) ([3015007](https://github.com/ocavue/eslint-config/commit/3015007fb3ecc30f9cc07f54c5612e5675367f49))
+
 ## [4.22.0](https://github.com/ocavue/eslint-config/compare/v4.21.0...v4.22.0) (2026-10-24)
 
 
