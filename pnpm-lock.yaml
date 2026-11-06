@@ -247,8 +247,8 @@ importers:
         specifier: ^0.74.0
         version: 0.74.0
       pkg-pr-new:
-        specifier: ^0.0.91
-        version: 0.0.91
+        specifier: ^0.0.93
+        version: 0.0.93
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -2071,8 +2071,8 @@ packages:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
 
-  pkg-pr-new@0.0.91:
-    resolution: {integrity: sha512-FQPmjspKRKYV4MlHQnun9snJqlYm6Yhmo12x1O3pgE2Akim/y/BZjMOppK//BFdh222WOj6WGqlmeZfrtUtfgQ==}
+  pkg-pr-new@0.0.93:
+    resolution: {integrity: sha512-JH3HEO+m8sNFpalNAeGrNKjdwxNcXT3yuEuGMU/65dvLojPo+Ofnmc8la2v2ceisjXTOKQw/738Pj4KNFY7F+w==}
     hasBin: true
 
   pluralize@8.0.0:
@@ -4402,7 +4402,7 @@ snapshots:
 
   picomatch@4.0.7: {}
 
-  pkg-pr-new@0.0.91: {}
+  pkg-pr-new@0.0.93: {}
 
   pluralize@8.0.0: {}
 
