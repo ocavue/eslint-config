@@ -14,6 +14,9 @@ export function ocavue(): Linter.Config[] {
       },
       rules: {
         'ocavue/no-implicit-arrow-linebreak': 'warn',
+        'ocavue/prefer-constant-function': 'warn',
+        'ocavue/prefer-noop': 'warn',
+        'ocavue/prefer-sleep': 'warn',
         'ocavue/prefer-while-true': 'warn',
       },
     },
