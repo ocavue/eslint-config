@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.24.0](https://github.com/ocavue/eslint-config/compare/v4.23.0...v4.24.0) (2026-11-09)
+
+
+### Features
+
+* enable `prefer-noop`, `prefer-constant-function` and `prefer-sleep` ([#577](https://github.com/ocavue/eslint-config/issues/577)) ([7d83f22](https://github.com/ocavue/eslint-config/commit/7d83f2234aa84a47bae4ddc8a3824a8771c6fe9e))
+
 ## [4.23.0](https://github.com/ocavue/eslint-config/compare/v4.22.1...v4.23.0) (2026-11-06)
 
 
