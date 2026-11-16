@@ -115,8 +115,7 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/no-asterisk-prefix-in-documentation-comments.md
     'unicorn/no-asterisk-prefix-in-documentation-comments',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v70.0.0/docs/rules/no-async-promise-finally.md
-    'unicorn/no-async-promise-finally',
+
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/no-await-expression-member.md
     'unicorn/no-await-expression-member',
