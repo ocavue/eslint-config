@@ -557,6 +557,9 @@ test('Unicorn rules should match recommended rules', () => {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-optional-catch-binding.md
     'unicorn/prefer-optional-catch-binding',
 
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v80.0.0/docs/rules/prefer-options-parameter.md
+    'unicorn/prefer-options-parameter',
+
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/prefer-path2d.md
     'unicorn/prefer-path2d',
 
@@ -580,6 +583,9 @@ test('Unicorn rules should match recommended rules', () => {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-reflect-apply.md
     'unicorn/prefer-reflect-apply',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v80.0.0/docs/rules/prefer-regexp-exec.md
+    'unicorn/prefer-regexp-exec',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v62.0.0/docs/rules/prefer-response-static-json.md
     'unicorn/prefer-response-static-json',
