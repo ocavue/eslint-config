@@ -337,6 +337,9 @@ export const unicornRules: Linter.RulesRecord = {
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v66.0.0/docs/rules/require-proxy-trap-boolean-return.md
   'unicorn/require-proxy-trap-boolean-return': 'warn',
 
+  // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v80.0.0/docs/rules/require-spread-parentheses.md
+  'unicorn/require-spread-parentheses': 'warn',
+
   // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v77.0.0/docs/rules/require-text-decoder-streaming.md
   'unicorn/require-text-decoder-streaming': 'warn',
 
