@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.26.0](https://github.com/ocavue/eslint-config/compare/v4.25.0...v4.26.0) (2026-11-20)
+
+
+### Features
+
+* update `@eslint/markdown` to v9 ([#582](https://github.com/ocavue/eslint-config/issues/582)) ([b2d7def](https://github.com/ocavue/eslint-config/commit/b2d7def8f05ccbb51fe4b0657f486bc2d5bed7f4))
+
 ## [4.25.0](https://github.com/ocavue/eslint-config/compare/v4.24.0...v4.25.0) (2026-11-16)
 
 
